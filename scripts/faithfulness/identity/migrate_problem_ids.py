@@ -194,7 +194,7 @@ def main() -> None:
     # a different shape for lineage (`parents: [{parent_id}]` rather than
     # `parent_ids`), so migrating them in place both misses their parents and
     # duplicates work. They are regenerated from the migrated sources instead.
-    derived = {"eml_v1_release.jsonl", "eml_v1_rejected.jsonl"}
+    derived = {"eml1_release.jsonl", "eml1_rejected.jsonl"}
     paths = sorted({p for root in args.roots for p in root.rglob("*.jsonl")
                     if p.name not in derived})
     rows = load_rows(paths)

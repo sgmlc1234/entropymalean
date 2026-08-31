@@ -463,8 +463,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
     parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
-    parser.add_argument("--output", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
-    parser.add_argument("--rejected-output", type=Path, default=Path("data/release/eml_v1_rejected.jsonl"))
+    parser.add_argument("--output", type=Path, default=Path("data/release/eml1_release.jsonl"))
+    parser.add_argument("--rejected-output", type=Path, default=Path("data/release/eml1_rejected.jsonl"))
     parser.add_argument("--prune", type=Path, default=Path("data/release/hypothesis_prune.json"),
                         help="Hypotheses Lean confirmed the proof does not need, removed from the "
                              "rows they were found in. Produced by check_dead_hypotheses.py for "

@@ -120,7 +120,7 @@ def examine(job) -> Dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--workspaces", type=Path, default=Path("data/release/comparator"))
     parser.add_argument("--output", type=Path, default=Path("data/release/comparator_batch.json"))
     parser.add_argument("--mathlib", type=Path, default=Path(".lake/packages/mathlib"))

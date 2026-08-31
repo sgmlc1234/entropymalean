@@ -11,8 +11,8 @@ renderer:
     agrees with itself, which is the honest ceiling on any verdict it gives.
 
 The site carries the same material as a browsable page; this is the form that
-goes into a paper appendix. Both are built from `eml_v1_release.jsonl` and
-`eml_v1_rejected.jsonl`, so neither can drift from the other.
+goes into a paper appendix. Both are built from `eml1_release.jsonl` and
+`eml1_rejected.jsonl`, so neither can drift from the other.
 
 Compile with lualatex or xelatex -- the Lean in it is Unicode throughout and
 pdflatex cannot set it.
@@ -520,11 +520,11 @@ def render_tex(accepted: List[dict], held: List[dict], stats: Dict[str, Any],
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
-    parser.add_argument("--rejected", type=Path, default=Path("data/release/eml_v1_rejected.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
+    parser.add_argument("--rejected", type=Path, default=Path("data/release/eml1_rejected.jsonl"))
     parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
     parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
-    parser.add_argument("--output-tex", type=Path, default=Path("docs/eml_v1_release_report.tex"))
+    parser.add_argument("--output-tex", type=Path, default=Path("docs/eml1_release_report.tex"))
     parser.add_argument("--split-by-benchmark", action="store_true",
                         help="also write one document per source benchmark. The two "
                              "read differently -- miniF2F statements are competition "

@@ -72,7 +72,7 @@ def certified_index() -> Dict[str, Dict[str, Any]]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--release", type=Path,
-                        default=REPO / "data/release/eml_v1_release.jsonl")
+                        default=REPO / "data/release/eml1_release.jsonl")
     parser.add_argument("--write", action="store_true")
     args = parser.parse_args()
 

@@ -63,7 +63,7 @@ async def lean_verifier(code: str, timeout: float = 300.0) -> Any:
 
 async def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--output", type=Path, default=Path("data/release/goal_roundtrip.json"))
     parser.add_argument("--concurrency", type=int, default=3)
     # `.env` sets GENERATION_MODEL to a model codex has no metadata for, and a

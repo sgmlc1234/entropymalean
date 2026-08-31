@@ -72,13 +72,13 @@ replay; what they fail is the exam preamble, which opens `Nat` and so binds `φ`
 before their statements can use it as a binder.
 
 ```
-data/release/eml_v1_release.jsonl             the corpus, one JSON object per line
-data/release/eml_v1_rejected.jsonl            691 refusals, with reasons
-data/release/eml_v1_preflight_excluded.jsonl  2 sound rows the harness cannot parse
+data/release/eml1_release.jsonl             the corpus, one JSON object per line
+data/release/eml1_rejected.jsonl            691 refusals, with reasons
+data/release/eml1_preflight_excluded.jsonl  2 sound rows the harness cannot parse
 data/release/CAMPAIGN_LABELS.md               what run-a … run-e mean
 data/benchmarks/                              the two 50-row seed sets
 examples/seeds/                               a five-seed group — the input a campaign takes
-docs/eml_v1_release_report*.pdf               every row as a card, 1,177 pages
+docs/eml1_release_report*.pdf               every row as a card, 1,177 pages
 ```
 
 ---
@@ -149,7 +149,7 @@ needs none.
 ```bash
 python3 - <<'PY'
 import json, pathlib
-row = json.loads(open('data/release/eml_v1_release.jsonl').readline())
+row = json.loads(open('data/release/eml1_release.jsonl').readline())
 pathlib.Path('/tmp/Check.lean').write_text(row['lean_code'])
 print(row['problem_id'])
 PY

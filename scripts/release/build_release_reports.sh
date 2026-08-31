@@ -10,7 +10,7 @@
 # the table of contents.
 set -uo pipefail
 cd "$(dirname "$0")/../docs"
-for f in eml_v1_release_report_proofnet eml_v1_release_report_minif2f eml_v1_release_report; do
+for f in eml1_release_report_proofnet eml1_release_report_minif2f eml1_release_report; do
   for i in 1 2; do
     lualatex -interaction=nonstopmode "$f.tex" > "/tmp/lua_${f}_$i.log" 2>&1
   done

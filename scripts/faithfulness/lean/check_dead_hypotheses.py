@@ -91,7 +91,7 @@ def examine(job: Tuple[int, dict, int]) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--output", type=Path, default=Path("data/release/dead_hypotheses.json"))
     parser.add_argument("--timeout", type=int, default=600)
     parser.add_argument("--workers", type=int, default=6)

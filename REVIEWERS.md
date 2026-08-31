@@ -67,7 +67,7 @@ no keys.
 
 ## 1. Verify the release without running anything
 
-The release is `data/release/eml_v1_release.jsonl` — 535 rows, one JSON object per
+The release is `data/release/eml1_release.jsonl` — 535 rows, one JSON object per
 line. Each carries the natural-language statement, the Lean statement, the Lean
 proof, the header it compiles under, its certificate, its parent lineage, and
 the result of every check that was run on it.
@@ -75,7 +75,7 @@ the result of every check that was run on it.
 ```bash
 python3 -c "
 import json
-rows = [json.loads(l) for l in open('data/release/eml_v1_release.jsonl') if l.strip()]
+rows = [json.loads(l) for l in open('data/release/eml1_release.jsonl') if l.strip()]
 print(len(rows), 'rows')
 print(sorted(rows[0]))
 "
@@ -86,7 +86,7 @@ print(sorted(rows[0]))
 ```bash
 python3 - <<'PY'
 import json, pathlib, subprocess
-row = json.loads(open('data/release/eml_v1_release.jsonl').readline())
+row = json.loads(open('data/release/eml1_release.jsonl').readline())
 pathlib.Path('/tmp/Check.lean').write_text(row['lean_code'])
 print(row['problem_id'])
 PY
@@ -119,9 +119,9 @@ restate a parent on purpose and are gated on sameness instead.
 
 ### 1.3 The rejected rows are shipped too
 
-`data/release/eml_v1_rejected.jsonl` holds the 691 candidates the validation
+`data/release/eml1_rejected.jsonl` holds the 691 candidates the validation
 layer refused, each with the reason. Two more are in
-`data/release/eml_v1_preflight_excluded.jsonl`: they are sound and certified,
+`data/release/eml1_preflight_excluded.jsonl`: they are sound and certified,
 but their statements do not parse under the evaluation preamble, so they are
 excluded from the panel rather than from the corpus. A corpus that shows only its survivors cannot be
 audited, and the failure modes are as informative as the successes.
@@ -130,23 +130,23 @@ audited, and the failure modes are as informative as the successes.
 python3 -c "
 import json, collections
 c = collections.Counter(json.loads(l)['admission']['why_not']
-                        for l in open('data/release/eml_v1_rejected.jsonl') if l.strip())
+                        for l in open('data/release/eml1_rejected.jsonl') if l.strip())
 for k, v in c.most_common(): print(f'{v:4d}  {k}')
 "
 ```
 
 ### 1.4 Read it as a document
 
-`docs/eml_v1_release_report.pdf` renders all 535 rows as cards — statement, Lean,
+`docs/eml1_release_report.pdf` renders all 535 rows as cards — statement, Lean,
 certificate, and every judge's reasoning including the passes that disagreed.
-Split by benchmark: `docs/eml_v1_release_report_proofnet.pdf` (287 rows),
-`docs/eml_v1_release_report_minif2f.pdf` (248 rows).
+Split by benchmark: `docs/eml1_release_report_proofnet.pdf` (287 rows),
+`docs/eml1_release_report_minif2f.pdf` (248 rows).
 
 Rebuild from the release with:
 
 ```bash
 python3 -m scripts.release.build_release_report --split-by-benchmark
-cd docs && lualatex eml_v1_release_report.tex          # twice, for the contents
+cd docs && lualatex eml1_release_report.tex          # twice, for the contents
 ```
 
 `lualatex`, not `pdflatex` — the cards set Lean's Unicode.

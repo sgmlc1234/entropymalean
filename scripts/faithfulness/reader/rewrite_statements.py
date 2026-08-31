@@ -101,7 +101,7 @@ def _looks_transcribed(text: str) -> List[str]:
 
 async def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--roundtrip", type=Path, default=Path("data/release/goal_roundtrip.json"))
     parser.add_argument("--output", type=Path, default=Path("data/release/statement_rewrites.json"))
     parser.add_argument("--model", default="gpt-5.6-luna")

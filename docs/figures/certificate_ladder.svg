@@ -57,7 +57,7 @@
 <path d="M1498 203 C1497 184 1509 175 1523 174" fill="none" stroke="#557A61" stroke-width="5" stroke-linecap="round"/>
 <path d="M1515 183 C1538 162 1562 170 1567 193 C1542 199 1526 195 1515 183 Z" fill="#9DBFA7" stroke="#557A61" stroke-width="2"/>
 <path d="M1479 254 L1496 272 L1527 234" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-<text x="1503" y="330" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7D403A" text-anchor="middle" letter-spacing="0.6">EML v1 RELEASE</text>
+<text x="1503" y="330" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7D403A" text-anchor="middle" letter-spacing="0.6">EML-1 RELEASE</text>
 <text x="1503" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#5D6C76" text-anchor="middle" letter-spacing="0">535 / 535 rows</text></g>
 <rect x="258" y="326" width="1088" height="162" rx="12" fill="#E7F0F7" opacity="1.0" stroke="#83A9C3" stroke-width="2"/>
 <text x="286" y="367" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#20323D" text-anchor="start" letter-spacing="0">proof_checked</text>
@@ -83,7 +83,7 @@
 <text x="650" y="578" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#667680" text-anchor="start" letter-spacing="0">anti-stub guard clear; no proof claim yet</text>
 <rect x="258" y="624" width="1088" height="82" rx="12" fill="#F5F5F3" opacity="1.0" stroke="#9C9C98" stroke-width="2" stroke-dasharray="9 7"/>
 <text x="286" y="674" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#777A7B" text-anchor="start" letter-spacing="0">none</text>
-<text x="650" y="672" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#777A7B" text-anchor="start" letter-spacing="0">Not accepted for EML v1</text>
+<text x="650" y="672" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#777A7B" text-anchor="start" letter-spacing="0">Not accepted for EML-1</text>
 <rect x="1139" y="648" width="180" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#A5A5A1" stroke-width="2"/>
 <text x="1229.0" y="671" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#6F7273" text-anchor="middle" letter-spacing="0.35">OUTSIDE RELEASE</text>
 </svg>

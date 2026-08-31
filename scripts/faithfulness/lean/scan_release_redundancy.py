@@ -89,7 +89,7 @@ def settled(evidence: Dict[str, Any]) -> bool:
 
 async def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--release", type=Path, default=Path("data/release/eml_v1_release.jsonl"))
+    parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--output", type=Path, default=Path("data/release/redundancy_scan.json"))
     parser.add_argument("--provers", nargs="+", default=["gpt-5.6-luna", "gpt-5.6-terra"])
     parser.add_argument("--timeout", type=float, default=300.0)

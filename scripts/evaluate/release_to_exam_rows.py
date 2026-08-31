@@ -24,7 +24,7 @@ arm over empty palettes is a closed-book run wearing the wrong label.
 
 Usage:
   python3 scripts/evaluate/release_to_exam_rows.py \
-    --input data/release/eml_v1_release.jsonl \
+    --input data/release/eml1_release.jsonl \
     --output data/evaluation/exam/release309_rows.jsonl
 """
 

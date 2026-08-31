@@ -246,7 +246,7 @@ Three things, stated so they are not silently assumed:
    pipeline. The evaluation session should confirm.
 2. ~~**`release_to_exam_rows.py`.**~~ **Settled:** it is a manual step, not a
    missing edge. It runs once when the release changes —
-   `eml_v1_release.jsonl` → `release537_rows.jsonl` (14:44) → and then
+   `eml1_release.jsonl` → `release537_rows.jsonl` (14:44) → and then
    `preflight_exam_rows.py`, which `run_exam_cell.py` does call, produces
    `release537_playable.jsonl` (14:46). A reviewer using the shipped release
    never runs it, because the playable file is already there.
