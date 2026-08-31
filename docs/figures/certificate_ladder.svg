@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="760" viewBox="0 0 1700 760" role="img">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#8EA1AE"/>
+</marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+<feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#8EA1AE" flood-opacity="0.18"/>
+</filter>
+<linearGradient id="woodRail" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#9C6638"/>
+<stop offset="0.42" stop-color="#D19A5C"/>
+<stop offset="0.72" stop-color="#BC7D43"/>
+<stop offset="1" stop-color="#83532F"/>
+</linearGradient>
+<linearGradient id="woodRung" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#D5A268"/>
+<stop offset="0.55" stop-color="#B8793F"/>
+<stop offset="1" stop-color="#8E5B34"/>
+</linearGradient>
+</defs>
+<rect width="100%" height="100%" fill="#FFFEFC"/>
+<text x="143" y="42" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#5D6C76" text-anchor="middle" letter-spacing="1.2">STRONGER CLAIM</text>
+<path d="M143 76 L143 51 M143 51 L136 61 M143 51 L150 61" stroke="#5F7482" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<rect x="87" y="124" width="112" height="16" rx="5" fill="url(#woodRung)" stroke="#784C2B" stroke-width="2"/>
+<rect x="87" y="245" width="112" height="16" rx="5" fill="url(#woodRung)" stroke="#784C2B" stroke-width="2"/>
+<rect x="87" y="399" width="112" height="16" rx="5" fill="url(#woodRung)" stroke="#784C2B" stroke-width="2"/>
+<rect x="87" y="550" width="112" height="16" rx="5" fill="url(#woodRung)" stroke="#784C2B" stroke-width="2"/>
+<rect x="87" y="657" width="112" height="16" rx="5" fill="url(#woodRung)" stroke="#784C2B" stroke-width="2"/>
+<path d="M70 708 L88 92 Q89 86 95 86 L113 86 L103 708 Z" fill="url(#woodRail)" stroke="#754927" stroke-width="2"/>
+<path d="M181 86 L199 86 Q205 86 206 92 L225 708 L192 708 Z" fill="url(#woodRail)" stroke="#754927" stroke-width="2"/>
+<path d="M85 690 C91 560 87 405 98 112 M203 690 C197 520 202 365 194 108" fill="none" stroke="#F1C78F" stroke-width="2.2" stroke-opacity="0.42" stroke-linecap="round"/>
+<path d="M76 652 C83 532 79 322 91 146 M217 662 C208 514 213 304 201 132" fill="none" stroke="#6F4527" stroke-width="1.5" stroke-opacity="0.28" stroke-linecap="round"/>
+<circle cx="143" cy="132" r="19" fill="#AFCBE4" stroke="#754927" stroke-width="2"/>
+<text x="143" y="139" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#263842" text-anchor="middle" letter-spacing="0">4</text>
+<circle cx="143" cy="253" r="19" fill="#8FB8D7" stroke="#754927" stroke-width="2"/>
+<text x="143" y="260" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#263842" text-anchor="middle" letter-spacing="0">3</text>
+<circle cx="143" cy="407" r="19" fill="#B9D1E6" stroke="#754927" stroke-width="2"/>
+<text x="143" y="414" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#263842" text-anchor="middle" letter-spacing="0">2</text>
+<circle cx="143" cy="558" r="19" fill="#D8E6F2" stroke="#754927" stroke-width="2"/>
+<text x="143" y="565" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#263842" text-anchor="middle" letter-spacing="0">1</text>
+<circle cx="143" cy="665" r="19" fill="#E5E7E8" stroke="#754927" stroke-width="2"/>
+<text x="143" y="672" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#263842" text-anchor="middle" letter-spacing="0">0</text>
+<rect x="258" y="90" width="1088" height="84" rx="12" fill="#EAF3FA" opacity="1.0" stroke="#7FA8C7" stroke-width="2"/>
+<text x="286" y="124" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#20323D" text-anchor="start" letter-spacing="0">reproducible</text>
+<text x="650" y="124" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#334852" text-anchor="start" letter-spacing="0">Byte-identical export on a second platform</text>
+<rect x="1157" y="114" width="162" height="34" rx="17" fill="#F7FAFC" opacity="1.0" stroke="#8EABC0" stroke-width="2"/>
+<text x="1238.0" y="137" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#476377" text-anchor="middle" letter-spacing="0.35">STRONGEST</text>
+<text x="650" y="152" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#667680" text-anchor="start" letter-spacing="0">for environments that match the pinned toolchain</text>
+<rect x="258" y="204" width="1088" height="98" rx="12" fill="#D7E9F6" opacity="1.0" stroke="#578BAF" stroke-width="2"/>
+<text x="286" y="244" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#183A50" text-anchor="start" letter-spacing="0">kernel_replayed</text>
+<text x="650" y="241" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#263D49" text-anchor="start" letter-spacing="0">Independent kernel accepts the proof term</text>
+<text x="650" y="272" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#5D707B" text-anchor="start" letter-spacing="0">independent of the elaborator&#x27;s own verdict</text>
+<rect x="1090" y="252" width="229" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#4E819F" stroke-width="2"/>
+<text x="1204.5" y="275" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#315E77" text-anchor="middle" letter-spacing="0.35">RELEASE THRESHOLD</text>
+<g transform="translate(0,-130)"><path d="M1346 253 C1405 253 1404 253 1444 253" stroke="#4E819F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="1502" cy="254" r="51" fill="#C96E62" stroke="#8F4D45" stroke-width="3"/>
+<path d="M1498 203 C1497 184 1509 175 1523 174" fill="none" stroke="#557A61" stroke-width="5" stroke-linecap="round"/>
+<path d="M1515 183 C1538 162 1562 170 1567 193 C1542 199 1526 195 1515 183 Z" fill="#9DBFA7" stroke="#557A61" stroke-width="2"/>
+<path d="M1479 254 L1496 272 L1527 234" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="1503" y="330" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7D403A" text-anchor="middle" letter-spacing="0.6">EML v1 RELEASE</text>
+<text x="1503" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#5D6C76" text-anchor="middle" letter-spacing="0">535 / 535 rows</text></g>
+<rect x="258" y="326" width="1088" height="162" rx="12" fill="#E7F0F7" opacity="1.0" stroke="#83A9C3" stroke-width="2"/>
+<text x="286" y="367" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#20323D" text-anchor="start" letter-spacing="0">proof_checked</text>
+<text x="650" y="363" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#2B414C" text-anchor="start" letter-spacing="0">Proof compiles; the obligation cannot be deferred</text>
+<text x="650" y="397" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#5D707B" text-anchor="start" letter-spacing="0.45">Axiom closure</text>
+<rect x="650" y="409" width="134" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#6F94AE" stroke-width="2"/>
+<text x="717.0" y="432" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#3D6178" text-anchor="middle" letter-spacing="0.35">+  ALLOWED</text>
+<rect x="796" y="409" width="114" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#8AA8BC" stroke-width="2"/>
+<text x="853.0" y="432" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#334852" text-anchor="middle" letter-spacing="0.35">propext</text>
+<rect x="922" y="409" width="144" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#8AA8BC" stroke-width="2"/>
+<text x="994.0" y="432" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#334852" text-anchor="middle" letter-spacing="0.35">Quot.sound</text>
+<rect x="1078" y="409" width="219" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#8AA8BC" stroke-width="2"/>
+<text x="1187.5" y="432" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#334852" text-anchor="middle" letter-spacing="0.35">Classical.choice</text>
+<rect x="650" y="448" width="144" height="34" rx="17" fill="#FBF0EE" opacity="1.0" stroke="#B7776E" stroke-width="2"/>
+<text x="722.0" y="471" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#8D514A" text-anchor="middle" letter-spacing="0.35">x  EXCLUDED</text>
+<rect x="806" y="448" width="112" height="34" rx="17" fill="#FBF0EE" opacity="1.0" stroke="#B7776E" stroke-width="2"/>
+<text x="862.0" y="471" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#8D514A" text-anchor="middle" letter-spacing="0.35">sorryAx</text>
+<rect x="930" y="448" width="172" height="34" rx="17" fill="#FBF0EE" opacity="1.0" stroke="#B7776E" stroke-width="2"/>
+<text x="1016.0" y="471" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#8D514A" text-anchor="middle" letter-spacing="0.35">native_decide</text>
+<rect x="258" y="510" width="1088" height="96" rx="12" fill="#F1F6FA" opacity="1.0" stroke="#A7BCCB" stroke-width="2"/>
+<text x="286" y="550" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#2C414D" text-anchor="start" letter-spacing="0">statement_checked</text>
+<text x="650" y="547" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#334852" text-anchor="start" letter-spacing="0">Elaborates under the pinned toolchain</text>
+<text x="650" y="578" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#667680" text-anchor="start" letter-spacing="0">anti-stub guard clear; no proof claim yet</text>
+<rect x="258" y="624" width="1088" height="82" rx="12" fill="#F5F5F3" opacity="1.0" stroke="#9C9C98" stroke-width="2" stroke-dasharray="9 7"/>
+<text x="286" y="674" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#777A7B" text-anchor="start" letter-spacing="0">none</text>
+<text x="650" y="672" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#777A7B" text-anchor="start" letter-spacing="0">Not accepted for EML v1</text>
+<rect x="1139" y="648" width="180" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#A5A5A1" stroke-width="2"/>
+<text x="1229.0" y="671" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#6F7273" text-anchor="middle" letter-spacing="0.35">OUTSIDE RELEASE</text>
+</svg>

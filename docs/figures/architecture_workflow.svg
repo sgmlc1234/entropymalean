@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1120" viewBox="0 0 1700 1120" role="img">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+<path d="M 0 0 L 10 5 L 0 10 z" fill="#8EA1AE"/>
+</marker>
+<filter id="shadow" x="-8%" y="-8%" width="116%" height="116%">
+<feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#8EA1AE" flood-opacity="0.18"/>
+</filter>
+</defs>
+<rect width="100%" height="100%" fill="#FBFBF7"/>
+<rect x="38" y="30" width="1624" height="650" rx="15" fill="#FFFEFC" opacity="1.0" stroke="#D4D8D5" stroke-width="2"/>
+<rect x="38" y="715" width="1624" height="365" rx="15" fill="#F7F9FA" opacity="1.0" stroke="#CDD5DA" stroke-width="2"/>
+<circle cx="72" cy="63" r="17" fill="#315E77"/>
+<text x="72" y="70" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0">A</text>
+<text x="102" y="70" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#4E606B" text-anchor="start" letter-spacing="1.0">CERTIFIED EVOLUTION LOOP</text>
+<circle cx="72" cy="748" r="17" fill="#315E77"/>
+<text x="72" y="755" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="0">B</text>
+<text x="102" y="755" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#4E606B" text-anchor="start" letter-spacing="1.0">LINEAGE BECOMES A MEASUREMENT</text>
+<path d="M1510 140 C1510 78 710 76 650 128" stroke="#5E7180" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<rect x="925" y="55" width="334" height="31" rx="15" fill="#FFFFFF" opacity="1.0" stroke="#AAB8C1" stroke-width="2"/>
+<text x="1092.0" y="76" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#526772" text-anchor="middle" letter-spacing="0.25">ACCEPTED CHILD BECOMES A PARENT</text>
+<rect x="70" y="125" width="270" height="440" rx="13" fill="#FFF9E8" opacity="1.0" stroke="#D8C777" stroke-width="2"/>
+<text x="96" y="165" font-family="Times New Roman, Times, serif" font-size="29" font-weight="700" fill="#283A44" text-anchor="start" letter-spacing="0">Seed bank</text>
+<text x="96" y="194" font-family="Times New Roman, Times, serif" font-size="17" font-weight="400" fill="#68757C" text-anchor="start" letter-spacing="0">100 controls · 50 per benchmark</text>
+<rect x="92" y="225" width="226" height="115" rx="10" fill="#FFFFFF" opacity="1.0" stroke="#D7C982" stroke-width="2"/>
+<text x="112" y="258" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#3A4B54" text-anchor="start" letter-spacing="0">miniF2F</text>
+<text x="112" y="288" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#68757C" text-anchor="start" letter-spacing="0">statement only</text>
+<rect x="112" y="300" width="150" height="31" rx="15" fill="#FFF4CE" opacity="1.0" stroke="#D2BD63" stroke-width="2"/>
+<text x="187.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#76621B" text-anchor="middle" letter-spacing="0.25">GEN-0 PROVE</text>
+<rect x="92" y="365" width="226" height="115" rx="10" fill="#FFFFFF" opacity="1.0" stroke="#C9BADB" stroke-width="2"/>
+<text x="112" y="398" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#3A4B54" text-anchor="start" letter-spacing="0">ProofNet</text>
+<text x="112" y="428" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#68757C" text-anchor="start" letter-spacing="0">statement + proof</text>
+<rect x="112" y="440" width="165" height="31" rx="15" fill="#F1ECFA" opacity="1.0" stroke="#C4B2DA" stroke-width="2"/>
+<text x="194.5" y="461" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#67547B" text-anchor="middle" letter-spacing="0.25">REPLAY VERIFIED</text>
+<text x="96" y="525.0" font-family="Times New Roman, Times, serif" font-size="16" font-weight="700" fill="#5F6E76" text-anchor="start" letter-spacing="0">Every admitted seed</text>
+<text x="96" y="543.88" font-family="Times New Roman, Times, serif" font-size="16" font-weight="700" fill="#5F6E76" text-anchor="start" letter-spacing="0">is Lean-certified.</text>
+<rect x="390" y="125" width="380" height="440" rx="13" fill="#FBF3EF" opacity="1.0" stroke="#D8BBAA" stroke-width="2"/>
+<clipPath id="agent-clip-1"><rect x="407.0" y="141.0" width="58" height="58" rx="13.34"/></clipPath>
+<rect x="407.0" y="141.0" width="58" height="58" rx="13.34" fill="#EEE7F7" stroke="#70598A" stroke-width="2"/>
+<image href="assets/agents/orchestrator.svg" x="407.0" y="141.0" width="58" height="58" preserveAspectRatio="xMidYMid slice" clip-path="url(#agent-clip-1)"/>
+<circle cx="462.68" cy="196.68" r="8.99" fill="#FFFFFF" stroke="#70598A" stroke-width="1.5"/>
+<image href="assets/icons/workflow.svg" x="456.5668" y="190.5668" width="12.226400000000002" height="12.226400000000002"/>
+<text x="480" y="165" font-family="Times New Roman, Times, serif" font-size="25" font-weight="700" fill="#283A44" text-anchor="start" letter-spacing="0">Orchestrator</text>
+<text x="480" y="194" font-family="Times New Roman, Times, serif" font-size="16" font-weight="400" fill="#68757C" text-anchor="start" letter-spacing="0">parents · operator · retry</text>
+<rect x="416" y="220" width="148" height="75" rx="8" fill="#FFFFFF" opacity="1.0" stroke="#C9CED2" stroke-width="2"/>
+<text x="433" y="249" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#7B858A" text-anchor="start" letter-spacing="0">P1</text>
+<text x="433" y="279" font-family="Courier New, Courier, monospace" font-size="20" font-weight="700" fill="#273A44" text-anchor="start" letter-spacing="0">gcd = 12</text>
+<rect x="594" y="220" width="160" height="75" rx="8" fill="#FFFFFF" opacity="1.0" stroke="#C9CED2" stroke-width="2"/>
+<text x="611" y="249" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#7B858A" text-anchor="start" letter-spacing="0">P2</text>
+<text x="611" y="279" font-family="Courier New, Courier, monospace" font-size="20" font-weight="700" fill="#273A44" text-anchor="start" letter-spacing="0">divs(198)</text>
+<path d="M490 295 C490 310 490 315 490 329" stroke="#8A9AA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M490 295 C520 307 635 305 660 329" stroke="#8A9AA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M674 295 L674 329" stroke="#8A9AA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<rect x="416" y="330" width="157" height="82" rx="9" fill="#F1ECFA" opacity="1.0" stroke="#C4B2DA" stroke-width="2"/>
+<clipPath id="agent-clip-2"><rect x="419.0" y="350.0" width="42" height="42" rx="9.66"/></clipPath>
+<rect x="419.0" y="350.0" width="42" height="42" rx="9.66" fill="#E8DDF5" stroke="#70598A" stroke-width="2"/>
+<image href="assets/agents/mutation_judge.svg" x="419.0" y="350.0" width="42" height="42" preserveAspectRatio="xMidYMid slice" clip-path="url(#agent-clip-2)"/>
+<circle cx="459.32" cy="390.32" r="7.5" fill="#FFFFFF" stroke="#70598A" stroke-width="1.5"/>
+<image href="assets/icons/gavel.svg" x="454.21999999999997" y="385.21999999999997" width="10.200000000000001" height="10.200000000000001"/>
+<text x="469" y="360" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#5F526B" text-anchor="start" letter-spacing="0">Mutation judge</text>
+<text x="469" y="390" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#5F526B" text-anchor="start" letter-spacing="0">variant contract</text>
+<rect x="587" y="330" width="167" height="82" rx="9" fill="#FBE9DF" opacity="1.0" stroke="#D7AA91" stroke-width="2"/>
+<clipPath id="agent-clip-3"><rect x="590.0" y="350.0" width="42" height="42" rx="9.66"/></clipPath>
+<rect x="590.0" y="350.0" width="42" height="42" rx="9.66" fill="#F6DDCF" stroke="#8D5B42" stroke-width="2"/>
+<image href="assets/agents/crossover_judge.svg" x="590.0" y="350.0" width="42" height="42" preserveAspectRatio="xMidYMid slice" clip-path="url(#agent-clip-3)"/>
+<circle cx="630.32" cy="390.32" r="7.5" fill="#FFFFFF" stroke="#8D5B42" stroke-width="1.5"/>
+<image href="assets/icons/gavel.svg" x="625.22" y="385.21999999999997" width="10.200000000000001" height="10.200000000000001"/>
+<text x="640" y="360" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#684E40" text-anchor="start" letter-spacing="0">Crossover judge</text>
+<text x="640" y="390" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#684E40" text-anchor="start" letter-spacing="0">both parents used</text>
+<path d="M495 412 C495 428 552 428 566 439" stroke="#8A9AA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M670 412 C670 428 610 428 596 439" stroke="#8A9AA4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<rect x="445" y="442" width="282" height="68" rx="10" fill="#FBE9DF" opacity="1.0" stroke="#D7AA91" stroke-width="2"/>
+<clipPath id="agent-clip-4"><rect x="450.0" y="455.0" width="42" height="42" rx="9.66"/></clipPath>
+<rect x="450.0" y="455.0" width="42" height="42" rx="9.66" fill="#F9DCCC" stroke="#8D5B42" stroke-width="2"/>
+<image href="assets/agents/generator.svg" x="450.0" y="455.0" width="42" height="42" preserveAspectRatio="xMidYMid slice" clip-path="url(#agent-clip-4)"/>
+<circle cx="490.32" cy="495.32" r="7.5" fill="#FFFFFF" stroke="#8D5B42" stroke-width="1.5"/>
+<image href="assets/icons/pencil-line.svg" x="485.21999999999997" y="490.21999999999997" width="10.200000000000001" height="10.200000000000001"/>
+<text x="505" y="466" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#7A6559" text-anchor="start" letter-spacing="0">Generator · candidate</text>
+<text x="505" y="494" font-family="Courier New, Courier, monospace" font-size="17" font-weight="700" fill="#3B342F" text-anchor="start" letter-spacing="0">sum = 90; gcd = 6</text>
+<rect x="470" y="522" width="232" height="31" rx="15" fill="#FFFFFF" opacity="1.0" stroke="#D8BBAA" stroke-width="2"/>
+<text x="586.0" y="543" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#765B4C" text-anchor="middle" letter-spacing="0.25">ONE LOCAL RETRY</text>
+<rect x="850" y="105" width="430" height="490" rx="15" fill="#F1F8F3" opacity="1.0" stroke="#93B59E" stroke-width="2"/>
+<clipPath id="agent-clip-5"><rect x="868.0" y="121.0" width="58" height="58" rx="13.34"/></clipPath>
+<rect x="868.0" y="121.0" width="58" height="58" rx="13.34" fill="#DDEEE2" stroke="#4E7A5B" stroke-width="2"/>
+<image href="assets/agents/validator.svg" x="868.0" y="121.0" width="58" height="58" preserveAspectRatio="xMidYMid slice" clip-path="url(#agent-clip-5)"/>
+<circle cx="923.68" cy="176.68" r="8.99" fill="#FFFFFF" stroke="#4E7A5B" stroke-width="1.5"/>
+<image href="assets/icons/clipboard-check.svg" x="917.5668" y="170.5668" width="12.226400000000002" height="12.226400000000002"/>
+<text x="941" y="145" font-family="Times New Roman, Times, serif" font-size="25" font-weight="700" fill="#274237" text-anchor="start" letter-spacing="0">Validation crew</text>
+<text x="941" y="174" font-family="Times New Roman, Times, serif" font-size="16" font-weight="400" fill="#61746A" text-anchor="start" letter-spacing="0">shared boundary · all checks required</text>
+<rect x="875" y="200" width="360" height="48" rx="7" fill="#FFFFFF" opacity="1.0" stroke="#B9CBC1" stroke-width="2"/>
+<circle cx="898" cy="224" r="12" fill="#D9EEE0" stroke="#5E8B6C" stroke-width="1.5"/>
+<path d="M892 224 L897 229 L905 218" stroke="#477356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="919" y="221" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">Schema + evaluator</text>
+<text x="919" y="240" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#6A787F" text-anchor="start" letter-spacing="0">supported template; answer round-trip</text>
+<rect x="875" y="260" width="360" height="48" rx="7" fill="#FFFFFF" opacity="1.0" stroke="#B9CBC1" stroke-width="2"/>
+<circle cx="898" cy="284" r="12" fill="#D9EEE0" stroke="#5E8B6C" stroke-width="1.5"/>
+<path d="M892 284 L897 289 L905 278" stroke="#477356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="919" y="281" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">Hash + anti-stub</text>
+<text x="919" y="300" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#6A787F" text-anchor="start" letter-spacing="0">identity; uniqueness</text>
+<rect x="875" y="320" width="360" height="48" rx="7" fill="#FFFFFF" opacity="1.0" stroke="#B9CBC1" stroke-width="2"/>
+<circle cx="898" cy="344" r="12" fill="#D9EEE0" stroke="#5E8B6C" stroke-width="1.5"/>
+<path d="M892 344 L897 349 L905 338" stroke="#477356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="919" y="341" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">Selected judge</text>
+<text x="919" y="360" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#6A787F" text-anchor="start" letter-spacing="0">operator-specific independent pass</text>
+<rect x="875" y="380" width="360" height="48" rx="7" fill="#FFFFFF" opacity="1.0" stroke="#B9CBC1" stroke-width="2"/>
+<circle cx="898" cy="404" r="12" fill="#D9EEE0" stroke="#5E8B6C" stroke-width="1.5"/>
+<path d="M892 404 L897 409 L905 398" stroke="#477356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="919" y="401" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">Lean proof</text>
+<text x="919" y="420" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#6A787F" text-anchor="start" letter-spacing="0">vacuity; load-bearing hypotheses</text>
+<rect x="875" y="440" width="360" height="48" rx="7" fill="#FFFFFF" opacity="1.0" stroke="#B9CBC1" stroke-width="2"/>
+<circle cx="898" cy="464" r="12" fill="#D9EEE0" stroke="#5E8B6C" stroke-width="1.5"/>
+<path d="M892 464 L897 469 L905 458" stroke="#477356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="919" y="461" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">Kernel replay + 2-platform export</text>
+<text x="919" y="480" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#6A787F" text-anchor="start" letter-spacing="0">exported proof term</text>
+<rect x="916" y="515" width="277" height="31" rx="15" fill="#E3F2E7" opacity="1.0" stroke="#85AA91" stroke-width="2"/>
+<text x="1054.5" y="536" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#3E694B" text-anchor="middle" letter-spacing="0.25">EARNS A NAMED CERTIFICATE</text>
+<rect x="1320" y="125" width="320" height="345" rx="13" fill="#EEF5FA" opacity="1.0" stroke="#91AFC2" stroke-width="2"/>
+<text x="1345" y="165" font-family="Times New Roman, Times, serif" font-size="25" font-weight="700" fill="#283A44" text-anchor="start" letter-spacing="0">Certified ledger</text>
+<text x="1345" y="235" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#315E77" text-anchor="start" letter-spacing="0">535</text>
+<text x="1451" y="232" font-family="Times New Roman, Times, serif" font-size="20" font-weight="700" fill="#536771" text-anchor="start" letter-spacing="0">released rows</text>
+<text x="1345" y="280" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#536771" text-anchor="start" letter-spacing="0">248 miniF2F · 287 ProofNet</text>
+<text x="1345" y="318" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#536771" text-anchor="start" letter-spacing="0">parents · content hashes</text>
+<text x="1345" y="348" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#536771" text-anchor="start" letter-spacing="0">5 operators · gen. 1–10</text>
+<rect x="1345" y="378" width="243" height="31" rx="15" fill="#FFFFFF" opacity="1.0" stroke="#82A6BC" stroke-width="2"/>
+<text x="1466.5" y="399" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#315E77" text-anchor="middle" letter-spacing="0.25">REPRODUCIBLE</text>
+<circle cx="1577" cy="185" r="27" fill="#C96E62" stroke="#8F4D45" stroke-width="2"/>
+<path d="M1574 158 C1574 148 1582 142 1592 142" fill="none" stroke="#557A61" stroke-width="3" stroke-linecap="round"/>
+<path d="M1588 147 C1601 137 1615 142 1617 154 C1604 158 1595 157 1588 147 Z" fill="#9DBFA7" stroke="#557A61" stroke-width="1.5"/>
+<path d="M1564 185 L1574 195 L1591 174" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="1345" y="445" font-family="Times New Roman, Times, serif" font-size="15" font-weight="700" fill="#586B75" text-anchor="start" letter-spacing="0">Lineage recorded at every generation.</text>
+<line x1="340" y1="280" x2="390" y2="280" stroke="#687C88" stroke-width="3" stroke-linecap="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M770 476 C796 476 824 475 850 475" stroke="#687C88" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<line x1="1280" y1="350" x2="1320" y2="350" stroke="#4F7A61" stroke-width="3.5" stroke-linecap="round" fill="none" marker-end="url(#arrow)"/>
+<text x="810" y="458" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#6B777D" text-anchor="middle" letter-spacing="0">candidate</text>
+<text x="1300" y="333" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#477356" text-anchor="middle" letter-spacing="0">PASS</text>
+<rect x="846" y="620" width="536" height="43" rx="10" fill="#FBF0EE" opacity="1.0" stroke="#C78C83" stroke-width="2"/>
+<text x="866" y="648" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#97564D" text-anchor="start" letter-spacing="0">FAIL</text>
+<text x="929" y="648" font-family="Times New Roman, Times, serif" font-size="17" font-weight="700" fill="#704F4A" text-anchor="start" letter-spacing="0">quarantine  →  repair/backfill  →  rerun slot</text>
+<path d="M1088 595 L1088 620" stroke="#B06D63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M846 642 C795 642 760 600 744 565" stroke="#B06D63" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)" stroke-dasharray="8 8"/>
+<text x="88" y="800" font-family="Times New Roman, Times, serif" font-size="23" font-weight="700" fill="#334852" text-anchor="start" letter-spacing="0">Condition on capability</text>
+<text x="88" y="832" font-family="Times New Roman, Times, serif" font-size="17" font-weight="400" fill="#68757C" text-anchor="start" letter-spacing="0">test child only after every root is solved</text>
+<circle cx="146" cy="940" r="31" fill="#E3F2E7" stroke="#699077" stroke-width="2"/>
+<circle cx="262" cy="940" r="31" fill="#E3F2E7" stroke="#699077" stroke-width="2"/>
+<circle cx="398" cy="940" r="36" fill="#FBF0EE" stroke="#B7776E" stroke-width="2"/>
+<path d="M134 940 L143 949 L160 927" stroke="#477356" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M250 940 L259 949 L276 927" stroke="#477356" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M384 926 L412 954 M412 926 L384 954" stroke="#9B5C54" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M177 940 C210 880 330 880 368 932" stroke="#6B8595" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<path d="M293 940 C320 940 344 940 362 940" stroke="#6B8595" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" marker-end="url(#arrow)"/>
+<text x="146" y="994" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#56676F" text-anchor="middle" letter-spacing="0">root A</text>
+<text x="262" y="994" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#56676F" text-anchor="middle" letter-spacing="0">root B</text>
+<text x="398" y="994" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8D514A" text-anchor="middle" letter-spacing="0">child</text>
+<line x1="452" y1="940" x2="510" y2="940" stroke="#6B7E89" stroke-width="3" stroke-linecap="round" fill="none" marker-end="url(#arrow)"/>
+<rect x="520" y="860" width="390" height="162" rx="12" fill="#FFFFFF" opacity="1.0" stroke="#A9BAC4" stroke-width="2"/>
+<text x="715" y="900" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#315E77" text-anchor="middle" letter-spacing="0.7">LINEAGE PROOF GAP</text>
+<text x="715" y="953" font-family="Times New Roman, Times, serif" font-size="22" font-weight="700" fill="#2F424C" text-anchor="middle" letter-spacing="0">all roots solved  +  child missed</text>
+<text x="715" y="989" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#68757C" text-anchor="middle" letter-spacing="0">count over eligible treatment lineages</text>
+<line x1="910" y1="940" x2="968" y2="940" stroke="#6B7E89" stroke-width="3" stroke-linecap="round" fill="none" marker-end="url(#arrow)"/>
+<rect x="978" y="850" width="300" height="180" rx="12" fill="#FBF0EE" opacity="1.0" stroke="#C78C83" stroke-width="2"/>
+<text x="1002" y="890" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8A524A" text-anchor="start" letter-spacing="0.5">OPEN-WEIGHT PROVERS</text>
+<text x="1128" y="961" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" fill="#9B5C54" text-anchor="middle" letter-spacing="0">32–100%</text>
+<text x="1128" y="999" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#735A56" text-anchor="middle" letter-spacing="0">children missed</text>
+<rect x="1294" y="850" width="320" height="180" rx="12" fill="#EDF6F0" opacity="1.0" stroke="#8DAF97" stroke-width="2"/>
+<text x="1318" y="890" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#4E7359" text-anchor="start" letter-spacing="0.5">FRONTIER REFERENCE</text>
+<text x="1454" y="961" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" fill="#477356" text-anchor="middle" letter-spacing="0">11–32%</text>
+<text x="1454" y="999" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#566F5D" text-anchor="middle" letter-spacing="0">children missed</text>
+<text x="850" y="1060" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#6A777E" text-anchor="middle" letter-spacing="0">Same Lean verifier · K=3 per row · control-adjusted Pass@3</text>
+</svg>
