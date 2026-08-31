@@ -119,8 +119,11 @@ restate a parent on purpose and are gated on sameness instead.
 
 ### 1.3 The rejected rows are shipped too
 
-`data/release/eml_v1_rejected.jsonl` holds all 693 candidates that did not make
-it, each with the reason. A corpus that shows only its survivors cannot be
+`data/release/eml_v1_rejected.jsonl` holds the 691 candidates the validation
+layer refused, each with the reason. Two more are in
+`data/release/eml_v1_preflight_excluded.jsonl`: they are sound and certified,
+but their statements do not parse under the evaluation preamble, so they are
+excluded from the panel rather than from the corpus. A corpus that shows only its survivors cannot be
 audited, and the failure modes are as informative as the successes.
 
 ```bash

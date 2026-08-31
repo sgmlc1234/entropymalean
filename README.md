@@ -11,7 +11,7 @@ produce, and a second platform regenerated that export byte for byte.
 | | |
 |---|---|
 | Released rows | 535 — 287 from ProofNet, 248 from miniF2F |
-| Held back | 693, each with its reason on file |
+| Held back | 691 by the validation layer, plus 2 the evaluation preamble cannot parse |
 | Certificate | `reproducible`, 535/535 |
 | Toolchain | `leanprover/lean4:v4.30.0-rc2`, Mathlib `0fb2045` |
 
@@ -21,13 +21,20 @@ judgement it received — including the passes that disagreed.
 
 One thing the hosted page cannot show: what each model did on each problem,
 attempt by attempt — Lean's verdict on every try, and the proof that closed the
-goal where one did. Those traces are 24 MB across 750 files, so they are served
-beside the page rather than bundled into it. Serve this repository and they
+goal where one did. Those traces are 19 MB across 636 files — the panel the paper reports, 13
+models over 24,765 episodes — so they are served beside the page rather than
+bundled into it. Serve this repository and they
 appear under every row:
 
 ```bash
 python3 -m http.server 8000     # then open site/workspace.html
 ```
+
+The three numbers add up, and the release ships each part separately so they can
+be checked: **535 released + 691 refused by the validation layer + 2 excluded by
+the evaluation preamble = 1,228 candidates judged.** The last two both compile
+under their own header and cleared the kernel replay; what they fail is the exam
+preamble, which opens `Nat` and so binds `φ` before their statements can use it.
 
 **Reproducing any of this: [`REVIEWERS.md`](REVIEWERS.md).** It is ordered by
 cost, and the first section needs nothing but Lean.
@@ -78,7 +85,8 @@ and nothing in the artifact said what local meant.
 
 ```
 data/release/eml_v1_release.jsonl     the corpus, one JSON object per line
-data/release/eml_v1_rejected.jsonl    everything that did not make it, with reasons
+data/release/eml_v1_rejected.jsonl    691 rows the validation layer refused, with reasons
+data/release/eml_v1_preflight_excluded.jsonl  2 sound rows the evaluation preamble cannot parse
 data/release/CAMPAIGN_LABELS.md       what `run-a` … `run-e` mean
 data/benchmarks/                      the two 50-row seed sets, and how they were chosen
 examples/seeds/                       a five-seed group, the input a campaign takes

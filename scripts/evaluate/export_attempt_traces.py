@@ -57,7 +57,25 @@ def main() -> None:
     ap.add_argument("--out", type=pathlib.Path, default=ROOT / "site/traces")
     ap.add_argument("--max-code-chars", type=int, default=20000,
                     help="truncate a proof longer than this, marking that it was")
+    ap.add_argument("--config", type=pathlib.Path,
+                    default=ROOT / "config/exam_cells.json")
+    ap.add_argument("--all-models", action="store_true",
+                    help="include models the panel withdrew, which the paper does not report")
     args = ap.parse_args()
+
+    # `groups` is the panel. `controls`, `treatments` and `budgets` are a
+    # registry and keep withdrawn entries, so reading those instead put three
+    # models into the traces that the paper does not report -- two of them with
+    # a control arm and no treatment, which reads as a model that failed
+    # everywhere rather than one that was never run.
+    panel = cells = None
+    if not args.all_models and args.config.is_file():
+        cfg = json.loads(args.config.read_text(encoding="utf-8"))
+        groups = cfg.get("groups") or {}
+        panel = {m for g in groups.values() for m in g}
+        cells = {pathlib.Path(cfg[bag][m]).name
+                 for bag in ("controls", "treatments") for m in panel if cfg[bag].get(m)}
+        print(f"  panel: {len(panel)} models, {len(cells)} cells from {args.config.name}")
 
     files = [p for p in sorted(args.episodes.glob("*/episodes_*closed_book.jsonl"))
              if "before-replay" not in p.name]
@@ -68,6 +86,8 @@ def main() -> None:
     episodes = 0
     for path in files:
         cell = path.parent.name
+        if cells is not None and cell not in cells:
+            continue
         for line in path.read_text(encoding="utf-8").splitlines():
             if not line.strip():
                 continue
@@ -94,6 +114,8 @@ def main() -> None:
             if code:
                 record["code"] = code[: args.max_code_chars]
                 record["code_truncated"] = truncated_code
+            if panel is not None and row.get("model") not in panel:
+                continue
             by_seed[row.get("seed")].append(record)
 
     args.out.mkdir(parents=True, exist_ok=True)
