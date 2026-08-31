@@ -468,6 +468,21 @@ by the same rule.
 Reading only the quality and not the vote once admitted six rows the judge had
 voted to reject.
 
+Both passes ship, for all nine campaigns: `data/release/*_rejudged_1.json` and
+`_2.json`, with `rejudged.json` / `rejudged_run2.json` as the first campaign's
+unprefixed pair. They are the record of what the judge saw, not the route to the
+release's numbers. Two of the nine campaigns re-judged rows an earlier campaign
+had already seen, so an id appears in more than one file with different verdicts
+and only the later one counts; a reader who merges them without that order gets
+272/247/102 against the release's 276/249/102.
+
+Nothing needs that merge. §1.3 counts `admission.why_not` in
+`eml1_rejected.jsonl` — one file, no order to know, and the number the release
+was actually built on. Joined that way, 626 of 627 judge-category rows reconcile
+exactly. The one that does not is `Munkres_exercise_18_8a__mh__357e4f99`: two
+different theorems from two campaigns hash to the same id, refused in one and
+kept in the other, and a dict keyed on the id holds only one of them.
+
 `export_release.py` reads only the campaigns in its `SOURCES` map, and
 `rejudge_corpus.py` only the ones in `DEFAULT_INDEX`. A campaign missing from
 either contributes nothing, silently: the judge is handed a child with no prose
