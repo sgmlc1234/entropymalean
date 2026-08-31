@@ -35,6 +35,9 @@
     border-radius:4px;opacity:.8;white-space:nowrap}
   .tabs a:hover,.tabs a:focus-visible{background:rgba(255,255,255,.16);opacity:1;outline:none}
   .tabs a[aria-current="page"]{background:rgba(255,255,255,.24);opacity:1;font-weight:600}
+  .repolink{margin-left:.6rem;color:var(--bar-ink);text-decoration:none;font-size:.83rem;
+    padding:.32rem .7rem;border:1px solid rgba(255,255,255,.34);border-radius:.3rem;white-space:nowrap}
+  .repolink:hover,.repolink:focus-visible{background:rgba(255,255,255,.16);outline:none}
 
   .wrap{max-width:78rem;margin:0 auto;padding:1.4rem clamp(.8rem,3vw,2rem) 5rem}
   .page{display:none}.page.on{display:block}
@@ -226,6 +229,7 @@
     <a href="#/release" data-route="/release">Release</a>
     <a href="#/plan" data-route="/plan">Plan &amp; decisions</a>
   </nav>
+  <a class="repolink" href="https://anonymous.4open.science/r/entropymalean-CBA7" target="_blank" rel="noopener">Code &amp; data &#8599;</a>
 </header>
 
 <div class="wrap">
@@ -1264,6 +1268,12 @@ flowchart TB
   reasoning behind each judgement it received, including the passes that disagreed, and the
   result of every mechanical check. The rows that did not make it are here too, with their
   reasons, because a corpus that shows only its survivors cannot be checked.</p>
+
+  <p class="lede" style="margin-top:-.35rem">Everything on this page &mdash; the corpus, the
+  refusals, the certificates, the pipeline that produced them, and the instructions for
+  re-running any of it &mdash; is at
+  <a href="https://anonymous.4open.science/r/entropymalean-CBA7" target="_blank" rel="noopener">anonymous.4open.science/r/entropymalean-CBA7</a>.
+  Verifying a row needs Lean and nothing else; no key is required.</p>
 
   <h2>What it is made of</h2>
   <p>Topic is a property of the seed, so it is read through the lineage: each row's
