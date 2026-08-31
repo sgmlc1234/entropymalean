@@ -1257,6 +1257,8 @@ flowchart TB
     border-radius:6px;background:var(--surface)}
   .rel-list li{padding:.5rem .7rem;border-bottom:1px solid var(--rule);cursor:pointer;font-size:.82rem}
   .rel-list li:hover{background:var(--sunk)}
+  .tr-ep{border-left:2px solid var(--rule);padding:.35rem 0 .35rem .7rem;margin:.5rem 0}
+  .tr-ep pre{max-height:26rem;overflow:auto}
   .rel-list li[aria-current="true"]{background:var(--accent-soft)}
   .rel-list .rid{font-family:var(--mono);font-size:.74rem;color:var(--soft);
     overflow-wrap:anywhere;display:block}
@@ -1402,6 +1404,73 @@ flowchart TB
       'release, so anyone with a Linux runner can settle it.';
   }
 
+
+  // ---- attempt traces -------------------------------------------------------
+  // Pass@3 says solved or not. It does not say whether a model was one
+  // identifier away or never produced a proof body, and the episodes record the
+  // difference: every attempt keeps Lean's verdict on it. `solved_code` is the
+  // only attempt text kept -- a rejected attempt leaves its verdict, not its
+  // body -- and the panel says so rather than implying the body was withheld.
+  var TRACE_INDEX = null, TRACE_CACHE = {};
+  function statusPill(st){
+    return st === 'solved' ? 'ok' : (st === 'rejected' || st === 'error' ? 'no' : 'mid');
+  }
+  function renderTraces(box, data){
+    var models = Object.keys(data.models).sort();
+    if(!models.length){ box.innerHTML = '<p class="muted">No panel episodes for this problem.</p>'; return; }
+    var solvedBy = models.filter(function(m){
+      return data.models[m].some(function(e){ return e.outcome === 'solved'; }); });
+    var out = ['<h4>How the panel did on this problem</h4>',
+      '<p class="muted">' + solvedBy.length + ' of ' + models.length + ' models solved it' +
+      (solvedBy.length ? ' — ' + solvedBy.map(esc).join(', ') : '') + '. ' +
+      'Each attempt shows Lean’s verdict on it; only a proof that closed the goal is kept in full.</p>'];
+    models.forEach(function(m){
+      var eps = data.models[m];
+      var won = eps.some(function(e){ return e.outcome === 'solved'; });
+      out.push('<details' + (won ? ' open' : '') + '><summary><code>' + esc(m) + '</code> ' +
+        '<span class="rel-pill ' + (won ? 'ok' : 'no') + '">' + (won ? 'solved' : 'not solved') +
+        '</span> <span class="muted">' + eps.length + ' episode' + (eps.length === 1 ? '' : 's') +
+        '</span></summary>');
+      eps.forEach(function(e){
+        out.push('<div class="tr-ep"><span class="rel-lab">' + esc(e.arm || 'run') +
+          ' · attempt ' + (e.attempt || 1) + ' · ' + esc(e.outcome || '') +
+          ' · ' + (e.tokens || 0) + '/' + (e.budget || 0) + ' tokens</span>');
+        if((e.log || []).length){
+          out.push('<table class="rel-t"><tbody>' + e.log.map(function(a, i){
+            return '<tr><td>' + (i + 1) + '</td><td><span class="rel-pill ' + statusPill(a.status) +
+              '">' + esc(a.status || '') + '</span></td><td>' + esc(a.message || '') +
+              '</td><td class="muted">' + (a.lines == null ? '' : a.lines + ' lines') +
+              (a.truncated ? ' · truncated' : '') + '</td></tr>'; }).join('') + '</tbody></table>');
+        }
+        if(e.code){
+          out.push('<details><summary>The proof that closed it</summary><pre>' + esc(e.code) +
+            (e.code_truncated ? '\n… truncated' : '') + '</pre></details>');
+        }
+        out.push('</div>');
+      });
+      out.push('</details>');
+    });
+    box.innerHTML = out.join('');
+  }
+  function loadTraces(id){
+    var box = document.getElementById('rel-traces'); if(!box) return;
+    function fail(why){ box.innerHTML = '<p class="muted">' + esc(why) + '</p>'; }
+    function withIndex(idx){
+      var meta = idx[id];
+      if(!meta){ fail('This row was not put to the panel.'); return; }
+      if(TRACE_CACHE[meta.f]){ renderTraces(box, TRACE_CACHE[meta.f]); return; }
+      fetch('traces/' + meta.f + '.json').then(function(r){
+        if(!r.ok) throw new Error(r.status); return r.json();
+      }).then(function(d){ TRACE_CACHE[meta.f] = d; renderTraces(box, d); })
+        .catch(function(){ fail('Traces load from traces/ — open this page over HTTP, not file://'); });
+    }
+    if(TRACE_INDEX){ withIndex(TRACE_INDEX); return; }
+    fetch('traces/index.json').then(function(r){
+      if(!r.ok) throw new Error(r.status); return r.json();
+    }).then(function(d){ TRACE_INDEX = d; withIndex(d); })
+      .catch(function(){ fail('Traces load from traces/ — open this page over HTTP, not file://'); });
+  }
+
   var rows = D.rows, listEl = document.getElementById('rel-list'),
       detailEl = document.getElementById('rel-detail'), qEl = document.getElementById('rel-q'),
       countEl = document.getElementById('rel-count'), fbox = document.getElementById('rel-filters');
@@ -1476,7 +1545,9 @@ flowchart TB
     h.push('<p class="muted">toolchain <code>'+esc(r.certificate.toolchain)+'</code> · mathlib <code>'+
       esc((r.certificate.mathlib||'').slice(0,12))+'</code> · axioms <code>'+
       esc(r.certificate.axioms.join(', ')||'none recorded')+'</code></p>');
+    h.push('<div id="rel-traces"><p class="muted">Loading how the panel did on this problem…</p></div>');
     detailEl.innerHTML = h.join('');
+    loadTraces(r.id);
     detailEl.scrollTop = 0;
   }
   listEl.addEventListener('click', function(e){
