@@ -4,8 +4,8 @@
   "replay_certified": 50,
   "rate": 1.0,
   "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
-  "comparator": "/home/baegjaehyeon.guest/lean-comparator/.lake/build/bin/comparator",
-  "mathlib_dir": "/home/baegjaehyeon.guest/eml-lake/.lake/packages/mathlib",
+  "comparator": "HOME/lean-comparator/.lake/build/bin/comparator",
+  "mathlib_dir": "HOME/eml-lake/.lake/packages/mathlib",
   "failure_details": {},
   "results": [
     {
