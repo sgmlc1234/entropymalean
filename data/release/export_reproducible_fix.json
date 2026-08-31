@@ -1,0 +1,44 @@
+{
+  "rows": 1,
+  "reproducible": 1,
+  "rate": 1.0,
+  "platforms": [
+    "macos-aarch64",
+    "linux-x86_64"
+  ],
+  "pins": {
+    "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+    "mathlib_revision": "0fb2045029635862ffb234635a111c80a55e2a87",
+    "package_revisions": {
+      "repl": "f0a88bfca1fa6ac75e2a33d1678a3b67c90fb492",
+      "mathlib": "0fb2045029635862ffb234635a111c80a55e2a87",
+      "plausible": "293af9b2a383eed4d04d66b898d608d0a44b750f",
+      "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "importGraph": "fd70b40073aeca8fa60fe0fb492f189d3b12c0ef",
+      "proofwidgets": "2db6054a44326f8c0230ee0570e2ddb894816511",
+      "aesop": "f0c6e183ea26531e82773feb4b73ab6595ca17a5",
+      "Qq": "1cc7e819b9b9bc1e87c9edcccb62e0269e00a809",
+      "batteries": "48ff08a0e30a15078186548f11981d8988dee0c5",
+      "Cli": "13567aed1ac4f12aea9484178e07e51f8c9f7658"
+    },
+    "manifest_digest": "262dfbd6193e7c04",
+    "lean4export_revision": "12581a6b680d8478175596338eb2d53383a323e3"
+  },
+  "mismatch_kinds": {},
+  "results": [
+    {
+      "name": "finite_closed_connected_union_perfect_decomposition",
+      "reproducible": true,
+      "export_digest": "8994dd143dafe1b20be17dbb23483cf8f12319f2cd2f7b27f4e45f52b3ca0a4d",
+      "export_bytes": 76902237,
+      "macos_aarch64": {
+        "digest": "8994dd143dafe1b20be17dbb23483cf8f12319f2cd2f7b27f4e45f52b3ca0a4d",
+        "bytes": 76902237
+      },
+      "linux_x86_64": {
+        "digest": "8994dd143dafe1b20be17dbb23483cf8f12319f2cd2f7b27f4e45f52b3ca0a4d",
+        "bytes": 76902237
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/seeds_50_screened.csv",
+  "seeds": 49,
+  "proved": 38,
+  "rate": 0.776,
+  "model": "gpt-5.6-luna",
+  "proof_k": 4,
+  "proof_turns": 6,
+  "gen0_summary": {
+    "total_seed_count": 49,
+    "missing_proof_body_count": 49,
+    "target_seed_count": 49,
+    "worker_count_requested": 2,
+    "worker_count_effective": 1,
+    "worker_count_source": "cli_or_default",
+    "completed_count": 38,
+    "failed_count": 11
+  },
+  "failures": [
+    {
+      "seed_id": "amc12b_2021_p13",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "amc12_2000_p1",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "amc12b_2021_p21",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "amc12b_2002_p11",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "mathd_numbertheory_200",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "mathd_numbertheory_99",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "imo_1978_p5",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "imo_1977_p5",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "imo_1968_p5_1",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "imo_1992_p1",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "algebra_9onxpypzleqsum2onxpy",
+      "reason": "unknown",
+      "class": "timeout"
+    }
+  ],
+  "unproved": [
+    "amc12b_2021_p13",
+    "amc12_2000_p1",
+    "amc12b_2021_p21",
+    "amc12b_2002_p11",
+    "mathd_numbertheory_200",
+    "mathd_numbertheory_99",
+    "imo_1978_p5",
+    "imo_1977_p5",
+    "imo_1968_p5_1",
+    "imo_1992_p1",
+    "algebra_9onxpypzleqsum2onxpy"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/spares_16_screened.csv",
+  "seeds": 16,
+  "proved": 13,
+  "rate": 0.812,
+  "model": "gpt-5.6-luna",
+  "proof_k": 6,
+  "proof_turns": 8,
+  "gen0_summary": {
+    "total_seed_count": 16,
+    "missing_proof_body_count": 16,
+    "target_seed_count": 16,
+    "worker_count_requested": 2,
+    "worker_count_effective": 2,
+    "worker_count_source": "cli_or_default",
+    "completed_count": 13,
+    "failed_count": 3
+  },
+  "failures": [
+    {
+      "seed_id": "amc12a_2020_p9",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "amc12a_2002_p13",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "algebra_apb4leq8ta4pb4",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    }
+  ],
+  "unproved": [
+    "amc12a_2020_p9",
+    "amc12a_2002_p13",
+    "algebra_apb4leq8ta4pb4"
+  ]
+}

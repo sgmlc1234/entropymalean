@@ -1,0 +1,19 @@
+{
+  "input": "data/benchmarks/proofnet_verified/raw/seeds_50_audit_input.jsonl",
+  "rows": 50,
+  "distinct_proofs": 50,
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "row_verdicts": {
+    "True": 50
+  },
+  "probe_status": {
+    "probed": 50
+  },
+  "disallowed_axiom_counts": {},
+  "failing_rows": [],
+  "unresolved_rows": []
+}

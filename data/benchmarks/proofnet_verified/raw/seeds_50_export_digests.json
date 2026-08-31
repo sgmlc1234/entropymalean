@@ -1,0 +1,729 @@
+{
+  "rows": 50,
+  "reproducible": 50,
+  "rate": 1.0,
+  "platforms": [
+    "macos-aarch64",
+    "linux-aarch64"
+  ],
+  "pins": {
+    "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+    "mathlib_revision": "0fb2045029635862ffb234635a111c80a55e2a87",
+    "package_revisions": {
+      "repl": "f0a88bfca1fa6ac75e2a33d1678a3b67c90fb492",
+      "mathlib": "0fb2045029635862ffb234635a111c80a55e2a87",
+      "plausible": "293af9b2a383eed4d04d66b898d608d0a44b750f",
+      "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "importGraph": "fd70b40073aeca8fa60fe0fb492f189d3b12c0ef",
+      "proofwidgets": "2db6054a44326f8c0230ee0570e2ddb894816511",
+      "aesop": "f0c6e183ea26531e82773feb4b73ab6595ca17a5",
+      "Qq": "1cc7e819b9b9bc1e87c9edcccb62e0269e00a809",
+      "batteries": "48ff08a0e30a15078186548f11981d8988dee0c5",
+      "Cli": "13567aed1ac4f12aea9484178e07e51f8c9f7658"
+    },
+    "manifest_digest": "262dfbd6193e7c04"
+  },
+  "mismatch_kinds": {},
+  "results": [
+    {
+      "name": "Artin_exercise_2_11_3",
+      "reproducible": true,
+      "export_digest": "0558270ede426ac1f7c9cc909960c1e472b58c1c9230d0510a6d60c0006b0051",
+      "export_bytes": 34392833,
+      "macos_aarch64": {
+        "digest": "0558270ede426ac1f7c9cc909960c1e472b58c1c9230d0510a6d60c0006b0051",
+        "bytes": 34392833
+      },
+      "linux_aarch64": {
+        "digest": "0558270ede426ac1f7c9cc909960c1e472b58c1c9230d0510a6d60c0006b0051",
+        "bytes": 34392833
+      }
+    },
+    {
+      "name": "Artin_exercise_6_8_1",
+      "reproducible": true,
+      "export_digest": "74e3c7939fc662a75902a9a719a74d3d507ab03c6f38af871f82486dfd3335a8",
+      "export_bytes": 4512267,
+      "macos_aarch64": {
+        "digest": "74e3c7939fc662a75902a9a719a74d3d507ab03c6f38af871f82486dfd3335a8",
+        "bytes": 4512267
+      },
+      "linux_aarch64": {
+        "digest": "74e3c7939fc662a75902a9a719a74d3d507ab03c6f38af871f82486dfd3335a8",
+        "bytes": 4512267
+      }
+    },
+    {
+      "name": "Axler_exercise_1_3",
+      "reproducible": true,
+      "export_digest": "53bb34ae1e9738e6f15271ca078204aadadd2861d67e3ac8396b01f3f19f7abf",
+      "export_bytes": 1929744,
+      "macos_aarch64": {
+        "digest": "53bb34ae1e9738e6f15271ca078204aadadd2861d67e3ac8396b01f3f19f7abf",
+        "bytes": 1929744
+      },
+      "linux_aarch64": {
+        "digest": "53bb34ae1e9738e6f15271ca078204aadadd2861d67e3ac8396b01f3f19f7abf",
+        "bytes": 1929744
+      }
+    },
+    {
+      "name": "Axler_exercise_1_8",
+      "reproducible": true,
+      "export_digest": "dc1c8af1519b534cf8b13e411d53a6c07eea8a9eb0139fbccc5436d8f95d73e7",
+      "export_bytes": 4572286,
+      "macos_aarch64": {
+        "digest": "dc1c8af1519b534cf8b13e411d53a6c07eea8a9eb0139fbccc5436d8f95d73e7",
+        "bytes": 4572286
+      },
+      "linux_aarch64": {
+        "digest": "dc1c8af1519b534cf8b13e411d53a6c07eea8a9eb0139fbccc5436d8f95d73e7",
+        "bytes": 4572286
+      }
+    },
+    {
+      "name": "Axler_exercise_5_12",
+      "reproducible": true,
+      "export_digest": "161a5688668a03ac80ec9536edf9229726148e5304cc554b7bdd2bd94ffaf2de",
+      "export_bytes": 135970788,
+      "macos_aarch64": {
+        "digest": "161a5688668a03ac80ec9536edf9229726148e5304cc554b7bdd2bd94ffaf2de",
+        "bytes": 135970788
+      },
+      "linux_aarch64": {
+        "digest": "161a5688668a03ac80ec9536edf9229726148e5304cc554b7bdd2bd94ffaf2de",
+        "bytes": 135970788
+      }
+    },
+    {
+      "name": "Axler_exercise_5_20",
+      "reproducible": true,
+      "export_digest": "bdb87a44417c06756d129a814d27fc55f7ee27e4adcccedfcc2c939cda18ef03",
+      "export_bytes": 108144157,
+      "macos_aarch64": {
+        "digest": "bdb87a44417c06756d129a814d27fc55f7ee27e4adcccedfcc2c939cda18ef03",
+        "bytes": 108144157
+      },
+      "linux_aarch64": {
+        "digest": "bdb87a44417c06756d129a814d27fc55f7ee27e4adcccedfcc2c939cda18ef03",
+        "bytes": 108144157
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_16",
+      "reproducible": true,
+      "export_digest": "b46bf939674d2f89dd1b351c1e0611ac53b752cfd987f5ea7d38bfe308acab7f",
+      "export_bytes": 5454456,
+      "macos_aarch64": {
+        "digest": "b46bf939674d2f89dd1b351c1e0611ac53b752cfd987f5ea7d38bfe308acab7f",
+        "bytes": 5454456
+      },
+      "linux_aarch64": {
+        "digest": "b46bf939674d2f89dd1b351c1e0611ac53b752cfd987f5ea7d38bfe308acab7f",
+        "bytes": 5454456
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_18",
+      "reproducible": true,
+      "export_digest": "8e2e3abbf6b70a683a71860f6f8507cfc58c369ccfbade5e440d96998f4c6d7a",
+      "export_bytes": 814243,
+      "macos_aarch64": {
+        "digest": "8e2e3abbf6b70a683a71860f6f8507cfc58c369ccfbade5e440d96998f4c6d7a",
+        "bytes": 814243
+      },
+      "linux_aarch64": {
+        "digest": "8e2e3abbf6b70a683a71860f6f8507cfc58c369ccfbade5e440d96998f4c6d7a",
+        "bytes": 814243
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_2_4_16b",
+      "reproducible": true,
+      "export_digest": "fc43190d08af27a501973922a44ece9b6424dc8e119baf60adc6ffcf802f81ad",
+      "export_bytes": 13361062,
+      "macos_aarch64": {
+        "digest": "fc43190d08af27a501973922a44ece9b6424dc8e119baf60adc6ffcf802f81ad",
+        "bytes": 13361062
+      },
+      "linux_aarch64": {
+        "digest": "fc43190d08af27a501973922a44ece9b6424dc8e119baf60adc6ffcf802f81ad",
+        "bytes": 13361062
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_1_3a",
+      "reproducible": true,
+      "export_digest": "39837cc52ca8fff6cb371437ad5c778902ad1a5f729f01e7f5428cbe1db369e8",
+      "export_bytes": 2995280,
+      "macos_aarch64": {
+        "digest": "39837cc52ca8fff6cb371437ad5c778902ad1a5f729f01e7f5428cbe1db369e8",
+        "bytes": 2995280
+      },
+      "linux_aarch64": {
+        "digest": "39837cc52ca8fff6cb371437ad5c778902ad1a5f729f01e7f5428cbe1db369e8",
+        "bytes": 2995280
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_1_22b",
+      "reproducible": true,
+      "export_digest": "cfde7e99c4354237bbc0fec234e83ee56b0b3aaac4e0b1454ff6c7e533db1642",
+      "export_bytes": 3831288,
+      "macos_aarch64": {
+        "digest": "cfde7e99c4354237bbc0fec234e83ee56b0b3aaac4e0b1454ff6c7e533db1642",
+        "bytes": 3831288
+      },
+      "linux_aarch64": {
+        "digest": "cfde7e99c4354237bbc0fec234e83ee56b0b3aaac4e0b1454ff6c7e533db1642",
+        "bytes": 3831288
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_14",
+      "reproducible": true,
+      "export_digest": "955539b74728a19ec26cdfcaf5fa0b55aa115221f51e44a996d38ed23a675bbc",
+      "export_bytes": 48172097,
+      "macos_aarch64": {
+        "digest": "955539b74728a19ec26cdfcaf5fa0b55aa115221f51e44a996d38ed23a675bbc",
+        "bytes": 48172097
+      },
+      "linux_aarch64": {
+        "digest": "955539b74728a19ec26cdfcaf5fa0b55aa115221f51e44a996d38ed23a675bbc",
+        "bytes": 48172097
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_1_11",
+      "reproducible": true,
+      "export_digest": "0bce7575e029adf9914067d4cf30640f20f3f3cc682ea3a17749e77c6b995dd9",
+      "export_bytes": 3959742,
+      "macos_aarch64": {
+        "digest": "0bce7575e029adf9914067d4cf30640f20f3f3cc682ea3a17749e77c6b995dd9",
+        "bytes": 3959742
+      },
+      "linux_aarch64": {
+        "digest": "0bce7575e029adf9914067d4cf30640f20f3f3cc682ea3a17749e77c6b995dd9",
+        "bytes": 3959742
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_1_15",
+      "reproducible": true,
+      "export_digest": "8d524da9c38458943bcf6f6ed19e751253a11e07d8ed14129ac88e87271903a9",
+      "export_bytes": 3268470,
+      "macos_aarch64": {
+        "digest": "8d524da9c38458943bcf6f6ed19e751253a11e07d8ed14129ac88e87271903a9",
+        "bytes": 3268470
+      },
+      "linux_aarch64": {
+        "digest": "8d524da9c38458943bcf6f6ed19e751253a11e07d8ed14129ac88e87271903a9",
+        "bytes": 3268470
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_3_37",
+      "reproducible": true,
+      "export_digest": "132067f7593656313c3f3ea3e2ee81c46bb47b0262534914ebdb60098e550084",
+      "export_bytes": 13091764,
+      "macos_aarch64": {
+        "digest": "132067f7593656313c3f3ea3e2ee81c46bb47b0262534914ebdb60098e550084",
+        "bytes": 13091764
+      },
+      "linux_aarch64": {
+        "digest": "132067f7593656313c3f3ea3e2ee81c46bb47b0262534914ebdb60098e550084",
+        "bytes": 13091764
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_8_3_4",
+      "reproducible": true,
+      "export_digest": "f51866d79577b2e28c757ff39be1abf3c49bff74a70697c3baf8fa0bcd1d6b5d",
+      "export_bytes": 97906844,
+      "macos_aarch64": {
+        "digest": "f51866d79577b2e28c757ff39be1abf3c49bff74a70697c3baf8fa0bcd1d6b5d",
+        "bytes": 97906844
+      },
+      "linux_aarch64": {
+        "digest": "f51866d79577b2e28c757ff39be1abf3c49bff74a70697c3baf8fa0bcd1d6b5d",
+        "bytes": 97906844
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_4_2b",
+      "reproducible": true,
+      "export_digest": "e985339d89cc42b249d9871c7379e77c53cf68179a33c7d3f08ce1bb278616aa",
+      "export_bytes": 79328044,
+      "macos_aarch64": {
+        "digest": "e985339d89cc42b249d9871c7379e77c53cf68179a33c7d3f08ce1bb278616aa",
+        "bytes": 79328044
+      },
+      "linux_aarch64": {
+        "digest": "e985339d89cc42b249d9871c7379e77c53cf68179a33c7d3f08ce1bb278616aa",
+        "bytes": 79328044
+      }
+    },
+    {
+      "name": "Herstein_exercise_2_1_27",
+      "reproducible": true,
+      "export_digest": "538b1caeefab400dd905ebc8ae58eb6dda7d65d4311c5d7225ca1ede5e3bd79e",
+      "export_bytes": 27874619,
+      "macos_aarch64": {
+        "digest": "538b1caeefab400dd905ebc8ae58eb6dda7d65d4311c5d7225ca1ede5e3bd79e",
+        "bytes": 27874619
+      },
+      "linux_aarch64": {
+        "digest": "538b1caeefab400dd905ebc8ae58eb6dda7d65d4311c5d7225ca1ede5e3bd79e",
+        "bytes": 27874619
+      }
+    },
+    {
+      "name": "Herstein_exercise_2_4_36",
+      "reproducible": true,
+      "export_digest": "129b63c4963441913f01aa76a306d738462a95962d78389b040a445b82fafb4b",
+      "export_bytes": 26057987,
+      "macos_aarch64": {
+        "digest": "129b63c4963441913f01aa76a306d738462a95962d78389b040a445b82fafb4b",
+        "bytes": 26057987
+      },
+      "linux_aarch64": {
+        "digest": "129b63c4963441913f01aa76a306d738462a95962d78389b040a445b82fafb4b",
+        "bytes": 26057987
+      }
+    },
+    {
+      "name": "Herstein_exercise_2_11_6",
+      "reproducible": true,
+      "export_digest": "7cc6bfc5590ae85ab56ac7c3299c7ffeeaabdc6cd1e490f3e30d7ddad2533f7b",
+      "export_bytes": 4210046,
+      "macos_aarch64": {
+        "digest": "7cc6bfc5590ae85ab56ac7c3299c7ffeeaabdc6cd1e490f3e30d7ddad2533f7b",
+        "bytes": 4210046
+      },
+      "linux_aarch64": {
+        "digest": "7cc6bfc5590ae85ab56ac7c3299c7ffeeaabdc6cd1e490f3e30d7ddad2533f7b",
+        "bytes": 4210046
+      }
+    },
+    {
+      "name": "Ireland_Rosen_exercise_1_27",
+      "reproducible": true,
+      "export_digest": "f7b25f07298f98f730067003996a33e825ca69c856bf210c83fde2c49cb374be",
+      "export_bytes": 13475379,
+      "macos_aarch64": {
+        "digest": "f7b25f07298f98f730067003996a33e825ca69c856bf210c83fde2c49cb374be",
+        "bytes": 13475379
+      },
+      "linux_aarch64": {
+        "digest": "f7b25f07298f98f730067003996a33e825ca69c856bf210c83fde2c49cb374be",
+        "bytes": 13475379
+      }
+    },
+    {
+      "name": "Ireland_Rosen_exercise_1_31",
+      "reproducible": true,
+      "export_digest": "c45bc9307a43865dccac6142ff0b6a0075ba15832883e6a963804e64b17a50f9",
+      "export_bytes": 45682701,
+      "macos_aarch64": {
+        "digest": "c45bc9307a43865dccac6142ff0b6a0075ba15832883e6a963804e64b17a50f9",
+        "bytes": 45682701
+      },
+      "linux_aarch64": {
+        "digest": "c45bc9307a43865dccac6142ff0b6a0075ba15832883e6a963804e64b17a50f9",
+        "bytes": 45682701
+      }
+    },
+    {
+      "name": "Munkres_exercise_13_1",
+      "reproducible": true,
+      "export_digest": "522cd8beab92276850630a254d0e05919bcceff264c483ba613c97a9fc876c54",
+      "export_bytes": 3318791,
+      "macos_aarch64": {
+        "digest": "522cd8beab92276850630a254d0e05919bcceff264c483ba613c97a9fc876c54",
+        "bytes": 3318791
+      },
+      "linux_aarch64": {
+        "digest": "522cd8beab92276850630a254d0e05919bcceff264c483ba613c97a9fc876c54",
+        "bytes": 3318791
+      }
+    },
+    {
+      "name": "Munkres_exercise_16_4",
+      "reproducible": true,
+      "export_digest": "e61fcf6d391706d27cb5a046bfe5e711650f7bd9547c9ebbf7ded10d11e1cbad",
+      "export_bytes": 6272357,
+      "macos_aarch64": {
+        "digest": "e61fcf6d391706d27cb5a046bfe5e711650f7bd9547c9ebbf7ded10d11e1cbad",
+        "bytes": 6272357
+      },
+      "linux_aarch64": {
+        "digest": "e61fcf6d391706d27cb5a046bfe5e711650f7bd9547c9ebbf7ded10d11e1cbad",
+        "bytes": 6272357
+      }
+    },
+    {
+      "name": "Munkres_exercise_23_2",
+      "reproducible": true,
+      "export_digest": "a769bea46eb95de0d5f868d7b27c6a315f7032ece08618248f055ecac06cb47e",
+      "export_bytes": 4546006,
+      "macos_aarch64": {
+        "digest": "a769bea46eb95de0d5f868d7b27c6a315f7032ece08618248f055ecac06cb47e",
+        "bytes": 4546006
+      },
+      "linux_aarch64": {
+        "digest": "a769bea46eb95de0d5f868d7b27c6a315f7032ece08618248f055ecac06cb47e",
+        "bytes": 4546006
+      }
+    },
+    {
+      "name": "Munkres_exercise_29_10",
+      "reproducible": true,
+      "export_digest": "b07a5740c70e3f4d302548ef3cf388f0dc3da6f9e38465bc7c05c4293883c3df",
+      "export_bytes": 20253622,
+      "macos_aarch64": {
+        "digest": "b07a5740c70e3f4d302548ef3cf388f0dc3da6f9e38465bc7c05c4293883c3df",
+        "bytes": 20253622
+      },
+      "linux_aarch64": {
+        "digest": "b07a5740c70e3f4d302548ef3cf388f0dc3da6f9e38465bc7c05c4293883c3df",
+        "bytes": 20253622
+      }
+    },
+    {
+      "name": "Munkres_exercise_30_13",
+      "reproducible": true,
+      "export_digest": "4dbbea446eedf66c2823417b6ca401505357e69e8143923c578b3795c30cfb0f",
+      "export_bytes": 17113991,
+      "macos_aarch64": {
+        "digest": "4dbbea446eedf66c2823417b6ca401505357e69e8143923c578b3795c30cfb0f",
+        "bytes": 17113991
+      },
+      "linux_aarch64": {
+        "digest": "4dbbea446eedf66c2823417b6ca401505357e69e8143923c578b3795c30cfb0f",
+        "bytes": 17113991
+      }
+    },
+    {
+      "name": "Rudin_exercise_1_18a",
+      "reproducible": true,
+      "export_digest": "c6d63880402e1a72225aadcac928e8c0628980fd1fd85628fec43a80795abfc5",
+      "export_bytes": 80662950,
+      "macos_aarch64": {
+        "digest": "c6d63880402e1a72225aadcac928e8c0628980fd1fd85628fec43a80795abfc5",
+        "bytes": 80662950
+      },
+      "linux_aarch64": {
+        "digest": "c6d63880402e1a72225aadcac928e8c0628980fd1fd85628fec43a80795abfc5",
+        "bytes": 80662950
+      }
+    },
+    {
+      "name": "Rudin_exercise_2_28",
+      "reproducible": true,
+      "export_digest": "85b94ccf68479c939ab63dab7b16e7e2705c9903add2c776742072294824aab9",
+      "export_bytes": 45125036,
+      "macos_aarch64": {
+        "digest": "85b94ccf68479c939ab63dab7b16e7e2705c9903add2c776742072294824aab9",
+        "bytes": 45125036
+      },
+      "linux_aarch64": {
+        "digest": "85b94ccf68479c939ab63dab7b16e7e2705c9903add2c776742072294824aab9",
+        "bytes": 45125036
+      }
+    },
+    {
+      "name": "Rudin_exercise_4_12",
+      "reproducible": true,
+      "export_digest": "0af4e31cd983f951c3448a186b4da78ad33adf30e24a58ebc3100c3f5135ddb2",
+      "export_bytes": 1097629,
+      "macos_aarch64": {
+        "digest": "0af4e31cd983f951c3448a186b4da78ad33adf30e24a58ebc3100c3f5135ddb2",
+        "bytes": 1097629
+      },
+      "linux_aarch64": {
+        "digest": "0af4e31cd983f951c3448a186b4da78ad33adf30e24a58ebc3100c3f5135ddb2",
+        "bytes": 1097629
+      }
+    },
+    {
+      "name": "Rudin_exercise_5_6",
+      "reproducible": true,
+      "export_digest": "7a87029f8f4a4dd80a7d815c348d466363fe44a7715ba2e7a30af819a20166d3",
+      "export_bytes": 76435942,
+      "macos_aarch64": {
+        "digest": "7a87029f8f4a4dd80a7d815c348d466363fe44a7715ba2e7a30af819a20166d3",
+        "bytes": 76435942
+      },
+      "linux_aarch64": {
+        "digest": "7a87029f8f4a4dd80a7d815c348d466363fe44a7715ba2e7a30af819a20166d3",
+        "bytes": 76435942
+      }
+    },
+    {
+      "name": "Shakarchi_exercise_1_19b",
+      "reproducible": true,
+      "export_digest": "f5235b40427fc86808770055b98b049b5ae64d0d47ea7a0ad0cf4b2620196062",
+      "export_bytes": 78058177,
+      "macos_aarch64": {
+        "digest": "f5235b40427fc86808770055b98b049b5ae64d0d47ea7a0ad0cf4b2620196062",
+        "bytes": 78058177
+      },
+      "linux_aarch64": {
+        "digest": "f5235b40427fc86808770055b98b049b5ae64d0d47ea7a0ad0cf4b2620196062",
+        "bytes": 78058177
+      }
+    },
+    {
+      "name": "Artin_exercise_13_6_10",
+      "reproducible": true,
+      "export_digest": "def4618bf84fe98a731a7449c9dc3b956a4f3be12bd9e6517071c9d9a37e8a06",
+      "export_bytes": 20357069,
+      "macos_aarch64": {
+        "digest": "def4618bf84fe98a731a7449c9dc3b956a4f3be12bd9e6517071c9d9a37e8a06",
+        "bytes": 20357069
+      },
+      "linux_aarch64": {
+        "digest": "def4618bf84fe98a731a7449c9dc3b956a4f3be12bd9e6517071c9d9a37e8a06",
+        "bytes": 20357069
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_2a",
+      "reproducible": true,
+      "export_digest": "836e22b9dbf243b91bf46af63feb934c3bb4dc496f702ef7ce7ce65e2729f041",
+      "export_bytes": 1496896,
+      "macos_aarch64": {
+        "digest": "836e22b9dbf243b91bf46af63feb934c3bb4dc496f702ef7ce7ce65e2729f041",
+        "bytes": 1496896
+      },
+      "linux_aarch64": {
+        "digest": "836e22b9dbf243b91bf46af63feb934c3bb4dc496f702ef7ce7ce65e2729f041",
+        "bytes": 1496896
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_6_11",
+      "reproducible": true,
+      "export_digest": "b40c340874fdf082963f25fa8fa51085eee99aaedefb6cc13ccb5938b2a9d91f",
+      "export_bytes": 738834,
+      "macos_aarch64": {
+        "digest": "b40c340874fdf082963f25fa8fa51085eee99aaedefb6cc13ccb5938b2a9d91f",
+        "bytes": 738834
+      },
+      "linux_aarch64": {
+        "digest": "b40c340874fdf082963f25fa8fa51085eee99aaedefb6cc13ccb5938b2a9d91f",
+        "bytes": 738834
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_4_4",
+      "reproducible": true,
+      "export_digest": "2d27b5e64259bfa9d8364f9ea6e79e183c20869a107261980d9ac72a1c88f908",
+      "export_bytes": 49138086,
+      "macos_aarch64": {
+        "digest": "2d27b5e64259bfa9d8364f9ea6e79e183c20869a107261980d9ac72a1c88f908",
+        "bytes": 49138086
+      },
+      "linux_aarch64": {
+        "digest": "2d27b5e64259bfa9d8364f9ea6e79e183c20869a107261980d9ac72a1c88f908",
+        "bytes": 49138086
+      }
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_23",
+      "reproducible": true,
+      "export_digest": "e4f91a7d3fccc762425872c627394a18cb776e00906e372aebfa65450dd9ae6a",
+      "export_bytes": 51784004,
+      "macos_aarch64": {
+        "digest": "e4f91a7d3fccc762425872c627394a18cb776e00906e372aebfa65450dd9ae6a",
+        "bytes": 51784004
+      },
+      "linux_aarch64": {
+        "digest": "e4f91a7d3fccc762425872c627394a18cb776e00906e372aebfa65450dd9ae6a",
+        "bytes": 51784004
+      }
+    },
+    {
+      "name": "Herstein_exercise_2_5_23",
+      "reproducible": true,
+      "export_digest": "5ae81fc5c34e8a813d22f1dd56db4a1565fab6cb1404b95a5ada079ce6e3f0f6",
+      "export_bytes": 1559393,
+      "macos_aarch64": {
+        "digest": "5ae81fc5c34e8a813d22f1dd56db4a1565fab6cb1404b95a5ada079ce6e3f0f6",
+        "bytes": 1559393
+      },
+      "linux_aarch64": {
+        "digest": "5ae81fc5c34e8a813d22f1dd56db4a1565fab6cb1404b95a5ada079ce6e3f0f6",
+        "bytes": 1559393
+      }
+    },
+    {
+      "name": "Herstein_exercise_2_5_31",
+      "reproducible": true,
+      "export_digest": "70e2a8cad2eff06a544ad0bc4663c8c16d9e43c905e5d876cfd2e543df3b8299",
+      "export_bytes": 48250848,
+      "macos_aarch64": {
+        "digest": "70e2a8cad2eff06a544ad0bc4663c8c16d9e43c905e5d876cfd2e543df3b8299",
+        "bytes": 48250848
+      },
+      "linux_aarch64": {
+        "digest": "70e2a8cad2eff06a544ad0bc4663c8c16d9e43c905e5d876cfd2e543df3b8299",
+        "bytes": 48250848
+      }
+    },
+    {
+      "name": "Herstein_exercise_4_2_6",
+      "reproducible": true,
+      "export_digest": "4cae11d5715e2dc896bb1f15b98e8f957ffd409da3373f897dc7bac902c735d2",
+      "export_bytes": 1043780,
+      "macos_aarch64": {
+        "digest": "4cae11d5715e2dc896bb1f15b98e8f957ffd409da3373f897dc7bac902c735d2",
+        "bytes": 1043780
+      },
+      "linux_aarch64": {
+        "digest": "4cae11d5715e2dc896bb1f15b98e8f957ffd409da3373f897dc7bac902c735d2",
+        "bytes": 1043780
+      }
+    },
+    {
+      "name": "Herstein_exercise_5_3_7",
+      "reproducible": true,
+      "export_digest": "7e510422056efd345367249150ca2d166610aa8e507d5b01cd97fbb3c2785600",
+      "export_bytes": 137605915,
+      "macos_aarch64": {
+        "digest": "7e510422056efd345367249150ca2d166610aa8e507d5b01cd97fbb3c2785600",
+        "bytes": 137605915
+      },
+      "linux_aarch64": {
+        "digest": "7e510422056efd345367249150ca2d166610aa8e507d5b01cd97fbb3c2785600",
+        "bytes": 137605915
+      }
+    },
+    {
+      "name": "Munkres_exercise_13_4b2",
+      "reproducible": true,
+      "export_digest": "ce0e976755f9b6b534ff209bc6554617818f205ee7a22a3a5741d5fdfeab5921",
+      "export_bytes": 91266,
+      "macos_aarch64": {
+        "digest": "ce0e976755f9b6b534ff209bc6554617818f205ee7a22a3a5741d5fdfeab5921",
+        "bytes": 91266
+      },
+      "linux_aarch64": {
+        "digest": "ce0e976755f9b6b534ff209bc6554617818f205ee7a22a3a5741d5fdfeab5921",
+        "bytes": 91266
+      }
+    },
+    {
+      "name": "Munkres_exercise_18_8a",
+      "reproducible": true,
+      "export_digest": "24c91b76eee4845ecfc60a4d61cd303cfa20e6fff8edc9165f6843b9de59eaaa",
+      "export_bytes": 5917856,
+      "macos_aarch64": {
+        "digest": "24c91b76eee4845ecfc60a4d61cd303cfa20e6fff8edc9165f6843b9de59eaaa",
+        "bytes": 5917856
+      },
+      "linux_aarch64": {
+        "digest": "24c91b76eee4845ecfc60a4d61cd303cfa20e6fff8edc9165f6843b9de59eaaa",
+        "bytes": 5917856
+      }
+    },
+    {
+      "name": "Munkres_exercise_23_11",
+      "reproducible": true,
+      "export_digest": "2194bfe3d9792531a02d95bc0882191ce34a333e52ed972e44aafba22baf0aa9",
+      "export_bytes": 3861985,
+      "macos_aarch64": {
+        "digest": "2194bfe3d9792531a02d95bc0882191ce34a333e52ed972e44aafba22baf0aa9",
+        "bytes": 3861985
+      },
+      "linux_aarch64": {
+        "digest": "2194bfe3d9792531a02d95bc0882191ce34a333e52ed972e44aafba22baf0aa9",
+        "bytes": 3861985
+      }
+    },
+    {
+      "name": "Munkres_exercise_24_3a",
+      "reproducible": true,
+      "export_digest": "f5f1d47d9effe2a675cbcaa2b2668053e72de8ebf9f30a272b6518e8b145919c",
+      "export_bytes": 48013592,
+      "macos_aarch64": {
+        "digest": "f5f1d47d9effe2a675cbcaa2b2668053e72de8ebf9f30a272b6518e8b145919c",
+        "bytes": 48013592
+      },
+      "linux_aarch64": {
+        "digest": "f5f1d47d9effe2a675cbcaa2b2668053e72de8ebf9f30a272b6518e8b145919c",
+        "bytes": 48013592
+      }
+    },
+    {
+      "name": "Pugh_exercise_3_1",
+      "reproducible": true,
+      "export_digest": "23d374592584e65e88adb3053dc5b9a0e36fd0797b173a6dbfbf66c9231827ad",
+      "export_bytes": 51578513,
+      "macos_aarch64": {
+        "digest": "23d374592584e65e88adb3053dc5b9a0e36fd0797b173a6dbfbf66c9231827ad",
+        "bytes": 51578513
+      },
+      "linux_aarch64": {
+        "digest": "23d374592584e65e88adb3053dc5b9a0e36fd0797b173a6dbfbf66c9231827ad",
+        "bytes": 51578513
+      }
+    },
+    {
+      "name": "Rudin_exercise_1_1b",
+      "reproducible": true,
+      "export_digest": "b76741ab5a6fd69fb09fce3c389af409bb5f993f778dcc8f6717e41ddcf2dcfd",
+      "export_bytes": 22233266,
+      "macos_aarch64": {
+        "digest": "b76741ab5a6fd69fb09fce3c389af409bb5f993f778dcc8f6717e41ddcf2dcfd",
+        "bytes": 22233266
+      },
+      "linux_aarch64": {
+        "digest": "b76741ab5a6fd69fb09fce3c389af409bb5f993f778dcc8f6717e41ddcf2dcfd",
+        "bytes": 22233266
+      }
+    },
+    {
+      "name": "Rudin_exercise_2_25",
+      "reproducible": true,
+      "export_digest": "1163a4a5b7d5bc0ef0a377dc7092264a82a3de7135d3cbb34080ee108d1b4e43",
+      "export_bytes": 45684185,
+      "macos_aarch64": {
+        "digest": "1163a4a5b7d5bc0ef0a377dc7092264a82a3de7135d3cbb34080ee108d1b4e43",
+        "bytes": 45684185
+      },
+      "linux_aarch64": {
+        "digest": "1163a4a5b7d5bc0ef0a377dc7092264a82a3de7135d3cbb34080ee108d1b4e43",
+        "bytes": 45684185
+      }
+    },
+    {
+      "name": "Rudin_exercise_4_3",
+      "reproducible": true,
+      "export_digest": "5910a9d85afc0af66076b50de0c2165d1491b5d753d93fc6ba98aeeb82688511",
+      "export_bytes": 47488043,
+      "macos_aarch64": {
+        "digest": "5910a9d85afc0af66076b50de0c2165d1491b5d753d93fc6ba98aeeb82688511",
+        "bytes": 47488043
+      },
+      "linux_aarch64": {
+        "digest": "5910a9d85afc0af66076b50de0c2165d1491b5d753d93fc6ba98aeeb82688511",
+        "bytes": 47488043
+      }
+    },
+    {
+      "name": "Rudin_exercise_5_5",
+      "reproducible": true,
+      "export_digest": "6ee7a6d41e810e1d910d78166e3ae6660dd639b062de1b10f1f7489dcadf4a78",
+      "export_bytes": 74407190,
+      "macos_aarch64": {
+        "digest": "6ee7a6d41e810e1d910d78166e3ae6660dd639b062de1b10f1f7489dcadf4a78",
+        "bytes": 74407190
+      },
+      "linux_aarch64": {
+        "digest": "6ee7a6d41e810e1d910d78166e3ae6660dd639b062de1b10f1f7489dcadf4a78",
+        "bytes": 74407190
+      }
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "mathd_algebra_214": {
+    "plan": [
+      "The argument begins by splitting according to whether the quadratic function has a global minimum or a global maximum at the point 2.",
+      "In the minimum branch one proves the leading coefficient is positive, while in the maximum branch one proves it is negative, using the prescribed values at 2 and 4 together with nearby comparisons.",
+      "The decisive fact in either branch is the completed-square expression around 2, whose required sign forces the square of the vertex condition to vanish and hence makes the vertex equal to 2.",
+      "Substituting that vertex condition into the equations determined by the values at 2 and 4 uniquely determines the remaining quadratic behavior, yielding the value 7 at 6."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_208": {
+    "plan": [
+      "1. The argument splits square-root identification into nonnegativity and squaring branches, establishing respectively the candidate’s sign and its square, while exact arithmetic computes the square root as 1000 and the cube root as 100, yielding the difference 900."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_28": {
+    "plan": [
+      "The greatest-element requirement opens into membership and maximality: first exhibit the witness x equal to negative five quarters, whose equation yields c equal to twenty-five eighths.",
+      "For an arbitrary represented c, establish it cannot exceed twenty-five eighths; the decisive fact is nonnegativity of the square of four x plus five, after rearranging the equation."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_101": {
+    "plan": [
+      "1. Split the goal into proving separately that x is at least −2 and that x is at most 7, corresponding to membership in the closed interval.",
+      "2. For the lower bound, assume instead that x is less than −2, so both x + 2 and x − 7 are negative.",
+      "3. Their product is therefore positive, and expanding it shows that the given quadratic expression exceeds 10, contradicting the hypothesis.",
+      "4. For the upper bound, assume x exceeds 7, making both factors positive; the same positive-product argument again contradicts the quadratic inequality and completes the interval bounds."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_327": {
+    "plan": [
+      "1. The argument opens by separating the equivalence into two directions, treating the absolute-value inequality as the source condition in one branch and interval membership as the source condition in the other.",
+      "2. In the first branch, convert the scaled inequality into the bound that the absolute value of nine plus twice a must be less than five.",
+      "3. The central fact is that an absolute value is less than a positive number exactly when the underlying quantity lies strictly between its negative and positive bounds, yielding both interval endpoints through elementary linear arithmetic.",
+      "4. In the second branch, use the assumed lower and upper bounds on a to establish those same two-sided bounds for nine plus twice a, then recover the absolute-value inequality and its original scaling."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_251": {
+    "plan": [
+      "First consider whether x is zero: that branch contradicts the given equation, so the only viable possibility is that x is nonzero.",
+      "With nonzero x established, eliminate the denominators in the original relation, obtaining an ordinary linear equation whose arithmetic forces x to equal two."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_313": {
+    "plan": [
+      "1. Substitute the given expressions for v and z into v = i z, then split the complex-number equality into its real-coordinate and imaginary-coordinate cases, each requiring the corresponding coordinate of i to match the proposed value.",
+      "2. Extract real and imaginary parts of the resulting equation, expand complex multiplication into coordinate formulas, and use the resulting two linear equations as the essential calculation determining both coordinates of i."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_484": {
+    "plan": [
+      "1. Split according to whether the logarithm of three is zero: the zero case is impossible because three exceeds one, while the nonzero case supplies the denominator needed later.",
+      "2. Express twenty-seven as the third power of three, apply the logarithm power law, and cancel the nonzero logarithm of three; this power law does the real mathematical work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_113": {
+    "plan": [
+      "1. Replace the function by its explicit quadratic formula, then open the global-minimum claim into the pointwise requirement that every real input has value at least the value at seven.",
+      "2. For an arbitrary real input, establish the required comparison by using the nonnegativity of the square of its displacement from seven, which is the decisive fact."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_410": {
+    "plan": [
+      "First replace the function by its quadratic formula and split the leastness claim into exhibiting a value attaining four and proving that every range value is at least four.",
+      "For the attainment branch choose the vertex input three, while for the lower-bound branch represent an arbitrary range value and use nonnegativity of the square of its displacement from three, which is the decisive fact."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_234": {
+    "plan": [
+      "1. The argument opens with a conceptual split between determining the common ratio from the initial terms and propagating later terms; the first branch establishes that ratio uniquely.",
+      "2. Using the relation between consecutive terms together with the first two prescribed values, one calculates that the common multiplier is five thirds.",
+      "3. The propagation branch successively applies the same recurrence to the known second term, then to the resulting third and fourth terms, establishing the third, fourth, and fifth terms.",
+      "4. The recurrence relation does the real work, while the final arithmetic substitution simplifies the fifth term to twenty-five ninths and completes the conclusion."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "numbertheory_sumkmulnckeqnmul2pownm1": {
+    "plan": [
+      "Split the summation indices into the exceptional zero index and the positive indices from one through n, using the hypothesis that n is positive to justify this partition.",
+      "For the zero-index branch, establish that its contribution vanishes because the index itself is zero, so adjoining it does not alter the original sum.",
+      "For the positive-index branch, identify the resulting index set with the complete range from zero through n, thereby allowing the restricted sum to be treated uniformly.",
+      "The decisive fact is the standard binomial-sum identity stating that the sum of each index multiplied by its binomial coefficient equals n times two to the power n minus one."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "numbertheory_sqmod3in01d": {
+    "plan": [
+      "1. Begin by splitting according to the three possible integer remainders upon division by three: zero, one, or two.",
+      "2. In the zero-remainder branch, establish that the square has remainder zero modulo three, hence satisfies the first alternative.",
+      "3. In both the one-remainder and two-remainder branches, establish that squaring produces remainder one modulo three, hence satisfies the second alternative.",
+      "4. The decisive fact is the division algorithm, which represents the integer as a multiple of three plus its chosen remainder and reduces the square computation to elementary modular arithmetic."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "aime_1984_p15": {
+    "plan": [
+      "1. No case split is needed: after evaluating all numerical denominators, the four hypotheses become a linear system in the four squared quantities, and solving that system by linear combination yields the required sum, with the hypotheses themselves doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "aime_1983_p3": {
+    "plan": [
+      "1. Establish that the square root of sixty-one is nonnegative and has square equal to sixty-one, providing the algebraic identity governing the two candidate roots.",
+      "2. Split the characterization into the zero-value direction and the candidate-root direction: from a zero value derive a quadratic equation, while from either candidate verify the original expression vanishes.",
+      "3. In the first branch, use the zero equation to force the radicand’s square root to equal five, reduce the resulting quadratic, and factor it using the square-root identity; in the second branch, substitute each root and verify the radicand and function value directly.",
+      "4. Identify the finite zero set with precisely those two roots, compute their product as the product over a two-element collection, and simplify it to twenty using the same square-root identity."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "aime_1983_p9": {
+    "plan": [
+      "1. Rewrite the hypotheses into the explicit function and interval, then study the continuous auxiliary function g(t)=t sin t on the interval from zero to π/2.",
+      "2. By the intermediate value theorem, because g takes values zero and at least two-thirds at the endpoints, choose z with g(z)=two-thirds, and show z lies strictly between zero and π.",
+      "3. The membership branch of the leastness assertion evaluates the given expression at this z, rewrites its numerator using g(z) squared, and obtains exactly twelve.",
+      "4. The lower-bound branch considers an arbitrary interval point, observes its denominator g(z) is positive, and uses nonnegativity of the square of three times g(z) minus two to prove the value is at least twelve."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "amc12a_2010_p10": {
+    "plan": [
+      "1. Evaluate the given equal-difference relation at the first two indices, substitute the four specified values, and solve the resulting linear equations to obtain p = 5.",
+      "2. Split the natural-number argument into the initial case and the successor case: establish the first difference equals 4 initially, then show each later difference remains 4 using the equal-difference hypothesis.",
+      "3. Split again into the initial case and successor case to establish the explicit formula, beginning with a 1 = 5 and extending it by adding the constant difference 4 at every step.",
+      "4. Apply the formula at the index 2009, corresponding to a 2010, and calculate 5 + 4 times 2009 = 8041; the equal-difference hypothesis does the essential work throughout."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "amc12a_2021_p9": {
+    "plan": [
+      "Separate the finite product into the empty-segment case, which establishes the neutral value, and the successor-segment case, which appends one factor and verifies the resulting arithmetic identity, with repeated difference-of-squares factorization doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "amc12b_2020_p22": {
+    "plan": [
+      "1. Introduce the auxiliary function sending a real parameter to that parameter divided by the corresponding power of two, and use continuity together with the intermediate value theorem to obtain a parameter whose value is one sixth.",
+      "2. The greatest-element requirement splits into membership of one twelfth in the set and proof that every represented element is at most one twelfth.",
+      "3. For membership, use the parameter supplied by the intermediate value theorem, express the fourth-power denominator as the square of the relevant second-power denominator, and simplify algebraically.",
+      "4. For the universal upper bound, rewrite each represented value using the auxiliary ratio, then the nonnegativity of its squared distance from one sixth gives the decisive quadratic maximum."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "amc12a_2002_p21": {
+    "plan": [
+      "1. Open the leastness claim by separating the proof into two obligations: first show that 1999 belongs to the set, and then show that every member of the set is at least 1999.",
+      "2. For the first branch, unfold the set description and calculate the partial sum through index 1998, using the recurrence and initial values to establish that the next sum exceeds 10000.",
+      "3. For the second branch, assume an arbitrary index belongs to the set and argue by contradiction that it must be below 1999, hence at most 1998.",
+      "4. The decisive work is comparing partial sums: monotonicity gives the sum at the arbitrary index no larger than the sum through 1998, while recurrence computation bounds that latter sum by 10000, contradicting membership."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "amc12_2000_p6": {
+    "plan": [
+      "Assume the outer witnesses and retain their primality, bounds, distinctness, and equation equal to 22; split over every integer value of p from 4 through 18, discard composite candidates using primality, and show the remaining prime cases cannot satisfy the equation for any q, with finite arithmetic contradiction doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_961": {
+    "plan": [
+      "1. No case split is needed: direct arithmetic evaluation establishes that dividing 2003 by 11 leaves remainder 1, with the exact remainder computation doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_33": {
+    "plan": [
+      "1. Open the argument by separating the identification branch from the verification branch: the first branch uses the hypothesis to identify n with the inverse of 7.",
+      "2. In the verification branch, establish that 57 is the inverse of 7 modulo 398; the decisive fact is that 7 times 57 equals 399, congruent to 1 modulo 398, which uniquely identifies the inverse."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_728": {
+    "plan": [
+      "1. Unfold the congruence into equality of remainders, split according to whether the integer difference is nonnegative or negative, establish remainder three in the former branch and impossibility of the latter, with direct numerical evaluation of the powers and remainder calculation doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_483": {
+    "plan": [
+      "Open the argument by separating the index into the exceptional cases zero and one, followed by the general case where the recurrence applies directly.",
+      "For index zero, use the recurrence at zero together with the two initial values to establish agreement with the zeroth Fibonacci number; for index one, use its given value to establish the corresponding agreement.",
+      "For every index at least two, assume agreement at all smaller indices, specialize the recurrence two positions earlier, and compare it with the Fibonacci recurrence to establish agreement at the current index.",
+      "Apply the resulting identification at index one hundred, then calculate the Fibonacci sequence modulo four, whose value at that index is three."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_99": {
+    "plan": [
+      "1. Rewrite the congruence as an equality with a multiple of 47, split according to whether that multiplier is even or odd, rule out the even branch because 2n and 15 have opposite parity there, and in the odd branch divide by 2 to obtain n as 47 times an integer plus 31, which establishes the required congruence."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_126": {
+    "plan": [
+      "Split first according to the disjunction asserting that either x equals 40 or a equals 40, and analyze the resulting alternatives separately.",
+      "In the first branch, nonemptiness supplies an element b satisfying the defining equations for Sa, so the gcd must equal 43 while simultaneously dividing 40, an impossibility.",
+      "In the second branch, nonemptiness supplies a positive y satisfying the defining equations for Sx, and the central identity relating a gcd, an lcm, and the product reduces those equations to the square relation y plus 3 squared equals 40.",
+      "Positivity and the square relation force y below 4, after which the remaining positive integer possibilities are checked and all are impossible, so each branch derives a contradiction and the desired disjunction follows."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_202": {
+    "plan": [
+      "1. Split powers of a number ending in nine by exponent parity: the even branch establishes residue one, the odd branch establishes residue nine, and the odd-exponent branch applies twice, yielding eighteen modulo ten, hence eight."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_85": {
+    "plan": [
+      "1. No case split opens the argument: establish that every natural number equals the value reconstructed from its base-three digit expansion, using the reconstruction identity as the essential fact.",
+      "2. The resulting branch only needs to evaluate the given four-digit expansion, replacing the digit expansion with the stated list and verifying arithmetically that its value is fifty-three."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "imo_1968_p5_1": {
+    "plan": [
+      "1. Start by using the recurrence at the preceding point and split according to whether the resulting square-root contribution is nonnegative or negative, with the negative branch immediately impossible and the nonnegative branch establishing the lower bound f(x) ≥ one half.",
+      "2. Establish the upper bound f(x) ≤ 1 by observing that the radicand is bounded above by one quarter through the square of f(x−a)−one half, so every value lies between one half and one.",
+      "3. Use these bounds to ensure the radicand f(x)−f(x)² is nonnegative, then apply the recurrence twice and identify the next radicand with the square of f(x)−one half.",
+      "4. The decisive fact is that the square root of this square equals f(x)−one half because the bounds fix its sign, causing two applications of the recurrence to return f(x), hence establishing period 2a with 2a positive."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x": {
+    "plan": [
+      "1. Split according to the sign of x; the hypothesis excludes the nonpositive cases, so the positive branch gives a strictly positive denominator 2x.",
+      "2. Establish that the square of √2 equals 2, then apply the two-term arithmetic-geometric mean inequality to x√2 and 1.",
+      "3. The crucial estimate is 2x√2 ≤ 2x² + 1, which becomes √2 ≤ x + 1/(2x) after division by the positive quantity 2x.",
+      "4. Rewrite the target expression using that lower bound and rearrange the resulting inequality, thereby proving the desired comparison between the two sides."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta": {
+    "plan": [
+      "No case split is needed: the sole branch establishes the polynomial identity by expanding products, collecting like terms, and using distributivity, associativity, and commutativity of complex-number arithmetic."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "algebra_manipexpr_apbeq2cceqiacpbceqm2": {
+    "plan": [
+      "1. The argument opens by separating the distributive rearrangement from the substitution branch: first establish that the two products combine as the sum of the coefficients multiplied by c, then use the hypothesis identifying that sum with twice c.",
+      "2. In the resulting branch, associate the factors to obtain twice the square of c, and then substitute c as the imaginary unit; the decisive fact is that the imaginary unit squared equals negative one."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "induction_divisibility_3div2tooddnp1": {
+    "plan": [
+      "1. Separate the argument into the initial case n equals zero and the successor case, so the base divisibility and its preservation can be handled independently.",
+      "2. In the initial case, directly evaluate the exponent to show that the resulting number equals three, hence is divisible by three.",
+      "3. In the successor case, assume the previous expression is three times some natural number k, and establish that the new exponent is exactly two larger.",
+      "4. The decisive fact is that increasing the exponent by two multiplies the power by four, allowing the new expression to be rearranged as three times the witness 4k minus 1."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "induction_ineq_nsqlefactn": {
+    "plan": [
+      "1. The argument opens by separating the impossible small-value case from the case where n is at least four: the former contradicts the hypothesis, while the latter proceeds with the predecessor n minus one.",
+      "2. In the surviving branch, the lower bound on n ensures that its predecessor is at least three, so that predecessor is strictly smaller than its factorial.",
+      "3. That strict comparison yields the needed weaker estimate that n itself is no larger than the factorial of its predecessor, which becomes useful after multiplication by n.",
+      "4. Finally, the square is viewed as n multiplied by n, the comparison is multiplied by n, and the factorial recurrence identifies n times the predecessor factorial with n factorial; the predecessor-factorial comparison does the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "numbertheory_prmdvsneqnsqmodpeq0": {
+    "plan": [
+      "First, rewrite the modular congruence condition as divisibility by the prime, then split into the two implications: divisibility of n by p must imply divisibility of n squared by p, while the converse must recover divisibility of n from that square condition.",
+      "The forward implication follows from the elementary fact that a divisor of an integer divides every power, whereas the reverse implication is powered by primality, which ensures that p dividing n squared forces p to divide n, together with the passage between integer and natural divisibility."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "imo_1965_p1": {
+    "plan": [
+      "1. Combine the two bounds on the absolute-value expression to deduce the crucial estimate that the cosine of x is at most √2/2.",
+      "2. Split the conclusion into lower and upper bounds, and in the lower-bound case assume that x lies strictly below π/4.",
+      "3. Use cosine’s strict decrease on the relevant nonnegative interval up to π to show that such an x would have cosine greater than cos(π/4)=√2/2, contradicting the crucial estimate.",
+      "4. For the upper-bound case reflect x across 2π, observe that y=2π−x lies strictly between zero and π/4, and use cosine’s periodic symmetry to obtain the same contradiction."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "induction_11div10tonmn1ton": {
+    "plan": [
+      "1. No case split is needed: both parity branches are covered uniformly by the difference-of-powers divisibility theorem, whose essential fact is that each power difference is divisible by the corresponding base difference, here eleven."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "aimeII_2020_p6": {
+    "plan": [
+      "1. Establish a five-term periodic pattern by separating the index parameter into the initial case and the case obtained by advancing one block of five positions.",
+      "2. In the initial case, compute the values at the third, fourth, and fifth positions directly from the recurrence and the two prescribed starting values, obtaining the complete first block.",
+      "3. In the advancing case, assume one block has the five claimed values, then apply the recurrence successively to the next five positions, using the preceding two values each time to reproduce the same block.",
+      "4. The recurrence relation is the essential fact driving the repeated pattern; since 2020 is the fifth position of block 404, its rational numerator and denominator can then be evaluated to give the stated sum."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_551": {
+    "plan": [
+      "No case split is needed: directly compute the division of 1529 by 6, observe that 254 is the quotient and 5 is the remainder, and conclude the stated equality by elementary arithmetic."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_114": {
+    "plan": [
+      "1. The argument opens with the single case forced by the hypothesis, namely a=8, and establishes that the real cube root of 64 is 4 using the inverse relationship between cubing and taking a cube root.",
+      "2. After replacing a by 8 and recognizing that its square is 64, the nested expression reduces through that cube-root identity, while ordinary numerical simplification verifies the remaining factors and yields 4."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_229": {
+    "plan": [
+      "The argument opens by separating the remainder computations: one branch shows the thirtieth power of five leaves remainder one modulo seven, while the other shows the target remainder is one, with direct modular arithmetic doing the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "numbertheory_nckeqnm1ckpnm1ckm1": {
+    "plan": [
+      "Separate the boundary cases where either parameter is zero from the positive case: the boundary branches follow from binomial-coefficient definitions, while the positive branch establishes Pascal’s recurrence, whose commutativity-adjusted form is exactly the desired identity and does the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_640": {
+    "plan": [
+      "1. Split the computation into the four summands’ residues modulo four, establish that their combined remainder is two in the only resulting branch, and let direct integer arithmetic perform the decisive work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_284": {
+    "plan": [
+      "1. Use the standard relationship between a positive number and the length of its base-ten expansion to deduce that a two-digit number is less than one hundred.",
+      "2. Split into all natural numbers from zero through ninety-nine, so every possible value of the unknown is examined explicitly.",
+      "3. In each branch, determine the decimal digits and their sum, then check whether twice that sum equals the candidate number.",
+      "4. The digit equation eliminates every candidate except eighteen, while the digit-length estimate does the essential work by making the finite case analysis possible."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_107": {
+    "plan": [
+      "1. No case split is needed: choose the circle’s center shifts as four and negative three and its radius as five, verify positivity and radius, while completing squares from the hypothesis supplies the essential equality."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_algebra_405": {
+    "plan": [
+      "1. To identify the set, consider an arbitrary natural number and prove that its membership is equivalent to being either one or two.",
+      "2. In the forward direction, positivity together with the quadratic inequality must first show that the number cannot exceed two.",
+      "3. The decisive case split is therefore among zero, one, and two, where each branch verifies or rejects the positivity and inequality conditions directly.",
+      "4. In the reverse direction, check separately that one and two satisfy the defining conditions, then count these two elements to obtain the stated cardinality."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "imo_1992_p1": {
+    "plan": [
+      "1. Introduce the positive integer quotient from the divisibility condition, expand the difference between the original product and the divisor, and use positivity to show that the quotient is at least two.",
+      "2. Establish the decisive size estimate that the expanded remainder is smaller than three times the divisor, thereby forcing the quotient to be either two or three.",
+      "3. Prove that the smallest variable is at most three by showing larger values would make the divisor exceed the expanded remainder, then split into the resulting possibilities for the smallest variable and quotient.",
+      "4. In each surviving branch derive a factorization equation for the two larger variables, bound them using positivity and ordering, and check the finitely many possibilities to obtain exactly the two stated triples."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "algebra_9onxpypzleqsum2onxpy": {
+    "plan": [
+      "1. Split the positivity assumption into the three separate cases that each variable is positive, establishing positivity for every pairwise sum and for the total sum.",
+      "2. Rewrite both sides over the common positive denominator formed by the total sum and the three pairwise sums, so the desired comparison becomes a numerator inequality.",
+      "3. Establish that numerator inequality by combining three nonnegative weighted square differences, with each square measuring the discrepancy between two pairwise sums.",
+      "4. The weighted sum-of-squares identity does the real work, proving the numerator comparison; positivity of the common denominator then preserves the inequality between the original fractions."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "mathd_numbertheory_296": {
+    "plan": [
+      "First separate the least-element claim into membership and minimality: establish that 4096 is positive, is not 1, and is simultaneously the cube of 16 and the fourth power of 8.",
+      "For the minimality branch, take any positive admissible number other than 1, together with its cubic and quartic-root witnesses, and assume temporarily that it lies below 4096.",
+      "Use monotonicity of natural-number powers to show that a cubic witness below this threshold must be smaller than 16 and a quartic witness must be smaller than 8, which is the decisive numerical reduction.",
+      "Finally examine the finitely many possible witness pairs in those ranges; direct evaluation shows that none can satisfy both power equations while producing an admissible number, yielding the required contradiction."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  }
+}

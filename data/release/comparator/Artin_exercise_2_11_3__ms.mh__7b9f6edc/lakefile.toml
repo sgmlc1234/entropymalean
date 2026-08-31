@@ -1,0 +1,15 @@
+name = "eml_comparator_workspace"
+defaultTargets = ["Challenge", "Solution"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+path = "REPO_ROOT/.lake/packages/mathlib"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

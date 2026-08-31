@@ -1,0 +1,660 @@
+{
+  "rows": 45,
+  "reproducible": 45,
+  "rate": 1.0,
+  "platforms": [
+    "macos-aarch64",
+    "linux-x86_64"
+  ],
+  "pins": {
+    "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+    "mathlib_revision": "0fb2045029635862ffb234635a111c80a55e2a87",
+    "package_revisions": {
+      "repl": "f0a88bfca1fa6ac75e2a33d1678a3b67c90fb492",
+      "mathlib": "0fb2045029635862ffb234635a111c80a55e2a87",
+      "plausible": "293af9b2a383eed4d04d66b898d608d0a44b750f",
+      "LeanSearchClient": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "importGraph": "fd70b40073aeca8fa60fe0fb492f189d3b12c0ef",
+      "proofwidgets": "2db6054a44326f8c0230ee0570e2ddb894816511",
+      "aesop": "f0c6e183ea26531e82773feb4b73ab6595ca17a5",
+      "Qq": "1cc7e819b9b9bc1e87c9edcccb62e0269e00a809",
+      "batteries": "48ff08a0e30a15078186548f11981d8988dee0c5",
+      "Cli": "13567aed1ac4f12aea9484178e07e51f8c9f7658"
+    },
+    "manifest_digest": "262dfbd6193e7c04",
+    "lean4export_revision": "12581a6b680d8478175596338eb2d53383a323e3"
+  },
+  "mismatch_kinds": {},
+  "results": [
+    {
+      "name": "common_topology_open_iff",
+      "reproducible": true,
+      "export_digest": "5b7b294c780653522f228fe94807c919fe231660b5ae23bab30b8f31f89e1fa5",
+      "export_bytes": 3338668,
+      "macos_aarch64": {
+        "digest": "5b7b294c780653522f228fe94807c919fe231660b5ae23bab30b8f31f89e1fa5",
+        "bytes": 3338668
+      },
+      "linux_x86_64": {
+        "digest": "5b7b294c780653522f228fe94807c919fe231660b5ae23bab30b8f31f89e1fa5",
+        "bytes": 3338668
+      }
+    },
+    {
+      "name": "isOpenMap_fst_restricted_bounded_union",
+      "reproducible": true,
+      "export_digest": "0eefad8307d99e1e8186cde4821d02c1c1ccb1e9b08f619c5ed380867da326d4",
+      "export_bytes": 6404151,
+      "macos_aarch64": {
+        "digest": "0eefad8307d99e1e8186cde4821d02c1c1ccb1e9b08f619c5ed380867da326d4",
+        "bytes": 6404151
+      },
+      "linux_x86_64": {
+        "digest": "0eefad8307d99e1e8186cde4821d02c1c1ccb1e9b08f619c5ed380867da326d4",
+        "bytes": 6404151
+      }
+    },
+    {
+      "name": "fiberwise_fixed_step_gap",
+      "reproducible": true,
+      "export_digest": "355e900e6cd3ce16fa68cb483d9d7ff4ed8463ede2ca79cad26880082d161169",
+      "export_bytes": 54343793,
+      "macos_aarch64": {
+        "digest": "355e900e6cd3ce16fa68cb483d9d7ff4ed8463ede2ca79cad26880082d161169",
+        "bytes": 54343793
+      },
+      "linux_x86_64": {
+        "digest": "355e900e6cd3ce16fa68cb483d9d7ff4ed8463ede2ca79cad26880082d161169",
+        "bytes": 54343793
+      }
+    },
+    {
+      "name": "compact_neighborhood_avoiding_common_level_locus",
+      "reproducible": true,
+      "export_digest": "2e6b13d6747e74018e9e3f42aa0ef3bcb7d750d380de384e2641a534a31e4eac",
+      "export_bytes": 47642262,
+      "macos_aarch64": {
+        "digest": "2e6b13d6747e74018e9e3f42aa0ef3bcb7d750d380de384e2641a534a31e4eac",
+        "bytes": 47642262
+      },
+      "linux_x86_64": {
+        "digest": "2e6b13d6747e74018e9e3f42aa0ef3bcb7d750d380de384e2641a534a31e4eac",
+        "bytes": 47642262
+      }
+    },
+    {
+      "name": "even_normal_intersection_has_conjugacy_stable_involution",
+      "reproducible": true,
+      "export_digest": "5400095a4b078047fd19aadb8587a995c18d72cebb96bca038c49071f1b707fc",
+      "export_bytes": 40110880,
+      "macos_aarch64": {
+        "digest": "5400095a4b078047fd19aadb8587a995c18d72cebb96bca038c49071f1b707fc",
+        "bytes": 40110880
+      },
+      "linux_x86_64": {
+        "digest": "5400095a4b078047fd19aadb8587a995c18d72cebb96bca038c49071f1b707fc",
+        "bytes": 40110880
+      }
+    },
+    {
+      "name": "exists_central_involution_of_even_card",
+      "reproducible": true,
+      "export_digest": "8f8e7b8f3b67ce09a71a9e7e856e895e44391ace30d9382e78234da2d22092e9",
+      "export_bytes": 34573667,
+      "macos_aarch64": {
+        "digest": "8f8e7b8f3b67ce09a71a9e7e856e895e44391ace30d9382e78234da2d22092e9",
+        "bytes": 34573667
+      },
+      "linux_x86_64": {
+        "digest": "8f8e7b8f3b67ce09a71a9e7e856e895e44391ace30d9382e78234da2d22092e9",
+        "bytes": 34573667
+      }
+    },
+    {
+      "name": "finite_even_normal_subgroup_in_normalCore",
+      "reproducible": true,
+      "export_digest": "e57b1e1a7d28f88c36e10ee63120bf970e56b27c8db51cece1cb528e0f33ff4b",
+      "export_bytes": 34897284,
+      "macos_aarch64": {
+        "digest": "e57b1e1a7d28f88c36e10ee63120bf970e56b27c8db51cece1cb528e0f33ff4b",
+        "bytes": 34897284
+      },
+      "linux_x86_64": {
+        "digest": "e57b1e1a7d28f88c36e10ee63120bf970e56b27c8db51cece1cb528e0f33ff4b",
+        "bytes": 34897284
+      }
+    },
+    {
+      "name": "order_eleven_totient_bridge",
+      "reproducible": true,
+      "export_digest": "923af7ae8405c3970562864649a8b256dafdb6d375ee5ebf8121965d207f144e",
+      "export_bytes": 34398304,
+      "macos_aarch64": {
+        "digest": "923af7ae8405c3970562864649a8b256dafdb6d375ee5ebf8121965d207f144e",
+        "bytes": 34398304
+      },
+      "linux_x86_64": {
+        "digest": "923af7ae8405c3970562864649a8b256dafdb6d375ee5ebf8121965d207f144e",
+        "bytes": 34398304
+      }
+    },
+    {
+      "name": "conjugate_generator_kernel_criterion",
+      "reproducible": true,
+      "export_digest": "de99f24c18f12ba2686913f4d10d0fc6f1d0c9e62fe3025bf7171d04bcd40463",
+      "export_bytes": 4565046,
+      "macos_aarch64": {
+        "digest": "de99f24c18f12ba2686913f4d10d0fc6f1d0c9e62fe3025bf7171d04bcd40463",
+        "bytes": 4565046
+      },
+      "linux_x86_64": {
+        "digest": "de99f24c18f12ba2686913f4d10d0fc6f1d0c9e62fe3025bf7171d04bcd40463",
+        "bytes": 4565046
+      }
+    },
+    {
+      "name": "finite_iterated_neg_sum_transport",
+      "reproducible": true,
+      "export_digest": "a5abceab86647287c5f5d85854d9b55e99953ec5e2504e16cad21035fce1b4cb",
+      "export_bytes": 6404125,
+      "macos_aarch64": {
+        "digest": "a5abceab86647287c5f5d85854d9b55e99953ec5e2504e16cad21035fce1b4cb",
+        "bytes": 6404125
+      },
+      "linux_x86_64": {
+        "digest": "a5abceab86647287c5f5d85854d9b55e99953ec5e2504e16cad21035fce1b4cb",
+        "bytes": 6404125
+      }
+    },
+    {
+      "name": "invariant_preimage_iInf_submodule",
+      "reproducible": true,
+      "export_digest": "b0ce24622d93c00d2090e50c5d7c7b80fc924c43dc3d533dc34783e57c688061",
+      "export_bytes": 5654597,
+      "macos_aarch64": {
+        "digest": "b0ce24622d93c00d2090e50c5d7c7b80fc924c43dc3d533dc34783e57c688061",
+        "bytes": 5654597
+      },
+      "linux_x86_64": {
+        "digest": "b0ce24622d93c00d2090e50c5d7c7b80fc924c43dc3d533dc34783e57c688061",
+        "bytes": 5654597
+      }
+    },
+    {
+      "name": "finite_invariant_intersection_common_submodule",
+      "reproducible": true,
+      "export_digest": "f73e2d8bda8be4e8aa18fcaea6d45b79c26ec13286307b039dad6e4fe9a4dbef",
+      "export_bytes": 29796800,
+      "macos_aarch64": {
+        "digest": "f73e2d8bda8be4e8aa18fcaea6d45b79c26ec13286307b039dad6e4fe9a4dbef",
+        "bytes": 29796800
+      },
+      "linux_x86_64": {
+        "digest": "f73e2d8bda8be4e8aa18fcaea6d45b79c26ec13286307b039dad6e4fe9a4dbef",
+        "bytes": 29796800
+      }
+    },
+    {
+      "name": "normalClosure_union_eq_sup",
+      "reproducible": true,
+      "export_digest": "2a59b0dfeb5a994ba78b6af9e2f70cc624d1dac1ec2531ed314222dcd9a27949",
+      "export_bytes": 6861078,
+      "macos_aarch64": {
+        "digest": "2a59b0dfeb5a994ba78b6af9e2f70cc624d1dac1ec2531ed314222dcd9a27949",
+        "bytes": 6861078
+      },
+      "linux_x86_64": {
+        "digest": "2a59b0dfeb5a994ba78b6af9e2f70cc624d1dac1ec2531ed314222dcd9a27949",
+        "bytes": 6861078
+      }
+    },
+    {
+      "name": "subset_iInf_iff_forall_normalClosure_subset",
+      "reproducible": true,
+      "export_digest": "e46c49b3c24a9603c34fe245fa50c827b3d1ba3bc83d65e4d905acc8e7758993",
+      "export_bytes": 4544683,
+      "macos_aarch64": {
+        "digest": "e46c49b3c24a9603c34fe245fa50c827b3d1ba3bc83d65e4d905acc8e7758993",
+        "bytes": 4544683
+      },
+      "linux_x86_64": {
+        "digest": "e46c49b3c24a9603c34fe245fa50c827b3d1ba3bc83d65e4d905acc8e7758993",
+        "bytes": 4544683
+      }
+    },
+    {
+      "name": "finite_field_prod_units_root_characterization",
+      "reproducible": true,
+      "export_digest": "45fc98bf9482cb48b303c89b10db300b892d039abd3c190adf8b59a2edff979e",
+      "export_bytes": 21147499,
+      "macos_aarch64": {
+        "digest": "45fc98bf9482cb48b303c89b10db300b892d039abd3c190adf8b59a2edff979e",
+        "bytes": 21147499
+      },
+      "linux_x86_64": {
+        "digest": "45fc98bf9482cb48b303c89b10db300b892d039abd3c190adf8b59a2edff979e",
+        "bytes": 21147499
+      }
+    },
+    {
+      "name": "even_finite_group_has_fixed_point_free_left_involution",
+      "reproducible": true,
+      "export_digest": "945b8398aab0258f4e283eab17c3a9590188e109c04191a4ed351eebe5b12c67",
+      "export_bytes": 34457390,
+      "macos_aarch64": {
+        "digest": "945b8398aab0258f4e283eab17c3a9590188e109c04191a4ed351eebe5b12c67",
+        "bytes": 34457390
+      },
+      "linux_x86_64": {
+        "digest": "945b8398aab0258f4e283eab17c3a9590188e109c04191a4ed351eebe5b12c67",
+        "bytes": 34457390
+      }
+    },
+    {
+      "name": "exists_subgroup_card_two_of_card_dvd_two",
+      "reproducible": true,
+      "export_digest": "d29c83568c54472d5e022a69e9f8c683f37d508476c5d8fc78d84fe6cc26eca3",
+      "export_bytes": 39460362,
+      "macos_aarch64": {
+        "digest": "d29c83568c54472d5e022a69e9f8c683f37d508476c5d8fc78d84fe6cc26eca3",
+        "bytes": 39460362
+      },
+      "linux_x86_64": {
+        "digest": "d29c83568c54472d5e022a69e9f8c683f37d508476c5d8fc78d84fe6cc26eca3",
+        "bytes": 39460362
+      }
+    },
+    {
+      "name": "subgroup_contains_adjacent_power_words",
+      "reproducible": true,
+      "export_digest": "7c137f15064a1d327ebef4e9eb1f44fefa29f9bf28f634c5e9a4c79e1a31d764",
+      "export_bytes": 3580220,
+      "macos_aarch64": {
+        "digest": "7c137f15064a1d327ebef4e9eb1f44fefa29f9bf28f634c5e9a4c79e1a31d764",
+        "bytes": 3580220
+      },
+      "linux_x86_64": {
+        "digest": "7c137f15064a1d327ebef4e9eb1f44fefa29f9bf28f634c5e9a4c79e1a31d764",
+        "bytes": 3580220
+      }
+    },
+    {
+      "name": "unit_power_characterization_in_subgroup",
+      "reproducible": true,
+      "export_digest": "8469d3c3dc7055fbc8196a21097123bf2bba20e4b7b0985db11115e41fae03cb",
+      "export_bytes": 5473013,
+      "macos_aarch64": {
+        "digest": "8469d3c3dc7055fbc8196a21097123bf2bba20e4b7b0985db11115e41fae03cb",
+        "bytes": 5473013
+      },
+      "linux_x86_64": {
+        "digest": "8469d3c3dc7055fbc8196a21097123bf2bba20e4b7b0985db11115e41fae03cb",
+        "bytes": 5473013
+      }
+    },
+    {
+      "name": "cyclic_subgroup_of_prime_order_in_subgroup",
+      "reproducible": true,
+      "export_digest": "338820d589480687ac195798d11478a8cc75b48a8791f04b6e2da778b28d1825",
+      "export_bytes": 32006177,
+      "macos_aarch64": {
+        "digest": "338820d589480687ac195798d11478a8cc75b48a8791f04b6e2da778b28d1825",
+        "bytes": 32006177
+      },
+      "linux_x86_64": {
+        "digest": "338820d589480687ac195798d11478a8cc75b48a8791f04b6e2da778b28d1825",
+        "bytes": 32006177
+      }
+    },
+    {
+      "name": "Artin_exercise_6_8_1_containment",
+      "reproducible": true,
+      "export_digest": "549fb3ab8919100b11595aa85684f00215d17fa3f3974c4da788ac96b3a1e497",
+      "export_bytes": 1041776,
+      "macos_aarch64": {
+        "digest": "549fb3ab8919100b11595aa85684f00215d17fa3f3974c4da788ac96b3a1e497",
+        "bytes": 1041776
+      },
+      "linux_x86_64": {
+        "digest": "549fb3ab8919100b11595aa85684f00215d17fa3f3974c4da788ac96b3a1e497",
+        "bytes": 1041776
+      }
+    },
+    {
+      "name": "normalCore_greatest_normal_subgroup_order",
+      "reproducible": true,
+      "export_digest": "ff11f2deef93e4b29061daba5b61ae6a65b7c2c560f7cf81a9c962cb84c4975c",
+      "export_bytes": 1326733,
+      "macos_aarch64": {
+        "digest": "ff11f2deef93e4b29061daba5b61ae6a65b7c2c560f7cf81a9c962cb84c4975c",
+        "bytes": 1326733
+      },
+      "linux_x86_64": {
+        "digest": "ff11f2deef93e4b29061daba5b61ae6a65b7c2c560f7cf81a9c962cb84c4975c",
+        "bytes": 1326733
+      }
+    },
+    {
+      "name": "conjugate_zpow_exists_exp",
+      "reproducible": true,
+      "export_digest": "554f0336be646bfc11f6c479a5690068cfac9d9708ae535d9c83c79bb4e86ec1",
+      "export_bytes": 1552187,
+      "macos_aarch64": {
+        "digest": "554f0336be646bfc11f6c479a5690068cfac9d9708ae535d9c83c79bb4e86ec1",
+        "bytes": 1552187
+      },
+      "linux_x86_64": {
+        "digest": "554f0336be646bfc11f6c479a5690068cfac9d9708ae535d9c83c79bb4e86ec1",
+        "bytes": 1552187
+      }
+    },
+    {
+      "name": "cyclic_subgroup_card_prime_units",
+      "reproducible": true,
+      "export_digest": "d65f8adf16d213ce35f538b95a181584245740b7968a49246cc912afb3f577cf",
+      "export_bytes": 44797811,
+      "macos_aarch64": {
+        "digest": "d65f8adf16d213ce35f538b95a181584245740b7968a49246cc912afb3f577cf",
+        "bytes": 44797811
+      },
+      "linux_x86_64": {
+        "digest": "d65f8adf16d213ce35f538b95a181584245740b7968a49246cc912afb3f577cf",
+        "bytes": 44797811
+      }
+    },
+    {
+      "name": "coupled_difference_isLeast",
+      "reproducible": true,
+      "export_digest": "e2e44ce8405471458d7397c92c6c92e1c11de0e91660614e51b50271cdb82589",
+      "export_bytes": 24991347,
+      "macos_aarch64": {
+        "digest": "e2e44ce8405471458d7397c92c6c92e1c11de0e91660614e51b50271cdb82589",
+        "bytes": 24991347
+      },
+      "linux_x86_64": {
+        "digest": "e2e44ce8405471458d7397c92c6c92e1c11de0e91660614e51b50271cdb82589",
+        "bytes": 24991347
+      }
+    },
+    {
+      "name": "quadratic_reciprocal_specialization",
+      "reproducible": true,
+      "export_digest": "b82fb69c0b6f7e9d59589615e17fa1abd0351a8ac23e92fc3697546546a48f0a",
+      "export_bytes": 53128216,
+      "macos_aarch64": {
+        "digest": "b82fb69c0b6f7e9d59589615e17fa1abd0351a8ac23e92fc3697546546a48f0a",
+        "bytes": 53128216
+      },
+      "linux_x86_64": {
+        "digest": "b82fb69c0b6f7e9d59589615e17fa1abd0351a8ac23e92fc3697546546a48f0a",
+        "bytes": 53128216
+      }
+    },
+    {
+      "name": "weighted_energy_translated_square_min_unique",
+      "reproducible": true,
+      "export_digest": "786d52dc512e176a43f95accd93ab76dcb5e82bf04a56fe94db807b882b1d244",
+      "export_bytes": 53666729,
+      "macos_aarch64": {
+        "digest": "786d52dc512e176a43f95accd93ab76dcb5e82bf04a56fe94db807b882b1d244",
+        "bytes": 53666729
+      },
+      "linux_x86_64": {
+        "digest": "786d52dc512e176a43f95accd93ab76dcb5e82bf04a56fe94db807b882b1d244",
+        "bytes": 53666729
+      }
+    },
+    {
+      "name": "weighted_binomial_eq_scaled_complementary_iff",
+      "reproducible": true,
+      "export_digest": "8b4b47cd7560942e309ca4011a166c0ac9a87baae94344377db5d0ff9a8a7050",
+      "export_bytes": 20214896,
+      "macos_aarch64": {
+        "digest": "8b4b47cd7560942e309ca4011a166c0ac9a87baae94344377db5d0ff9a8a7050",
+        "bytes": 20214896
+      },
+      "linux_x86_64": {
+        "digest": "8b4b47cd7560942e309ca4011a166c0ac9a87baae94344377db5d0ff9a8a7050",
+        "bytes": 20214896
+      }
+    },
+    {
+      "name": "bounded_rational_recurrence_transfer",
+      "reproducible": true,
+      "export_digest": "bfe4240532404211d0cf2533aadd5fe06c312a2751f27fb424baf28ea41e103c",
+      "export_bytes": 10523542,
+      "macos_aarch64": {
+        "digest": "bfe4240532404211d0cf2533aadd5fe06c312a2751f27fb424baf28ea41e103c",
+        "bytes": 10523542
+      },
+      "linux_x86_64": {
+        "digest": "bfe4240532404211d0cf2533aadd5fe06c312a2751f27fb424baf28ea41e103c",
+        "bytes": 10523542
+      }
+    },
+    {
+      "name": "parameterized_radical_root_product",
+      "reproducible": true,
+      "export_digest": "a22ef70aa296e1b7d069bc691d669b73fba839950e17c8b238dfe79d4ccc99f3",
+      "export_bytes": 53314972,
+      "macos_aarch64": {
+        "digest": "a22ef70aa296e1b7d069bc691d669b73fba839950e17c8b238dfe79d4ccc99f3",
+        "bytes": 53314972
+      },
+      "linux_x86_64": {
+        "digest": "a22ef70aa296e1b7d069bc691d669b73fba839950e17c8b238dfe79d4ccc99f3",
+        "bytes": 53314972
+      }
+    },
+    {
+      "name": "bilinear_iff_square_eq_neg_one",
+      "reproducible": true,
+      "export_digest": "9b283e375b8e0b5763f5e252fdc9ddfe12721e84cde393abe80515157159268a",
+      "export_bytes": 45156940,
+      "macos_aarch64": {
+        "digest": "9b283e375b8e0b5763f5e252fdc9ddfe12721e84cde393abe80515157159268a",
+        "bytes": 45156940
+      },
+      "linux_x86_64": {
+        "digest": "9b283e375b8e0b5763f5e252fdc9ddfe12721e84cde393abe80515157159268a",
+        "bytes": 45156940
+      }
+    },
+    {
+      "name": "arbitrary_parameter_shifted_roots",
+      "reproducible": true,
+      "export_digest": "878fa2300438631957f2ee60edae2e744fbaee7c21beb03e207de0d90625678a",
+      "export_bytes": 47567705,
+      "macos_aarch64": {
+        "digest": "878fa2300438631957f2ee60edae2e744fbaee7c21beb03e207de0d90625678a",
+        "bytes": 47567705
+      },
+      "linux_x86_64": {
+        "digest": "878fa2300438631957f2ee60edae2e744fbaee7c21beb03e207de0d90625678a",
+        "bytes": 47567705
+      }
+    },
+    {
+      "name": "aime_1984_p15_x_squared_scaled",
+      "reproducible": true,
+      "export_digest": "724481e7969c06c5e0bbcdcf60fbe85ac17d48dd524382352c2c9fca8db0abd6",
+      "export_bytes": 49847701,
+      "macos_aarch64": {
+        "digest": "724481e7969c06c5e0bbcdcf60fbe85ac17d48dd524382352c2c9fca8db0abd6",
+        "bytes": 49847701
+      },
+      "linux_x86_64": {
+        "digest": "724481e7969c06c5e0bbcdcf60fbe85ac17d48dd524382352c2c9fca8db0abd6",
+        "bytes": 49847701
+      }
+    },
+    {
+      "name": "cubic_affine_evaluation_injective",
+      "reproducible": true,
+      "export_digest": "11aa2ff7d6ab7acf650f753b85771e23416b3de43c7c04a9a04ea599f2d2d1f7",
+      "export_bytes": 47954307,
+      "macos_aarch64": {
+        "digest": "11aa2ff7d6ab7acf650f753b85771e23416b3de43c7c04a9a04ea599f2d2d1f7",
+        "bytes": 47954307
+      },
+      "linux_x86_64": {
+        "digest": "11aa2ff7d6ab7acf650f753b85771e23416b3de43c7c04a9a04ea599f2d2d1f7",
+        "bytes": 47954307
+      }
+    },
+    {
+      "name": "aime_1983_p9_mutation",
+      "reproducible": true,
+      "export_digest": "a320f7ce69e44c6227ca94de7c8e71bffd68fa9982a6541f4bdb1e80d303a604",
+      "export_bytes": 68532134,
+      "macos_aarch64": {
+        "digest": "a320f7ce69e44c6227ca94de7c8e71bffd68fa9982a6541f4bdb1e80d303a604",
+        "bytes": 68532134
+      },
+      "linux_x86_64": {
+        "digest": "a320f7ce69e44c6227ca94de7c8e71bffd68fa9982a6541f4bdb1e80d303a604",
+        "bytes": 68532134
+      }
+    },
+    {
+      "name": "aime_1983_p9_mutation",
+      "reproducible": true,
+      "export_digest": "23cdf0d6fbed967ac326ae6eaf3c879d429b446d1e7889ae9d300f24243d5683",
+      "export_bytes": 69857157,
+      "macos_aarch64": {
+        "digest": "23cdf0d6fbed967ac326ae6eaf3c879d429b446d1e7889ae9d300f24243d5683",
+        "bytes": 69857157
+      },
+      "linux_x86_64": {
+        "digest": "23cdf0d6fbed967ac326ae6eaf3c879d429b446d1e7889ae9d300f24243d5683",
+        "bytes": 69857157
+      }
+    },
+    {
+      "name": "aime_1984_p15_x_two_roots",
+      "reproducible": true,
+      "export_digest": "6514c738f7c82e1e8d6b03849c6b125283136bcaae78631cde9c0bfecabb92bd",
+      "export_bytes": 50123532,
+      "macos_aarch64": {
+        "digest": "6514c738f7c82e1e8d6b03849c6b125283136bcaae78631cde9c0bfecabb92bd",
+        "bytes": 50123532
+      },
+      "linux_x86_64": {
+        "digest": "6514c738f7c82e1e8d6b03849c6b125283136bcaae78631cde9c0bfecabb92bd",
+        "bytes": 50123532
+      }
+    },
+    {
+      "name": "bounded_subtractive_prime_balance_integer_roots",
+      "reproducible": true,
+      "export_digest": "d8b1b8b72ad1989657050a63a880c10bfba0853f812af1b3e0e2e351ac67445b",
+      "export_bytes": 47605945,
+      "macos_aarch64": {
+        "digest": "d8b1b8b72ad1989657050a63a880c10bfba0853f812af1b3e0e2e351ac67445b",
+        "bytes": 47605945
+      },
+      "linux_x86_64": {
+        "digest": "d8b1b8b72ad1989657050a63a880c10bfba0853f812af1b3e0e2e351ac67445b",
+        "bytes": 47605945
+      }
+    },
+    {
+      "name": "aime_1984_p15_squared_tuple",
+      "reproducible": true,
+      "export_digest": "0e6ac54ab43614688fdcc46c90d4dfb72668b1e244a8e919aafe6b7402b4916b",
+      "export_bytes": 50412743,
+      "macos_aarch64": {
+        "digest": "0e6ac54ab43614688fdcc46c90d4dfb72668b1e244a8e919aafe6b7402b4916b",
+        "bytes": 50412743
+      },
+      "linux_x86_64": {
+        "digest": "0e6ac54ab43614688fdcc46c90d4dfb72668b1e244a8e919aafe6b7402b4916b",
+        "bytes": 50412743
+      }
+    },
+    {
+      "name": "bounded_subtractive_prime_balance_unique_complement",
+      "reproducible": true,
+      "export_digest": "c83e533c8af325e6a46abab420bfc94d3ac1f2f2039e6f3cc0dbc28244a84a62",
+      "export_bytes": 47500277,
+      "macos_aarch64": {
+        "digest": "c83e533c8af325e6a46abab420bfc94d3ac1f2f2039e6f3cc0dbc28244a84a62",
+        "bytes": 47500277
+      },
+      "linux_x86_64": {
+        "digest": "c83e533c8af325e6a46abab420bfc94d3ac1f2f2039e6f3cc0dbc28244a84a62",
+        "bytes": 47500277
+      }
+    },
+    {
+      "name": "mathd_algebra_101_completed_square",
+      "reproducible": true,
+      "export_digest": "8af7e4e967a7c282fecb830f1d2c4eec510688cd63684938570189c4b592b1ae",
+      "export_bytes": 52665622,
+      "macos_aarch64": {
+        "digest": "8af7e4e967a7c282fecb830f1d2c4eec510688cd63684938570189c4b592b1ae",
+        "bytes": 52665622
+      },
+      "linux_x86_64": {
+        "digest": "8af7e4e967a7c282fecb830f1d2c4eec510688cd63684938570189c4b592b1ae",
+        "bytes": 52665622
+      }
+    },
+    {
+      "name": "mathd_algebra_313_affine",
+      "reproducible": true,
+      "export_digest": "829f9bafc84bbd95d31b1b815e2cf286a660efeee6d35ca9a4653af337872c9e",
+      "export_bytes": 49831600,
+      "macos_aarch64": {
+        "digest": "829f9bafc84bbd95d31b1b815e2cf286a660efeee6d35ca9a4653af337872c9e",
+        "bytes": 49831600
+      },
+      "linux_x86_64": {
+        "digest": "829f9bafc84bbd95d31b1b815e2cf286a660efeee6d35ca9a4653af337872c9e",
+        "bytes": 49831600
+      }
+    },
+    {
+      "name": "bounded_prime_product_additive_balance_characterization",
+      "reproducible": true,
+      "export_digest": "1e27be4c3dc489e1428013738856f4e6a84d03e8b7a61f81dd7116f09981504a",
+      "export_bytes": 47148630,
+      "macos_aarch64": {
+        "digest": "1e27be4c3dc489e1428013738856f4e6a84d03e8b7a61f81dd7116f09981504a",
+        "bytes": 47148630
+      },
+      "linux_x86_64": {
+        "digest": "1e27be4c3dc489e1428013738856f4e6a84d03e8b7a61f81dd7116f09981504a",
+        "bytes": 47148630
+      }
+    },
+    {
+      "name": "periodic_natural_multiple_equivalence",
+      "reproducible": true,
+      "export_digest": "53a499ce9e3fd4dc30ba58a2bb8b8eaa71aee761ec6e75fff47842e0c5a61973",
+      "export_bytes": 16322028,
+      "macos_aarch64": {
+        "digest": "53a499ce9e3fd4dc30ba58a2bb8b8eaa71aee761ec6e75fff47842e0c5a61973",
+        "bytes": 16322028
+      },
+      "linux_x86_64": {
+        "digest": "53a499ce9e3fd4dc30ba58a2bb8b8eaa71aee761ec6e75fff47842e0c5a61973",
+        "bytes": 16322028
+      }
+    },
+    {
+      "name": "aime_1984_p15_x_squared_value",
+      "reproducible": true,
+      "export_digest": "6818493612ebca28f2bc928bb8ce3823a3279b36452d25ebc0c61920318d4dd9",
+      "export_bytes": 49617811,
+      "macos_aarch64": {
+        "digest": "6818493612ebca28f2bc928bb8ce3823a3279b36452d25ebc0c61920318d4dd9",
+        "bytes": 49617811
+      },
+      "linux_x86_64": {
+        "digest": "6818493612ebca28f2bc928bb8ce3823a3279b36452d25ebc0c61920318d4dd9",
+        "bytes": 49617811
+      }
+    }
+  ]
+}

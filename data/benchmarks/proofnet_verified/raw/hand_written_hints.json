@@ -1,0 +1,141 @@
+{
+  "Axler_exercise_1_3": {
+    "author": "claude",
+    "outline": [
+      "Negation in an abelian group is an involution, and that is the whole content — the module and field structure play no role."
+    ]
+  },
+  "Dummit_Foote_exercise_8_3_4": {
+    "author": "claude",
+    "outline": [
+      "Zero is a sum of two squares trivially, so set that case aside and assume the integer is nonzero.",
+      "A sum of two rational squares is nonnegative, so the integer is a nonnegative integer expressible as a sum of two rational squares.",
+      "The classification of such integers by their prime factorisation is insensitive to whether the squares are rational or integral: primes congruent to three modulo four must occur to even exponent either way, and that condition is exactly what makes an integer representation exist."
+    ]
+  },
+  "Dummit_Foote_exercise_9_4_2b": {
+    "author": "claude",
+    "outline": [
+      "The coefficients suggest Eisenstein's criterion; the prime to test is three, since it divides every coefficient except the leading one.",
+      "Check the three conditions in turn: three divides each lower coefficient, three does not divide the leading coefficient, and nine does not divide the constant term.",
+      "Eisenstein then gives irreducibility over the rationals, and primitivity carries it back to the integers."
+    ]
+  },
+  "Munkres_exercise_16_4": {
+    "author": "claude",
+    "outline": [
+      "The claim is a conjunction, so each projection is treated separately.",
+      "Rewriting each map as the standard coordinate projection reduces both halves to the fact that projections out of a product are open — a basic open box maps onto one of its factors."
+    ]
+  },
+  "Dummit_Foote_exercise_3_4_4": {
+    "author": "claude",
+    "outline": [
+      "Induct on the order of the group, strengthening the hypothesis so that every smaller abelian group is available.",
+      "For the step, pick a prime dividing the target divisor; Cauchy's theorem supplies a subgroup of that prime order, which is normal because the group is abelian.",
+      "The quotient by it is smaller and still abelian, and the remaining cofactor divides its order, so the inductive hypothesis gives a subgroup of that order there.",
+      "Pulling that subgroup back along the quotient map gives one whose order is the prime times the cofactor — the target."
+    ]
+  },
+  "Herstein_exercise_2_5_31": {
+    "author": "claude",
+    "outline": [
+      "Lagrange's theorem turns the given orders into an index, and the coprimality hypothesis transfers to that index.",
+      "The subgroup's order is a pure power of the prime, so it is a Sylow subgroup for that prime.",
+      "In an abelian group every subgroup is normal, and a normal Sylow subgroup is the unique one for its prime — uniqueness is what makes it characteristic, since an automorphism must send it to a Sylow subgroup for the same prime."
+    ]
+  },
+  "Herstein_exercise_2_11_6": {
+    "author": "claude",
+    "outline": [
+      "Take an arbitrary Sylow subgroup for the same prime and aim to show it coincides with the normal one.",
+      "Normality gives a quotient map; the image of the arbitrary subgroup under it is a p-subgroup of the quotient, and the preimage of that image is a p-subgroup containing the normal one.",
+      "Maximality among p-subgroups forces that preimage to be the normal subgroup itself, which contains the arbitrary one — and maximality of the latter upgrades the inclusion to equality."
+    ]
+  },
+  "Munkres_exercise_29_10": {
+    "author": "claude",
+    "outline": [
+      "Local compactness supplies a compact neighbourhood of the point; the work is to shrink it inside the given neighbourhood while keeping its closure compact.",
+      "The part of that compact set lying outside the given neighbourhood is compact and misses the point, so Hausdorffness separates the point from each of its members by disjoint open sets.",
+      "Compactness reduces that separation to finitely many pairs; intersecting the finitely many open sets around the point, and cutting down by the given neighbourhood, produces the candidate.",
+      "Its closure is a closed subset of a compact set, hence compact, and the separation keeps it inside the given neighbourhood."
+    ]
+  },
+  "Munkres_exercise_30_13": {
+    "author": "claude",
+    "outline": [
+      "Density means every nonempty open set meets the countable dense subset, so each nonempty member of the disjoint collection contains at least one of its points.",
+      "Choosing one such point per member defines a map into the countable set, and disjointness makes that map injective.",
+      "An injection into a countable set makes the nonempty members countable; adding the empty set, if present, keeps it so."
+    ]
+  },
+  "Munkres_exercise_23_2": {
+    "author": "claude",
+    "outline": [
+      "Consecutive members overlap, so any two of them are linked by a finite chain of overlaps.",
+      "A union of connected sets that pairwise share a point through such a chain is connected — the chain propagates connectedness from any member to any other.",
+      "Applying that to every pair of indices gives connectedness of the whole union."
+    ]
+  },
+  "Axler_exercise_1_8": {
+    "author": "claude",
+    "outline": [
+      "An arbitrary intersection of subspaces contains zero and is closed under addition and scaling, because each member is.",
+      "That is exactly the greatest lower bound of the family in the lattice of subspaces, so the set-theoretic intersection and that infimum have the same elements."
+    ]
+  },
+  "Rudin_exercise_2_28": {
+    "author": "claude",
+    "outline": [
+      "In a separable complete metric space, a closed set splits into a perfect part and a countable remainder — this is the Cantor–Bendixson decomposition.",
+      "The statement asks for the perfect part first, so the only remaining work is to present the decomposition in that order."
+    ]
+  },
+  "Artin_exercise_13_6_10": {
+    "author": "claude",
+    "outline": [
+      "The nonzero elements of a finite field form a cyclic group, in which every element is paired with its inverse except those equal to their own inverse.",
+      "Only one and minus one are self-inverse, so all other factors cancel in pairs and the product is minus one — the field-theoretic form of Wilson's theorem."
+    ]
+  },
+  "Dummit_Foote_exercise_4_5_14": {
+    "author": "claude",
+    "outline": [
+      "Three hundred and twelve factors as eight times three times thirteen, so the count of Sylow subgroups for thirteen must divide twenty-four and be one more than a multiple of thirteen.",
+      "The only such number is one, so there is exactly one Sylow thirteen-subgroup.",
+      "A unique Sylow subgroup is normal, since conjugation permutes the Sylow subgroups for a given prime."
+    ]
+  },
+  "Axler_exercise_5_12": {
+    "author": "claude",
+    "outline": [
+      "Every vector has some eigenvalue attached to it; the claim is that a single scalar works for all of them at once.",
+      "If the space is trivial, any scalar does. Otherwise fix a nonzero vector and let its eigenvalue be the candidate.",
+      "For any other vector, compare it against that fixed one: if the two are dependent they share the eigenvalue outright, and if independent their sum is also an eigenvector, which forces all three eigenvalues to agree."
+    ]
+  },
+  "Artin_exercise_2_11_3": {
+    "author": "claude",
+    "outline": [
+      "Even order means two divides the order of the group.",
+      "Cauchy's theorem says a prime dividing the order of a finite group is realised as the order of some element, and two is prime — that element is the one required."
+    ]
+  },
+  "Dummit_Foote_exercise_1_1_18": {
+    "author": "claude",
+    "outline": [
+      "The target is a conjunction of two equivalences, so four implications in all; each is a rearrangement of the same group identity.",
+      "For the first, multiplying the commuting relation on the left by the inverse of one element moves it across, and multiplying back recovers it.",
+      "For the second, the conjugate equals the original exactly when their quotient is the identity, which is what the third expression states."
+    ]
+  },
+  "Dummit_Foote_exercise_2_4_16b": {
+    "author": "claude",
+    "outline": [
+      "Maximality is two claims: the rotation subgroup is proper, and nothing sits strictly between it and the whole group.",
+      "It is proper because a reflection is not a rotation.",
+      "For the second, a subgroup strictly containing it must contain some reflection; a reflection together with all rotations generates the whole dihedral group, since every reflection is a rotation composed with that one."
+    ]
+  }
+}

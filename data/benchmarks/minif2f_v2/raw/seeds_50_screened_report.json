@@ -1,0 +1,10 @@
+{
+  "input": "data/benchmarks/minif2f_v2/seeds_50.csv",
+  "seeds": 50,
+  "vacuous": [
+    "mathd_algebra_275"
+  ],
+  "vacuous_count": 1,
+  "kept": 49,
+  "rate": 0.02
+}

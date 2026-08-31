@@ -1,0 +1,30 @@
+{
+  "input": "data/benchmarks/minif2f_v2/seeds_50.csv",
+  "seeds": 50,
+  "proved": 41,
+  "rate": 0.82,
+  "model": "gpt-5.6-luna",
+  "proof_k": 4,
+  "proof_turns": 6,
+  "gen0_summary": {
+    "total_seed_count": 45,
+    "missing_proof_body_count": 45,
+    "target_seed_count": 45,
+    "worker_count_requested": 5,
+    "worker_count_effective": 5,
+    "worker_count_source": "cli_or_default",
+    "completed_count": 36,
+    "failed_count": 9
+  },
+  "unproved": [
+    "amc12b_2021_p13",
+    "amc12_2000_p1",
+    "amc12b_2021_p21",
+    "mathd_numbertheory_200",
+    "mathd_numbertheory_543",
+    "imo_1978_p5",
+    "imo_1977_p5",
+    "imo_1992_p1",
+    "algebra_9onxpypzleqsum2onxpy"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/retry_11.csv",
+  "seeds": 11,
+  "proved": 4,
+  "rate": 0.364,
+  "model": "gpt-5.6-luna",
+  "proof_k": 8,
+  "proof_turns": 10,
+  "gen0_summary": {
+    "total_seed_count": 11,
+    "missing_proof_body_count": 11,
+    "target_seed_count": 11,
+    "worker_count_requested": 1,
+    "worker_count_effective": 1,
+    "worker_count_source": "cli_or_default",
+    "completed_count": 4,
+    "failed_count": 7
+  },
+  "failures": [
+    {
+      "seed_id": "amc12b_2021_p13",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "amc12_2000_p1",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "amc12b_2021_p21",
+      "reason": "unknown",
+      "class": "timeout"
+    },
+    {
+      "seed_id": "amc12b_2002_p11",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "mathd_numbertheory_200",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "imo_1978_p5",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    },
+    {
+      "seed_id": "imo_1977_p5",
+      "reason": "unknown",
+      "class": "alignment_failed"
+    }
+  ],
+  "unproved": [
+    "amc12b_2021_p13",
+    "amc12_2000_p1",
+    "amc12b_2021_p21",
+    "amc12b_2002_p11",
+    "mathd_numbertheory_200",
+    "imo_1978_p5",
+    "imo_1977_p5"
+  ]
+}

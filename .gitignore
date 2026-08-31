@@ -1,0 +1,212 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Lean build artifacts
+.lake/
+lake-packages/
+build/
+*.olean
+
+# CaDiCaL / SAT solver outputs
+*.cnf
+*.tmp
+*.log
+sat_output/
+cadical_output/
+
+# Data directories (large files / generated)
+data/processed/
+data/certified/
+data/archive/
+data/3gen_results/
+data/.cache/
+data/cache/
+data/evaluation/campaign_*/
+data/evaluation/treatment_inventory/proofnet_manual_hard_qa/
+data/evaluation/treatment_inventory/proofnet_strict_qa/
+data/phase2_pilot_results.json
+results/
+*.jsonl
+!data/curated/
+!data/curated/planner_crossover_gold_cases.jsonl
+!data/evaluation/treatment_inventory/final_curated/accepted.jsonl
+!data/evaluation/treatment_inventory/final_curated/accepted_final.jsonl
+!release/huggingface/EML-1/accepted.jsonl
+!release/huggingface/EML-1/accepted_final.jsonl
+# The frozen episode-level evidence behind the paper's panel tables.
+# `data/evaluation/exam/` stays ignored (ablations, aborted runs, backups);
+# this is the twenty-six reported cells only, gzipped, with a manifest.
+!data/evaluation/exam_evidence/
+!data/evaluation/exam_evidence/*.jsonl.gz
+!data/evaluation/exam_evidence/MANIFEST.json
+
+*.pkl
+*.pickle
+*.hdf5
+
+# Seed CSVs in data/raw/ are intentionally tracked
+
+# Model outputs
+model_eval_results/
+checkpoints/
+
+# Temporary files
+*.bak
+*.tmp
+*._*
+.tmp/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+*.swp
+.#*
+
+# Project-specific
+references/
+credentials/
+secrets/
+.env.local
+config/local_config.yaml
+docs/2605.13137v2.pdf
+
+
+# Internal notes and review scratchpads that are not part of the public code release.
+ORCHESTRATOR_QA_REPORT.md
+PHASE*_COMPLETION.md
+docs/*.md
+!README.md
+!docs/lean_comparator.md
+!docs/naming_conventions.md
+!docs/eml2_campaign_plan.md
+!docs/axiom_audit_released.md
+!docs/alignment_benchmark_results.md
+!docs/lean_generation_failure_analysis.md
+!docs/semantic_alignment_plan.md
+!docs/eml_proofnet_hygiene_report.md
+data/raw/*_notes.md
+data/raw/*inventory*.md
+data/raw/*recovery*.md
+data/raw/SELECTION_NOTES.md
+data/evaluation/treatment_inventory/final_curated/*.md
+!release/huggingface/EML-1/README.md
+
+# LLM API keys (CRITICAL)
+OPENAI_API_KEY
+ANTHROPIC_API_KEY
+GOOGLE_API_KEY
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# CI/CD
+.github/workflows/*.log
+
+# scratch space for smoke runs and Lean probes
+tmp/
+
+# LaTeX build artifacts. The .tex and .pdf are deliverables; these are not, and
+# they change on every compile.
+*.aux
+*.toc
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Sync-client conflict copies. A file-sync client writes `name 2.py` beside
+# `name.py`, byte-identical, and 2,520 of them accumulated here -- one of them
+# shadowing a script in the faithfulness layer, where a stale copy of a check is
+# worse than no copy.
+#
+# Listed by extension rather than as `* [0-9].*`. That broader pattern also
+# swallowed `docs/Chapter 2.pdf` and `data/run 3.json` -- ordinary names that
+# happen to end in a space and a digit -- and an ignore rule that hides real
+# files is a worse problem than the one it solves.
+* [2-9].py
+* [2-9].sh
+* [2-9].md
+* [2-9].json
+* [2-9].jsonl
+* [2-9].csv
+* [2-9].tex
+* [2-9].lean
+* [2-9].yaml
+* [2-9].toml
+
+# This repository ships the corpus. The source repository ignored `*.jsonl` and
+# `data/benchmarks/`, which meant a clone did not contain the release the guide
+# tells a reader to open -- five of the eight files it named were absent.
+!data/release/*.jsonl
+!data/benchmarks/**

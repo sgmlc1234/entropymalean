@@ -1,0 +1,30 @@
+{
+  "proofnet": {
+    "hf_repo": "HaimingW/proofnet-lean4",
+    "revision": "main",
+    "license": "unspecified",
+    "citation": "azerbayev2023proofnet",
+    "local_dir": "data/benchmarks/proofnet",
+    "data_files": [
+      "data/few_shot_examples-00000-of-00001.parquet",
+      "data/test-00000-of-00001.parquet",
+      "data/valid-00000-of-00001.parquet"
+    ],
+    "splits": {
+      "test": "test",
+      "valid": "valid",
+      "few_shot_examples": "few_shot_examples"
+    },
+    "schema": {
+      "problem_id_col": "name",
+      "statement_col": "informal_prefix",
+      "answer_extraction": {
+        "kind": "lean_theorem_rhs",
+        "column": "formal_statement",
+        "fallback_kind": "literal",
+        "fallback_column": "name"
+      },
+      "quality_filter": null
+    }
+  }
+}

@@ -1,0 +1,337 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split,lean_code,gen0_proof_completed
+mathd_algebra_114,"If $a = 8$, what is the value of $\left(16\sqrt[3]{a^2}\right)^{\frac 13}$? Show that it is 4.",,"theorem mathd_algebra_114 (a : ℝ) (h₀ : a = 8) :
+  (16 * (a ^ 2) ^ ((1 : ℝ) / 3)) ^ ((1 : ℝ) / 3) = 4 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem mathd_algebra_114 (a : ℝ) (h₀ : a = 8) :
+  (16 * (a ^ 2) ^ ((1 : ℝ) / 3)) ^ ((1 : ℝ) / 3) = 4 := by
+  subst a
+  have hc : (64 : ℝ) ^ ((1 : ℝ) / 3) = 4 := by
+    convert Real.pow_rpow_inv_natCast (x := (4 : ℝ)) (n := 3) (by norm_num) (by norm_num) using 1 <;> norm_num
+  rw [show (8 : ℝ) ^ 2 = 64 by norm_num, hc]
+  norm_num [hc]",True
+mathd_algebra_480,"Let \[f(x) = \begin{cases}
+-x^2 - 1 &\text{if }x<0, \\
+2&\text{if }0 \le x< 4, \\
+\sqrt{x}&\text{if }x \ge 4.
+\end{cases}
+\]Find $f(\pi)$. Show that it is 2.",,"theorem mathd_algebra_480 (f : ℝ → ℝ) (h₀ : ∀ x < 0, f x = -x ^ 2 - 1)
+  (h₁ : ∀ x, 0 ≤ x ∧ x < 4 → f x = 2) (h₂ : ∀ x ≥ 4, f x = Real.sqrt x) : f Real.pi = 2 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_algebra_480 (f : ℝ → ℝ) (h₀ : ∀ x < 0, f x = -x ^ 2 - 1)
+  (h₁ : ∀ x, 0 ≤ x ∧ x < 4 → f x = 2) (h₂ : ∀ x ≥ 4, f x = Real.sqrt x) : f Real.pi = 2 := by
+  apply h₁ Real.pi
+  constructor
+  · exact le_of_lt Real.pi_pos
+  · exact Real.pi_lt_four",True
+mathd_algebra_302,Evaluate $\left(\frac{i}{2}\right)^2$. Show that it is -\frac{1}{4}.,,theorem mathd_algebra_302 : (Complex.I / 2) ^ 2 = -(1 / 4) := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_algebra_302 : (Complex.I / 2) ^ 2 = -(1 / 4) := by
+  rw [div_pow, Complex.I_sq]
+  norm_num",True
+mathd_algebra_143,"If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show that it is 8.",,"theorem mathd_algebra_143 (f g : ℝ → ℝ) (h₀ : ∀ x, f x = x + 1) (h₁ : ∀ x, g x = x ^ 2 + 3) :
+  f (g 2) = 8 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_algebra_143 (f g : ℝ → ℝ) (h₀ : ∀ x, f x = x + 1) (h₁ : ∀ x, g x = x ^ 2 + 3) :
+  f (g 2) = 8 := by
+  rw [h₀, h₁]
+  norm_num",True
+mathd_algebra_452,"The first and ninth terms of an arithmetic sequence are $\frac23$ and $\frac45$, respectively. What is the fifth term? Show that it is \frac{11}{15}.",,"theorem mathd_algebra_452 (a : ℕ → ℝ) (h₀ : ∀ n, a (n + 2) - a (n + 1) = a (n + 1) - a n)
+  (h₁ : a 1 = 2 / 3) (h₂ : a 9 = 4 / 5) : a 5 = 11 / 15 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_algebra_452 (a : ℕ → ℝ) (h₀ : ∀ n, a (n + 2) - a (n + 1) = a (n + 1) - a n)
+  (h₁ : a 1 = 2 / 3) (h₂ : a 9 = 4 / 5) : a 5 = 11 / 15 := by
+  have h0 := h₀ 0
+  have h1 := h₀ 1
+  have h2 := h₀ 2
+  have h3 := h₀ 3
+  have h4 := h₀ 4
+  have h5 := h₀ 5
+  have h6 := h₀ 6
+  have h7 := h₀ 7
+  norm_num at h0 h1 h2 h3 h4 h5 h6 h7 h₁ h₂ ⊢
+  linarith",True
+numbertheory_prmdvsneqnsqmodpeq0,"Show that for any prime $p$ and any integer $n$, we have $p \mid n$ if and only if $n^2 \equiv 0 \pmod{p}$.",,"theorem numbertheory_prmdvsneqnsqmodpeq0 (n : ℤ) (p : ℕ) (h₀ : Nat.Prime p) :
+  ↑p ∣ n ↔ n ^ 2 ≡ 0 [ZMOD p] := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"theorem numbertheory_prmdvsneqnsqmodpeq0 (n : ℤ) (p : ℕ) (h₀ : Nat.Prime p) :
+  ↑p ∣ n ↔ n ^ 2 ≡ 0 [ZMOD p] := by
+  rw [Int.modEq_zero_iff_dvd]
+  constructor
+  · intro h
+    exact dvd_pow h (by norm_num)
+  · intro h
+    apply Int.natCast_dvd.mpr
+    exact Int.Prime.dvd_natAbs_of_coe_dvd_sq h₀ n h",True
+aimeII_2020_p6,"Define a sequence recursively by $t_1 = 20$, $t_2 = 21$, and$t_n = \frac{5t_{n-1}+1}{25t_{n-2}}$for all $n \ge 3$. Then $t_{2020}$ can be expressed as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. Show that it is 626.",,"theorem aimeII_2020_p6 (t : ℕ → ℚ) (h₀ : t 1 = 20) (h₁ : t 2 = 21)
+  (h₂ : ∀ n ≥ 3, t n = (5 * t (n - 1) + 1) / (25 * t (n - 2))) :
+  ↑(t 2020).den + (t 2020).num = 626 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem aimeII_2020_p6 (t : ℕ → ℚ) (h₀ : t 1 = 20) (h₁ : t 2 = 21)
+  (h₂ : ∀ n ≥ 3, t n = (5 * t (n - 1) + 1) / (25 * t (n - 2))) :
+  ↑(t 2020).den + (t 2020).num = 626 := by
+  have hcycle : ∀ n : ℕ,
+      t (5*n+1) = 20 ∧ t (5*n+2) = 21 ∧
+      t (5*n+3) = 53/250 ∧ t (5*n+4) = 103/26250 ∧
+      t (5*n+5) = 101/525 := by
+    intro n
+    induction n with
+    | zero =>
+        have h3 : t 3 = 53/250 := by
+          norm_num [h₂ 3, h₀, h₁]
+        have h4 : t 4 = 103/26250 := by
+          norm_num [h₂ 4, h₁, h3]
+        have h5 : t 5 = 101/525 := by
+          norm_num [h₂ 5, h3, h4]
+        norm_num [h₀, h₁, h3, h4, h5]
+    | succ n ih =>
+        rcases ih with ⟨a, b, c, d, e⟩
+        have e1 := h₂ (5*n+6) (by omega)
+        have e2 := h₂ (5*n+7) (by omega)
+        have e3 := h₂ (5*n+8) (by omega)
+        have e4 := h₂ (5*n+9) (by omega)
+        have e5 := h₂ (5*n+10) (by omega)
+        have s1 : t (5*n+6) = 20 := by
+          rw [show 5*n+6-1 = 5*n+5 by omega,
+            show 5*n+6-2 = 5*n+4 by omega] at e1
+          norm_num [e, d] at e1 ⊢
+          exact e1
+        have s2 : t (5*n+7) = 21 := by
+          rw [show 5*n+7-1 = 5*n+6 by omega,
+            show 5*n+7-2 = 5*n+5 by omega] at e2
+          norm_num [s1, e] at e2 ⊢
+          exact e2
+        have s3 : t (5*n+8) = 53/250 := by
+          rw [show 5*n+8-1 = 5*n+7 by omega,
+            show 5*n+8-2 = 5*n+6 by omega] at e3
+          norm_num [s2, s1] at e3 ⊢
+          exact e3
+        have s4 : t (5*n+9) = 103/26250 := by
+          rw [show 5*n+9-1 = 5*n+8 by omega,
+            show 5*n+9-2 = 5*n+7 by omega] at e4
+          norm_num [s3, s2] at e4 ⊢
+          exact e4
+        have s5 : t (5*n+10) = 101/525 := by
+          rw [show 5*n+10-1 = 5*n+9 by omega,
+            show 5*n+10-2 = 5*n+8 by omega] at e5
+          norm_num [s4, s3] at e5 ⊢
+          exact e5
+        simpa [Nat.mul_add, Nat.add_assoc] using ⟨s1, s2, s3, s4, s5⟩
+  have h := (hcycle 403).2.2.2.2
+  have hi : 5*403+5 = 2020 := by norm_num
+  rw [hi] at h
+  norm_num [h]",True
+amc12a_2020_p9,"How many solutions does the equation $\tan(2x)=\cos(\tfrac{x}{2})$ have on the interval $[0,2\pi]?$ Show that it is 5.",,"theorem amc12a_2020_p9 (S : Finset ℝ)
+  (h₀ : ∀ x : ℝ, x ∈ S ↔ 0 ≤ x ∧ x ≤ 2 * Real.pi ∧ Real.tan (2 * x) = Real.cos (x / 2)) : S.card = 5 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,,False
+amc12a_2002_p13,Two different positive numbers $a$ and $b$ each differ from their reciprocals by $1$. What is $a+b$? Show that it is \sqrt 5.,,"theorem amc12a_2002_p13
+  (a b : ℝ)
+  (h₀ : 0 < a ∧ 0 < b)
+  (h₁ : a ≠ b)
+  (h₂ : abs (a - 1 / a) = 1)
+  (h₃ : abs (b - 1 / b) = 1) :
+  a + b = Real.sqrt 5 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,,False
+mathd_numbertheory_551,Determine the remainder of 1529 (mod 6). Show that it is 5.,,theorem mathd_numbertheory_551 : 1529 % 6 = 5 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem mathd_numbertheory_551 : 1529 % 6 = 5 := by
+  norm_num",True
+mathd_numbertheory_233,"Find $24^{-1} \pmod{11^2}$. That is, find the residue $b$ for which $24b \equiv 1\pmod{11^2}$.
+
+
+Express your answer as an integer from $0$ to $11^2-1$, inclusive. Show that it is 116.",,theorem mathd_numbertheory_233 (b : ZMod (11 ^ 2)) (h₀ : b = 24⁻¹) : b = 116 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_233 (b : ZMod (11 ^ 2)) (h₀ : b = 24⁻¹) : b = 116 := by
+  subst b
+  native_decide",True
+mathd_numbertheory_229,What is the remainder when $5^{30}$ is divided by 7? Show that it is 1.,,theorem mathd_numbertheory_229 : 5 ^ 30 ≡ 1 [ZMOD 7] := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem mathd_numbertheory_229 : 5 ^ 30 ≡ 1 [ZMOD 7] := by
+  norm_num [Int.ModEq]",True
+mathd_numbertheory_427,"If $A$ is the sum of the positive divisors of $500$, what is the sum of the distinct prime divisors of $A$? Show that it is 25.",,"theorem mathd_numbertheory_427 (a : ℕ) (h₀ : a = ∑ k ∈Nat.divisors 500, k) :
+  (∑ k ∈ Finset.filter (fun x => Nat.Prime x) (Nat.divisors a), k) = 25 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_427 (a : ℕ) (h₀ : a = ∑ k ∈Nat.divisors 500, k) :
+  (∑ k ∈ Finset.filter (fun x => Nat.Prime x) (Nat.divisors a), k) = 25 := by
+  have hs : (∑ k ∈ Nat.divisors 500, k) = 1092 := by
+    native_decide
+  rw [hs] at h₀
+  subst a
+  native_decide",True
+imo_1965_p1,"Determine all values $x$ in the interval $0\\leq x\\leq 2\\pi $
+  which satisfy the inequality\n$2\\cos x \\leq \\left| \\sqrt{1+\\sin 2x} - \\sqrt{1-\\sin 2x } \\right| \\leq \\sqrt{2}.$
+  Prove that x must be
+  1. \\pi / 4 ≤ x
+  2. x ≤ 7 * \\pi / 4",,"theorem imo_1965_p1 (x : ℝ) (h₀ : 0 ≤ x) (h₁ : x ≤ 2 * Real.pi)
+  (h₂ : 2 * Real.cos x ≤ abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))))
+  (h₃ : abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))) ≤ Real.sqrt 2) :
+  Real.pi / 4 ≤ x ∧ x ≤ 7 * Real.pi / 4 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem imo_1965_p1 (x : ℝ) (h₀ : 0 ≤ x) (h₁ : x ≤ 2 * Real.pi)
+  (h₂ : 2 * Real.cos x ≤ abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))))
+  (h₃ : abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))) ≤ Real.sqrt 2) :
+  Real.pi / 4 ≤ x ∧ x ≤ 7 * Real.pi / 4 := by
+  have hcos : Real.cos x ≤ Real.sqrt 2 / 2 := by
+    nlinarith [h₂, h₃]
+  constructor
+  · by_contra hn
+    have hxlt : x < Real.pi / 4 := lt_of_not_ge hn
+    have hcx := Real.cos_lt_cos_of_nonneg_of_le_pi h₀
+      (by nlinarith [Real.pi_pos]) hxlt
+    rw [Real.cos_pi_div_four] at hcx
+    nlinarith
+  · by_contra hn
+    have hxgt : 7 * Real.pi / 4 < x := lt_of_not_ge hn
+    have hy0 : 0 ≤ 2 * Real.pi - x := by
+      nlinarith [Real.pi_pos]
+    have hylt : 2 * Real.pi - x < Real.pi / 4 := by
+      nlinarith [Real.pi_pos]
+    have hcy := Real.cos_lt_cos_of_nonneg_of_le_pi hy0
+      (by nlinarith [Real.pi_pos]) hylt
+    rw [Real.cos_two_pi_sub] at hcy
+    rw [Real.cos_pi_div_four] at hcy
+    nlinarith",True
+algebra_apb4leq8ta4pb4,"Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \leq 8(a^4 + b^4)$.",,theorem algebra_apb4leq8ta4pb4 (a b : ℝ) (h₀ : 0 < a ∧ 0 < b) : (a + b) ^ 4 ≤ 8 * (a ^ 4 + b ^ 4) := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+induction_11div10tonmn1ton,"Show that for any natural number $n$, we have $11\mid 10^n-(-1)^n$.",,theorem induction_11div10tonmn1ton (n : ℕ) : 11 ∣ 10 ^ n - (-1 : ℤ) ^ n := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem induction_11div10tonmn1ton (n : ℕ) : 11 ∣ 10 ^ n - (-1 : ℤ) ^ n := by
+  simpa using (sub_dvd_pow_sub_pow (10 : ℤ) (-1 : ℤ) n)",True

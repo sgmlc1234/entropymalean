@@ -1,0 +1,262 @@
+{
+  "input": "data/benchmarks/proofnet_verified/raw/seeds_50_rows.jsonl",
+  "rows": 50,
+  "replay_certified": 50,
+  "rate": 1.0,
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "comparator": "/home/baegjaehyeon.guest/lean-comparator/.lake/build/bin/comparator",
+  "mathlib_dir": "/home/baegjaehyeon.guest/eml-lake/.lake/packages/mathlib",
+  "failure_details": {},
+  "results": [
+    {
+      "name": "Artin_exercise_2_11_3",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Artin_exercise_6_8_1",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Axler_exercise_1_3",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Axler_exercise_1_8",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Axler_exercise_5_12",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Axler_exercise_5_20",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_16",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_18",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_2_4_16b",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_1_3a",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_1_22b",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_14",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_1_11",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_1_15",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_3_37",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_8_3_4",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_4_2b",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_2_1_27",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_2_4_36",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_2_11_6",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Ireland_Rosen_exercise_1_27",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Ireland_Rosen_exercise_1_31",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_13_1",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_16_4",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_23_2",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_29_10",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_30_13",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_1_18a",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_2_28",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_4_12",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_5_6",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Shakarchi_exercise_1_19b",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Artin_exercise_13_6_10",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_1_2a",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_6_11",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_4_4",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_23",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_2_5_23",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_2_5_31",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_4_2_6",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Herstein_exercise_5_3_7",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_13_4b2",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_18_8a",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_23_11",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Munkres_exercise_24_3a",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Pugh_exercise_3_1",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_1_1b",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_2_25",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_4_3",
+      "replay_certified": true,
+      "detail": ""
+    },
+    {
+      "name": "Rudin_exercise_5_5",
+      "replay_certified": true,
+      "detail": ""
+    }
+  ]
+}

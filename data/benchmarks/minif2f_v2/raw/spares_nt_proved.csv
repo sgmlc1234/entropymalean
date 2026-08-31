@@ -1,0 +1,172 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split,lean_code,gen0_proof_completed
+numbertheory_nckeqnm1ckpnm1ckm1,"Show that for positive integers $n$ and $k$ with $k \leq n$, we have 
+$\binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}$.",,"theorem numbertheory_nckeqnm1ckpnm1ckm1 (n k : ℕ) (h₀ : 0 < n ∧ 0 < k) (h₁ : k ≤ n) :
+  Nat.choose n k = Nat.choose (n - 1) k + Nat.choose (n - 1) (k - 1) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem numbertheory_nckeqnm1ckpnm1ckm1 (n k : ℕ) (h₀ : 0 < n ∧ 0 < k) (h₁ : k ≤ n) :
+  Nat.choose n k = Nat.choose (n - 1) k + Nat.choose (n - 1) (k - 1) := by
+  simpa [Nat.add_comm] using (Nat.choose_eq_choose_pred_add h₀.1 h₀.2)",True
+mathd_numbertheory_640,Find the remainder when $91145 + 91146 + 91147 + 91148$ is divided by 4. Show that it is 2.,,theorem mathd_numbertheory_640 : (91145 + 91146 + 91147 + 91148) % 4 = 2 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_640 : (91145 + 91146 + 91147 + 91148) % 4 = 2 := by
+  norm_num",True
+mathd_numbertheory_403,The sum of the proper divisors of 18 is 21. What is the sum of the proper divisors of 198? Show that it is 270.,,"theorem mathd_numbertheory_403 
+  (h₀: (∑ k ∈ Nat.properDivisors 18, k) = 21) : 
+  (∑ k ∈ Nat.properDivisors 198, k) = 270 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_403 
+  (h₀: (∑ k ∈ Nat.properDivisors 18, k) = 21) : 
+  (∑ k ∈ Nat.properDivisors 198, k) = 270 := by
+  native_decide",True
+mathd_numbertheory_296,"What is the smallest positive integer, other than $1$, that is both a perfect cube and a perfect fourth power? Show that it is 4096.",,"theorem mathd_numbertheory_296
+  (S : Set ℕ)
+  (hS :  S = {n | 0 < n ∧ n ≠ 1 ∧ ∃ x, x ^ 3 = n ∧ ∃ t, t ^ 4 = n}) :
+  IsLeast S 4096 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_296
+  (S : Set ℕ)
+  (hS : S = {n | 0 < n ∧ n ≠ 1 ∧ ∃ x, x ^ 3 = n ∧ ∃ t, t ^ 4 = n}) :
+  IsLeast S 4096 := by
+  subst S
+  constructor
+  · constructor
+    · norm_num
+    · constructor
+      · norm_num
+      · exact ⟨16, by norm_num, 8, by norm_num⟩
+  · intro n hn
+    rcases hn with ⟨hnpos, hnne, x, hx, t, ht⟩
+    by_contra h
+    have hnlt : n < 4096 := by omega
+    have hxlt : x < 16 := by
+      by_contra h'
+      have hxge : 16 ≤ x := by omega
+      have hp : 16 ^ 3 ≤ x ^ 3 := Nat.pow_le_pow_left hxge 3
+      rw [hx] at hp
+      norm_num at hp
+      omega
+    have htlt : t < 8 := by
+      by_contra h'
+      have htge : 8 ≤ t := by omega
+      have hp : 8 ^ 4 ≤ t ^ 4 := Nat.pow_le_pow_left htge 4
+      rw [ht] at hp
+      norm_num at hp
+      omega
+    interval_cases x <;> interval_cases t <;> norm_num at hx ht <;> omega",True
+mathd_numbertheory_284,What positive two-digit integer is exactly twice the sum of its digits? Show that it is 18.,,"theorem mathd_numbertheory_284
+  (x : ℕ)
+  (h₀ : 0 < x)
+  (h₁ : (Nat.digits 10 x).length = 2)
+  (h₁ : 2 * (Nat.digits 10 x).sum = x) :
+  x = 18 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem mathd_numbertheory_284
+  (x : ℕ)
+  (h₀ : 0 < x)
+  (h₁ : (Nat.digits 10 x).length = 2)
+  (h₁ : 2 * (Nat.digits 10 x).sum = x) :
+  x = 18 := by
+  rename_i hlen
+  have hx : x < 100 := by
+    have h := Nat.lt_base_pow_length_digits (m := x) (b := 10) (by norm_num)
+    rw [hlen] at h
+    norm_num at h
+    exact h
+  interval_cases x <;>
+    norm_num [Nat.digits, Nat.digitsAux, Nat.digitsAux_def] at h₁ <;>
+    norm_num",True
+mathd_numbertheory_247,"Solve the congruence $3n \equiv 2 \pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.) Show that it is 8.",,theorem mathd_numbertheory_247 (n : ℕ) (h₀ : 3 * n ≡ 2 [MOD 11]) : n % 11 = 8 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem mathd_numbertheory_247 (n : ℕ) (h₀ : 3 * n ≡ 2 [MOD 11]) : n % 11 = 8 := by
+  change (3 * n) % 11 = 2 % 11 at h₀
+  norm_num at h₀
+  omega",True
+mathd_numbertheory_92,"Solve the congruence $5n \equiv 8 \pmod{17}$, as a residue modulo 17.  (Give an answer between 0 and 16.) Show that it is 5.",,theorem mathd_numbertheory_92 : {n : ZMod 17 | 5 * n.val ≡ 8 [ZMOD 17]} = {5} := by ,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,"theorem mathd_numbertheory_92 : {n : ZMod 17 | 5 * n.val ≡ 8 [ZMOD 17]} = {5} := by
+  ext n
+  simp only [Set.mem_setOf_eq, Set.mem_singleton_iff]
+  constructor
+  · intro h
+    have hmod : (5 * (n.val : ℤ)) % 17 = (8 : ℤ) % 17 := h
+    have hn : n.val < 17 := n.val_lt
+    have hv : n.val = 5 := by omega
+    have hn_eq : n = (5 : ZMod 17) := by
+      calc
+        n = (n.val : ZMod 17) := (ZMod.natCast_zmod_val n).symm
+        _ = 5 := by simpa [hv]
+    rw [hn_eq]
+  · intro h
+    rcases h with rfl
+    change 5 * (5 : ℤ) % 17 = 8
+    norm_num",True

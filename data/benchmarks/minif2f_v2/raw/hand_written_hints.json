@@ -1,0 +1,373 @@
+{
+  "mathd_algebra_214": {
+    "author": "claude",
+    "outline": [
+      "Being an extremum on all of the reals is a disjunction, so the argument opens by splitting on whether 2 is a minimum or a maximum of the parabola.",
+      "In the minimum branch, comparing the value at 2 against the values at 1 and at 3 forces the leading coefficient to be strictly positive; assuming otherwise makes those two comparisons contradict each other.",
+      "With the leading coefficient nonzero the vertex condition pins the linear coefficient to minus four times it, and the two given data points then determine the remaining coefficients outright.",
+      "Evaluate the now fully determined quadratic at 6."
+    ]
+  },
+  "mathd_algebra_208": {
+    "author": "claude",
+    "outline": [
+      "One million is a perfect square and a perfect cube at once, so both radicals are integers and no algebraic manipulation is needed — evaluating them numerically settles the difference."
+    ]
+  },
+  "mathd_algebra_28": {
+    "author": "claude",
+    "outline": [
+      "Being the greatest element is two separate claims: that the candidate belongs to the set, and that it bounds every member of it.",
+      "For membership, exhibit the root at which the quadratic is tangent to the axis — the value where its discriminant vanishes.",
+      "For the bound, take any admissible constant together with a witnessing root; the square of four times that root plus five is nonnegative, and that single fact forces the constant below the candidate."
+    ]
+  },
+  "mathd_algebra_101": {
+    "author": "claude",
+    "outline": [
+      "Membership in a closed interval is two inequalities, so each endpoint is argued separately.",
+      "For each endpoint, suppose the opposite. Then the two factors of the quadratic shifted to its roots share a sign, making their product strictly positive.",
+      "That product is exactly the hypothesis rearranged, which bounds it above by zero — the contradiction closes both branches."
+    ]
+  },
+  "mathd_algebra_107": {
+    "author": "claude",
+    "outline": [
+      "The goal asks for a witness, so the work is to supply the centre and radius outright rather than to derive them.",
+      "Completing the square in each variable separately turns the given equation into a sum of two squares, which reads off the centre coordinates.",
+      "What remains is the arithmetic identity between that completed form and the hypothesis."
+    ]
+  },
+  "mathd_algebra_327": {
+    "author": "claude",
+    "outline": [
+      "The statement is an equivalence, so both directions are proved separately.",
+      "Forward: clearing the fifth turns the assumption into a bound on the absolute value, and unfolding an absolute-value bound into its two-sided form gives one inequality per endpoint of the interval.",
+      "Backward: the two interval endpoints reassemble into that same two-sided bound, which folds back into a statement about the absolute value."
+    ]
+  },
+  "mathd_algebra_251": {
+    "author": "claude",
+    "outline": [
+      "The hypothesis divides by the unknown, so it says nothing until the unknown is known nonzero — and if it were zero the hypothesis would reduce to a false numeric claim, which settles that.",
+      "Once the denominators can be removed, both sides become linear in the unknown.",
+      "The resulting linear equation has a single solution."
+    ]
+  },
+  "mathd_algebra_313": {
+    "author": "claude",
+    "outline": [
+      "Substitute the two given complex values into the product equation.",
+      "A complex equation is two real equations; take real and imaginary parts of it to get a linear system in the unknown's two components.",
+      "Prove the target componentwise, solving that system in each part."
+    ]
+  },
+  "mathd_algebra_484": {
+    "author": "claude",
+    "outline": [
+      "The base-3 logarithm is a quotient of natural logarithms, so its denominator must be shown nonzero before anything can be cancelled — the logarithm of a number above one is positive.",
+      "Rewrite the argument as a power of the base, which lets the exponent come out in front of the logarithm.",
+      "The two logarithms then cancel."
+    ]
+  },
+  "mathd_algebra_113": {
+    "author": "claude",
+    "outline": [
+      "Minimality over the whole line means the value at the claimed point is at most the value at an arbitrary point, so fix such a point.",
+      "The difference between the two values is a perfect square in the displacement from the claimed minimiser, and squares are nonnegative."
+    ]
+  },
+  "mathd_algebra_410": {
+    "author": "claude",
+    "outline": [
+      "Being the least element of a range is two claims: the value is attained, and it is a lower bound for every value the function takes.",
+      "It is attained at the point where the quadratic's vertex sits, which the numbers make easy to spot.",
+      "For the bound, any value in the range comes from some argument, and the gap between that value and the claimed minimum is a perfect square in the displacement from the vertex."
+    ]
+  },
+  "mathd_algebra_405": {
+    "author": "claude",
+    "outline": [
+      "Counting a set is easiest once the set is named, so first show it is exactly the two-element set the arithmetic suggests.",
+      "For the hard inclusion, bound the variable above: from three upwards the square term alone already exceeds the budget, so only the small cases survive and each is checked directly.",
+      "The reverse inclusion is arithmetic on those two values, after which the cardinality is immediate."
+    ]
+  },
+  "mathd_algebra_234": {
+    "author": "claude",
+    "outline": [
+      "The common ratio is not given, so recover it first by comparing the two earliest terms through the recurrence.",
+      "With the ratio known, walk the recurrence forward one index at a time, each step turning a known term into the next.",
+      "Four such steps reach the sixth term."
+    ]
+  },
+  "numbertheory_sumkmulnckeqnmul2pownm1": {
+    "author": "claude",
+    "outline": [
+      "The sum runs from one, but the binomial identities are stated over the full range including zero — so first observe that adjoining the zero index changes nothing, since that term vanishes.",
+      "Over the full range the summand is the classical identity whose value is the dimension times a power of two, one less than the exponent.",
+      "Chain the two rewrites together."
+    ]
+  },
+  "numbertheory_sqmod3in01d": {
+    "author": "claude",
+    "outline": [
+      "Every integer leaves one of three remainders on division by three, so the claim reduces to three cases.",
+      "In each case, write the integer as three times its quotient plus that fixed remainder.",
+      "Squaring makes every term carrying the factor three vanish modulo three, leaving only the square of the remainder — which is zero for the first case and one for the other two."
+    ]
+  },
+  "aime_1984_p15": {
+    "author": "claude",
+    "outline": [
+      "The four hypotheses look like a system in four unknowns, but every denominator is a concrete number, so each one is really a linear relation among the four squares.",
+      "Once the arithmetic in the denominators is carried out, the target quantity is a linear combination of those four relations."
+    ]
+  },
+  "aime_1983_p3": {
+    "author": "claude",
+    "outline": [
+      "The equation mixes a quadratic with the square root of a closely related quadratic; naming the shifted quantity under the root turns it into a quadratic in that single variable.",
+      "Solving it characterises the roots exactly: both lie symmetrically about the vertex, displaced by the square root of a fixed number.",
+      "The problem asks for a product over the root set, so the characterisation has to be an equivalence — every solution is one of the two, and both really are solutions.",
+      "The product of the two is then a difference of squares."
+    ]
+  },
+  "aime_1983_p9": {
+    "author": "claude",
+    "outline": [
+      "The expression depends on its argument only through the product of the argument with its sine, so treat that product as a single quantity.",
+      "That quantity is continuous and, on the interval given, sweeps through the value where the expression is minimised — the intermediate value theorem supplies a point achieving it.",
+      "For the lower bound, the expression in that single quantity is a sum of a term and its reciprocal scaled, minimised where the two balance; the gap to the claimed minimum is a perfect square."
+    ]
+  },
+  "amc12a_2010_p10": {
+    "author": "claude",
+    "outline": [
+      "The sequence is only known to have constant successive differences, so start by applying that at the two places where three consecutive named terms overlap.",
+      "Those two relations, together with the given values, determine the unknown parameter and hence the common difference.",
+      "Every successive difference then equals that constant — an inductive argument, each step reusing the defining relation one index further along — so the term two thousand and ten places in is the first term plus that many differences."
+    ]
+  },
+  "amc12a_2021_p9": {
+    "author": "claude",
+    "outline": [
+      "The product has only seven factors, each a concrete power, so expanding it fully is cheaper than finding the telescoping identity behind it."
+    ]
+  },
+  "amc12b_2020_p22": {
+    "author": "claude",
+    "outline": [
+      "Being the greatest element needs both attainment and an upper bound.",
+      "For attainment, note the expression depends on its variable through the ratio of that variable to a power of two; that ratio is continuous and sweeps past the value where the maximum occurs, so a witness exists by the intermediate value theorem.",
+      "For the bound, rewrite the expression in that same ratio — it becomes a quadratic in one quantity, and the gap to the claimed maximum is a perfect square."
+    ]
+  },
+  "amc12a_2002_p21": {
+    "author": "claude",
+    "outline": [
+      "The claim is that a particular index is the least one whose partial sum passes the threshold, which is two obligations: that index works, and no smaller one does.",
+      "That it works is a finite computation — the recurrence is on last digits, so the terms cycle and the partial sum can be evaluated outright.",
+      "That no smaller index works follows from the partial sums being nondecreasing: if a smaller index passed the threshold, so would every index up to it, contradicting minimality."
+    ]
+  },
+  "amc12_2000_p6": {
+    "author": "claude",
+    "outline": [
+      "The claim is a negation, so assume such a pair exists and derive a contradiction.",
+      "The first prime is confined to a short range, so every candidate can be enumerated; for each, primality and the arithmetic condition cannot hold together."
+    ]
+  },
+  "mathd_numbertheory_961": {
+    "author": "claude",
+    "outline": [
+      "Both numbers are concrete, so the remainder is a single division carried out numerically."
+    ]
+  },
+  "mathd_numbertheory_33": {
+    "author": "claude",
+    "outline": [
+      "In a modular ring an inverse is characterised by what it multiplies to, so it suffices to exhibit the candidate and check that the product with seven is one.",
+      "That check is a finite computation in the ring."
+    ]
+  },
+  "mathd_numbertheory_728": {
+    "author": "claude",
+    "outline": [
+      "Both powers are concrete, so reducing each modulo seven and subtracting settles the congruence by computation."
+    ]
+  },
+  "mathd_numbertheory_483": {
+    "author": "claude",
+    "outline": [
+      "The two initial values and the two-term recurrence define the Fibonacci sequence, so the first move is to identify the two — and because each value depends on the two before it, the identification has to be established for all smaller indices at once.",
+      "The residues of Fibonacci numbers modulo four are eventually periodic, so the hundredth one is determined by where it falls in that cycle."
+    ]
+  },
+  "mathd_numbertheory_99": {
+    "author": "claude",
+    "outline": [
+      "A congruence is an equation between remainders, so unfold both the hypothesis and the goal into that form.",
+      "What remains is a linear arithmetic fact over the integers with those remainders."
+    ]
+  },
+  "mathd_numbertheory_126": {
+    "author": "claude",
+    "outline": [
+      "The hypothesis is a disjunction fixing one of the two unknowns, so split on it and handle each side.",
+      "In each branch a witness for the described set is available; its greatest common divisor with the fixed number must divide that number.",
+      "The set's defining condition forces that divisor to a value which does not divide it, so the branch is impossible — which is what pins the answer."
+    ]
+  },
+  "mathd_numbertheory_202": {
+    "author": "claude",
+    "outline": [
+      "Both powers are concrete, so the last digit of their sum is obtained by computation."
+    ]
+  },
+  "mathd_numbertheory_85": {
+    "author": "claude",
+    "outline": [
+      "A number is recovered from its digit expansion by reading the digits back against the base, so rewrite the unknown as that reconstruction.",
+      "The given digit list then makes it a finite arithmetic evaluation."
+    ]
+  },
+  "imo_1968_p5_1": {
+    "author": "claude",
+    "outline": [
+      "The square root in the relation only makes sense when its argument is nonnegative, which already confines the function between one half and one everywhere.",
+      "Applying the relation twice returns the original value, so the shift by twice the given amount is the identity.",
+      "That doubled shift is therefore the period being asked for."
+    ]
+  },
+  "imo_1992_p1": {
+    "author": "claude",
+    "outline": [
+      "The divisibility gives a quotient; bounding it is what makes the problem finite. Since the three unknowns are strictly increasing above one, the product of the decremented values is close enough to the product itself that the quotient cannot be large.",
+      "Each admissible quotient constrains the smallest unknown to a short range, and each value of it in turn constrains the next.",
+      "Working through those finitely many possibilities leaves exactly the two stated triples."
+    ]
+  },
+  "algebra_9onxpypzleqsum2onxpy": {
+    "author": "claude",
+    "outline": [
+      "All three denominators are positive, which is what licenses clearing them without flipping the inequality.",
+      "After clearing, the difference between the two sides is a nonnegative combination of squares of the pairwise differences of the three numbers — the inequality is tight exactly when all three agree."
+    ]
+  },
+  "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x": {
+    "author": "claude",
+    "outline": [
+      "Rearranged, the claim is that the number plus half its reciprocal is at least the square root of two, which is the arithmetic-geometric mean inequality for that pair.",
+      "The usable form comes from the square of the difference between the number scaled by the square root of two and one being nonnegative.",
+      "Expanding that square, and using that the square root of two squares to two, gives the bound."
+    ]
+  },
+  "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta": {
+    "author": "claude",
+    "outline": [
+      "Both sides are polynomials in the four variables with no side conditions, so the identity is purely formal — expanding and collecting terms settles it."
+    ]
+  },
+  "algebra_manipexpr_apbeq2cceqiacpbceqm2": {
+    "author": "claude",
+    "outline": [
+      "The left side factors, putting the given sum in evidence.",
+      "Substituting that sum leaves twice the square of the remaining unknown.",
+      "That unknown is the imaginary unit, whose square is minus one."
+    ]
+  },
+  "induction_divisibility_3div2tooddnp1": {
+    "author": "claude",
+    "outline": [
+      "The claim is about every natural number and each case rests on the one before, so argue from the base upward.",
+      "Going one step up multiplies the power by four; writing the previous divisibility as a witness, four times that witness minus one witnesses the new one."
+    ]
+  },
+  "induction_ineq_nsqlefactn": {
+    "author": "claude",
+    "outline": [
+      "Split the factorial into the number times the factorial of its predecessor.",
+      "It then suffices that the number itself is at most that predecessor factorial, which holds from four upward because a number below three is already smaller than its own factorial.",
+      "Multiplying that bound by the number gives the square on the left."
+    ]
+  },
+  "numbertheory_prmdvsneqnsqmodpeq0": {
+    "author": "claude",
+    "outline": [
+      "A congruence to zero is exactly a divisibility, so restate the right-hand side that way and prove the two implications separately.",
+      "Forward is immediate: what divides a number divides its powers.",
+      "Backward uses primality — a prime dividing a square must divide the base."
+    ]
+  },
+  "imo_1965_p1": {
+    "author": "claude",
+    "outline": [
+      "The two square roots and the absolute value are awkward directly, but combining the hypotheses bounds the cosine above by half the square root of two.",
+      "The answer set is an interval, so both endpoints are argued by contradiction.",
+      "Below the lower endpoint the cosine is strictly larger than that bound because cosine decreases on the relevant range, and above the upper endpoint the other hypothesis fails; both contradict what was derived."
+    ]
+  },
+  "induction_11div10tonmn1ton": {
+    "author": "claude",
+    "outline": [
+      "This is the general fact that the difference of two numbers divides the difference of their equal powers; here the difference is eleven."
+    ]
+  },
+  "aimeII_2020_p6": {
+    "author": "claude",
+    "outline": [
+      "Computing the first few terms shows the sequence returns to its starting pair, so it is periodic with period five.",
+      "Establish that periodicity for all indices, each block of five reproducing the previous one.",
+      "The required index is then reduced modulo five to one of the five known values, and its numerator and denominator read off."
+    ]
+  },
+  "mathd_numbertheory_551": {
+    "author": "claude",
+    "outline": [
+      "Both numbers are concrete, so the remainder follows from carrying out the division."
+    ]
+  },
+  "mathd_algebra_114": {
+    "author": "claude",
+    "outline": [
+      "Substitute the given value, so the inner power becomes a concrete number.",
+      "That number is a perfect cube, so its cube root is the integer whose cube it is — this is where the real work sits, since the exponent is a real number rather than a natural one.",
+      "The outer cube root then acts on another perfect cube."
+    ]
+  },
+  "mathd_numbertheory_229": {
+    "author": "claude",
+    "outline": [
+      "The power and the modulus are both concrete, so reducing directly settles the congruence."
+    ]
+  },
+  "numbertheory_nckeqnm1ckpnm1ckm1": {
+    "author": "claude",
+    "outline": [
+      "This is Pascal's rule, stated with the upper index decremented rather than incremented, so the only real work is matching it to the library's orientation.",
+      "The positivity hypotheses are what let the two subtractions on natural numbers behave as ordinary subtraction."
+    ]
+  },
+  "mathd_numbertheory_640": {
+    "author": "claude",
+    "outline": [
+      "The four summands are consecutive and concrete, so the remainder follows from evaluating the sum and dividing."
+    ]
+  },
+  "mathd_numbertheory_296": {
+    "author": "claude",
+    "outline": [
+      "Being the least element is two claims: the candidate qualifies, and nothing smaller does.",
+      "It qualifies because it is a twelfth power, so exhibiting its cube root and its fourth root settles membership.",
+      "For minimality, suppose a smaller qualifying number existed. Its cube root and fourth root would both be bounded, and stepping through the finitely many possibilities leaves only one — which is excluded by hypothesis."
+    ]
+  },
+  "mathd_numbertheory_284": {
+    "author": "claude",
+    "outline": [
+      "Having two digits in base ten bounds the number below one hundred, which makes the search finite.",
+      "For each candidate the digit sum is a concrete computation, and only one satisfies the doubling condition."
+    ]
+  }
+}

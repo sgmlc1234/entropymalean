@@ -1,0 +1,491 @@
+{
+  "input": "data/benchmarks/proofnet_verified/raw/exam_rows_v2.jsonl",
+  "rows": 367,
+  "replays": 272,
+  "replay_rate": 0.741,
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "mathlib_revision": "0fb2045029635862ffb234635a111c80a55e2a87",
+  "failure_kinds": {
+    "other": 47,
+    "signature_drift": 18,
+    "unsolved_goals": 15,
+    "unknown_identifier": 15
+  },
+  "failures": [
+    {
+      "name": "Artin_exercise_6_4_3",
+      "kind": "other",
+      "error": "error @ line 16: Ambiguous term\n  Prime\nPossible interpretations:\n  _root_.Prime p : Prop\n  \n  Nat.Prime p : Prop\nerror @ line 16: Ambiguous term\n  Prime\nPossible interpretations:\n  _root_.Prime q : P"
+    },
+    {
+      "name": "Artin_exercise_11_4_8",
+      "kind": "other",
+      "error": "error @ line 14: Ambiguous term\n  Prime\nPossible interpretations:\n  _root_.Prime p : Prop\n  \n  Nat.Prime p : Prop"
+    },
+    {
+      "name": "Artin_exercise_13_4_10",
+      "kind": "other",
+      "error": "error @ line 100: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt (Odd.pos htOdd) : t ≠ 0\n  \n  Nat.ne_of_gt (Odd.pos htOdd) : t ≠ 0\nerror @ line 117: Ambiguous term\n  ne_of_gt\nPo"
+    },
+    {
+      "name": "Axler_exercise_4_4",
+      "kind": "unsolved_goals",
+      "error": "error @ line 51: unsolved goals\ncase mpr\np : ℂ[X]\nhp : p ≠ 0\nhsplit : (map (algebraMap ℂ ℂ) p).Splits\nhsep : p.Separable\nh_nat : card ↑(p.rootSet ℂ) = p.natDegree\nh_withTop : ↑(card ↑(p.rootSet ℂ)) = "
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_6_4",
+      "kind": "other",
+      "error": "error @ line 167: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.218452415._hygCtx._hyg.45` has multiple components\nerror @ line 169: No goals to be solved"
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_4_11",
+      "kind": "other",
+      "error": "error @ line 115: failed to synthesize instance of type class\n  Bracket G G\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command."
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_20",
+      "kind": "unsolved_goals",
+      "error": "error @ line 99: unsolved goals\nG : Type u_1\ninst✝¹ : Fintype G\ninst✝ : Group G\nhG : card G = 1365\nhSquarefree1365 : Squarefree 1365\nhSquarefreeG : Squarefree (Nat.card G)\nhZ this✝² : IsZGroup G\nhSolv"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_22",
+      "kind": "signature_drift",
+      "error": "error @ line 251: Invalid field notation: Function `normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `↑R`\n\nNote: Such a parameter must be explicit, or implic"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_28",
+      "kind": "signature_drift",
+      "error": "error @ line 303: Invalid pattern variable: Variable name must be atomic, but `Real.pi._@.2559105507._hygCtx._hyg.3369` has multiple components\nerror @ line 304: No goals to be solved\nerror @ line 594"
+    },
+    {
+      "name": "Dummit_Foote_exercise_5_4_2",
+      "kind": "other",
+      "error": "error @ line 40: failed to synthesize instance of type class\n  Bracket G G\n\nHint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.\n"
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_2_12",
+      "kind": "unsolved_goals",
+      "error": "error @ line 60: unsolved goals\ncase base\nR : Type u_1\nG : Type u_2\ninst✝² : Ring R\ninst✝¹ : Group G\ninst✝ : Fintype G\nN : MonoidAlgebra R G := ∑ g, (MonoidAlgebra.of R G) g\nhNdef : N = ∑ g, (MonoidAl"
+    },
+    {
+      "name": "Dummit_Foote_exercise_8_1_12",
+      "kind": "unsolved_goals",
+      "error": "error @ line 21: unexpected token 'φ'; expected '_' or identifier\nerror @ line 18: unsolved goals\nN : ℕ\nhN : N > 0\nM M' : ℤ\nd : ℕ\nhMN : M.gcd ↑N = 1\nhMd : d.gcd (φ N) = 1\nhM' : M' ≡ M ^ d [ZMOD ↑N]\na✝"
+    },
+    {
+      "name": "Dummit_Foote_exercise_8_3_6a",
+      "kind": "unknown_identifier",
+      "error": "error @ line 109: Unknown identifier `idealOnePlusI.IsMaximal`\nerror @ line 114: failed to synthesize instance of type class\n  Semiring quotientQ\n\nHint: Type class instance resolution failures can be "
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_1_6",
+      "kind": "other",
+      "error": "error @ line 72: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.746284864._hygCtx._hyg.370` has multiple components\nerror @ line 73: No goals to be solved"
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_3_2",
+      "kind": "unsolved_goals",
+      "error": "error @ line 50: unsolved goals\nf g : ℚ[X]\ni j : ℕ\nhfg : ∀ (n : ℕ), ∃ a, (f * g).coeff n = ↑a\nbf bg : ↥(nonZeroDivisors ℤ)\nF : ℤ[X] := IsLocalization.integerNormalization (nonZeroDivisors ℤ) f\nhbf : P"
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_4_11",
+      "kind": "unknown_identifier",
+      "error": "error @ line 92: Unknown constant `MvPolynomial.pUnitAlgEquiv_apply`\nerror @ line 96: Ambiguous term\n  irreducible_iff_prime\nPossible interpretations:\n  _root_.irreducible_iff_prime : Irreducible ?m.5"
+    },
+    {
+      "name": "Herstein_exercise_2_5_37",
+      "kind": "signature_drift",
+      "error": "error @ line 115: unexpected token 'φ'; expected '_' or identifier\nerror @ line 89: Invalid field `comm`: The environment does not contain `IsMulCommutative.comm`, so it is not possible to project the"
+    },
+    {
+      "name": "Herstein_exercise_2_8_12",
+      "kind": "unknown_identifier",
+      "error": "error @ line 171: Invalid field `comm`: The environment does not contain `IsMulCommutative.comm`, so it is not possible to project the field `comm` from an expression\n  IsCyclic.commutative\nof type `I"
+    },
+    {
+      "name": "Herstein_exercise_2_11_22",
+      "kind": "signature_drift",
+      "error": "error @ line 89: Invalid field notation: Function `Subgroup.normalizer` does not have a usable parameter of type `Subgroup ...` for which to substitute `K`\n\nNote: Such a parameter must be explicit, or"
+    },
+    {
+      "name": "Herstein_exercise_4_1_19",
+      "kind": "unsolved_goals",
+      "error": "error @ line 39: unsolved goals\ncase a\ng : ℝ → Quaternion ℝ := fun θ => { re := 0, imI := cos θ, imJ := sin θ, imK := 0 }\nθ : ℝ\nhtrig : cos θ ^ 2 + sin θ ^ 2 = 1\n⊢ QuaternionAlgebra.imI 1 = 0\nerror @ "
+    },
+    {
+      "name": "Herstein_exercise_4_3_25",
+      "kind": "other",
+      "error": "error @ line 127: typeclass instance problem is stuck\n  Membership ?m.2 ?m.1\n\nNote: Lean will not try to resolve this typeclass instance problem because the second type argument to `Membership` is a m"
+    },
+    {
+      "name": "Herstein_exercise_4_5_16",
+      "kind": "unsolved_goals",
+      "error": "error @ line 76: unsolved goals\np n : ℕ\nhp : Nat.Prime p\nq : (ZMod p)[X]\nhq : Irreducible q\nhn : q.degree = ↑n\nthis : Fact (Nat.Prime p)\nK : Type := ZMod p\nR : Type := K[X]\nI : Ideal R := span {q}\nhq0"
+    },
+    {
+      "name": "Herstein_exercise_5_3_10",
+      "kind": "signature_drift",
+      "error": "error @ line 126: unexpected token ':='; expected ')', ',' or ':'\nerror @ line 126: Application type mismatch: The argument\n  φ\nhas type\n  ℕ → ℕ\nof sort `Type` but is expected to have type\n  (algebraM"
+    },
+    {
+      "name": "Herstein_exercise_5_5_2",
+      "kind": "signature_drift",
+      "error": "error @ line 142: unexpected token ':='; expected ')', ',' or ':'\nerror @ line 142: Application type mismatch: The argument\n  φ\nhas type\n  ℕ → ℕ\nof sort `Type` but is expected to have type\n  (algebraM"
+    },
+    {
+      "name": "Ireland_Rosen_exercise_2_21",
+      "kind": "other",
+      "error": "error @ line 33: Ambiguous term\n  log\nPossible interpretations:\n  Nat.log d : ℕ → ℕ\n  \n  Real.log ↑d : ℝ\nerror @ line 67: Ambiguous term\n  log\nPossible interpretations:\n  Nat.log d : ℕ → ℕ\n  \n  Real.l"
+    },
+    {
+      "name": "Ireland_Rosen_exercise_4_8",
+      "kind": "other",
+      "error": "error @ line 28: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt h_pos : p - 1 ≠ 0\n  \n  Nat.ne_of_gt h_pos : p - 1 ≠ 0"
+    },
+    {
+      "name": "Ireland_Rosen_exercise_18_4",
+      "kind": "other",
+      "error": "error @ line 29: typeclass instance problem is stuck\n  Membership ℕ ?m.1\n\nNote: Lean will not try to resolve this typeclass instance problem because the second type argument to `Membership` is a metav"
+    },
+    {
+      "name": "Munkres_exercise_13_8b",
+      "kind": "unknown_identifier",
+      "error": "error @ line 68: Unknown identifier `Munkres_exercise_13_8b`"
+    },
+    {
+      "name": "Munkres_exercise_22_2b",
+      "kind": "signature_drift",
+      "error": "error @ line 22: Invalid `⟨...⟩` notation: The expected type of this term could not be determined\nerror @ line 22: Type mismatch\n  fun y => ?m.27\nhas type\n  (y : ?m.25) → ?m.28 y\nbut is expected to ha"
+    },
+    {
+      "name": "Munkres_exercise_24_2",
+      "kind": "other",
+      "error": "error @ line 14: typeclass instance problem is stuck\n  TopologicalSpace ?m.7\n\nNote: Lean will not try to resolve this typeclass instance problem because the type argument to `TopologicalSpace` is a me"
+    },
+    {
+      "name": "Munkres_exercise_29_1",
+      "kind": "other",
+      "error": "error @ line 85: unexpected token 'φ'; expected rcasesPat"
+    },
+    {
+      "name": "Munkres_exercise_33_8",
+      "kind": "other",
+      "error": "error @ line 62: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.3660066864._hygCtx._hyg.877` has multiple components\nerror @ line 63: No goals to be solved"
+    },
+    {
+      "name": "Pugh_exercise_2_41",
+      "kind": "unsolved_goals",
+      "error": "error @ line 53: unknown tactic\nerror @ line 52: unsolved goals\nm : ℕ\nE : Type u_1\ninst✝² : NormedAddCommGroup E\ninst✝¹ : NormedSpace ℝ E\ninst✝ : FiniteDimensional ℝ E\n_hdim : Module.finrank ℝ E = m\n⊢"
+    },
+    {
+      "name": "Pugh_exercise_2_57",
+      "kind": "other",
+      "error": "error @ line 146: `simp` made no progress\nerror @ line 186: Ambiguous term\n  dist_comm\nPossible interpretations:\n  _root_.dist_comm : ∀ (x y : ?m.1014), Dist.dist x y = Dist.dist y x\n  \n  Nat.dist_com"
+    },
+    {
+      "name": "Putnam_exercise_2017_b3",
+      "kind": "other",
+      "error": "error @ line 502: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt hden_pos : (T_rat n).den ≠ 0\n  \n  Nat.ne_of_gt hden_pos : (T_rat n).den ≠ 0\nerror @ line 513: Ambiguous term\n  n"
+    },
+    {
+      "name": "Rudin_exercise_1_5",
+      "kind": "unsolved_goals",
+      "error": "error @ line 17: unexpected token ','; expected ':'\nerror @ line 18: unexpected token 'in'; expected ':'\nerror @ line 27: unexpected token '.'; expected identifier\nerror @ line 28: unexpected token 'f"
+    },
+    {
+      "name": "Rudin_exercise_2_24",
+      "kind": "unknown_identifier",
+      "error": "error @ line 18: Unknown identifier `RealDisc.mk`\nerror @ line 19: Invalid field notation: Field projection operates on types of the form `C ...` where C is a constant. The expression\n  RealDisc\nhas t"
+    },
+    {
+      "name": "Rudin_exercise_3_8",
+      "kind": "unknown_identifier",
+      "error": "error @ line 38: Unknown identifier `Rudin_exercise_3_8`\nerror @ line 47: Ambiguous term\n  dist_zero_right\nPossible interpretations:\n  _root_.dist_zero_right : ∀ (a : ?m.156), Dist.dist a 0 = ‖a‖\n  \n "
+    },
+    {
+      "name": "Rudin_exercise_3_20",
+      "kind": "other",
+      "error": "error @ line 19: unexpected token 'φ'; expected '_' or identifier"
+    },
+    {
+      "name": "Rudin_exercise_4_6",
+      "kind": "unsolved_goals",
+      "error": "error @ line 88: unexpected token 'φ'; expected rcasesPat\nerror @ line 88: Unexpected syntax\n  failed to pretty print term (use 'set_option pp.rawOnError true' for raw representation)\nerror @ line 58:"
+    },
+    {
+      "name": "Rudin_exercise_4_19",
+      "kind": "other",
+      "error": "error @ line 16: typeclass instance problem is stuck\n  Preorder ?m.7\n\nNote: Lean will not try to resolve this typeclass instance problem because the type argument to `Preorder` is a metavariable. This"
+    },
+    {
+      "name": "Rudin_exercise_5_15",
+      "kind": "signature_drift",
+      "error": "error @ line 74: Application type mismatch: The argument\n  hxy\nhas type\n  x < y\nbut is expected to have type\n  x ≠ y\nin the application\n  taylor_mean_remainder_lagrange hxy\nerror @ line 75: Applicatio"
+    },
+    {
+      "name": "Shakarchi_exercise_1_13a",
+      "kind": "other",
+      "error": "error @ line 28: typeclass instance problem is stuck\n  TopologicalSpace ?m.4\n\nNote: Lean will not try to resolve this typeclass instance problem because the type argument to `TopologicalSpace` is a me"
+    },
+    {
+      "name": "Shakarchi_exercise_1_26",
+      "kind": "other",
+      "error": "error @ line 41: Invalid `end`: There is no current scope to end\n\nNote: Scopes are introduced using `namespace` and `section`\nerror @ line 43: Invalid `end`: There is no current scope to end\n\nNote: Sc"
+    },
+    {
+      "name": "Shakarchi_exercise_2_9",
+      "kind": "other",
+      "error": "error @ line 427: unexpected end of input; expected 'lemma'"
+    },
+    {
+      "name": "Artin_exercise_3_2_7",
+      "kind": "other",
+      "error": "error @ line 15: unexpected token 'φ'; expected '_' or identifier"
+    },
+    {
+      "name": "Axler_exercise_5_11",
+      "kind": "signature_drift",
+      "error": "error @ line 20: Application type mismatch: The argument\n  F\nhas type\n  ℕ\nof sort `Type` but is expected to have type\n  Type ?u.18\nof sort `Type (?u.18 + 1)` in the application\n  End F\nerror @ line 20"
+    },
+    {
+      "name": "Axler_exercise_5_13",
+      "kind": "unsolved_goals",
+      "error": "error @ line 241: unexpected token 'φ'; expected '(', '[', '_', '{', '⦃' or identifier\nerror @ line 241: elaboration function for `Lean.«termSatisfies_binder_pred%__»` has not been implemented\n  faile"
+    },
+    {
+      "name": "Axler_exercise_7_11",
+      "kind": "other",
+      "error": "error @ line 149: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.410436929._hygCtx._hyg.1281` has multiple components\nerror @ line 151: No goals to be solved"
+    },
+    {
+      "name": "Dummit_Foote_exercise_1_6_23",
+      "kind": "signature_drift",
+      "error": "error @ line 23: Application type mismatch: The argument\n  L\nhas type\n  List (α × Bool)\nbut is expected to have type\n  Type ?u.9046\nin the application\n  @IsReduced L\nerror @ line 24: Application type "
+    },
+    {
+      "name": "Dummit_Foote_exercise_2_4_16c",
+      "kind": "other",
+      "error": "error @ line 183: Ambiguous term\n  Prime\nPossible interpretations:\n  _root_.Prime p : Prop\n  \n  Nat.Prime p : Prop\nerror @ line 417: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_"
+    },
+    {
+      "name": "Dummit_Foote_exercise_3_4_5b",
+      "kind": "other",
+      "error": "error @ line 77: Invalid pattern variable: Variable name must be atomic, but `Real.pi._@.624686619._hygCtx._hyg.62` has multiple components\nerror @ line 79: No goals to be solved"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_2_8",
+      "kind": "other",
+      "error": "error @ line 37: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.428153716._hygCtx._hyg.194` has multiple components\nerror @ line 38: No goals to be solved\nerror @ line 57:"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_13",
+      "kind": "other",
+      "error": "error @ line 641: Ambiguous term\n  card_zpowers\nPossible interpretations:\n  Fintype.card_zpowers : card ↥(zpowers ?m.3015) = orderOf ?m.3015\n  \n  Nat.card_zpowers : ∀ (a : ?m.3012), Nat.card ↥(zpowers"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_17",
+      "kind": "other",
+      "error": "error @ line 176: Ambiguous term\n  card_zpowers\nPossible interpretations:\n  Fintype.card_zpowers : card ↥(zpowers ?m.917) = orderOf ?m.917\n  \n  Nat.card_zpowers : ∀ (a : ?m.914), Nat.card ↥(zpowers a)"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_19",
+      "kind": "unsolved_goals",
+      "error": "error @ line 78: unsolved goals\nG : Type u_1\ninst✝¹ : Fintype G\ninst✝ : Group G\nhG : card G = 6545\nhSquarefree6545 : Squarefree 6545\nhSquarefreeG : Squarefree (Nat.card G)\nhZ this✝² : IsZGroup G\nhSolv"
+    },
+    {
+      "name": "Dummit_Foote_exercise_4_5_21",
+      "kind": "other",
+      "error": "error @ line 334: Ambiguous term\n  card_zpowers\nPossible interpretations:\n  Fintype.card_zpowers : card ↥(zpowers ?m.8754) = orderOf ?m.8754\n  \n  Nat.card_zpowers : ∀ (a : ?m.8751), Nat.card ↥(zpowers"
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_2_2",
+      "kind": "other",
+      "error": "error @ line 80: Invalid `end`: There is no current scope to end\n\nNote: Scopes are introduced using `namespace` and `section`"
+    },
+    {
+      "name": "Dummit_Foote_exercise_7_3_16",
+      "kind": "other",
+      "error": "error @ line 19: unexpected token 'φ'; expected '_' or identifier"
+    },
+    {
+      "name": "Dummit_Foote_exercise_8_3_6b",
+      "kind": "unknown_identifier",
+      "error": "error @ line 44: Function expected at\n  idealQ\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  q\n\nHint: The identifier `idealQ` is unknown"
+    },
+    {
+      "name": "Dummit_Foote_exercise_9_1_10",
+      "kind": "other",
+      "error": "error @ line 66: failed to compile definition, consider marking it as 'noncomputable' because it depends on 'AddMonoidAlgebra.semiring', which is 'noncomputable'\nerror @ line 157: unexpected token 'φ'"
+    },
+    {
+      "name": "Herstein_exercise_2_5_52",
+      "kind": "other",
+      "error": "error @ line 70: unexpected token 'φ'; expected '_' or identifier"
+    },
+    {
+      "name": "Herstein_exercise_2_7_7",
+      "kind": "other",
+      "error": "error @ line 27: Invalid argument: Variable `swap01` is not a proposition or let-declaration\nerror @ line 27: `simp` made no progress\nerror @ line 32: Invalid argument: Variable `swap01` is not a prop"
+    },
+    {
+      "name": "Herstein_exercise_2_8_15",
+      "kind": "signature_drift",
+      "error": "error @ line 63: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt h : p ≠ q\n  \n  Nat.ne_of_gt h : p ≠ q\nerror @ line 491: Invalid field `comm`: The environment does not contain `I"
+    },
+    {
+      "name": "Herstein_exercise_2_11_7",
+      "kind": "other",
+      "error": "error @ line 25: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.281339423._hygCtx._hyg.81` has multiple components\nerror @ line 27: No goals to be solved"
+    },
+    {
+      "name": "Herstein_exercise_4_4_9",
+      "kind": "signature_drift",
+      "error": "error @ line 90: Type mismatch: After simplification, term\n  this\n has type\n  ↑a ^ 2 - ↑b ^ 2 = 0\nbut is expected to have type\n  ↑a + ↑b = 0 ∨ ↑a - ↑b = 0\nerror @ line 92: Ambiguous term\n  add_le_add\n"
+    },
+    {
+      "name": "Herstein_exercise_4_5_23",
+      "kind": "other",
+      "error": "error @ line 420: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.3291830080._hygCtx._hyg.835` has multiple components\nerror @ line 423: No goals to be solved"
+    },
+    {
+      "name": "Herstein_exercise_4_6_2",
+      "kind": "signature_drift",
+      "error": "error @ line 136: unexpected token ':='; expected ')', ',' or ':'\nerror @ line 136: Application type mismatch: The argument\n  φ\nhas type\n  ℕ → ℕ\nof sort `Type` but is expected to have type\n  (algebraM"
+    },
+    {
+      "name": "Herstein_exercise_5_4_3",
+      "kind": "other",
+      "error": "error @ line 172: Ambiguous term\n  sqrt\nPossible interpretations:\n  Rat.sqrt 2 : ℚ\n  \n  Nat.sqrt 2 : ℕ\n  \n  √2 : ℝ\nerror @ line 172: Ambiguous term\n  sqrt\nPossible interpretations:\n  Rat.sqrt 5 : ℚ\n  "
+    },
+    {
+      "name": "Ireland_Rosen_exercise_3_10",
+      "kind": "other",
+      "error": "error @ line 125: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt hNpos : N ≠ 0\n  \n  Nat.ne_of_gt hNpos : N ≠ 0\nerror @ line 161: Ambiguous term\n  ne_of_lt\nPossible interpretatio"
+    },
+    {
+      "name": "Munkres_exercise_13_4a2",
+      "kind": "unsolved_goals",
+      "error": "error @ line 408: unexpected token '⟨'; expected '{' or tactic\nerror @ line 408: unsolved goals\n⊢ ∃ X I T, (∀ (i : I), is_topology X (T i)) ∧ ¬is_topology X (⋃ i, T i)"
+    },
+    {
+      "name": "Munkres_exercise_16_1",
+      "kind": "signature_drift",
+      "error": "error @ line 15: Type mismatch\n  y\nhas type\n  badY\nbut is expected to have type\n  BadX\nerror @ line 19: typeclass instance problem is stuck\n  Membership badA ?m.2\n\nNote: Lean will not try to resolve t"
+    },
+    {
+      "name": "Munkres_exercise_16_6",
+      "kind": "unknown_identifier",
+      "error": "error @ line 17: Function expected at\n  rationalRectangle\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  a\n\nHint: The identifier `rationa"
+    },
+    {
+      "name": "Munkres_exercise_22_2a",
+      "kind": "signature_drift",
+      "error": "error @ line 60: Application type mismatch: The argument\n  h_surj\nhas type\n  Function.Surjective p\nbut is expected to have type\n  IsCoinducing p\nin the application\n  IsQuotientMap.mk h_surj"
+    },
+    {
+      "name": "Munkres_exercise_25_9",
+      "kind": "unsolved_goals",
+      "error": "error @ line 33: unexpected token 'φ'; expected '_' or identifier\nerror @ line 25: unsolved goals\ncase refine_2\nG : Type u_1\ninst✝² : TopologicalSpace G\ninst✝¹ : Group G\ninst✝ : IsTopologicalGroup G\nC"
+    },
+    {
+      "name": "Munkres_exercise_28_4",
+      "kind": "unknown_identifier",
+      "error": "error @ line 76: Function expected at\n  limit_point_compact_strong\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  X\n\nHint: The identifier"
+    },
+    {
+      "name": "Munkres_exercise_28_6",
+      "kind": "signature_drift",
+      "error": "error @ line 97: unexpected token 'φ'; expected '⟩'\nerror @ line 72: Type mismatch: After simplification, term\n  hlt\n has type\n  Dist.dist x₀ z < ε\nbut is expected to have type\n  Dist.dist z x₀ < ε\ner"
+    },
+    {
+      "name": "Munkres_exercise_29_4",
+      "kind": "unknown_identifier",
+      "error": "error @ line 16: Function expected at\n  spikeValue\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  ε\n\nHint: The identifier `spikeValue` is"
+    },
+    {
+      "name": "Munkres_exercise_31_3",
+      "kind": "other",
+      "error": "error @ line 40: typeclass instance problem is stuck\n  LT ?m.5\n\nNote: Lean will not try to resolve this typeclass instance problem because the type argument to `LT` is a metavariable. This argument mu"
+    },
+    {
+      "name": "Munkres_exercise_32_2c",
+      "kind": "other",
+      "error": "error @ line 48: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.2411465925._hygCtx._hyg.324` has multiple components\nerror @ line 49: No goals to be solved"
+    },
+    {
+      "name": "Pugh_exercise_2_92",
+      "kind": "unknown_identifier",
+      "error": "error @ line 31: Function expected at\n  cofiniteChain\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  n\n\nHint: The identifier `cofiniteCha"
+    },
+    {
+      "name": "Pugh_exercise_4_15a",
+      "kind": "other",
+      "error": "error @ line 114: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.2093472855._hygCtx._hyg.1234` has multiple components\nerror @ line 115: No goals to be solved"
+    },
+    {
+      "name": "Putnam_exercise_2018_a5",
+      "kind": "other",
+      "error": "error @ line 67: unexpected token '.'; expected ':'\nerror @ line 70: unexpected identifier; expected '[', 'add_aesop_rules', 'binder_predicate', 'builtin_cbv_simproc', 'builtin_dsimproc', 'builtin_sim"
+    },
+    {
+      "name": "Rudin_exercise_1_17",
+      "kind": "signature_drift",
+      "error": "error @ line 27: Type mismatch: After simplification, term\n  parallelogram_law_with_norm ℝ x y\n has type\n  ‖x + y‖ ^ 2 + ‖x - y‖ ^ 2 = 2 * (‖x‖ ^ 2 + ‖y‖ ^ 2)\nbut is expected to have type\n  ‖x + y‖ * "
+    },
+    {
+      "name": "Rudin_exercise_3_2a",
+      "kind": "unsolved_goals",
+      "error": "error @ line 97: Ambiguous term\n  sqrt\nPossible interpretations:\n  Rat.sqrt (1 + 0) : ℚ\n  \n  (1 + 0).sqrt : ℕ\n  \n  √(1 + 0) : ℝ\nerror @ line 97: unsolved goals\ng : ℝ → ℝ := fun x => 1 / (√(1 + x) + 1)"
+    },
+    {
+      "name": "Rudin_exercise_3_5",
+      "kind": "unknown_identifier",
+      "error": "error @ line 28: Function expected at\n  seq343A\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  n\n\nHint: The identifier `seq343A` is unkno"
+    },
+    {
+      "name": "Rudin_exercise_3_13",
+      "kind": "unknown_identifier",
+      "error": "error @ line 28: Function expected at\n  spike\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  0\n\nHint: The identifier `spike` is unknown, "
+    },
+    {
+      "name": "Rudin_exercise_4_15",
+      "kind": "other",
+      "error": "error @ line 77: Invalid `end`: There is no current scope to end\n\nNote: Scopes are introduced using `namespace` and `section`"
+    },
+    {
+      "name": "Rudin_exercise_5_1",
+      "kind": "other",
+      "error": "error @ line 109: Ambiguous term\n  ne_of_gt\nPossible interpretations:\n  _root_.ne_of_gt hn_pos : n ≠ 0\n  \n  Nat.ne_of_gt hn_pos : n ≠ 0\nerror @ line 115: Ambiguous term\n  ne_of_gt\nPossible interpretat"
+    },
+    {
+      "name": "Rudin_exercise_5_3",
+      "kind": "signature_drift",
+      "error": "error @ line 78: Type mismatch: After simplification, term\n  h\n has type\n  |g y - g x| ≤ |y - x| * ↑⟨M, hM_nonneg⟩\nbut is expected to have type\n  |g y - g x| ≤ M * |y - x|"
+    },
+    {
+      "name": "Rudin_exercise_5_17",
+      "kind": "other",
+      "error": "error @ line 75: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.1572104419._hygCtx._hyg.592` has multiple components\nerror @ line 79: No goals to be solved"
+    },
+    {
+      "name": "Shakarchi_exercise_1_13b",
+      "kind": "other",
+      "error": "error @ line 27: typeclass instance problem is stuck\n  TopologicalSpace ?m.4\n\nNote: Lean will not try to resolve this typeclass instance problem because the type argument to `TopologicalSpace` is a me"
+    },
+    {
+      "name": "Shakarchi_exercise_2_13",
+      "kind": "unknown_identifier",
+      "error": "error @ line 19: Function expected at\n  pathological\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  0\n\nHint: The identifier `pathological"
+    },
+    {
+      "name": "Shakarchi_exercise_3_14",
+      "kind": "other",
+      "error": "error @ line 91: Invalid pattern variable: Variable name must be atomic, but `Nat.totient._@.897961200._hygCtx._hyg.435` has multiple components\nerror @ line 94: No goals to be solved"
+    },
+    {
+      "name": "Shakarchi_exercise_5_1",
+      "kind": "unknown_identifier",
+      "error": "error @ line 15: Function expected at\n  counterexampleF\nbut this term has type\n  ?m.1\n\nNote: Expected a function because this term is being applied to the argument\n  z\n\nHint: The identifier `counterex"
+    }
+  ]
+}

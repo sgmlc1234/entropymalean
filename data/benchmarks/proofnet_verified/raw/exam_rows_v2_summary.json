@@ -1,0 +1,68 @@
+{
+  "schema_version": "eml-exam-row-v2",
+  "rows": 367,
+  "statement_checked": 351,
+  "statement_failed": [
+    "Artin_exercise_6_4_3",
+    "Artin_exercise_11_4_8",
+    "Axler_exercise_7_6",
+    "Ireland_Rosen_exercise_2_21",
+    "Rudin_exercise_3_20",
+    "Artin_exercise_3_2_7",
+    "Axler_exercise_6_13",
+    "Axler_exercise_7_5",
+    "Dummit_Foote_exercise_2_4_16c",
+    "Dummit_Foote_exercise_7_3_16",
+    "Herstein_exercise_2_5_52",
+    "Herstein_exercise_2_7_7",
+    "Herstein_exercise_5_4_3",
+    "Ireland_Rosen_exercise_2_4",
+    "Munkres_exercise_13_3b",
+    "Rudin_exercise_1_8"
+  ],
+  "by_topic": {
+    "abstract_algebra": 162,
+    "real_analysis": 70,
+    "topology": 60,
+    "linear_algebra": 26,
+    "number_theory": 21,
+    "complex_analysis": 16,
+    "competition": 12
+  },
+  "by_shape": {
+    "other": 116,
+    "inequality": 75,
+    "existential": 67,
+    "equation": 44,
+    "universal": 28,
+    "iff": 20,
+    "divisibility": 17
+  },
+  "by_hypotheses": {
+    "light": 167,
+    "rich": 135,
+    "closed": 65
+  },
+  "by_max_hint_level": {
+    "3": 281,
+    "0": 3,
+    "2": 61,
+    "1": 22
+  },
+  "gt_step_count": {
+    "median": 35,
+    "max": 693
+  },
+  "palette_theorems": {
+    "rows_with_palette": 319,
+    "median": 5
+  },
+  "audit_faithfulness": {
+    "faithful": 270,
+    "stronger": 39,
+    "incomparable": 33,
+    "weaker": 16,
+    "nl_ambiguous": 8,
+    "nl_wrong": 1
+  }
+}

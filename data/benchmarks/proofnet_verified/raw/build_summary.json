@@ -1,0 +1,17 @@
+{
+  "rows": 367,
+  "skipped": [],
+  "used_corrected": 92,
+  "with_helper": 14,
+  "hint_outline_rows": 322,
+  "mean_palette_theorems": 10.05,
+  "validated_names": 1505,
+  "audit_counts": {
+    "faithful": 270,
+    "stronger": 39,
+    "incomparable": 33,
+    "weaker": 16,
+    "nl_ambiguous": 8,
+    "nl_wrong": 1
+  }
+}

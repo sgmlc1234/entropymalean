@@ -1,0 +1,38 @@
+{
+  "schema_version": "eml-exam-row-v2",
+  "rows": 50,
+  "statement_checked": 50,
+  "statement_failed": [],
+  "by_topic": {
+    "algebra": 18,
+    "number_theory": 17,
+    "competition": 12,
+    "induction": 3
+  },
+  "by_shape": {
+    "equation": 21,
+    "other": 13,
+    "divisibility": 9,
+    "inequality": 7
+  },
+  "by_hypotheses": {
+    "rich": 15,
+    "closed": 11,
+    "light": 24
+  },
+  "by_max_hint_level": {
+    "1": 40,
+    "0": 10
+  },
+  "gt_step_count": {
+    "median": 8,
+    "max": 151
+  },
+  "palette_theorems": {
+    "rows_with_palette": 40,
+    "median": 2
+  },
+  "audit_faithfulness": {
+    "unaudited": 50
+  }
+}

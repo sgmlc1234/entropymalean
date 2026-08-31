@@ -1,0 +1,155 @@
+id,statement,formal_statement,lean_header,lean_code,difficulty_label,problem_style,formal_status,generation,parent_ids,ancestor_ids
+Dummit_Foote_exercise_3_1_22b,Prove the theorem Dummit_Foote_exercise_3_1_22b.,"theorem Dummit_Foote_exercise_3_1_22b {G : Type*} [Group G] (I : Type*) [Nonempty I]
+  (H : I → Subgroup G) (hH : ∀ i : I, Normal (H i)) :
+  Normal (⨅ (i : I), H i) := by","import Mathlib
+open Fintype Subgroup Set Polynomial Ideal
+open scoped BigOperators","import Mathlib
+open Fintype Subgroup Set Polynomial Ideal
+open scoped BigOperators
+
+theorem Dummit_Foote_exercise_3_1_22b {G : Type*} [Group G] (I : Type*) [Nonempty I]
+  (H : I → Subgroup G) (hH : ∀ i : I, Normal (H i)) :
+  Normal (⨅ (i : I), H i) := by
+  -- Step 1: Recognize that the infimum `⨅ (i : I), H i` is definitionally the `iInf` of the family `H`.
+  -- Step 2: Aim to invoke `Subgroup.normal_iInf_normal`, which states that the infimum of normal subgroups is normal.
+  -- Step 2.1: Supply the lemma with the hypothesis `hH`, witnessing that each `H i` is normal.
+  exact Subgroup.normal_iInf_normal (fun i => hH i)
+",hard,theorem_proof,certified,0,[],[]
+Munkres_exercise_16_4,Prove the theorem Munkres_exercise_16_4.,"theorem Munkres_exercise_16_4 {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+  (π₁ : X × Y → X)
+  (π₂ : X × Y → Y)
+  (h₁ : π₁ = Prod.fst)
+  (h₂ : π₂ = Prod.snd) :
+  IsOpenMap π₁ ∧ IsOpenMap π₂ := by","import Mathlib
+open Filter Set TopologicalSpace
+open scoped Topology","import Mathlib
+open Filter Set TopologicalSpace
+open scoped Topology
+
+theorem Munkres_exercise_16_4 {X Y : Type*} [TopologicalSpace X] [TopologicalSpace Y]
+  (π₁ : X × Y → X)
+  (π₂ : X × Y → Y)
+  (h₁ : π₁ = Prod.fst)
+  (h₂ : π₂ = Prod.snd) :
+  IsOpenMap π₁ ∧ IsOpenMap π₂ := by
+  constructor
+  · -- Step 1: Our goal is to show that `π₁` is an open map.
+    -- Step 1.1: Rewrite `π₁` using `h₁` so the goal becomes the standard projection `Prod.fst`.
+    -- Step 1.2: Apply the library lemma `isOpenMap_fst`, which establishes that `Prod.fst` is open.
+    simpa [h₁] using (isOpenMap_fst : IsOpenMap (Prod.fst : X × Y → X))
+  · -- Step 2: Our goal is to show that `π₂` is an open map.
+    -- Step 2.1: Rewrite `π₂` using `h₂` so the goal becomes the standard projection `Prod.snd`.
+    -- Step 2.2: Apply the library lemma `isOpenMap_snd`, which establishes that `Prod.snd` is open.
+    simpa [h₂] using (isOpenMap_snd : IsOpenMap (Prod.snd : X × Y → Y))
+",hard,theorem_proof,certified,0,[],[]
+Axler_exercise_1_8,Prove the theorem Axler_exercise_1_8.,"theorem Axler_exercise_1_8 {F V : Type*} [AddCommGroup V] [Field F]
+  [Module F V] {ι : Type*} (u : ι → Submodule F V) :
+  ∃ U : Submodule F V, (⋂ (i : ι), (u i).carrier) = ↑U := by","import Mathlib
+open Fintype Complex Polynomial LinearMap FiniteDimensional Module Module.End
+open scoped BigOperators","import Mathlib
+open Fintype Complex Polynomial LinearMap FiniteDimensional Module Module.End
+open scoped BigOperators
+
+theorem Axler_exercise_1_8 {F V : Type*} [AddCommGroup V] [Field F]
+  [Module F V] {ι : Type*} (u : ι → Submodule F V) :
+  ∃ U : Submodule F V, (⋂ (i : ι), (u i).carrier) = ↑U := by
+  -- Step 1: Enable classical logic to use choice-dependent lemmas about indexed intersections.
+  classical
+  -- Step 2: Choose the canonical candidate submodule, namely the infimum over the family.
+  refine ⟨⨅ i, u i, ?_⟩
+  -- Step 3: Compare the set-theoretic intersection with the carrier of the infimum via extensionality.
+  ext x
+  -- Step 3.1: Prove that membership in the intersection implies membership in the infimum submodule.
+  constructor
+  · -- Step 3.1.1: Assume `x` lies in the intersection of the underlying sets of each submodule.
+    intro hx
+    -- Step 3.1.1.1: Expand the intersection membership into pointwise membership in each submodule.
+    have hx_all_carrier : ∀ i : ι, x ∈ (u i).carrier := by
+      -- Step 3.1.1.1.1: Use the elimination rule for indexed intersections of sets.
+      exact Set.mem_iInter.mp hx
+    -- Step 3.1.2: Convert the pointwise membership into membership in the infimum submodule.
+    -- Step 3.1.2.1: First rephrase the carrier-style membership in terms of submodule membership.
+    have hx_all : ∀ i : ι, x ∈ u i := by
+      -- Step 3.1.2.1.1: Coercions identify `x ∈ u i` with membership in the underlying set.
+      intro i
+      simpa using hx_all_carrier i
+    -- Step 3.1.2.2: `Submodule.mem_iInf` translates the universal property into infimum membership.
+    exact (Submodule.mem_iInf u).mpr hx_all
+  · -- Step 3.2: Assume `x` belongs to the infimum submodule and deduce membership in every component.
+    intro hx
+    -- Step 3.2.1: Unpack the infimum membership into pointwise membership in each submodule.
+    have hx_all : ∀ i : ι, x ∈ u i := by
+      -- Step 3.2.1.1: Apply the introduction rule for `mem_iInf` to obtain the universal condition.
+      exact (Submodule.mem_iInf u).mp hx
+    -- Step 3.2.2: Reassemble the pointwise membership into the set-theoretic intersection.
+    -- Step 3.2.2.1: Translate the submodule membership back to carrier-style membership.
+    have hx_all_carrier : ∀ i : ι, x ∈ (u i).carrier := by
+      -- Step 3.2.2.1.1: Use coercion equality between submodule and carrier membership.
+      intro i
+      simpa using hx_all i
+    -- Step 3.2.2.2: `Set.mem_iInter` packages the universal condition as intersection membership.
+    exact Set.mem_iInter.mpr hx_all_carrier
+",hard,theorem_proof,certified,0,[],[]
+Dummit_Foote_exercise_3_1_3a,Prove the theorem Dummit_Foote_exercise_3_1_3a.,"theorem Dummit_Foote_exercise_3_1_3a {A : Type*} [CommGroup A] (B : Subgroup A) :
+  ∀ a b : A ⧸ B, a*b = b*a := by","import Mathlib
+open Fintype Subgroup Set Polynomial Ideal
+open scoped BigOperators","import Mathlib
+open Fintype Subgroup Set Polynomial Ideal
+open scoped BigOperators
+
+theorem Dummit_Foote_exercise_3_1_3a {A : Type*} [CommGroup A] (B : Subgroup A) :
+  ∀ a b : A ⧸ B, a*b = b*a := by
+  -- Step 1: Introduce arbitrary cosets `a` and `b` in the quotient group `A ⧸ B`
+  --         so that we can reason pointwise about their product.
+  intro a b
+  -- Step 2: Apply the commutativity law in the quotient commutative group `A ⧸ B`,
+  --         which it inherits from the ambient commutative group `A`.
+  -- Step 2.1: The lemma `mul_comm a b` explicitly states the desired equality, so we conclude with it.
+  simpa using (mul_comm a b)
+",hard,theorem_proof,certified,0,[],[]
+Munkres_exercise_23_2,Prove the theorem Munkres_exercise_23_2.,"theorem Munkres_exercise_23_2 {X : Type*}
+  [TopologicalSpace X] {A : ℕ → Set X} (hA : ∀ n, IsConnected (A n))
+  (hAn : ∀ n, A n ∩ A (n + 1) ≠ ∅) :
+  IsConnected (⋃ n, A n) := by","import Mathlib
+open Filter Set TopologicalSpace
+open scoped Topology","import Mathlib
+open Filter Set TopologicalSpace
+open scoped Topology
+
+theorem Munkres_exercise_23_2 {X : Type*}
+  [TopologicalSpace X] {A : ℕ → Set X} (hA : ∀ n, IsConnected (A n))
+  (hAn : ∀ n, A n ∩ A (n + 1) ≠ ∅) :
+  IsConnected (⋃ n, A n) := by
+  classical
+  -- Step 1: turn each non-emptiness assumption on `A n ∩ A (n + 1)` into a reusable witness.
+  have hAdj : ∀ n, (A n ∩ A (n + 1)).Nonempty := by
+    -- Step 1.1: rewrite `Nonempty` as `≠ ∅` and apply the given hypothesis.
+    intro n
+    exact (Set.nonempty_iff_ne_empty).2 (hAn n)
+  -- Step 2: encode the “intersection graph” relating indices that share points.
+  set R : ℕ → ℕ → Prop := fun i j => (A i ∩ A j).Nonempty
+  -- Step 3: register forward and backward edges in this graph using consecutive intersections.
+  have hEdgeSucc : ∀ n, R n (n + 1) := by
+    -- Step 3.1: unpack the definition of `R` and reuse `hAdj`.
+    intro n
+    simpa [R, Nat.succ_eq_add_one] using hAdj n
+  -- Step 3.2: obtain the reverse edges by symmetry of intersection.
+  have hEdgePred : ∀ n, R (n + 1) n := by
+    -- Step 3.2.1: rewrite the intersection by commuting the factors.
+    intro n
+    simpa [R, Nat.succ_eq_add_one, Set.inter_comm] using hAdj n
+  -- Step 4: prove that any two indices are connected inside the graph via successive edges.
+  have hChain : ∀ i j : ℕ, Relation.ReflTransGen R i j := by
+    -- Step 4.1: apply the general lemma for relations on successor-ordered types.
+    intro i j
+    refine reflTransGen_of_succ R ?_ ?_
+    -- Step 4.1.1: furnish forward steps `k → k + 1` along the interval `[i, j)`.
+    intro k hk
+    exact hEdgeSucc k
+    -- Step 4.1.2: furnish backward steps `k + 1 → k` along the interval `[j, i)`.
+    intro k hk
+    exact hEdgePred k
+  -- Step 5: assemble the connectedness of the entire union via the path-connected graph lemma.
+  simpa [R] using
+    IsConnected.iUnion_of_reflTransGen (s := A) (H := hA) (K := hChain)
+",hard,theorem_proof,certified,0,[],[]

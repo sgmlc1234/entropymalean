@@ -1,0 +1,272 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split
+mathd_algebra_359,"What is the value of $y$ in the arithmetic sequence $y + 6$, $12$, $y$? Show that it is 9.",,"theorem mathd_algebra_359
+  (y : ℝ)
+  (h₀ : ∃ d:ℝ, y + 6 + d = 12 ∧ 12 + d = y) :
+  y = 9 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_421,"The parabolas defined by the equations $y=x^2+4x+6$ and $y=\frac{1}{2}x^2+x+6$ intersect at points $(a,b)$ and $(c,d)$, where $c\ge a$. What is $c-a$? Show that it is 6.",,"theorem mathd_algebra_421 (a b c d : ℝ)
+  (Sf Sg : Set (ℝ × ℝ))
+  (h₀: ∀ x y:ℝ, (x, y) ∈ Sf ↔ y = x ^ 2 + 4 * x + 6)
+  (h₁: ∀ x y:ℝ, (x, y) ∈ Sg ↔ y = 1 / 2 * x ^ 2 + x + 6)
+  (h₂: (a, b) ∈ Sf ∩ Sg)
+  (h₃: (c, d) ∈ Sf ∩ Sg)
+  (h₄ : (a, b) ≠ (c, d))
+  (h₅ : a ≤ c) :
+  c - a = 6 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_algebra_432,Expand $(x+3)(2x-6)$. Show that it is 2x^2-18.,,theorem mathd_algebra_432 (x : ℝ) : (x + 3) * (2 * x - 6) = 2 * x ^ 2 - 18 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_487,What is the distance between the two intersections of $y=x^2$ and $x+y=1$? Show that it is \sqrt{10}.,,"theorem mathd_algebra_487
+  (F G I : Set (EuclideanSpace ℝ (Fin 2)))
+  (hF : F = { x | x 1 = (x 0) ^ 2})
+  (hG : G = { x | x 0 + x 1 = 1})
+  (hI : I = (F ∩ G))
+  (A B : EuclideanSpace ℝ (Fin 2))
+  (h₀ : ∀ x, x ∈ I ↔ x = A ∨ x = B) :
+  dist A B = Real.sqrt 10 := by sorry","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_459,"Anna, Bertram, Carli, and David have a competition to see which of them can hold their breath for the longest time period, in minutes. If Bertram, Carli, and David add their times together, the resulting sum is three times the length of time that Anna can hold her breath. Similarly, if Anna, Carli, and David sum their times, the result is four times Bertram's time period, and if Anna, Bertram, and David sum their times, the result is twice Carli's time. Finally, eight times Anna's time plus ten times Bertram's time plus six times Carli's time equals two fifths of an hour. If the length of time that David can hold his breath is expressed in minutes as a simplified fraction, what is the sum of the numerator and the denominator? Show that it is 28.",,"theorem mathd_algebra_459 (a b c d : ℚ) (h₀ : 3 * a = b + c + d) (h₁ : 4 * b = a + c + d)
+  (h₂ : 2 * c = a + b + d) (h₃ : 8 * a + 10 * b + 6 * c = 24) : ↑d.den + d.num = 28 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_245,Simplify $\left( \frac{4}{x} \right)^{-1} \left( \frac{3x^3}{x} \right)^2 \left( \frac{1}{2x} \right)^{-3}$. Show that it is 18x^8.,,"theorem mathd_algebra_245 (x : ℝ) :
+  (4 / x)⁻¹ * (3 * x ^ 3 / x) ^ 2 * (1 / (2 * x))⁻¹ ^ 3 = 18 * x ^ 8 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_algebra_80,Solve  \[\frac{x-9}{x+1}=2\]for $x$. Show that it is -11.,,theorem mathd_algebra_80 (x : ℝ) (h₁ : (x - 9) / (x + 1) = 2) : x = -11 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+numbertheory_nckeqnm1ckpnm1ckm1,"Show that for positive integers $n$ and $k$ with $k \leq n$, we have 
+$\binom{n}{k} = \binom{n-1}{k} + \binom{n-1}{k-1}$.",,"theorem numbertheory_nckeqnm1ckpnm1ckm1 (n k : ℕ) (h₀ : 0 < n ∧ 0 < k) (h₁ : k ≤ n) :
+  Nat.choose n k = Nat.choose (n - 1) k + Nat.choose (n - 1) (k - 1) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+aime_1991_p1,"Find $x^2+y^2$ if $x$ and $y$ are positive integers such that
+$\begin{align*}
+xy+x+y&=71, \\
+x^2y+xy^2&=880.
+\end{align*}$ Show that it is 146.",,"theorem aime_1991_p1 (x y : ℕ) (h₀ : 0 < x ∧ 0 < y) (h₁ : x * y + (x + y) = 71)
+  (h₂ : x ^ 2 * y + x * y ^ 2 = 880) : x ^ 2 + y ^ 2 = 146 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+amc12a_2021_p25,"Let $d(n)$ denote the number of positive integers that divide $n$, including $1$ and $n$. For example, $d(1)=1,d(2)=2,$ and $d(12)=6$. (This function is known as the divisor function.) Let$f(n)=\\frac{d(n)}{\\sqrt [3]n}.$
+There is a unique positive integer $N$ such that $f(N)>f(n)$ for all positive integers $n\\ne N$. What is the sum of the digits of $N$? Show that it is 9.",,"theorem amc12a_2021_p25
+  (m : ℕ)
+  (hm₀ : 0 < m)
+  (f : ℕ → ℝ)
+  (h₀ : ∀ n, 0 < n → f n = ((Nat.divisors n).card)/(n^((1:ℝ)/3)))
+  (h₁ : ∀ n ≠ m, 0 < n → f n < f m) :
+  (Nat.digits 10 m).sum = 9 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+amc12a_2009_p25,"The first two terms of a sequence are $a_1 = 1$ and $a_2 = \frac {1}{\sqrt3}$. For $n\ge1$,
+
+
+<center>$a_{n + 2} = \frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>
+
+
+What is $|a_{2009}|$? Show that it is 0.",,"theorem amc12a_2009_p25 (a : ℕ → ℝ) (h₀ : a 1 = 1) (h₁ : a 2 = 1 / Real.sqrt 3)
+  (h₂ : ∀ n, 1 ≤ n → a (n + 2) = (a n + a (n + 1)) / (1 - a n * a (n + 1))) : abs (a 2009) = 0 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+amc12a_2008_p4,"
+What is the numerical value of the [[product]]
+$\frac{8}{4}\cdot\frac{12}{8}\cdot\frac{16}{12}\cdot\cdots\cdot\frac{4n+4}{4n}\cdot\cdots\cdot\frac{2008}{2004}?$ Show that it is 502.",,"theorem amc12a_2008_p4 : (∏ k ∈ Finset.Icc (1 : ℕ) 501, ((4 : ℝ) * k + 4) / (4 * k)) = 502 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+amc12b_2020_p6,"Prove that for all integers $n \geq 9,$ the value of $\frac{(n+2)!-(n+1)!}{n!}$is always a perfect square.",,theorem amc12b_2020_p6  (n : ℕ) (hn : 9 ≤ n) : IsSquare (((n + 2)! - (n + 1)!) / n !) := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_640,Find the remainder when $91145 + 91146 + 91147 + 91148$ is divided by 4. Show that it is 2.,,theorem mathd_numbertheory_640 : (91145 + 91146 + 91147 + 91148) % 4 = 2 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_numbertheory_403,The sum of the proper divisors of 18 is 21. What is the sum of the proper divisors of 198? Show that it is 270.,,"theorem mathd_numbertheory_403 
+  (h₀: (∑ k ∈ Nat.properDivisors 18, k) = 21) : 
+  (∑ k ∈ Nat.properDivisors 198, k) = 270 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_numbertheory_296,"What is the smallest positive integer, other than $1$, that is both a perfect cube and a perfect fourth power? Show that it is 4096.",,"theorem mathd_numbertheory_296
+  (S : Set ℕ)
+  (hS :  S = {n | 0 < n ∧ n ≠ 1 ∧ ∃ x, x ^ 3 = n ∧ ∃ t, t ^ 4 = n}) :
+  IsLeast S 4096 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_284,What positive two-digit integer is exactly twice the sum of its digits? Show that it is 18.,,"theorem mathd_numbertheory_284
+  (x : ℕ)
+  (h₀ : 0 < x)
+  (h₁ : (Nat.digits 10 x).length = 2)
+  (h₁ : 2 * (Nat.digits 10 x).sum = x) :
+  x = 18 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_numbertheory_247,"Solve the congruence $3n \equiv 2 \pmod{11}$, as a residue modulo 11.  (Give an answer between 0 and 10.) Show that it is 8.",,theorem mathd_numbertheory_247 (n : ℕ) (h₀ : 3 * n ≡ 2 [MOD 11]) : n % 11 = 8 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_92,"Solve the congruence $5n \equiv 8 \pmod{17}$, as a residue modulo 17.  (Give an answer between 0 and 16.) Show that it is 5.",,theorem mathd_numbertheory_92 : {n : ZMod 17 | 5 * n.val ≡ 8 [ZMOD 17]} = {5} := by ,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+imo_1984_p6,"Let $a,b,c,d$ be odd integers such that $0<a<b<c<d$ and $ad=bc$. Prove that if $a+d=2^k$ and $b+c=2^m$ for some integers $k$ and $m$, then $a=1$.",,"theorem imo_1984_p6
+  (a b c d k m : ℤ)
+  (h₀ : 0 < a ∧ 0 < b ∧ 0 < c ∧ 0 < d)
+  (h₁ : Odd a ∧ Odd b ∧ Odd c ∧ Odd d)
+  (h₂ : a < b ∧ b < c ∧ c < d)
+  (h₃ : a * d = b * c)
+  (h₄ : a + d = (2:ℝ) ^ k)
+  (h₅ : b + c = (2:ℝ) ^ m) :
+  a = 1 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+imo_1960_p2,"Let \(x\) be a real number. Assume that:
+
+
+- \(1 + 2x \ge 0\) (so that the square root is defined),
+- \((1 - \sqrt{1 + 2x})^2 \neq 0\) (so the denominator is nonzero), and
+- \(\frac{4x^2}{(1 - \sqrt{1 + 2x})^2} < 2x + 9\).
+
+
+Prove that:
+\[
+-\frac{1}{2} \le x \quad \text{and} \quad x < \frac{45}{8}\,.
+\]",,"theorem imo_1960_p2 (x : ℝ) (h₀ : 0 ≤ 1 + 2 * x) (h₁ : (1 - Real.sqrt (1 + 2 * x)) ^ 2 ≠ 0)
+  (h₂ : 4 * x ^ 2 / (1 - Real.sqrt (1 + 2 * x)) ^ 2 < 2 * x + 9) : -(1 / 2) ≤ x ∧ x < 45 / 8 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+algebra_amgm_sum1toneqn_prod1tonleq1,"For a sequence of nonnegative real numbers $a_1, a_2, \ldots, a_n$ such that $\sum_{i=1}^n a_i = n$, show that $\prod_{i=1}^n a_i \leq 1$.",,"theorem algebra_amgm_sum1toneqn_prod1tonleq1
+  (a : ℕ → NNReal)
+  (n : ℕ)
+  (h₀ : (∑ x ∈ Finset.range n, a x) = n) :
+  (∏ x ∈ Finset.range n, a x) ≤ 1 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+algebra_binomnegdiscrineq_10alt28asqp1,"For any real number a, show that $10a \leq 28a^2 + 1$.",,theorem algebra_binomnegdiscrineq_10alt28asqp1 (a : ℝ) : 10 * a ≤ 28 * a ^ 2 + 1 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+induction_pord1p1on2powklt5on2,"Show that for positive integer $n$, $(\prod_{k=1}^{n} (1 + 1/2^k)) < 5/2$.",,"theorem induction_pord1p1on2powklt5on2
+  (n : ℕ) (h₀ : 0 < n) :
+  (∏ k ∈ Finset.Icc (1:ℕ) n, ((1:ℝ) + (1 : ℝ) / 2 ^ k)) < (5 / 2 : ℝ) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid

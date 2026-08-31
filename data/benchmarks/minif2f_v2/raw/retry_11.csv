@@ -1,0 +1,124 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split
+amc12b_2021_p13,How many values of $\theta$ in the interval $0<\theta\le 2\pi$ satisfy$1-3\sin\theta+5\cos3\theta = 0?$ Show that it is 6.,,"theorem amc12b_2021_p13 (S : Finset ℝ)
+  (h₀ :
+  ∀ x : ℝ, x ∈ S ↔ 0 < x ∧ x ≤ 2 * Real.pi ∧ 1 - 3 * Real.sin x + 5 * Real.cos (3 * x) = 0) :
+  S.card = 6 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+amc12_2000_p1,"Let $I,M,$ and $O$ be distinct [[positive integer]]s such that the product $I \\cdot M \\cdot O = 2001 $.  What is the largest possible value of the sum $I + M + O$?\n\n Show that it is 671.",,"theorem amc12_2000_p1:   IsGreatest {z : ℕ | ∃ I M O : ℕ, I > 0 ∧ M > 0 ∧O > 0 ∧ I ≠ M ∧ M ≠ O ∧ I * M * O = 2001 ∧ I + M + O = z} 671 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+amc12b_2021_p21,Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\sqrt2}}=\sqrt2^{2^x}.$ Show that the following statements is true: 2\le S<6.,,"theorem amc12b_2021_p21
+  (S : Finset ℝ)
+  (a : ℝ)
+  (h₀ : ∀ x : ℝ, x ∈ S ↔ 0 < x ∧ x ^ (2 : ℝ) ^ Real.sqrt 2 = Real.sqrt 2 ^ ((2 : ℝ) ^ x))
+  (h₁ : a = ∑ k ∈ S, k) :
+  (2 ≤ a) ∧ a < 6 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+amc12b_2002_p11,"The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. Show that the sum of these four primes is a prime.",,"theorem amc12b_2002_p11 (a b : ℕ) (h₀ : Nat.Prime a) (h₁ : Nat.Prime b) (h₂ : Nat.Prime (a + b))
+  (h₃ : Nat.Prime (a - b)) : Nat.Prime (a + b + (a - b + (a + b))) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_numbertheory_200,"Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and takes a total of $139$ steps, walking in a circle (so that after the 11th step he reaches the first step again). Which step of the cakewalk does he end on? Show that it is 7.",,"theorem mathd_numbertheory_200
+  (x p : ℕ)
+  (f : ℕ → ℝ)
+  (h₀ : Function.Periodic f p)
+  (h₁ : f 11 = f 0)
+  (h₂: f 139 = f x) :
+  x = 7 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_numbertheory_99,"Solve the congruence $2n \equiv 15 \pmod{47}$, as a residue modulo 47.  (Give an answer between 0 and 46.) Show that it is 31.",,theorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n ≡ 15 [MOD 47]) : n ≡ 31 [MOD 47] := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+imo_1978_p5,"Let $f(1), f(2), f(3), ..., f(n), ...$, be a sequence of distinct positive integers. Prove that for all positive natural numbers $n$ we have: $\\sum_{k=1}^{n} f(k)k^{-2} \\geq \\sum_{k=1}^{n} k^{-1}.$",,"theorem imo_1978_p5
+  (n : ℕ)
+  (f : ℕ → ℕ)
+  (h₀ : ∀ (m : ℕ), 0 < m → 0 < f m)
+  (h₁ : ∀ (p q : ℕ), 0 < p → 0 < q → p ≠ q → f p ≠ f q)
+  (h₂ : 0 < n) :
+  (∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / k) ≤ ∑ k ∈ Finset.Icc 1 n, ((f k):ℝ) / k ^ 2 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+imo_1977_p5,"Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the remainder $r$ and the quotient $q.$
+  Determine all pairs $(a, b)$ for which $q^2 + r = 1977.$ 
+  Show that (a,b) can take only one of these values: (7, 50) or (37,50) or (50, 7) or (50, 37) .",,"theorem imo_1977_p5
+  (a b q r : ℕ)
+  (hp: 0 < a ∧ 0 < b)
+  (h₀ : r = (a ^ 2 + b ^ 2) % (a + b))
+  (h₁ : q = (a ^ 2 + b ^ 2) / (a + b))
+  (h₂ : q ^ 2 + r = 1977) :
+  (a = 7 ∧ b = 50) ∨ (a = 37 ∧ b = 50) ∨ (a = 50 ∧ b = 7) ∨ (a = 50 ∧ b = 37) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+imo_1968_p5_1,"Let $a$ be a positive real number and $f$ be a real function such that $\forall x \in \mathbb{R}, f(x+a)=\frac{1}{2}+\sqrt{f(x)-f(x)^2}$.
+Show that there exists a positive real number $b$ such that $\forall x \in \mathbb{R}, f(x+b)=f(x)$.",,"theorem imo_1968_p5_1 (a : ℝ) (f : ℝ → ℝ) (h₀ : 0 < a)
+  (h₁ : ∀ x, f (x + a) = 1 / 2 + Real.sqrt (f x - f x ^ 2)) : ∃ b > 0, ∀x, f (x + b) = f x := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+imo_1992_p1,"Let $p, q, r$ be integers with $1 < p < q < r$.
+  Show that if $(p - 1) * (q - 1) * (r - 1)$ divides $p * q * r - 1$, then $(p, q, r) = (2, 4, 8)$ or $(p, q, r) = (3, 5, 15)$.",,"theorem imo_1992_p1 (p q r : ℤ) (h₀ : 1 < p ∧ p < q ∧ q < r)
+  (h₁ : (p - 1) * (q - 1) * (r - 1) ∣ p * q * r - 1) :
+  (p, q, r) = (2, 4, 8) ∨ (p, q, r) = (3, 5, 15) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+algebra_9onxpypzleqsum2onxpy,"Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\leq 2/(x+y)+2/(y+z)+2/(z+x)$.",,"theorem algebra_9onxpypzleqsum2onxpy (x y z : ℝ) (h₀ : 0 < x ∧0 < y ∧ 0 < z) :
+  9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid

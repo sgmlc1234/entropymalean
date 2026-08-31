@@ -1,0 +1,159 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split
+mathd_algebra_114,"If $a = 8$, what is the value of $\left(16\sqrt[3]{a^2}\right)^{\frac 13}$? Show that it is 4.",,"theorem mathd_algebra_114 (a : ℝ) (h₀ : a = 8) :
+  (16 * (a ^ 2) ^ ((1 : ℝ) / 3)) ^ ((1 : ℝ) / 3) = 4 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_480,"Let \[f(x) = \begin{cases}
+-x^2 - 1 &\text{if }x<0, \\
+2&\text{if }0 \le x< 4, \\
+\sqrt{x}&\text{if }x \ge 4.
+\end{cases}
+\]Find $f(\pi)$. Show that it is 2.",,"theorem mathd_algebra_480 (f : ℝ → ℝ) (h₀ : ∀ x < 0, f x = -x ^ 2 - 1)
+  (h₁ : ∀ x, 0 ≤ x ∧ x < 4 → f x = 2) (h₂ : ∀ x ≥ 4, f x = Real.sqrt x) : f Real.pi = 2 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+mathd_algebra_302,Evaluate $\left(\frac{i}{2}\right)^2$. Show that it is -\frac{1}{4}.,,theorem mathd_algebra_302 : (Complex.I / 2) ^ 2 = -(1 / 4) := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_143,"If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show that it is 8.",,"theorem mathd_algebra_143 (f g : ℝ → ℝ) (h₀ : ∀ x, f x = x + 1) (h₁ : ∀ x, g x = x ^ 2 + 3) :
+  f (g 2) = 8 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_algebra_452,"The first and ninth terms of an arithmetic sequence are $\frac23$ and $\frac45$, respectively. What is the fifth term? Show that it is \frac{11}{15}.",,"theorem mathd_algebra_452 (a : ℕ → ℝ) (h₀ : ∀ n, a (n + 2) - a (n + 1) = a (n + 1) - a n)
+  (h₁ : a 1 = 2 / 3) (h₂ : a 9 = 4 / 5) : a 5 = 11 / 15 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+numbertheory_prmdvsneqnsqmodpeq0,"Show that for any prime $p$ and any integer $n$, we have $p \mid n$ if and only if $n^2 \equiv 0 \pmod{p}$.",,"theorem numbertheory_prmdvsneqnsqmodpeq0 (n : ℤ) (p : ℕ) (h₀ : Nat.Prime p) :
+  ↑p ∣ n ↔ n ^ 2 ≡ 0 [ZMOD p] := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+aimeII_2020_p6,"Define a sequence recursively by $t_1 = 20$, $t_2 = 21$, and$t_n = \frac{5t_{n-1}+1}{25t_{n-2}}$for all $n \ge 3$. Then $t_{2020}$ can be expressed as $\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers. Find $p+q$. Show that it is 626.",,"theorem aimeII_2020_p6 (t : ℕ → ℚ) (h₀ : t 1 = 20) (h₁ : t 2 = 21)
+  (h₂ : ∀ n ≥ 3, t n = (5 * t (n - 1) + 1) / (25 * t (n - 2))) :
+  ↑(t 2020).den + (t 2020).num = 626 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+amc12a_2020_p9,"How many solutions does the equation $\tan(2x)=\cos(\tfrac{x}{2})$ have on the interval $[0,2\pi]?$ Show that it is 5.",,"theorem amc12a_2020_p9 (S : Finset ℝ)
+  (h₀ : ∀ x : ℝ, x ∈ S ↔ 0 ≤ x ∧ x ≤ 2 * Real.pi ∧ Real.tan (2 * x) = Real.cos (x / 2)) : S.card = 5 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+amc12a_2002_p13,Two different positive numbers $a$ and $b$ each differ from their reciprocals by $1$. What is $a+b$? Show that it is \sqrt 5.,,"theorem amc12a_2002_p13
+  (a b : ℝ)
+  (h₀ : 0 < a ∧ 0 < b)
+  (h₁ : a ≠ b)
+  (h₂ : abs (a - 1 / a) = 1)
+  (h₃ : abs (b - 1 / b) = 1) :
+  a + b = Real.sqrt 5 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_551,Determine the remainder of 1529 (mod 6). Show that it is 5.,,theorem mathd_numbertheory_551 : 1529 % 6 = 5 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_233,"Find $24^{-1} \pmod{11^2}$. That is, find the residue $b$ for which $24b \equiv 1\pmod{11^2}$.
+
+
+Express your answer as an integer from $0$ to $11^2-1$, inclusive. Show that it is 116.",,theorem mathd_numbertheory_233 (b : ZMod (11 ^ 2)) (h₀ : b = 24⁻¹) : b = 116 := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_229,What is the remainder when $5^{30}$ is divided by 7? Show that it is 1.,,theorem mathd_numbertheory_229 : 5 ^ 30 ≡ 1 [ZMOD 7] := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+mathd_numbertheory_427,"If $A$ is the sum of the positive divisors of $500$, what is the sum of the distinct prime divisors of $A$? Show that it is 25.",,"theorem mathd_numbertheory_427 (a : ℕ) (h₀ : a = ∑ k ∈Nat.divisors 500, k) :
+  (∑ k ∈ Finset.filter (fun x => Nat.Prime x) (Nat.divisors a), k) = 25 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid
+imo_1965_p1,"Determine all values $x$ in the interval $0\\leq x\\leq 2\\pi $
+  which satisfy the inequality\n$2\\cos x \\leq \\left| \\sqrt{1+\\sin 2x} - \\sqrt{1-\\sin 2x } \\right| \\leq \\sqrt{2}.$
+  Prove that x must be
+  1. \\pi / 4 ≤ x
+  2. x ≤ 7 * \\pi / 4",,"theorem imo_1965_p1 (x : ℝ) (h₀ : 0 ≤ x) (h₁ : x ≤ 2 * Real.pi)
+  (h₂ : 2 * Real.cos x ≤ abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))))
+  (h₃ : abs (Real.sqrt (1 + Real.sin (2 * x)) - Real.sqrt (1 - Real.sin (2 * x))) ≤ Real.sqrt 2) :
+  Real.pi / 4 ≤ x ∧ x ≤ 7 * Real.pi / 4 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+algebra_apb4leq8ta4pb4,"Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \leq 8(a^4 + b^4)$.",,theorem algebra_apb4leq8ta4pb4 (a b : ℝ) (h₀ : 0 < a ∧ 0 < b) : (a + b) ^ 4 ≤ 8 * (a ^ 4 + b ^ 4) := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test
+induction_11div10tonmn1ton,"Show that for any natural number $n$, we have $11\mid 10^n-(-1)^n$.",,theorem induction_11div10tonmn1ton (n : ℕ) : 11 ∣ 10 ^ n - (-1 : ℤ) ^ n := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid

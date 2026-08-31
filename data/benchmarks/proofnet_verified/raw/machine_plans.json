@@ -1,0 +1,488 @@
+{
+  "Artin_exercise_2_11_3": {
+    "plan": [
+      "1. The parity dichotomy opens the argument: the odd branch is excluded by hypothesis, while the even branch supplies a natural number whose double equals the group’s cardinality.",
+      "2. In the surviving even branch, that doubling witness establishes that two divides the finite group’s cardinality, which is precisely the numerical condition needed next.",
+      "3. The prime fact that two is prime is recorded so that Cauchy’s theorem applies to the divisor two and produces an element whose order divides two.",
+      "4. Since the resulting element has prime order dividing two, its order is exactly two, thereby establishing the existence of an element of order two."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Artin_exercise_6_8_1": {
+    "plan": [
+      "1. Establish equality by proving both subgroup containments, using the universal characterization of generated subgroups to reduce each containment to checking the corresponding generators.",
+      "2. For the first containment, split membership of the original generating pair into the cases of the element being a or b, then show b belongs to the new subgroup by multiplying the inverse of the first new generator by the second.",
+      "3. In the a branch, combine the inverse of b, the first new generator, and two further inverse copies of b to recover a, while the b branch is discharged by the previously established membership.",
+      "4. For the reverse containment, split membership of the two new generators into their respective cases and establish each one using closure membership of a and b, closure under powers, and closure under multiplication, with subgroup closure properties doing the essential work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Axler_exercise_1_3": {
+    "plan": [
+      "1. No case split is needed, because the statement is uniform for every vector in the additive commutative group and requires no distinction between possible cases.",
+      "2. The sole obligation is that taking the additive inverse twice returns the original vector, established by the general involutivity of additive negation."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Axler_exercise_1_8": {
+    "plan": [
+      "1. Use classical reasoning and select the infimum of the given family of submodules as the candidate whose underlying set should realize their intersection.",
+      "2. By extensionality, reduce equality of the underlying sets to an equivalence of memberships, then split into the two opposing implications.",
+      "3. In the first branch, membership in the set-theoretic intersection supplies membership in every submodule, which the universal characterization of infimum membership converts into membership in the chosen infimum.",
+      "4. In the second branch, membership in the infimum yields membership in every submodule by that same characterization, and the universal description of set intersection reassembles these facts into intersection membership."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Axler_exercise_5_12": {
+    "plan": [
+      "Choose an eigenvalue for every vector, obtaining a function assigning each vector a scalar by which the linear map acts on that vector.",
+      "Split according to whether a nonzero vector exists; in the zero-vector branch, establish that the space is trivial, so the map equals scalar multiplication by the identity.",
+      "In the nontrivial branch, fix a nonzero eigenvector and show the desired scalar-multiple description for arbitrary vectors lying in its span.",
+      "For vectors outside that span, compare the eigenvalue equations for the vector, the fixed eigenvector, and their sum; linear independence forces all relevant eigenvalues to coincide, which completes the operator equality."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Axler_exercise_5_20": {
+    "plan": [
+      "1. The argument opens by separating the two directions of the common-eigenvector equivalence: the needed direction sends each eigenvector of T to some eigenspace of S, while the reverse direction would establish the converse correspondence.",
+      "2. For every eigenvalue of T, select a nonzero eigenvector; distinct eigenvalues make these vectors linearly independent, and the cardinality hypothesis then forces their span to equal the entire space.",
+      "3. On each selected vector, the operators S and T act by scalar multiplication, so both compositions act by the same product of scalars, establishing that their commutator vanishes on every spanning generator.",
+      "4. Since a linear map vanishing on generators vanishes on their span, the commutator vanishes everywhere; the real work is the theorem that a linearly independent family with dimension-sized cardinality spans the space."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_1_1_16": {
+    "plan": [
+      "Begin by separating the equivalence into two implications, treating the forward direction as the main divisibility argument and the reverse direction as a verification of the possible orders.",
+      "From the assumption that squaring the element gives the identity, use the characterization of finite powers equal to the identity to show that the element's order divides two.",
+      "Because two is prime, its only positive divisors are one and two, so the forward implication establishes precisely the stated alternatives for the element's order.",
+      "For the reverse implication, split according to whether the order is one or two; in the first branch establish that the element is the identity, while in the second use the defining power-order identity directly, with that identity providing the essential work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_1_1_18": {
+    "plan": [
+      "1. Split the conjunction into two separate equivalences, treating commutation with y and conjugation by y as the first claim, and conjugation by y as the second claim involving the identity element.",
+      "2. For the first equivalence, consider each direction separately: commutation must imply the conjugation equality, while the conjugation equality must recover commutation.",
+      "3. For the second equivalence, again handle both directions: conjugation must imply the identity relation after introducing the inverse of x, while the identity relation must recover conjugation.",
+      "4. In every branch, the essential mathematical move is multiplying an equality on the appropriate side by an inverse or its corresponding element, then using associativity and cancellation in the group."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_2_4_16b": {
+    "plan": [
+      "1. Identify R with the integer-power subgroup generated by the basic rotation, then use surjectivity onto the cyclic index group to show every rotation belongs to R.",
+      "2. Prove R is proper by observing that the fundamental reflection cannot equal any integer power of the basic rotation, since rotations and reflections are distinct types of elements.",
+      "3. For any subgroup K containing R, first separate the case K equals R from the case where K contains an element outside R, and classify that witness as either a rotation or a reflection.",
+      "4. The rotation alternative is impossible, while a reflection yields the fundamental reflection by multiplying with a suitable rotation; this generates every reflection, so K contains all rotations and reflections and therefore equals the whole dihedral group."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_3_1_3a": {
+    "plan": [
+      "1. Open the argument by considering arbitrary quotient cosets a and b, with the single resulting branch requiring their products to be shown equal in both orders.",
+      "2. The essential work is done by commutativity of the quotient group, inherited from the commutative ambient group, which directly identifies those two products."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_3_1_22b": {
+    "plan": [
+      "No case split is needed: the intersection of the given family is considered directly as the common subgroup contained in every member of the family.",
+      "The essential fact is that an arbitrary intersection of normal subgroups is normal, and the hypotheses provide normality for each member of the family."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_4_5_14": {
+    "plan": [
+      "1. The argument begins by choosing a Sylow subgroup for the prime 13 and letting n denote the number of all such Sylow subgroups.",
+      "2. Sylow theory shows that n is congruent to one modulo 13, is not divisible by 13, and divides the index of the chosen subgroup, hence divides 312.",
+      "3. Since 312 equals 13 times 24 and n is coprime to 13, n divides 24; writing n as 13k plus one opens the case split k equals zero or one.",
+      "4. The zero branch gives n equals one and therefore the chosen Sylow subgroup is unique and normal, while the one branch would force n equals 14, contradicting divisibility by 24; the decisive fact is the Sylow count divisibility combined with the numerical order 312."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_7_1_11": {
+    "plan": [
+      "Rewrite the equation that the square of the element equals one as a difference of squares, obtaining a product of two factors whose product is zero.",
+      "Use the integral-domain property that a product can vanish only when at least one factor vanishes; this zero-product principle does the real work.",
+      "In the first branch, where the factor obtained by subtracting one vanishes, establish that the original element equals one.",
+      "In the second branch, where the factor obtained by adding one vanishes, establish that the original element equals the additive inverse of one."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_7_1_15": {
+    "plan": [
+      "1. The argument opens by comparing the two instances of idempotency for an arbitrary element and its negative, establishing that both branches force the negative element to equal the original.",
+      "2. From this self-negativity, the proof establishes that every element added to itself is zero, thereby identifying the ring as having characteristic two.",
+      "3. Applying idempotency to the sum of two arbitrary elements and expanding its square produces an equation whose mixed terms are the only unresolved contributions.",
+      "4. Cancelling the repeated unmixed terms yields that the mixed products sum to zero, and characteristic two converts this relation into equality of the two products, with idempotency providing the essential work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_7_3_37": {
+    "plan": [
+      "1. The argument opens without a substantive case split: one names the ideal generated by the residue class of p and chooses exponent m+1 as its nilpotency witness.",
+      "2. The chosen ideal power is identified with the principal ideal generated by the corresponding (m+1)-st power of the residue class of p.",
+      "3. This branch establishes that p to the m-th power divides p to the (m+1)-st power, with divisibility providing the crucial arithmetic input.",
+      "4. The decisive fact is that divisibility by the modulus makes the generator vanish in the quotient ring, so the resulting ideal power is zero."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_8_3_4": {
+    "plan": [
+      "The argument begins by separating the case n equals zero, where zero and zero are immediate witnesses, from the nonzero case, where the rational sum of squares forces n to be nonnegative.",
+      "For nonzero n, choose a common positive denominator for the two rational numbers, clear denominators, and obtain an integer identity expressing n times a denominator square as a sum of two integer squares.",
+      "Taking absolute values converts this identity into a natural-number representation of n times a square, and the sum-of-two-squares characterization supplies the crucial evenness of prime valuations at primes congruent to three modulo four.",
+      "Because every prime valuation contributed by the denominator square is even, the corresponding evenness property descends to n itself, so the same characterization produces integer witnesses whose squares sum to n."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_9_4_2b": {
+    "plan": [
+      "1. Name the polynomial and choose the ideal generated by the prime number three, whose maximality ensures it is a proper prime ideal suitable for Eisenstein’s criterion.",
+      "2. Compute that the polynomial has degree six and leading coefficient one, thereby establishing that it is monic, primitive, and nonconstant.",
+      "3. Verify the Eisenstein conditions by showing the leading coefficient is outside the ideal and every lower-degree coefficient belongs to it; the case split on indices below six opens the argument, with each branch establishing divisibility by three for the corresponding coefficient.",
+      "4. Apply the Eisenstein irreducibility theorem for a primitive positive-degree polynomial over the integers, with the verified ideal conditions providing the decisive step."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_2_4_36": {
+    "plan": [
+      "1. Split according to whether n is zero: in the zero case the divisibility statement is immediate, while in the nonzero case n is positive and the argument continues with the modulus a raised to n minus one.",
+      "2. Establish that this modulus is positive and that the residue class of a has its n-th power equal to one, thereby producing a unit whose order divides n.",
+      "3. Prove that no positive exponent smaller than n can yield the identity, because such an equality would make the modulus divide a smaller positive number than itself, contradicting elementary size comparison.",
+      "4. Conclude that the unit has exact order n, then use Lagrange’s theorem together with the fact that the unit group has Euler-totient cardinality; this divisibility result is the argument’s decisive step."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_2_11_6": {
+    "plan": [
+      "1. The opening comparison considers an arbitrary Sylow subgroup Q alongside the given normal Sylow subgroup P, and the argument must prove their equality for this arbitrary choice.",
+      "2. Passing to the quotient by P, one establishes that the kernel is precisely P, while the image of Q and its full preimage remain p-subgroups.",
+      "3. Since P lies inside that preimage, the maximality property of P forces the preimage to equal P, which then places Q inside P.",
+      "4. The maximality property of Q supplies the reverse conclusion and hence equality, with Sylow maximality doing the real work rather than the quotient construction itself."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Ireland_Rosen_exercise_1_27": {
+    "plan": [
+      "1. Since n is odd, represent it as one more than twice an integer k, which converts the original expression into a form controlled by consecutive integers.",
+      "2. Expanding and factoring the resulting square shows that n squared minus one equals four times k times k plus one, isolating the essential divisibility structure.",
+      "3. Split according to whether k is even or odd; in the even branch the factor k contributes another factor of two, while in the odd branch its consecutive partner k plus one does.",
+      "4. In either branch the product therefore contains eight as a factor, and the algebraic identity from the second step transfers this divisibility to n squared minus one."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Ireland_Rosen_exercise_1_31": {
+    "plan": [
+      "1. The argument opens by splitting divisibility into the choice of a quotient and the obligation to prove that multiplying the divisor by it gives two.",
+      "2. Choosing negative the imaginary unit as quotient, the essential work is expanding the square, multiplying Gaussian integers, and checking separately that the resulting real and imaginary coordinates equal those of two."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_13_1": {
+    "plan": [
+      "1. Begin by invoking the characterization of openness that reduces the claim to checking every point of the set individually, thereby opening the argument into one local case for each point and membership assumption.",
+      "2. In that case, fix an arbitrary point of A and use the hypothesis to obtain a neighborhood containing that point, together with its openness and containment within A.",
+      "3. The resulting local data must establish that this neighborhood is an open subset of A containing the chosen point, exactly matching the requirements of the openness characterization.",
+      "4. The real work is done by the standard pointwise criterion for openness, while the hypothesis supplies all required local witnesses and the conclusion follows by assembling them for every point."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_16_4": {
+    "plan": [
+      "Begin by separating the conjunction into two independent cases, one concerning the first coordinate projection and the other concerning the second coordinate projection.",
+      "In the first branch, establish that the given map π₁ is open by identifying it with the canonical projection onto the first factor.",
+      "In the second branch, establish that the given map π₂ is open by identifying it with the canonical projection onto the second factor.",
+      "The essential mathematical input in both branches is the standard theorem that projections from a product of topological spaces onto either factor are open maps."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_23_2": {
+    "plan": [
+      "1. Replace each stated nonempty consecutive intersection with an explicit shared-point fact, establishing the links needed between every neighboring pair of sets.",
+      "2. Form the intersection relation on indices, and observe that consecutive sets are related in both directions because set intersection is symmetric.",
+      "3. Split according to the ordering of two indices: the earlier-to-later branch establishes a forward chain, while the later-to-earlier branch establishes a backward chain.",
+      "4. The decisive fact is that connected sets whose intersection relation connects all indices through such finite chains have a connected union, which applies to the entire family."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_29_10": {
+    "plan": [
+      "1. Split the local compactness witness into an open neighborhood of x contained in a compact set K, while recording that K is closed because X is Hausdorff.",
+      "2. For each point of the complementary region K minus U, separate it from x by disjoint open neighborhoods; compactness of this region then reduces infinitely many exclusions to finitely many.",
+      "3. Intersect the finitely many neighborhoods of x with the original neighborhood, obtaining an open set V whose closure remains inside K and avoids every selected neighborhood covering K minus U.",
+      "4. The two branches of the ambient partition, points already in U and points outside U, are reconciled by the finite cover: closure V cannot meet the latter, while closedness inside compact K supplies compactness of closure V."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_30_13": {
+    "plan": [
+      "1. Choose a countable dense subset of the space, and observe that every nonempty open member of the disjoint family must contain a point from this dense subset.",
+      "2. Separate the members of the family into nonempty sets and the possible empty set, requiring the nonempty branch to receive a selected point from the dense subset.",
+      "3. Show that the selected-point assignment is injective, because equal selected points force two members to intersect, while the disjointness hypothesis permits intersection only when the underlying sets coincide.",
+      "4. Transfer countability from the dense subset to the nonempty members through the injection, adjoin the singleton empty-set branch, and conclude by containment in this countable union; the disjointness argument does the real work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_1_18a": {
+    "plan": [
+      "1. First establish that the dimension has at least two coordinates, choose two distinct coordinate directions, and split according to whether the given vector is zero or nonzero.",
+      "2. If the vector is zero, choose a standard basis vector in one selected direction, whose nonzero coordinate proves it is nonzero while its inner product with the zero vector vanishes.",
+      "3. If the vector is nonzero, select a coordinate where it is nonzero and choose a different coordinate among the two distinguished directions, ensuring two distinct indices are available.",
+      "4. Form a vector supported on those two coordinates with coefficients taken from the opposite coordinates; bilinearity and the standard-basis inner-product formulas make the two resulting terms cancel, while the selected nonzero coordinate proves the constructed vector is nonzero."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_2_28": {
+    "plan": [
+      "1. The argument begins with classical reasoning; there is no substantive case split, because the closed set is handled uniformly by a decomposition theorem.",
+      "2. The Cantor–Bendixson decomposition separates the set into two branches: one component must be perfect, while the other must be countable.",
+      "3. The perfect branch establishes the required topological structure, and the complementary branch establishes the required smallness property through countability.",
+      "4. The real work is done by the Cantor–Bendixson theorem for closed subsets of second-countable spaces, with separability and metrizability supplying that ambient hypothesis."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_4_12": {
+    "plan": [
+      "No case split opens the argument: one considers the composite of two maps and aims to show it preserves uniformity of closeness.",
+      "The composition principle for uniformly continuous functions does the essential work, applying the outer map's uniform continuity after the inner map's uniform continuity."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_5_6": {
+    "plan": [
+      "1. Begin with arbitrary positive numbers ordered as x≤y; the relevant order branch must establish that the quotient at x does not exceed the quotient at y.",
+      "2. Use continuity at the endpoint, differentiability in the positive interior, and monotonicity of the derivative to establish convexity on the entire nonnegative half-line.",
+      "3. Express x as a convex combination of y and zero, then use convexity together with f(0)=0 to obtain f(x)≤(x/y)f(y).",
+      "4. Finally, rewrite this inequality as f(x)≤x(f(y)/y) and divide by the positive number x; convexity is the decisive fact driving the comparison."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Shakarchi_exercise_1_19b": {
+    "plan": [
+      "1. No genuine logical case split is needed: the preliminary decomposition has two branches, establishing separately the numerator’s unit norm and the denominator’s squared real norm.",
+      "2. These calculations identify every summand’s norm with the shifted reciprocal-square sequence, whose summability follows from the classical real p-series criterion with exponent two.",
+      "3. That p-series fact does the real work, because summability of the norms gives absolute summability of the complex summands and therefore convergence of their infinite series.",
+      "4. Finally, the given description of the sequence is matched with the finite partial sums of this complex series, so the standard partial-sum convergence theorem supplies the required limit."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Artin_exercise_13_6_10": {
+    "plan": [
+      "The argument opens by separating the field assumptions into their two relevant consequences: commutative multiplication and absence of zero divisors.",
+      "In the first branch, one establishes that the ambient field supplies the commutative-ring structure required for the finite-field product theorem.",
+      "In the second branch, one establishes that the field is an integral domain, while finite dimensionality of its unit group supplies finiteness.",
+      "The decisive fact is the established finite-field theorem that the product of every unit equals the negative identity, which directly yields the conclusion."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_1_1_2a": {
+    "plan": [
+      "1. Open the argument by choosing the explicit witnesses one and negative one, reducing the existential claim to proving their two directed differences are unequal.",
+      "2. Evaluate the first directed difference as two and the reversed difference as negative two, establishing the concrete values required in the respective branches.",
+      "3. Split conceptually between equality and inequality: the inequality is desired, while the equality branch would force the impossible numerical assertion that two equals negative two.",
+      "4. The contradiction between those distinct integers does the real work, thereby excluding equality and completing the witness construction."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_1_6_11": {
+    "plan": [
+      "The argument opens by viewing nonemptiness as the task of producing one explicit multiplicative equivalence, so there are no substantive cases and the single witness branch must establish existence directly.",
+      "That branch is settled by the canonical symmetry isomorphism of a direct product, which exchanges the two components and whose inverse performs the same exchange, providing the real mathematical work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_3_4_4": {
+    "plan": [
+      "1. Proceed by strong induction on the order of the finite abelian group, then split into the cases where the divisor is zero, one, or greater than one.",
+      "2. The zero case is impossible because a finite group has positive order, while the one case is realized by the trivial subgroup, whose order is one.",
+      "3. In the remaining case, choose a prime divisor of the given integer and use Sylow’s theorem to obtain a subgroup of that prime order, which is normal because the ambient group is abelian.",
+      "4. Pass to the quotient by this normal subgroup, apply the induction hypothesis to the complementary factor, and pull the resulting subgroup back through the quotient map, using Lagrange’s theorem and index multiplicativity to recover the original order."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Dummit_Foote_exercise_4_5_23": {
+    "plan": [
+      "1. Assume for contradiction that the group is simple, then translate its order into arithmetic data showing that eleven divides the order exactly once.",
+      "2. Sylow theory shows that the number of Sylow eleven-subgroups divides forty-two and is congruent to one modulo eleven, with the divisor case split leaving only the value forty-two for the complementary factor.",
+      "3. The surviving factor forces exactly one Sylow eleven-subgroup, and this uniqueness makes the chosen subgroup normal while its order calculation proves it is nontrivial and proper.",
+      "4. The resulting proper nontrivial normal subgroup contradicts simplicity, and the decisive work is done by Sylow divisibility, congruence, and uniqueness together with the prime-power order bound."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_2_5_23": {
+    "plan": [
+      "1. No substantive case split opens the argument; instead, one fixes the cyclic subgroup generated by a and invokes the hypothesis that every subgroup is normal.",
+      "2. Normality does the real work by ensuring that conjugating the generator a by b remains inside this cyclic subgroup.",
+      "3. Membership in that cyclic subgroup establishes that the conjugate of a by b equals some integer power of a, which is the required algebraic description.",
+      "4. Finally, multiplying by b and reassociating the group product transforms that conjugation equality into the desired relation b*a = a raised to an integer power times b."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_2_5_31": {
+    "plan": [
+      "1. Register the prime order and translate the given subgroup and group cardinalities into arithmetic, then use Lagrange’s theorem to show that the index of the subgroup equals m.",
+      "2. Split according to whether p divides the index: the divisibility branch contradicts the assumed nondivisibility of m, while the other branch establishes the required coprimality with p.",
+      "3. Since the subgroup has order a pure power of p, regard it as a Sylow p-subgroup, with the index calculation identifying the constructed Sylow subgroup exactly with the original subgroup.",
+      "4. Commutativity makes the subgroup normal, and the decisive fact is that every normal Sylow subgroup is characteristic, after which the characteristic property transfers back to the original subgroup."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_4_2_6": {
+    "plan": [
+      "The argument opens by splitting the desired equality into two separate cases, one reducing the left-hand side and the other reducing the right-hand side.",
+      "In both cases, the hypothesis that the square of the element vanishes is converted into vanishing of its consecutive product, which provides the essential cancellation fact.",
+      "The left branch expands its product and reassociates factors, showing that the term involving two consecutive copies of the element disappears, leaving the mixed triple product.",
+      "The right branch undergoes the analogous expansion and reassociation, again eliminating the vanishing squared factor and identifying the result with the same mixed triple product."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_5_3_7": {
+    "plan": [
+      "1. Open the hypothesis by choosing a nonzero polynomial over the subfield that vanishes at the square of the given element.",
+      "2. Compose this polynomial with the squaring polynomial, and establish separately that the resulting polynomial is nonzero by comparing leading coefficients.",
+      "3. Use compatibility of polynomial evaluation with composition to show that evaluating the new polynomial at the element reproduces the original polynomial evaluated at its square.",
+      "4. Conclude algebraicity by combining the nonvanishing polynomial and its root, with composition and preservation of the leading coefficient providing the essential work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_13_4b2": {
+    "plan": [
+      "1. Define the candidate as the family of subsets belonging simultaneously to every given topology, then establish the required inclusions directly from this common-membership condition.",
+      "2. The topology verification splits into the universe, finite-intersection, and arbitrary-union cases, with each branch inherited componentwise from the corresponding axiom of every given topology.",
+      "3. The decisive fact is that any topology contained in every given topology has all its open sets in the candidate, establishing the candidate's maximality.",
+      "4. Finally, any competing topology satisfies the same containment condition and therefore lies inside the candidate, while the candidate lies inside it by that competitor's maximality, yielding equality and uniqueness."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_18_8a": {
+    "plan": [
+      "No case split opens the argument, because the desired set is directly recognized as the sublevel comparison set determined by two continuous real-valued functions.",
+      "The general closedness theorem for pointwise inequalities does the essential work, establishing that the comparison set is closed from the continuity of both functions."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_23_11": {
+    "plan": [
+      "First, translate connectedness of the base into connectedness of the whole base space, choose a point there, lift it through the surjective quotient map, and thereby establish that the total space is nonempty.",
+      "Assume the total space separates into two disjoint nonempty open pieces covering everything; the argument then branches according to which piece contains a point in a chosen fiber, with each branch proving that the entire fiber lies in that same piece.",
+      "Using fiberwise connectedness, each branch shows that both open pieces are saturated under the map, so they are inverse images of their respective images and the quotient property makes those images open.",
+      "The images are nonempty, disjoint, and cover the connected base, producing the contradiction; the real work is the connectedness of every fiber, which forces each fiber to remain entirely within one side of the separation."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Munkres_exercise_24_3a": {
+    "plan": [
+      "First split off the immediate endpoint cases: if f(0)=0 or f(1)=1, that endpoint already supplies the required fixed point.",
+      "In the remaining branch, define g(x)=f(x)-x and establish its continuity, while showing g(0) is nonnegative and g(1) is nonpositive.",
+      "The real work is the intermediate value theorem, which forces g to vanish somewhere because its endpoint values have opposite weak signs.",
+      "A zero of g means f(x) and x have equal real values, and therefore they are equal as elements of the interval subtype."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Pugh_exercise_3_1": {
+    "plan": [
+      "1. Fix two points and split into the coincident case, where equality of function values is immediate, and the distinct case, which requires proving their values still coincide.",
+      "2. In the distinct case, divide the interval between the points into arbitrarily many equal pieces and show that each consecutive function-value change is bounded by the square of one piece length.",
+      "3. Accumulate these local bounds along the partition using the triangle inequality, obtaining a total variation bounded by the squared distance between the endpoints divided by the number of pieces.",
+      "4. Since this bound holds for every positive number of pieces and tends to zero as the partition is refined, the endpoint difference vanishes, so all function values equal one common constant."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_1_1b": {
+    "plan": [
+      "1. The argument opens by separating the implication into the case where x is irrational, leaving the task of proving that its scaled value is irrational.",
+      "2. In this relevant branch, one must establish that multiplying the irrational real number by the given rational number preserves irrationality.",
+      "3. The nonzero assumption on the rational multiplier supplies exactly the condition needed to exclude the degenerate scaling case.",
+      "4. The essential mathematical fact is that a nonzero rational multiple of an irrational real number remains irrational, which directly establishes the desired conclusion."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_2_25": {
+    "plan": [
+      "1. No genuine case split opens the argument; instead, the hypotheses immediately place the space within the compact-metric setting requiring a countability conclusion.",
+      "2. The first branch of the conceptual argument establishes that compactness together with metrizability yields a second-countable topology, while the alternative branch is absent.",
+      "3. The real work is done by the general theorem that every second-countable topological space possesses a countable family of open sets forming a basis.",
+      "4. Finally, the selected countable basis is packaged as a family of subsets, simultaneously providing countability and the required topological-basis property."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_4_3": {
+    "plan": [
+      "1. No substantive case split opens the argument; instead, one first isolates the target value zero and observes that its singleton is closed in the real line.",
+      "2. The first branch establishes closedness of this singleton, using the standard topological fact that every singleton in a metric space, particularly the real numbers, is closed.",
+      "3. The second branch establishes that the inverse image of this closed singleton under the continuous function is closed, with continuity and the closed-preimage theorem doing the real work.",
+      "4. Finally, the given identification of the set z with that inverse image transfers the established closedness directly to z, completing the argument without additional mathematical complications."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Rudin_exercise_5_5": {
+    "plan": [
+      "1. The argument opens by considering an arbitrary positive error tolerance, with the sole branch requiring the increment to be eventually smaller than that tolerance.",
+      "2. The derivative’s convergence to zero supplies a threshold beyond which its absolute value is below the chosen tolerance, and this estimate is the main asymptotic input.",
+      "3. For each sufficiently large x, the interval from x to x plus one lies in the positive half-line, so differentiability and continuity permit the mean value theorem to produce an intermediate point c.",
+      "4. Since c is at least as large as x, the derivative bound applies at c, and the mean value theorem transfers it directly to the absolute increment, establishing the desired convergence."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  },
+  "Herstein_exercise_2_1_27": {
+    "plan": [
+      "1. Choose the number of elements of the finite group as the common positive exponent to be used for every group element.",
+      "2. The argument then separates into two cases: one branch establishes positivity of the chosen exponent, while the other establishes the required identity for arbitrary elements.",
+      "3. In the positivity branch, the group contains its identity element, so it is nonempty, and therefore its finite cardinality is strictly positive.",
+      "4. In the exponent branch, the standard finite-group theorem stating that every element raised to the group’s cardinality equals the identity does the essential work."
+    ],
+    "author": "machine",
+    "model": "gpt-5.6-luna"
+  }
+}

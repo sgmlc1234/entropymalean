@@ -1,0 +1,372 @@
+id,statement,answer,formal_statement,lean_header,informal_proof,split,lean_code,gen0_proof_completed
+amc12b_2021_p13,How many values of $\theta$ in the interval $0<\theta\le 2\pi$ satisfy$1-3\sin\theta+5\cos3\theta = 0?$ Show that it is 6.,,"theorem amc12b_2021_p13 (S : Finset ℝ)
+  (h₀ :
+  ∀ x : ℝ, x ∈ S ↔ 0 < x ∧ x ≤ 2 * Real.pi ∧ 1 - 3 * Real.sin x + 5 * Real.cos (3 * x) = 0) :
+  S.card = 6 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,,False
+amc12_2000_p1,"Let $I,M,$ and $O$ be distinct [[positive integer]]s such that the product $I \\cdot M \\cdot O = 2001 $.  What is the largest possible value of the sum $I + M + O$?\n\n Show that it is 671.",,"theorem amc12_2000_p1:   IsGreatest {z : ℕ | ∃ I M O : ℕ, I > 0 ∧ M > 0 ∧O > 0 ∧ I ≠ M ∧ M ≠ O ∧ I * M * O = 2001 ∧ I + M + O = z} 671 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,,False
+amc12b_2021_p21,Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\sqrt2}}=\sqrt2^{2^x}.$ Show that the following statements is true: 2\le S<6.,,"theorem amc12b_2021_p21
+  (S : Finset ℝ)
+  (a : ℝ)
+  (h₀ : ∀ x : ℝ, x ∈ S ↔ 0 < x ∧ x ^ (2 : ℝ) ^ Real.sqrt 2 = Real.sqrt 2 ^ ((2 : ℝ) ^ x))
+  (h₁ : a = ∑ k ∈ S, k) :
+  (2 ≤ a) ∧ a < 6 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+amc12b_2002_p11,"The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. Show that the sum of these four primes is a prime.",,"theorem amc12b_2002_p11 (a b : ℕ) (h₀ : Nat.Prime a) (h₁ : Nat.Prime b) (h₂ : Nat.Prime (a + b))
+  (h₃ : Nat.Prime (a - b)) : Nat.Prime (a + b + (a - b + (a + b))) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+mathd_numbertheory_200,"Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and takes a total of $139$ steps, walking in a circle (so that after the 11th step he reaches the first step again). Which step of the cakewalk does he end on? Show that it is 7.",,"theorem mathd_numbertheory_200
+  (x p : ℕ)
+  (f : ℕ → ℝ)
+  (h₀ : Function.Periodic f p)
+  (h₁ : f 11 = f 0)
+  (h₂: f 139 = f x) :
+  x = 7 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+mathd_numbertheory_99,"Solve the congruence $2n \equiv 15 \pmod{47}$, as a residue modulo 47.  (Give an answer between 0 and 46.) Show that it is 31.",,theorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n ≡ 15 [MOD 47]) : n ≡ 31 [MOD 47] := by,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"theorem mathd_numbertheory_99 (n : ℕ) (h₀ : 2 * n ≡ 15 [MOD 47]) : n ≡ 31 [MOD 47] := by
+  simp only [Nat.ModEq] at h₀ ⊢
+  omega",True
+imo_1978_p5,"Let $f(1), f(2), f(3), ..., f(n), ...$, be a sequence of distinct positive integers. Prove that for all positive natural numbers $n$ we have: $\\sum_{k=1}^{n} f(k)k^{-2} \\geq \\sum_{k=1}^{n} k^{-1}.$",,"theorem imo_1978_p5
+  (n : ℕ)
+  (f : ℕ → ℕ)
+  (h₀ : ∀ (m : ℕ), 0 < m → 0 < f m)
+  (h₁ : ∀ (p q : ℕ), 0 < p → 0 < q → p ≠ q → f p ≠ f q)
+  (h₂ : 0 < n) :
+  (∑ k ∈ Finset.Icc 1 n, (1 : ℝ) / k) ≤ ∑ k ∈ Finset.Icc 1 n, ((f k):ℝ) / k ^ 2 := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+imo_1977_p5,"Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the remainder $r$ and the quotient $q.$
+  Determine all pairs $(a, b)$ for which $q^2 + r = 1977.$ 
+  Show that (a,b) can take only one of these values: (7, 50) or (37,50) or (50, 7) or (50, 37) .",,"theorem imo_1977_p5
+  (a b q r : ℕ)
+  (hp: 0 < a ∧ 0 < b)
+  (h₀ : r = (a ^ 2 + b ^ 2) % (a + b))
+  (h₁ : q = (a ^ 2 + b ^ 2) / (a + b))
+  (h₂ : q ^ 2 + r = 1977) :
+  (a = 7 ∧ b = 50) ∨ (a = 37 ∧ b = 50) ∨ (a = 50 ∧ b = 7) ∨ (a = 50 ∧ b = 37) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,test,,False
+imo_1968_p5_1,"Let $a$ be a positive real number and $f$ be a real function such that $\forall x \in \mathbb{R}, f(x+a)=\frac{1}{2}+\sqrt{f(x)-f(x)^2}$.
+Show that there exists a positive real number $b$ such that $\forall x \in \mathbb{R}, f(x+b)=f(x)$.",,"theorem imo_1968_p5_1 (a : ℝ) (f : ℝ → ℝ) (h₀ : 0 < a)
+  (h₁ : ∀ x, f (x + a) = 1 / 2 + Real.sqrt (f x - f x ^ 2)) : ∃ b > 0, ∀x, f (x + b) = f x := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem imo_1968_p5_1 (a : ℝ) (f : ℝ → ℝ) (h₀ : 0 < a)
+  (h₁ : ∀ x, f (x + a) = 1 / 2 + Real.sqrt (f x - f x ^ 2)) :
+  ∃ b > 0, ∀x, f (x + b) = f x := by
+  have hbounds : ∀ x, (1 / 2 : ℝ) ≤ f x ∧ f x ≤ 1 := by
+    intro x
+    have hlow : f x = 1 / 2 + Real.sqrt (f (x - a) - f (x - a) ^ 2) := by
+      simpa [sub_add_cancel] using h₁ (x - a)
+    have hsnon : 0 ≤ Real.sqrt (f (x - a) - f (x - a) ^ 2) :=
+      Real.sqrt_nonneg _
+    have harg : f (x - a) - f (x - a) ^ 2 ≤ (1 / 2 : ℝ) ^ 2 := by
+      nlinarith [sq_nonneg (f (x - a) - 1 / 2)]
+    have hsle : Real.sqrt (f (x - a) - f (x - a) ^ 2) ≤ (1 / 2 : ℝ) := by
+      rw [Real.sqrt_le_iff]
+      exact ⟨by norm_num, harg⟩
+    constructor <;> nlinarith [hlow, hsnon, hsle]
+  have hper : ∀ x, f (x + a + a) = f x := by
+    intro x
+    have hx := hbounds x
+    have hargx : 0 ≤ f x - f x ^ 2 := by
+      nlinarith [hx.1, hx.2]
+    have hsroot : Real.sqrt (f x - f x ^ 2) ^ 2 = f x - f x ^ 2 :=
+      Real.sq_sqrt hargx
+    have hrec := h₁ x
+    have hrec2 := h₁ (x + a)
+    have habs : |f x - 1 / 2| = f x - 1 / 2 := by
+      rw [abs_of_nonneg]
+      nlinarith [hx.1]
+    have hs2 : Real.sqrt ((f x - 1 / 2) ^ 2) = f x - 1 / 2 := by
+      rw [Real.sqrt_sq_eq_abs, habs]
+    have hident :
+        f (x + a) - f (x + a) ^ 2 = (f x - 1 / 2) ^ 2 := by
+      rw [hrec]
+      nlinarith [hsroot]
+    rw [hrec2, hident, hs2]
+    ring
+  refine ⟨2 * a, by nlinarith, ?_⟩
+  intro x
+  convert hper x using 1 <;> ring",True
+imo_1992_p1,"Let $p, q, r$ be integers with $1 < p < q < r$.
+  Show that if $(p - 1) * (q - 1) * (r - 1)$ divides $p * q * r - 1$, then $(p, q, r) = (2, 4, 8)$ or $(p, q, r) = (3, 5, 15)$.",,"theorem imo_1992_p1 (p q r : ℤ) (h₀ : 1 < p ∧ p < q ∧ q < r)
+  (h₁ : (p - 1) * (q - 1) * (r - 1) ∣ p * q * r - 1) :
+  (p, q, r) = (2, 4, 8) ∨ (p, q, r) = (3, 5, 15) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem imo_1992_p1 (p q r : ℤ) (h₀ : 1 < p ∧ p < q ∧ q < r)
+  (h₁ : (p - 1) * (q - 1) * (r - 1) ∣ p * q * r - 1) :
+  (p, q, r) = (2, 4, 8) ∨ (p, q, r) = (3, 5, 15) := by
+  rcases h₀ with ⟨hp, hpq, hqr⟩
+  rcases h₁ with ⟨k, hk⟩
+  have hnext : ∀ x y : ℤ, ¬ x ≤ y → y + 1 ≤ x := by omega
+  have hpred : ∀ x y : ℤ, ¬ y + 1 ≤ x → x ≤ y := by omega
+  have hp2 : 2 ≤ p := by omega
+  have hq3 : 3 ≤ q := by omega
+  have hr4 : 4 ≤ r := by omega
+  have hp1 : 0 < p - 1 := by linarith
+  have hq1 : 0 < q - 1 := by linarith
+  have hr1 : 0 < r - 1 := by linarith
+  have hD : 0 < (p - 1) * (q - 1) * (r - 1) := by
+    positivity
+  have hS :
+      p * q * r - 1 - (p - 1) * (q - 1) * (r - 1) =
+        (p - 1) * (q - 1) + (p - 1) * (r - 1) +
+          (q - 1) * (r - 1) + (p - 1) + (q - 1) + (r - 1) := by
+    ring
+  have hSpos :
+      0 <
+        (p - 1) * (q - 1) + (p - 1) * (r - 1) +
+          (q - 1) * (r - 1) + (p - 1) + (q - 1) + (r - 1) := by
+    positivity
+  have hrel :
+      (p - 1) * (q - 1) * (r - 1) * (k - 1) =
+        (p - 1) * (q - 1) + (p - 1) * (r - 1) +
+          (q - 1) * (r - 1) + (p - 1) + (q - 1) + (r - 1) := by
+    nlinarith [hk, hS]
+  have hk0 : 0 < k := by
+    have hpos : 0 < (p - 1) * (q - 1) * (r - 1) * (k - 1) := by
+      rw [hrel]
+      exact hSpos
+    nlinarith
+  have hk2 : 2 ≤ k := by
+    have hpos : 0 < k - 1 := by
+      have hprod :
+          0 < (p - 1) * (q - 1) * (r - 1) * (k - 1) := by
+        rw [hrel]
+        exact hSpos
+      nlinarith
+    omega
+  have hbound :
+      (p - 1) * (q - 1) + (p - 1) * (r - 1) +
+          (q - 1) * (r - 1) + (p - 1) + (q - 1) + (r - 1) <
+        3 * ((p - 1) * (q - 1) * (r - 1)) := by
+    have hx : 0 ≤ p - 2 := by linarith
+    have hy : 0 ≤ q - 3 := by linarith
+    have hz : 0 ≤ r - 4 := by linarith
+    have hxy : 0 ≤ (p - 2) * (q - 3) := mul_nonneg hx hy
+    have hxz : 0 ≤ (p - 2) * (r - 4) := mul_nonneg hx hz
+    have hyz : 0 ≤ (q - 3) * (r - 4) := mul_nonneg hy hz
+    have hxyz : 0 ≤ (p - 2) * (q - 3) * (r - 4) :=
+      mul_nonneg hxy hz
+    nlinarith
+  have hk3 : k ≤ 3 := by
+    have hm :
+        (p - 1) * (q - 1) * (r - 1) * (k - 1) <
+          (p - 1) * (q - 1) * (r - 1) * 3 := by
+      rw [hrel]
+      nlinarith [hbound]
+    nlinarith [hD, hm]
+  have hp3 : p ≤ 3 := by
+    by_contra h
+    have hp4 : 4 ≤ p := hnext p 3 h
+    have hx : 0 ≤ p - 4 := by linarith
+    have hy : 0 ≤ q - 5 := by linarith
+    have hz : 0 ≤ r - 6 := by linarith
+    have hxy : 0 ≤ (p - 4) * (q - 5) := mul_nonneg hx hy
+    have hxz : 0 ≤ (p - 4) * (r - 6) := mul_nonneg hx hz
+    have hyz : 0 ≤ (q - 5) * (r - 6) := mul_nonneg hy hz
+    have hxyz : 0 ≤ (p - 4) * (q - 5) * (r - 6) :=
+      mul_nonneg hxy hz
+    have hineq :
+        (p - 1) * (q - 1) * (r - 1) >
+          p * q * r - 1 - (p - 1) * (q - 1) * (r - 1) := by
+      rw [hS]
+      nlinarith
+    have hm :
+        (p - 1) * (q - 1) * (r - 1) ≤
+          (p - 1) * (q - 1) * (r - 1) * (k - 1) := by
+      have hmul :
+          (p - 1) * (q - 1) * (r - 1) * 1 ≤
+            (p - 1) * (q - 1) * (r - 1) * (k - 1) :=
+        mul_le_mul_of_nonneg_left (by omega) (le_of_lt hD)
+      simpa using hmul
+    have hge :
+        (p - 1) * (q - 1) * (r - 1) ≤
+          p * q * r - 1 - (p - 1) * (q - 1) * (r - 1) := by
+      calc
+        (p - 1) * (q - 1) * (r - 1) ≤
+            (p - 1) * (q - 1) * (r - 1) * (k - 1) := hm
+        _ = (p - 1) * (q - 1) + (p - 1) * (r - 1) +
+              (q - 1) * (r - 1) + (p - 1) + (q - 1) + (r - 1) := hrel
+        _ = p * q * r - 1 - (p - 1) * (q - 1) * (r - 1) := hS.symm
+    linarith
+  have hp_cases : p = 2 ∨ p = 3 := by omega
+  have hk_cases : k = 2 ∨ k = 3 := by omega
+  rcases hp_cases with rfl | rfl <;> rcases hk_cases with rfl | rfl
+  · exfalso
+    nlinarith [hk]
+  · have hfac : (q - 3) * (r - 3) = 5 := by
+      nlinarith [hk]
+    have hq4 : 4 ≤ q := by
+      by_contra h
+      have hqle : q ≤ 3 := hpred q 3 h
+      have hqe : q = 3 := le_antisymm hqle hq3
+      subst q
+      norm_num at hfac
+    have hq8 : q ≤ 8 := by
+      by_contra h
+      have hq9 : 9 ≤ q := hnext q 8 h
+      have hr10 : 10 ≤ r := by
+        have : 9 < r := lt_of_le_of_lt hq9 hqr
+        exact hnext r 9 (by linarith)
+      have hprod : 42 ≤ (q - 3) * (r - 3) := by
+        have hh : 0 ≤ (q - 9) * (r - 10) :=
+          mul_nonneg (by linarith) (by linarith)
+        nlinarith
+      nlinarith
+    have hr8 : r ≤ 8 := by
+      by_contra h
+      have hr9 : 9 ≤ r := hnext r 8 h
+      have hh : 0 ≤ (q - 4) * (r - 9) :=
+        mul_nonneg (by linarith) (by linarith)
+      nlinarith
+    interval_cases q <;> interval_cases r <;> norm_num at *
+  · have hfac : (q - 4) * (r - 4) = 11 := by
+      nlinarith [hk]
+    have hq5 : 5 ≤ q := by
+      by_contra h
+      have hqle : q ≤ 4 := hpred q 4 h
+      have hqe : q = 4 := le_antisymm hqle (by omega)
+      subst q
+      norm_num at hfac
+    have hq15 : q ≤ 15 := by
+      by_contra h
+      have hq16 : 16 ≤ q := hnext q 15 h
+      have hr17 : 17 ≤ r := by
+        have : 16 < r := lt_of_le_of_lt hq16 hqr
+        exact hnext r 16 (by linarith)
+      have hh : 0 ≤ (q - 16) * (r - 17) :=
+        mul_nonneg (by linarith) (by linarith)
+      nlinarith
+    have hr15 : r ≤ 15 := by
+      by_contra h
+      have hr16 : 16 ≤ r := hnext r 15 h
+      have hh : 0 ≤ (q - 5) * (r - 16) :=
+        mul_nonneg (by linarith) (by linarith)
+      nlinarith
+    interval_cases q <;> interval_cases r <;> norm_num at *
+  · exfalso
+    nlinarith [hk]",True
+algebra_9onxpypzleqsum2onxpy,"Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\leq 2/(x+y)+2/(y+z)+2/(z+x)$.",,"theorem algebra_9onxpypzleqsum2onxpy (x y z : ℝ) (h₀ : 0 < x ∧0 < y ∧ 0 < z) :
+  9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by","import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+",,valid,"import Mathlib
+import Aesop
+
+set_option maxHeartbeats 0
+
+open BigOperators Real Nat Topology Rat
+
+theorem algebra_9onxpypzleqsum2onxpy (x y z : ℝ) (h₀ : 0 < x ∧ 0 < y ∧ 0 < z) :
+  9 / (x + y + z) ≤ 2 / (x + y) + 2 / (y + z) + 2 / (z + x) := by
+  rcases h₀ with ⟨hx, hy, hz⟩
+  have hxy : 0 < x + y := by linarith
+  have hyz : 0 < y + z := by linarith
+  have hzx : 0 < z + x := by linarith
+  have hxyz : 0 < x + y + z := by linarith
+  have hnum :
+      0 ≤ 2 * (x + y + z) *
+          ((x + y) * (y + z) + (y + z) * (z + x) + (z + x) * (x + y)) -
+        9 * (x + y) * (y + z) * (z + x) := by
+    have h1 : 0 ≤ ((x + y) - (y + z)) ^ 2 := sq_nonneg _
+    have h2 : 0 ≤ ((y + z) - (z + x)) ^ 2 := sq_nonneg _
+    have h3 : 0 ≤ ((z + x) - (x + y)) ^ 2 := sq_nonneg _
+    have h1' : 0 ≤ (x + y) * ((x + y) - (y + z)) ^ 2 :=
+      mul_nonneg (le_of_lt hxy) h1
+    have h2' : 0 ≤ (y + z) * ((y + z) - (z + x)) ^ 2 :=
+      mul_nonneg (le_of_lt hyz) h2
+    have h3' : 0 ≤ (z + x) * ((z + x) - (x + y)) ^ 2 :=
+      mul_nonneg (le_of_lt hzx) h3
+    nlinarith
+  have hden : 0 < (x + y + z) * (x + y) * (y + z) * (z + x) := by
+    positivity
+  have hleft :
+      9 / (x + y + z) =
+        (9 * (x + y) * (y + z) * (z + x)) /
+          ((x + y + z) * (x + y) * (y + z) * (z + x)) := by
+    field_simp [ne_of_gt hxyz, ne_of_gt hxy, ne_of_gt hyz, ne_of_gt hzx] <;> ring
+  have hright :
+      2 / (x + y) + 2 / (y + z) + 2 / (z + x) =
+        (2 * (x + y + z) *
+          ((x + y) * (y + z) + (y + z) * (z + x) + (z + x) * (x + y))) /
+          ((x + y + z) * (x + y) * (y + z) * (z + x)) := by
+    field_simp [ne_of_gt hxyz, ne_of_gt hxy, ne_of_gt hyz, ne_of_gt hzx] <;> ring
+  rw [hleft, hright]
+  exact (div_le_div_iff_of_pos_right hden).2 (by nlinarith)",True

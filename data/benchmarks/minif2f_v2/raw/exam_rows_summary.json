@@ -1,0 +1,14 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/seeds_50_final.csv",
+  "seeds": 50,
+  "rows": 50,
+  "skipped": [],
+  "gt_proof_source": "EML Gen-0 (gpt-5.6-luna)",
+  "rows_with_outline": 0,
+  "palette_validated_names": 113,
+  "median_palette_size": 2,
+  "by_split": {
+    "test": 29,
+    "valid": 21
+  }
+}

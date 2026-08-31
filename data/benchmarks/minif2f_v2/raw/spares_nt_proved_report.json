@@ -1,0 +1,21 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/spares_nt_screened.csv",
+  "seeds": 7,
+  "proved": 7,
+  "rate": 1.0,
+  "model": "gpt-5.6-luna",
+  "proof_k": 6,
+  "proof_turns": 8,
+  "gen0_summary": {
+    "total_seed_count": 7,
+    "missing_proof_body_count": 7,
+    "target_seed_count": 7,
+    "worker_count_requested": 2,
+    "worker_count_effective": 1,
+    "worker_count_source": "cli_or_default",
+    "completed_count": 7,
+    "failed_count": 0
+  },
+  "failures": [],
+  "unproved": []
+}

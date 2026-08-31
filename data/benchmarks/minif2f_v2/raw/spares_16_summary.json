@@ -1,0 +1,57 @@
+{
+  "source": "references/miniF2F_v2/datasets/miniF2F_v2s.jsonl",
+  "selected": 16,
+  "by_family": {
+    "mathd_algebra": 5,
+    "numbertheory": 1,
+    "aime": 1,
+    "amc12": 2,
+    "mathd_numbertheory": 4,
+    "imo": 1,
+    "algebra": 1,
+    "induction": 1
+  },
+  "by_shape": {
+    "equation": 9,
+    "divisibility": 4,
+    "other": 1,
+    "inequality": 2
+  },
+  "by_hypotheses": {
+    "light": 7,
+    "rich": 5,
+    "closed": 4
+  },
+  "by_split": {
+    "valid": 11,
+    "test": 5
+  },
+  "benchmark_family_shares": {
+    "mathd_algebra": 0.288,
+    "mathd_numbertheory": 0.247,
+    "amc12": 0.185,
+    "imo": 0.082,
+    "algebra": 0.073,
+    "aime": 0.062,
+    "numbertheory": 0.032,
+    "induction": 0.032
+  },
+  "names": [
+    "mathd_algebra_114",
+    "mathd_algebra_480",
+    "mathd_algebra_302",
+    "mathd_algebra_143",
+    "mathd_algebra_452",
+    "numbertheory_prmdvsneqnsqmodpeq0",
+    "aimeII_2020_p6",
+    "amc12a_2020_p9",
+    "amc12a_2002_p13",
+    "mathd_numbertheory_551",
+    "mathd_numbertheory_233",
+    "mathd_numbertheory_229",
+    "mathd_numbertheory_427",
+    "imo_1965_p1",
+    "algebra_apb4leq8ta4pb4",
+    "induction_11div10tonmn1ton"
+  ]
+}

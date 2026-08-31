@@ -1,0 +1,86 @@
+# Benchmark catalog for the EntropyMaG-2 evaluation pipeline.
+#
+# Each entry describes (a) the upstream Hugging Face repository, (b) where the
+# local snapshot lives, and (c) how to map the upstream schema onto the
+# pipeline's canonical `EvalRow` (problem_id / statement / gold_answer).
+#
+# Downloading: scripts/download_benchmarks.py snapshot-downloads each entry
+# into `local_dir`. Re-running the script is idempotent because the
+# huggingface_hub cache only re-fetches changed files.
+#
+# Loading:    src/evaluation/benchmarks.py reads this file, picks the right
+# split + schema, and yields EvalRow records compatible with run_evaluation.py.
+
+defaults:
+  cache_root: data/benchmarks               # repo-relative; absolute is also OK
+  default_split: train
+  control_cap: 20                            # rows used as the control arm
+
+benchmarks:
+  miniF2F:
+    hf_repo: Tonic/MiniF2F
+    revision: main
+    local_dir: data/benchmarks/minif2f
+    license: MIT
+    citation: zheng2022minif2f
+    splits:
+      train: train                           # 488 rows; column 'split' is a label
+    # Note: the `split` *column* carries valid/test markers; we keep
+    # all rows in `train` and let an optional `split_filter` carve a
+    # subset out for the control arm.
+    split_filter:
+      column: split
+      keep: ["valid", "test"]                # any of these qualifies for control
+    schema:
+      problem_id_col: name
+      statement_col: informal_prefix         # NL + LaTeX prefix is the prompt
+      formal_statement_col: formal_statement
+      lean_header_col: header
+      answer_extraction:
+        kind: lean_theorem_rhs               # extract '= <ANS> := by' from formal_statement
+        column: formal_statement
+        fallback_kind: boxed_then_text       # if the theorem is non-equational
+        fallback_column: informal_prefix
+
+  putnambench:
+    hf_repo: amitayusht/PutnamBench
+    revision: main
+    local_dir: data/benchmarks/putnambench
+    license: Apache-2.0
+    citation: tsoukalas2024putnambench
+    splits:
+      train: train                           # 522 rows
+    schema:
+      problem_id_col: name
+      statement_col: informal_statement
+      formal_statement_col: lean4_statement
+      answer_extraction:
+        kind: boxed_then_text                # try \boxed{...}, then strip "The answer is" prefixes
+        column: informal_solution
+
+  proofnet:
+    # ProofNet (undergraduate-level theorem proving, Lean 4 port).
+    # Replaces the earlier wenjiema02/ProofBench placeholder, which is
+    # informal-only and therefore incompatible with the EMG-2 Lean L2+
+    # certification gate. ProofNet ships native Lean 4 statements with
+    # mathlib4 headers, mirroring the miniF2F / PutnamBench layout and
+    # the evaluation panel used by DeepSeek-Prover-V1.5.
+    hf_repo: HaimingW/proofnet-lean4
+    revision: main
+    local_dir: data/benchmarks/proofnet
+    license: unspecified                     # mirror upstream; ProofNet itself is MIT
+    citation: azerbayev2023proofnet
+    splits:
+      test: test                             # 186 rows
+      valid: valid                           # 185 rows
+      few_shot_examples: few_shot_examples   # 67 rows
+    schema:
+      problem_id_col: name
+      statement_col: informal_prefix          # NL wrapped in /-- ... -/ comment
+      formal_statement_col: formal_statement
+      lean_header_col: header
+      answer_extraction:
+        kind: lean_theorem_rhs               # try '= <ANS> := by' first
+        column: formal_statement
+        fallback_kind: literal               # otherwise treat the theorem as proof-only
+        fallback_column: name

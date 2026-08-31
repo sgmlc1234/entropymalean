@@ -1,0 +1,8 @@
+{
+  "input": "data/benchmarks/minif2f_v2/raw/spares_16.csv",
+  "seeds": 16,
+  "vacuous": [],
+  "vacuous_count": 0,
+  "kept": 16,
+  "rate": 0.0
+}
