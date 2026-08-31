@@ -89,9 +89,9 @@
 <circle cx="100" cy="646" r="13" fill="#E5AD3C" stroke="#9B7228" stroke-width="1.5"/>
 <circle cx="122" cy="646" r="13" fill="#D99A27" stroke="#9B7228" stroke-width="1.5"/>
 <text x="160" y="632" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#566872" text-anchor="start" letter-spacing="0.6">SHARED CURRENCY</text>
-<text x="160" y="669" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">8,192 generated tokens / episode</text>
+<text x="160" y="669" font-family="Times New Roman, Times, serif" font-size="28" font-weight="700" fill="#263842" text-anchor="start" letter-spacing="0">8,192 proof tokens / episode</text>
 <text x="770" y="636" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#566872" text-anchor="start" letter-spacing="0">fair across unequal action sizes</text>
-<text x="770" y="668" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#8A524A" text-anchor="start" letter-spacing="0">not actions  ·  not attempts</text>
+<text x="770" y="668" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#8A524A" text-anchor="start" letter-spacing="0">not actions · not attempts · not thinking</text>
 <rect x="1115" y="627" width="205" height="36" rx="18" fill="#F4F6F7" opacity="1.0" stroke="#A8B3BA" stroke-width="2"/>
 <text x="1217.5" y="651" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#455862" text-anchor="middle" letter-spacing="0.15">K = 3 PER CELL</text>
 </svg>

@@ -768,10 +768,13 @@ def episode_interfaces() -> None:
         )
     raw_text(160, 632, "SHARED CURRENCY", 16, "#566872", 700,
              "Arial, Helvetica, sans-serif", letter_spacing=0.6)
-    raw_text(160, 669, "8,192 generated tokens / episode", 28, ink, 700)
+    # The budget counts proof tokens, not everything the endpoint emits:
+    # thinking is requested on top of it as `reasoning_headroom` and is not
+    # charged. Calling it "generated tokens" reads as the whole response.
+    raw_text(160, 669, "8,192 proof tokens / episode", 28, ink, 700)
     raw_text(770, 636, "fair across unequal action sizes", 18, "#566872", 700,
              "Arial, Helvetica, sans-serif")
-    raw_text(770, 668, "not actions  ·  not attempts", 18, "#8A524A", 700,
+    raw_text(770, 668, "not actions · not attempts · not thinking", 18, "#8A524A", 700,
              "Arial, Helvetica, sans-serif")
     pill(1115, 627, 205, "K = 3 PER CELL", "#F4F6F7", "#A8B3BA", "#455862", 16)
 
