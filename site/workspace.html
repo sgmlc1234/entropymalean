@@ -1462,13 +1462,13 @@ flowchart TB
       fetch('traces/' + meta.f + '.json').then(function(r){
         if(!r.ok) throw new Error(r.status); return r.json();
       }).then(function(d){ TRACE_CACHE[meta.f] = d; renderTraces(box, d); })
-        .catch(function(){ fail('Traces load from traces/ — open this page over HTTP, not file://'); });
+        .catch(function(){ fail('Per-attempt traces are not bundled with this copy of the page \u2014 they are '+ '24 MB across 750 files. Serve the repository over HTTP and they load beside '+ 'it; everything above needs nothing.'); });
     }
     if(TRACE_INDEX){ withIndex(TRACE_INDEX); return; }
     fetch('traces/index.json').then(function(r){
       if(!r.ok) throw new Error(r.status); return r.json();
     }).then(function(d){ TRACE_INDEX = d; withIndex(d); })
-      .catch(function(){ fail('Traces load from traces/ — open this page over HTTP, not file://'); });
+      .catch(function(){ fail('Per-attempt traces are not bundled with this copy of the page \u2014 they are '+ '24 MB across 750 files. Serve the repository over HTTP and they load beside '+ 'it; everything above needs nothing.'); });
   }
 
   var rows = D.rows, listEl = document.getElementById('rel-list'),

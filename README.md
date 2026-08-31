@@ -17,8 +17,17 @@ produce, and a second platform regenerated that export byte for byte.
 
 **[Browse the corpus and the results →](https://claude.ai/code/artifact/4c0b6395-74e7-4785-acbb-36868ad108a5)**
 Every row with its Lean, its certificate, and the reasoning behind every
-judgement it received — including the passes that disagreed. The page source is
-in `site/`.
+judgement it received — including the passes that disagreed.
+
+One thing the hosted page cannot show: what each model did on each problem,
+attempt by attempt — Lean's verdict on every try, and the proof that closed the
+goal where one did. Those traces are 24 MB across 750 files, so they are served
+beside the page rather than bundled into it. Serve this repository and they
+appear under every row:
+
+```bash
+python3 -m http.server 8000     # then open site/workspace.html
+```
 
 **Reproducing any of this: [`REVIEWERS.md`](REVIEWERS.md).** It is ordered by
 cost, and the first section needs nothing but Lean.
