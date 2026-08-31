@@ -270,13 +270,17 @@ already measured is replayed.
 > the treatment first and the gate never fires. We lost 546 Leanstral episodes
 > that way.
 
-The panel is 11 models in three groups:
+The panel is 13 models in three groups:
 
 ```
 lean_provers    bfs, goedel, pythagoras, leanstral
-reasoning_slms  muse, qwen3_14b, nemotron, qwen36, gptoss
-frontier_llms   grok, luna
+reasoning_slms  muse, qwen3_14b, nemotron_nano_9b, nemotron, qwen36, gptoss
+frontier_llms   luna, muse_spark, gemini_flash
 ```
+
+`groups` is the panel. `controls`, `treatments` and `budgets` are a registry and
+keep entries for models that were withdrawn — reading those instead of `groups`
+pulls in cells the paper does not report.
 
 **A reduced path with no API keys:** serve BFS and Goedel locally and run those
 two cells. They reproduce both headline results — the ProofNet drop and the
@@ -296,11 +300,20 @@ arms — and does not produce the table numbers.
 Both read the model order from `groups` in `config/exam_cells.json`, so a cell
 added or withdrawn does not leave the table behind.
 
-**Reading the tables.** The panel is eleven models across two arms. A cell that
-has not run yet renders as `tbd` — that is a missing measurement, not a score of
-zero and not a failed attempt. Qwen3.8-27B was withdrawn from the panel; its
-control data is kept as a record, so you will meet the directory even though the
-model is not in the tables.
+**Reading the tables.** All 26 cells ran — 13 models across two arms, 300
+control episodes and 1,605 treatment episodes each, 24,765 in total, every one
+carrying a Lean verdict. Nothing renders as `tbd`.
+
+`data/evaluation/exam_evidence/MANIFEST.json` recomputes Pass@3 for every cell
+from the raw episodes and carries a SHA-256 per cell, so the table numbers can be
+checked against the logs rather than against our transcription of them.
+
+Four models were withdrawn and are not in the tables: Grok-4.6 (control only),
+Qwen3.8-27B, Nemotron-3-Ultra and Inkling. Their directories are still under
+`data/evaluation/exam/`, as are the two contaminated Luna cells named
+`*_contaminated_codex` — those score 100/100 because the prompts could read the
+ground-truth proofs, and they are kept as the record of a defect rather than as
+a result.
 
 ### 3.5 Where the results live
 

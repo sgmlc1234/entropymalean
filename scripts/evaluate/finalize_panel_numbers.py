@@ -118,6 +118,8 @@ LABEL = {"bfs": "BFS-V2-7B", "goedel": "Goedel-V2-8B", "pythagoras": "Pythagoras
          "qwen3_14b": "Qwen3-14B", "nemotron": "Nemotron-3-nano",
          "qwen36": "Qwen3.6-35B-A3B", "gptoss": "gpt-oss-20b",
          "grok": "Grok-4.6", "luna": r"\texttt{gpt-5.6-luna}",
+         "nemotron_nano_9b": "Nemotron-nano-9B",
+         "gemini_flash": "gemini-3.7-flash",
          # The paper names the model, not OpenRouter's routing tier: `:free`
          # and `-contributor` are billing routes to one owner-operated
          # endpoint, not different weights. The tier is recorded in
