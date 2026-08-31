@@ -1,6 +1,6 @@
 """YAML-driven benchmark loaders.
 
-Three external benchmarks back the EntropyMaG-2 evaluation campaign:
+Three external benchmarks back the EntropyMaLean evaluation campaign:
 miniF2F, PutnamBench, and ProofNet. Their Hugging Face schemas differ, so
 this module turns each one into the pipeline's canonical ``EvalRow``
 (``problem_id``, ``statement``, ``gold_answer``) using the catalog in

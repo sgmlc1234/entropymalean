@@ -1,4 +1,4 @@
-"""Benchmark-aware dataset loaders for the EntropyMaG-2 evaluation arms.
+"""Benchmark-aware dataset loaders for the EntropyMaLean evaluation arms.
 
 A *cell* in the evaluation cube is `(benchmark, arm)`:
 - benchmark: one of {miniF2F, putnambench, proofnet}
@@ -115,7 +115,7 @@ def ensure_auto_implicit_false(header: object) -> str:
 
 
 def load_treatment_rows(jsonl_path: Path, benchmark: str) -> List[EvalRow]:
-    """Load quality-gated treatment rows from an EntropyMaG-2 certified JSONL.
+    """Load quality-gated treatment rows from an EntropyMaLean certified JSONL.
 
     The JSONL is the output of ``run_pool_generation`` or ``certify_csv``.
     A row is kept iff:

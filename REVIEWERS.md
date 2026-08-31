@@ -497,10 +497,12 @@ An HTML working page carries the same numbers as the paper, plus the full
 release with every judge's reasoning, browsable.
 
 ```bash
-python3 -m http.server 8791          # from the repository's parent directory
+python3 -m http.server 8791          # from the repository root
 ```
 
-Then open `http://localhost:8791/ICLR_2027/workspace.html`.
+Then open `http://localhost:8791/site/workspace.html`. The page loads its
+data and traces by relative path, so the server has to be rooted at the
+repository, not inside `site/`.
 
 ```
 #/results          corpus integrity, drops, lineage gap

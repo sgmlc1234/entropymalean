@@ -409,9 +409,9 @@ def render_tex(accepted: List[dict], held: List[dict], stats: Dict[str, Any],
                family: str = "") -> str:
     both = [r for r in held if r["admission"]["why_not"] == "rejected by both passes"]
     considered = len(accepted) + len(held)
-    title = ("EML-2 release: the corpus, the judgements, and what was thrown away"
+    title = ("EML-1 release: the corpus, the judgements, and what was thrown away"
              if not family else
-             f"EML-2 release, {family}: the corpus, the judgements, and what was thrown away")
+             f"EML-1 release, {family}: the corpus, the judgements, and what was thrown away")
     out: List[str] = [PREAMBLE.replace("TITLEPLACEHOLDER", title)]
 
     out.append(r"\begin{reviewbox}{What this is}" + "\n"

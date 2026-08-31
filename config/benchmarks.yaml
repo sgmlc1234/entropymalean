@@ -1,4 +1,4 @@
-# Benchmark catalog for the EntropyMaG-2 evaluation pipeline.
+# Benchmark catalog for the EntropyMaLean evaluation pipeline.
 #
 # Each entry describes (a) the upstream Hugging Face repository, (b) where the
 # local snapshot lives, and (c) how to map the upstream schema onto the

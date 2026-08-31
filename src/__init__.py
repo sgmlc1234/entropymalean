@@ -1,7 +1,7 @@
-"""EntropyMaG-2 minimal Lean L2+ certification package."""
+"""EntropyMaLean minimal Lean L2+ certification package."""
 
 __version__ = "0.1.0"
-__author__ = "EntropyMaG-2 Team"
+__author__ = "Anonymous Authors"
 
 from src.certification import (
     CertificationInput,

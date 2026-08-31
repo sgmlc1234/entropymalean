@@ -36,5 +36,5 @@ tables, not for reading.
 
 `external/` holds the original miniF2F, ProofNet, and PutnamBench dumps. Nothing
 in `src/` or `scripts/` references them; PutnamBench in particular is out of the
-EML-2 campaign entirely. They are kept only so a provenance question can be
+EML-1 campaign entirely. They are kept only so a provenance question can be
 answered without a re-download.

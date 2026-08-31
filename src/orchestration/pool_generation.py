@@ -9229,6 +9229,10 @@ def _aggregate_response_format() -> Dict[str, Any]:
 
 
 def _aggregate_messages(payload: Dict[str, Any]) -> List[Dict[str, str]]:
+    # The project's working name appears in this string because the campaigns
+    # ran with it. It is deliberately not renamed with the rest: this text was
+    # sent to the model, so editing it would make the released code differ from
+    # the code that produced the corpus, for a cosmetic gain.
     system = (
         "You are the EntropyMaG-2 next-pool aggregate orchestrator. "
         "Make final next-pool selection decisions from verified compact summaries. "

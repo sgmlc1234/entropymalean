@@ -674,9 +674,9 @@ def main() -> None:
     parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
     parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
     parser.add_argument("--workspace", type=Path,
-                        default=_repo_root().parent / "ICLR_2027" / "workspace.html")
+                        default=_repo_root() / "site" / "workspace.html")
     parser.add_argument("--json-output", type=Path,
-                        default=_repo_root().parent / "ICLR_2027" / "release_gallery.json")
+                        default=_repo_root() / "site" / "release_gallery.json")
     args = parser.parse_args()
 
     release = sorted(load(args.release), key=lambda r: (r["op_type"], r["operator_variant"], r["problem_id"]))

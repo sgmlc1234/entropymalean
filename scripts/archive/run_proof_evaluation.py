@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the EntropyMaG-2 multi-turn proof evaluation campaign.
+"""Run the EntropyMaLean multi-turn proof evaluation campaign.
 
 For every (problem, model) pair the evaluator runs K independent attempts,
 each up to T_max turns. Every turn is one chat completion followed by a

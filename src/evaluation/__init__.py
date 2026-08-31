@@ -1,4 +1,4 @@
-"""Direct no-tool model evaluation pipeline for EntropyMaG-2.
+"""Direct no-tool model evaluation pipeline for EntropyMaLean.
 
 Mirrors the EntropyMaG-1 stress-test protocol:
 - 3 benchmarks (miniF2F, PutnamBench, ProofNet)

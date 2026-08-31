@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the EntropyMaG-2 direct no-tool evaluation campaign.
+"""Run the EntropyMaLean direct no-tool evaluation campaign.
 
 Usage:
     python scripts/archive/run_evaluation.py \
