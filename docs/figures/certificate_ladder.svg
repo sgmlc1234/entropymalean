@@ -52,13 +52,15 @@
 <text x="650" y="272" font-family="Times New Roman, Times, serif" font-size="18" font-weight="400" fill="#5D707B" text-anchor="start" letter-spacing="0">independent of the elaborator&#x27;s own verdict</text>
 <rect x="1090" y="252" width="229" height="34" rx="17" fill="#FFFFFF" opacity="1.0" stroke="#4E819F" stroke-width="2"/>
 <text x="1204.5" y="275" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#315E77" text-anchor="middle" letter-spacing="0.35">RELEASE THRESHOLD</text>
-<g transform="translate(0,-130)"><path d="M1346 253 C1405 253 1404 253 1444 253" stroke="#4E819F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<g transform="translate(0,-130)">
+<path d="M1346 253 C1405 253 1404 253 1444 253" stroke="#4E819F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 <circle cx="1502" cy="254" r="51" fill="#C96E62" stroke="#8F4D45" stroke-width="3"/>
 <path d="M1498 203 C1497 184 1509 175 1523 174" fill="none" stroke="#557A61" stroke-width="5" stroke-linecap="round"/>
 <path d="M1515 183 C1538 162 1562 170 1567 193 C1542 199 1526 195 1515 183 Z" fill="#9DBFA7" stroke="#557A61" stroke-width="2"/>
 <path d="M1479 254 L1496 272 L1527 234" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 <text x="1503" y="330" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#7D403A" text-anchor="middle" letter-spacing="0.6">EML-1 RELEASE</text>
-<text x="1503" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#5D6C76" text-anchor="middle" letter-spacing="0">535 / 535 rows</text></g>
+<text x="1503" y="356" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#5D6C76" text-anchor="middle" letter-spacing="0">535 / 535 rows</text>
+</g>
 <rect x="258" y="326" width="1088" height="162" rx="12" fill="#E7F0F7" opacity="1.0" stroke="#83A9C3" stroke-width="2"/>
 <text x="286" y="367" font-family="Courier New, Courier, monospace" font-size="25" font-weight="700" fill="#20323D" text-anchor="start" letter-spacing="0">proof_checked</text>
 <text x="650" y="363" font-family="Times New Roman, Times, serif" font-size="24" font-weight="400" fill="#2B414C" text-anchor="start" letter-spacing="0">Proof compiles; the obligation cannot be deferred</text>
