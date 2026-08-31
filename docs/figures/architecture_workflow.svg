@@ -159,7 +159,7 @@
 <line x1="910" y1="940" x2="968" y2="940" stroke="#6B7E89" stroke-width="3" stroke-linecap="round" fill="none" marker-end="url(#arrow)"/>
 <rect x="978" y="850" width="300" height="180" rx="12" fill="#FBF0EE" opacity="1.0" stroke="#C78C83" stroke-width="2"/>
 <text x="1002" y="890" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#8A524A" text-anchor="start" letter-spacing="0.5">OPEN-WEIGHT PROVERS</text>
-<text x="1128" y="961" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" fill="#9B5C54" text-anchor="middle" letter-spacing="0">32–100%</text>
+<text x="1128" y="961" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" fill="#9B5C54" text-anchor="middle" letter-spacing="0">35–89%</text>
 <text x="1128" y="999" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#735A56" text-anchor="middle" letter-spacing="0">children missed</text>
 <rect x="1294" y="850" width="320" height="180" rx="12" fill="#EDF6F0" opacity="1.0" stroke="#8DAF97" stroke-width="2"/>
 <text x="1318" y="890" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#4E7359" text-anchor="start" letter-spacing="0.5">FRONTIER REFERENCE</text>
