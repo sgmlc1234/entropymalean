@@ -32,7 +32,7 @@ wrong. They were local, and nothing in the artifact said what local meant.
 
 |   |   |
 |---|---|
-| **[Browse the corpus →](https://claude.ai/code/artifact/4c0b6395-74e7-4785-acbb-36868ad108a5)** | Every row with its Lean, its certificate, and the reasoning behind each judgement — including the passes that disagreed |
+| **[Browse the corpus →](site/workspace.html)** | Every row with its Lean, its certificate, and the reasoning behind each judgement — including the passes that disagreed |
 | **[`REVIEWERS.md`](REVIEWERS.md)** | How to reproduce any of it, ordered by cost. The first section needs nothing but Lean |
 | **[`scripts/INVENTORY.md`](scripts/INVENTORY.md)** | What each of the 101 scripts is for, and why it sits where it does |
 
