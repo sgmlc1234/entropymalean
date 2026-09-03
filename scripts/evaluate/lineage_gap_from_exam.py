@@ -24,7 +24,7 @@ inflate the number.
 Lineage comes from the recorded id convention, parsed by the resolver in
 analyze_parent_child_ablation.py rather than a second copy of it here.
 """
-import argparse, collections, glob, importlib.util, json, math
+import argparse, collections, importlib.util, json, math
 from pathlib import Path
 
 def _repo_root() -> Path:
@@ -39,6 +39,10 @@ def _repo_root() -> Path:
 
 
 ROOT = _repo_root()
+import sys as _sys
+if str(ROOT) not in _sys.path:
+    _sys.path.insert(0, str(ROOT))
+from src.evaluation.exam_records import cell_episodes  # noqa: E402
 BENCH = (("proofnet_verified", "ProofNet"), ("minif2f_v2", "miniF2F"))
 
 
@@ -61,32 +65,16 @@ def wilson(k, n, z=1.96):
     return (100 * (c - half) / d, 100 * (c + half) / d)
 
 
-def _resolve(cell_dir):
-    """Cell paths in the config are repo-relative, so they only resolve when the
-    command is run from the repository root. Anchor them instead of trusting the
-    working directory: the failure otherwise is an empty glob, which reads as a
-    cell with no episodes rather than as a path that was never found."""
-    if not cell_dir:
-        return None
-    p = Path(cell_dir)
-    return p if p.is_absolute() else ROOT / p
+def pass3(cell_dir, model="", arm=""):
+    """{problem_id: bool} -- did any of the repeats close this row?
 
-
-def pass3(cell_dir):
-    """{problem_id: bool} -- did any of the repeats close this row?"""
+    Raw cell directory if present, else the shipped bundle
+    `data/evaluation/exam_evidence/<model>_<arm>.jsonl.gz`; see
+    `src/evaluation/exam_records.py`."""
     out = {}
-    cell_dir = _resolve(cell_dir)
-    if not cell_dir:
-        return out
     by_seed = collections.defaultdict(list)
-    for path in glob.glob(f"{cell_dir}/episodes_*.jsonl"):
-        if "before-replay" in path:
-            continue
-        with open(path, encoding="utf-8") as handle:
-            for line in handle:
-                if line.strip():
-                    row = json.loads(line)
-                    by_seed[row["seed"]].append(row)
+    for row in cell_episodes(cell_dir, model, arm):
+        by_seed[row["seed"]].append(row)
     for seed, episodes in by_seed.items():
         out[seed] = any(e.get("success") for e in episodes)
     return out
@@ -164,8 +152,8 @@ def main():
         model = model.strip()
         if not model:
             continue
-        ctrl = pass3(cfg["controls"].get(model))
-        trt = pass3(cfg["treatments"].get(model))
+        ctrl = pass3(cfg["controls"].get(model), model, "control")
+        trt = pass3(cfg["treatments"].get(model), model, "treatment")
         if not ctrl or not trt:
             print(f"\n{model}: control {len(ctrl)} rows, treatment {len(trt)} rows -- skipped")
             continue

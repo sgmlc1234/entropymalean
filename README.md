@@ -34,6 +34,7 @@ wrong. They were local, and nothing in the artifact said what local meant.
 |---|---|
 | **[Browse the corpus →](site/workspace.html)** | Every row with its Lean, its certificate, and the reasoning behind each judgement — including the passes that disagreed |
 | **[`REVIEWERS.md`](REVIEWERS.md)** | How to reproduce any of it, ordered by cost. The first section needs nothing but Lean |
+| **`python3 scripts/evaluate/bundle_exam_evidence.py --from-bundle`** | The panel's 24,765 episodes ship in `data/evaluation/exam_evidence/`; this recomputes every Pass@3 in the paper from those bytes in under a minute, no model and no Lean |
 | **[`scripts/INVENTORY.md`](scripts/INVENTORY.md)** | What each of the 101 scripts is for, and why it sits where it does |
 
 <details>
@@ -122,6 +123,8 @@ scripts/release/        applying the gates, writing the corpus
 scripts/evaluate/       the panel — 13 models, two arms, 24,765 episodes
 scripts/analysis/       tools that produced a number in the paper
 scripts/archive/        superseded, kept because released rows came out of them
+data/release/           the corpus, the rejected rows, and the judge passes
+data/evaluation/        the panel's episodes (26 cells, gzipped, with a manifest) and the rows they played
 site/                   the browsable page, its data, and the traces
 ```
 

@@ -8,7 +8,7 @@ use, so the paper is edited from one source rather than from whichever partial
 count was on screen. Pass@3 is the row-level indicator that at least one of the
 three repeats closed the row, which is what the bootstrap resamples.
 """
-import argparse, collections, glob, json, sys
+import argparse, collections, json, sys
 from pathlib import Path
 
 def _repo_root() -> Path:
@@ -25,36 +25,22 @@ def _repo_root() -> Path:
 
 sys.path.insert(0, str(_repo_root()))
 from src.evaluation.bootstrap_ci import bootstrap_drop_ci
+from src.evaluation.exam_records import cell_episodes
 
 BENCH = (("minif2f_v2", "miniF2F"), ("proofnet_verified", "ProofNet"))
 
 
-def _resolve(cell_dir):
-    """Cell paths in the config are repo-relative, so they only resolve when the
-    command is run from the repository root. Anchor them instead of trusting the
-    working directory: the failure otherwise is an empty glob, which reads as a
-    cell with no episodes rather than as a path that was never found."""
-    if not cell_dir:
-        return None
-    p = Path(cell_dir)
-    return p if p.is_absolute() else _repo_root() / p
+def pass3(cell_dir, model="", arm=""):
+    """Row-level Pass@3 indicators, per benchmark.
 
-
-def pass3(cell_dir):
-    """Row-level Pass@3 indicators, per benchmark."""
+    Records come from the raw cell directory when it exists and from the
+    shipped bundle `data/evaluation/exam_evidence/<model>_<arm>.jsonl.gz`
+    otherwise, so the same command runs in the working tree and in a checkout
+    that holds only the release (see `src/evaluation/exam_records.py`)."""
     out = collections.defaultdict(list)
-    cell_dir = _resolve(cell_dir)
-    if not cell_dir:
-        return out
-    files = [f for f in glob.glob(f"{cell_dir}/episodes_*.jsonl")
-             if "before-replay" not in f]
     by_seed = collections.defaultdict(list)
-    for path in files:
-        with open(path, encoding="utf-8") as handle:
-            for line in handle:
-                if line.strip():
-                    row = json.loads(line)
-                    by_seed[row["seed"]].append(row)
+    for row in cell_episodes(cell_dir, model, arm):
+        by_seed[row["seed"]].append(row)
     # Sorted, not file order: the bootstrap resamples indices, so the order the
     # episodes happen to sit in decides which draws a seeded generator makes. A
     # replayed cell rewrites that order without changing a single result.
@@ -91,8 +77,8 @@ def main():
     wanted = [m for m in (args.models.split(",") if args.models else order) if m]
 
     for model in wanted:
-        c = pass3(cfg["controls"].get(model))
-        t = pass3(cfg["treatments"].get(model))
+        c = pass3(cfg["controls"].get(model), model, "control")
+        t = pass3(cfg["treatments"].get(model), model, "treatment")
         if not c:
             continue
         print(f"\n{model}")
@@ -132,7 +118,8 @@ TBD = r"\textsc{tbd}"
 def emit(kind, cfg, wanted):
     from src.evaluation.bootstrap_ci import bootstrap_drop_ci
     for model in wanted:
-        c, t = pass3(cfg["controls"].get(model)), pass3(cfg["treatments"].get(model))
+        c = pass3(cfg["controls"].get(model), model, "control")
+        t = pass3(cfg["treatments"].get(model), model, "treatment")
         if model not in LABEL:
             # A cell can be added to the config and never reach the table:
             # emitting nothing for an unknown key is how that happens silently.

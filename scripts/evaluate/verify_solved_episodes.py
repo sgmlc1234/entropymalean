@@ -22,8 +22,11 @@ the next call read someone else's verdict.
 Usage:
   set -a; source .env; set +a
   python3 scripts/evaluate/verify_solved_episodes.py \
-      data/evaluation/exam/release309_bfs/episodes_bfs_closed_book.jsonl \
+      data/evaluation/exam_evidence/bfs_treatment.jsonl.gz \
       --report /tmp/false_solves_bfs.json
+
+The shipped bundle (`data/evaluation/exam_evidence/*.jsonl.gz`) and the raw
+cell files (`data/evaluation/exam/<cell>/episodes_*.jsonl`) are both accepted.
 """
 
 from __future__ import annotations
@@ -53,6 +56,7 @@ from src.evaluation.lean_repl_verifier import (  # noqa: E402
     close_global_repl_verifier,
     verify_lean_proof_repl,
 )
+from src.evaluation.exam_records import episode_files, read_episode_file  # noqa: E402
 
 
 async def _run() -> None:
@@ -65,9 +69,8 @@ async def _run() -> None:
 
     findings, checked = [], 0
     try:
-        for path in args.episodes:
-            rows = [json.loads(l) for l in path.read_text(encoding="utf-8").splitlines()
-                    if l.strip()]
+        for path in episode_files(args.episodes):
+            rows = read_episode_file(path)  # plain .jsonl or the shipped .jsonl.gz
             solved = [r for r in rows if r.get("success")
                       and (r.get("solved_code") or "").strip()]
             if args.limit:

@@ -1,0 +1,446 @@
+{
+  "cells": {
+    "bfs/control": {
+      "bundled": "bfs_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 58.0,
+        "proofnet_verified": 28.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "097c806bd13979ca21f1cc9ef0ad34184e93e049a7541f7e5a5bdc7b90e3c9bb",
+      "source": "data/evaluation/exam/control100_matched/episodes_bfs_closed_book.jsonl"
+    },
+    "bfs/treatment": {
+      "bundled": "bfs_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 47.6,
+        "proofnet_verified": 25.8
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "1432b3113a0d8807a4033ac97ca5d1a3998668e1bfb9f4a8db1656c3fb487024",
+      "source": "data/evaluation/exam/release309_bfs/episodes_bfs_closed_book.jsonl"
+    },
+    "gemini_flash/control": {
+      "bundled": "gemini_flash_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 80.0,
+        "proofnet_verified": 64.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "1c90246571f5b6f7acdb517d1e848dc22f43c5e495a82733a4f6f5ede1a5ce47",
+      "source": "data/evaluation/exam/gemini_flash_control/episodes_gemini_flash_closed_book.jsonl"
+    },
+    "gemini_flash/treatment": {
+      "bundled": "gemini_flash_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 80.2,
+        "proofnet_verified": 65.5
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "4f109fcea36b6d3f2691f4326de4a0770c74367e39edaf7efb72d3bea5c674fe",
+      "source": "data/evaluation/exam/gemini_flash_treatment/episodes_gemini_flash_closed_book.jsonl"
+    },
+    "goedel/control": {
+      "bundled": "goedel_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 60.0,
+        "proofnet_verified": 24.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "3c1a9318616589c1ea0dc9ae50b4871b684df630e42e46e4891290e6414b1f59",
+      "source": "data/evaluation/exam/prefill_closed/episodes_goedel_closed_book.jsonl"
+    },
+    "goedel/treatment": {
+      "bundled": "goedel_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 47.6,
+        "proofnet_verified": 7.0
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "5815fcfbcd8c1dc710f9829b594fbd6e93b472bce44ff54b61c6c37053068f32",
+      "source": "data/evaluation/exam/release309_goedel/episodes_goedel_closed_book.jsonl"
+    },
+    "gptoss/control": {
+      "bundled": "gptoss_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 36.0,
+        "proofnet_verified": 26.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "80ca2449947fff29427155e0732716661d4a68249c0848963e92033ba666ec08",
+      "source": "data/evaluation/exam/gptoss_control/episodes_gptoss_closed_book.jsonl"
+    },
+    "gptoss/treatment": {
+      "bundled": "gptoss_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 21.8,
+        "proofnet_verified": 23.3
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "63fe4e316be354593418c943d3261508ca1e1ecfde0dde1df5ed73f875ebef78",
+      "source": "data/evaluation/exam/gptoss_treatment/episodes_gptoss_closed_book.jsonl"
+    },
+    "leanstral/control": {
+      "bundled": "leanstral_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 56.0,
+        "proofnet_verified": 32.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "5cee2a9d199afa6cdde5199f5b20732b6aaf3c69002bdaf16d43cb6e73970067",
+      "source": "data/evaluation/exam/leanstral_control/episodes_leanstral_closed_book.jsonl"
+    },
+    "leanstral/treatment": {
+      "bundled": "leanstral_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 52.8,
+        "proofnet_verified": 27.2
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "2fa92999efe1c906f9312cd5802ed580ae2c49c40c0dc0cbc8830f7ee9a0618a",
+      "source": "data/evaluation/exam/leanstral_treatment/episodes_leanstral_closed_book.jsonl"
+    },
+    "luna/control": {
+      "bundled": "luna_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 82.0,
+        "proofnet_verified": 50.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "f140961870c6d7b9d9fe45e667d07a61a904d16040c1c0f4f0d79f4a1669349c",
+      "source": "data/evaluation/exam/luna_control/episodes_luna_closed_book.jsonl"
+    },
+    "luna/treatment": {
+      "bundled": "luna_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 84.7,
+        "proofnet_verified": 49.5
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "203dc5d9a5e994b327121c25d352b7433de0dbb80204d959b5543191a3a82f54",
+      "source": "data/evaluation/exam/release309_luna/episodes_luna_closed_book.jsonl"
+    },
+    "muse/control": {
+      "bundled": "muse_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 32.0,
+        "proofnet_verified": 10.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "a8423ba61dfab669fb605191799b7e4bb86346ac3e70187b3c906b371c2109b3",
+      "source": "data/evaluation/exam/muse_control/episodes_muse_closed_book.jsonl"
+    },
+    "muse/treatment": {
+      "bundled": "muse_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 20.2,
+        "proofnet_verified": 9.4
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "2ed077e85e74a54587feed5a4cc050015a6cc00e7240007b36e9083008cadab4",
+      "source": "data/evaluation/exam/muse_treatment/episodes_muse_closed_book.jsonl"
+    },
+    "muse_spark/control": {
+      "bundled": "muse_spark_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 74.0,
+        "proofnet_verified": 48.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "4471c146978dd81acab639bd4383b8a26f98b25fd987b41e1d933169502d4a2c",
+      "source": "data/evaluation/exam/muse_spark_control/episodes_muse_spark_closed_book.jsonl"
+    },
+    "muse_spark/treatment": {
+      "bundled": "muse_spark_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 76.6,
+        "proofnet_verified": 56.1
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "13cf2484ad7de769c888aeef2ab52589cddedf7355c49a7709ebbc2bf648ec38",
+      "source": "data/evaluation/exam/muse_spark_treatment/episodes_muse_spark_closed_book.jsonl"
+    },
+    "nemotron/control": {
+      "bundled": "nemotron_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 58.0,
+        "proofnet_verified": 24.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "3150888c7a92a2a8666280af41fe46f0e60f25b7f2dc8c4de0fd6e4e6185ce9a",
+      "source": "data/evaluation/exam/nemotron_control/episodes_nemotron_closed_book.jsonl"
+    },
+    "nemotron/treatment": {
+      "bundled": "nemotron_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 53.6,
+        "proofnet_verified": 12.5
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "103621f3cbd4f9ea48a53b22c9088b435df797f60958e0df715dbb53165960ca",
+      "source": "data/evaluation/exam/nemotron_treatment/episodes_nemotron_closed_book.jsonl"
+    },
+    "nemotron_nano_9b/control": {
+      "bundled": "nemotron_nano_9b_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 10.0,
+        "proofnet_verified": 0.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "7c34b5a5ea9d8f08badfad9e549fd6fc77382f3dd92d8f351ffcb8d1a96c7288",
+      "source": "data/evaluation/exam/nemotron_nano_9b_control/episodes_nemotron_nano_9b_closed_book.jsonl"
+    },
+    "nemotron_nano_9b/treatment": {
+      "bundled": "nemotron_nano_9b_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 0.4,
+        "proofnet_verified": 0.0
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "027573bb26a44187b176551494be94cf7358355dc7795cbdd7faa023437f6dfb",
+      "source": "data/evaluation/exam/nemotron_nano_9b_treatment/episodes_nemotron_nano_9b_closed_book.jsonl"
+    },
+    "pythagoras/control": {
+      "bundled": "pythagoras_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 56.0,
+        "proofnet_verified": 14.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "736d6c8a885e03a382c7779028610ebc799e570bd4e961a4fb5cc0113ee52386",
+      "source": "data/evaluation/exam/pythagoras_control/episodes_pythagoras_closed_book.jsonl"
+    },
+    "pythagoras/treatment": {
+      "bundled": "pythagoras_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 49.6,
+        "proofnet_verified": 4.5
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "0308ec9dacfc7a2d218eed196127ff8a0b4b605be11d97e3b8a3627a0bb5383f",
+      "source": "data/evaluation/exam/pythagoras_treatment/episodes_pythagoras_closed_book.jsonl"
+    },
+    "qwen36/control": {
+      "bundled": "qwen36_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 48.0,
+        "proofnet_verified": 16.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "63a84ca33b257ffcb10ab1dbd16538e1812f100b9c0b1d126e5047628679bd34",
+      "source": "data/evaluation/exam/qwen36_control/episodes_qwen36_closed_book.jsonl"
+    },
+    "qwen36/treatment": {
+      "bundled": "qwen36_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 35.5,
+        "proofnet_verified": 11.5
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "92ff20a70ba93a767d6c49c721c2d4b57a82ed136177069a1ab00e30717f0a6f",
+      "source": "data/evaluation/exam/qwen36_treatment/episodes_qwen36_closed_book.jsonl"
+    },
+    "qwen3_14b/control": {
+      "bundled": "qwen3_14b_control.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 300,
+      "pass3": {
+        "minif2f_v2": 10.0,
+        "proofnet_verified": 4.0
+      },
+      "rows": 100,
+      "rows_per_benchmark": {
+        "minif2f_v2": 50,
+        "proofnet_verified": 50
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "c5b11f95f21ad127dd6c8cd167120c7c525ca12eaa19e82b559147614b1f93c8",
+      "source": "data/evaluation/exam/qwen3_14b_control/episodes_qwen3_14b_closed_book.jsonl"
+    },
+    "qwen3_14b/treatment": {
+      "bundled": "qwen3_14b_treatment.jsonl.gz",
+      "compromised_episodes": 0,
+      "episodes": 1605,
+      "pass3": {
+        "minif2f_v2": 0.4,
+        "proofnet_verified": 1.0
+      },
+      "rows": 535,
+      "rows_per_benchmark": {
+        "minif2f_v2": 248,
+        "proofnet_verified": 287
+      },
+      "rows_with_no_measured_episode": 0,
+      "sha256": "c84385572c2aa01869ea80a075cd97c6328c04fa0308acb377e567a5d4636262",
+      "source": "data/evaluation/exam/qwen3_14b_treatment/episodes_qwen3_14b_closed_book.jsonl"
+    }
+  }
+}

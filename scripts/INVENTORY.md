@@ -137,7 +137,7 @@ part of this cluster rather than a measurement of it.
 `finalize_panel_numbers.py` · `lineage_gap_from_exam.py` ·
 `analyze_parent_child_ablation.py` · `verify_solved_episodes.py` ·
 `audit_repl_desync.py` · `drop_unmeasured_episodes.py` ·
-`analyze_exam_arms.py` · `provers.sh` *(repository root, not `scripts/`)*
+`analyze_exam_arms.py` · `provers.sh` *(serves the two local provers)*
 
 `analyze_parent_child_ablation.py` is on this list for a reason no reference
 graph could find. `lineage_gap_from_exam.py:35` loads its lineage parser **by

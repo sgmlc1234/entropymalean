@@ -6,6 +6,7 @@ most likely to want are ordered by cost, cheapest first:
 | Want to | Cost | Section |
 |---|---|---|
 | Check that our reported proofs are real | minutes, no GPU, no API key | [1](#1-verify-the-release-without-running-anything) |
+| Recompute the paper's tables from the shipped episodes | under a minute, Python only | [3.1](#31-start-here-the-papers-tables-from-the-shipped-episodes-no-model-no-lean) |
 | Re-run the evaluation | hours to days, GPU or API keys | [3](#3-evaluation-pipeline) |
 | Re-run problem generation | days, API keys | [4](#4-generation-pipeline) |
 
@@ -211,20 +212,43 @@ seeds (50 per benchmark) and a treatment of the released corpus. It is reported
 per benchmark and never pooled — the control is balanced 50/50, the treatment is
 287/248, and the benchmark gap exceeds the effect being measured.
 
-### 3.1 Start here: verify our successes without re-running anything
+### 3.1 Start here: the paper's tables from the shipped episodes, no model, no Lean
 
-Episode outcomes are sampled at temperature 1.0 and there is no seed argument,
-so Pass@3 will not reproduce exactly. **Verification is deterministic.** Every
-episode we scored as solved stored the Lean it closed with, and that can be
-re-elaborated:
+Every episode behind the 26 reported cells ships in
+`data/evaluation/exam_evidence/` — one gzipped file per model and arm, 24,765
+episodes, with `MANIFEST.json` recording each file's SHA-256 and the Pass@3 it
+yields. Three commands recompute the paper from those bytes, in under a minute,
+with nothing installed beyond Python:
+
+```bash
+python3 scripts/evaluate/bundle_exam_evidence.py --from-bundle        # digests + Pass@3 vs MANIFEST
+python3 scripts/evaluate/finalize_panel_numbers.py --latex drops      # Table 1: drops with bootstrap CIs
+python3 scripts/evaluate/lineage_gap_from_exam.py --contrast goedel,bfs  # Table 5: lineage proof gap
+```
+
+The first checks the bundle against its own manifest and prints the control /
+treatment grid. The second prints the rows of the paper's Table 1 verbatim (the
+one cell scoring zero on both arms prints a degenerate `[0.0,0.0]`; the paper
+substitutes a Wilson interval there and marks it †). The third prints the
+lineage proof gap per model and benchmark with Wilson intervals, the rescue
+counts, and the Goedel-minus-BFS contrast with its Newcombe interval. The
+scripts read the raw cell directories when those exist and the bundle
+otherwise, so they run identically here and in the tree the bundle was cut
+from.
+
+**Then verify the proofs.** Episode outcomes are sampled at temperature 1.0
+and there is no seed argument, so Pass@3 will not reproduce exactly.
+**Verification is deterministic.** Every episode we scored as solved stored
+the Lean it closed with, and that can be re-elaborated against a built Mathlib
+(§0.2):
 
 ```bash
 python3 scripts/evaluate/verify_solved_episodes.py \
-  data/evaluation/exam/<cell>/episodes_<model>_closed_book.jsonl
+  data/evaluation/exam_evidence/<model>_<arm>.jsonl.gz
 ```
 
 This settles whether our reported successes are real without reproducing a
-single episode. It is the cheapest meaningful check in this section.
+single episode. Raw `episodes_*.jsonl` files are accepted as well.
 
 ### 3.2 Serving the local provers
 
@@ -234,8 +258,11 @@ single episode. It is the cheapest meaningful check in this section.
 ./scripts/provers.sh status
 ```
 
-Note this script lives at the **repository root**, not under `entropy-malean/`.
-GGUF paths are in it: BFS-Prover-V2-7B Q8_0, Goedel-Prover-V2-8B Q8_0.
+The script expects the two GGUF checkpoints — BFS-Prover-V2-7B Q8_0 and
+Goedel-Prover-V2-8B Q8_0 — under `$HOME/.cache/lm-studio/models` in LM
+Studio's download layout; edit `MODELS` at the top of the script to point
+elsewhere. `LM_STUDIO_BASE_URL` optionally names a remote LM Studio host that
+can serve Goedel (not BFS, see below).
 
 > **BFS must be served by llama.cpp.** Its search ranks the frontier by
 > cumulative token log-probability, and LM Studio returns `logprobs: null` **on
@@ -304,35 +331,40 @@ added or withdrawn does not leave the table behind.
 control episodes and 1,605 treatment episodes each, 24,765 in total, every one
 carrying a Lean verdict. Nothing renders as `tbd`.
 
-`data/evaluation/exam_evidence/MANIFEST.json` recomputes Pass@3 for every cell
-from the raw episodes and carries a SHA-256 per cell, so the table numbers can be
-checked against the logs rather than against our transcription of them.
+`data/evaluation/exam_evidence/MANIFEST.json` records, for every cell, the
+SHA-256 of the shipped episodes and the Pass@3 recomputed from them, so the
+table numbers can be checked against the logs rather than against our
+transcription of them; `bundle_exam_evidence.py --from-bundle` (§3.1) does that
+check.
 
 Four models were withdrawn and are not in the tables: Grok-4.6 (control only),
-Qwen3.8-27B, Nemotron-3-Ultra and Inkling. Their directories are still under
-`data/evaluation/exam/`, as are the two contaminated Luna cells named
-`*_contaminated_codex` — those score 100/100 because the prompts could read the
-ground-truth proofs, and they are kept as the record of a defect rather than as
-a result.
+Qwen3.8-27B, Nemotron-3-Ultra and Inkling. Their cells are not shipped. Nor
+are two contaminated Luna cells whose prompts could read the ground-truth
+proofs and which score 100/100 — they exist in our working tree as the record
+of a defect, and `groups` in the config is what keeps every script from
+reading them.
 
 ### 3.5 Where the results live
 
 ```
-data/evaluation/exam/<cell>/episodes_<model>_closed_book.jsonl   raw episodes
-data/evaluation/exam/<cell>/summary_*.json                        cell summary
-config/exam_cells.json                                            cell → path
+data/evaluation/exam_evidence/<model>_<arm>.jsonl.gz      episodes, one file per reported cell
+data/evaluation/exam_evidence/MANIFEST.json               SHA-256 and Pass@3 per cell
+data/evaluation/exam/seeds_all100.jsonl                   the 100 control rows as played
+data/evaluation/exam/release537_playable.jsonl            the 535 released rows as played
+config/exam_cells.json                                    panel (`groups`) and cell registry
 ```
 
-Cell names are historical and not guessable. BFS's treatment cell is
-`release309_bfs` and its control cell is `control100_matched` — note that the
-latter differs by one word from the `control100` directory warned about below,
-which is a different and unusable thing. Read the `controls` and `treatments`
-maps in the config rather than inferring any name.
+A cell you run yourself lands under `data/evaluation/exam/<cell>/` as
+`episodes_<model>_closed_book.jsonl` plus a `summary_*.json`; the config's
+`controls` and `treatments` maps name those directories, and every scoring
+script reads a directory when it exists and the shipped bundle when it does
+not. Cell names in the registry are historical and not guessable — BFS's
+treatment cell is `release309_bfs`, its control `control100_matched` — so read
+the maps rather than inferring a name.
 
-The control corpus is `data/evaluation/exam/seeds_all100.jsonl` (50
-ProofNet-Verified + 50 miniF2F). An older `control100` directory exists and
-mixes the two benchmarks in a way that makes pooled Pass@3 confound corpus
-effect with benchmark difficulty — do not use it.
+The control corpus is `seeds_all100.jsonl` (50 ProofNet-Verified + 50
+miniF2F). Report per benchmark: the two differ in difficulty by more than any
+effect being measured, and a pooled Pass@3 confounds the two.
 
 ### 3.6 Two ways to miscount
 
@@ -395,7 +427,7 @@ set -a; source .env; set +a
 
 GENERATION_PROVIDER=codex_cli LEAN_VERIFIER=repl \
 python3 scripts/generate/run_pool_generation.py \
-  --input data/certified/run-e/seeds/proofnet_p01.csv \
+  --input examples/seeds/proofnet_example_group.csv \   # or your own certified seed group
   --output /tmp/p01.jsonl \
   --summary-output /tmp/p01_summary.json \
   --generation-model gpt-5.6-luna \
@@ -521,13 +553,16 @@ python3 -m scripts.release.publish_release_page
 
 ## 6. What we would check first, if we were reviewing this
 
-1. **Recompile a row** (§1.1). One command, and it settles whether the artifact
+1. **Recompute Table 1 and Table 5 from the bundle** (§3.1). Under a minute,
+   Python only, and it settles whether the numbers in the paper are the numbers
+   in the logs.
+2. **Recompile a row** (§1.1). One command, and it settles whether the artifact
    is what it says it is.
-2. **Run `verify_solved_episodes.py`** (§3.1). Deterministic, no GPU, and it
+3. **Run `verify_solved_episodes.py`** (§3.1). Deterministic, no GPU, and it
    settles whether the successes we report are real.
-3. **Check a rejected row's reason** (§1.3). The gate is only meaningful if what
+4. **Check a rejected row's reason** (§1.3). The gate is only meaningful if what
    it rejected was worth rejecting.
-4. **Compare an export digest** (§2.2), if you have a second machine. That is
+5. **Compare an export digest** (§2.2), if you have a second machine. That is
    the claim we are least able to make on your behalf.
 
 Reproducing the full evaluation is the most expensive check and the least

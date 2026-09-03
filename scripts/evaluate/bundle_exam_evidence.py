@@ -13,8 +13,14 @@ The manifest is the audit trail: the numbers in it are recomputed from the
 bundled bytes, so a reviewer can check the paper's Table against the manifest
 and the manifest against the files without running a model.
 
-    python3 scripts/evaluate/bundle_exam_evidence.py           # write bundle
-    python3 scripts/evaluate/bundle_exam_evidence.py --verify  # check, write nothing
+    python3 scripts/evaluate/bundle_exam_evidence.py                # write bundle
+    python3 scripts/evaluate/bundle_exam_evidence.py --verify       # bundle vs raw
+    python3 scripts/evaluate/bundle_exam_evidence.py --from-bundle  # bundle alone
+
+`--from-bundle` is the reviewer's command: it needs no raw episode directory
+and no model. It decompresses each shipped cell, checks its bytes against the
+manifest's SHA-256, recomputes Pass@3 from those bytes, and prints the panel
+in the shape of the paper's control-versus-treatment table.
 """
 
 from __future__ import annotations
@@ -101,11 +107,63 @@ def summarise(raw: bytes) -> dict:
     }
 
 
+def from_bundle() -> None:
+    """Recompute every reported cell from the shipped bytes alone."""
+    manifest = json.loads((OUT / "MANIFEST.json").read_text(encoding="utf-8"))["cells"]
+    config = json.loads(CONFIG.read_text(encoding="utf-8"))
+    groups = config.get("groups") or {}
+    order = [m for g in ("lean_provers", "reasoning_slms", "frontier_llms")
+             for m in (groups.get(g) or [])]
+    problems, table = [], {}
+    for model in order:
+        for arm in ("control", "treatment"):
+            key = f"{model}/{arm}"
+            expected = manifest.get(key)
+            if expected is None:
+                problems.append(f"{key}: not in MANIFEST.json")
+                continue
+            path = OUT / expected["bundled"]
+            if not path.exists():
+                problems.append(f"{key}: {path.name} missing")
+                continue
+            raw = gzip.decompress(path.read_bytes())
+            digest = hashlib.sha256(raw).hexdigest()
+            if digest != expected["sha256"]:
+                problems.append(f"{key}: SHA-256 {digest[:12]} != manifest {expected['sha256'][:12]}")
+            got = summarise(raw)
+            for field in ("episodes", "rows", "pass3", "rows_with_no_measured_episode"):
+                if got[field] != expected[field]:
+                    problems.append(f"{key}: {field} {got[field]} != manifest {expected[field]}")
+            table[key] = got
+    print(f"{'model':18s}{'miniF2F ctrl/trt':>20s}{'ProofNet ctrl/trt':>20s}")
+    for model in order:
+        c, t = table.get(f"{model}/control"), table.get(f"{model}/treatment")
+        if not c or not t:
+            continue
+        cells = []
+        for bench in ("minif2f_v2", "proofnet_verified"):
+            cells.append(f"{c['pass3'].get(bench, float('nan')):5.1f}/{t['pass3'].get(bench, float('nan')):4.1f}")
+        print(f"{model:18s}{cells[0]:>20s}{cells[1]:>20s}")
+    total = sum(v["episodes"] for v in table.values())
+    print(f"\n{len(table)} cells, {total} episodes, recomputed from the bundle.")
+    if problems:
+        print("\nproblems:", file=sys.stderr)
+        for p in problems:
+            print(f"  {p}", file=sys.stderr)
+        sys.exit(1)
+    print("every cell matches MANIFEST.json byte for byte and figure for figure.")
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--verify", action="store_true",
                     help="recompute against an existing bundle and write nothing")
+    ap.add_argument("--from-bundle", action="store_true",
+                    help="recompute from the shipped bundle alone; needs no raw episodes")
     args = ap.parse_args()
+    if args.from_bundle:
+        from_bundle()
+        return
 
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
     manifest, problems = {}, []
