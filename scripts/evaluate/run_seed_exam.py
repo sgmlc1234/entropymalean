@@ -407,9 +407,21 @@ async def main() -> None:
             # back to a fixed name would send OpenRouter's key to Mistral, and
             # the refusal arrives as an empty reply that reads like a dead
             # server rather than a wrong credential.
-            names = [args.api_key_env] if args.api_key_env else []
-            names += ["OPENROUTER_API_KEY", "OPENAI_API_KEY"]
-            key = next((os.environ[n] for n in names if n and os.environ.get(n)), "")
+            # A cell that names its variable gets exactly that variable. The
+            # fallback below is for cells that name none; applying it to a
+            # named-but-unset variable sent OpenRouter's key to Mistral, and
+            # the refusal was a 401 rather than "no key", which reads as a bad
+            # credential rather than a misspelled name.
+            if args.api_key_env:
+                key = os.environ.get(args.api_key_env, "")
+                if not key:
+                    raise SystemExit(
+                        f"refusing to start: this cell reads its credential from "
+                        f"${args.api_key_env}, which is unset. Add it to .env; "
+                        f"no other key is substituted for a named one.")
+            else:
+                names = ["OPENROUTER_API_KEY", "OPENAI_API_KEY"]
+                key = next((os.environ[n] for n in names if os.environ.get(n)), "")
             if key:
                 headers["Authorization"] = f"Bearer {key}"
         # A hosted endpoint fails in two quite different ways and the transport

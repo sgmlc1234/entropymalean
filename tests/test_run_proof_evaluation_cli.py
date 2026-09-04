@@ -11,7 +11,7 @@ from src.evaluation.model_runner import ModelConfig
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "scripts" / "run_proof_evaluation.py"
+SCRIPT = ROOT / "scripts" / "archive" / "run_proof_evaluation.py"
 
 
 def _load_script_module():

@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "scripts" / "analyze_parent_child_ablation.py"
+SCRIPT = ROOT / "scripts" / "evaluate" / "analyze_parent_child_ablation.py"
 
 
 def _load_script_module():

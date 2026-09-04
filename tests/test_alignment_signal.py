@@ -308,9 +308,10 @@ def test_inline_hook_off_by_default(monkeypatch):
 # ---------------------------------------------------------------------------
 
 
-@pytest.mark.skipif(
-    shutil.which("lake") is None, reason="lake toolchain not on PATH"
-)
+from tests._lean_available import mathlib_built, SKIP_REASON  # noqa: E402
+
+
+@pytest.mark.skipif(not mathlib_built(), reason=SKIP_REASON)
 def test_goal_probe_extracts_real_elaborated_goal():
     repo = Path(__file__).resolve().parents[1]
     code = build_goal_probe_code(

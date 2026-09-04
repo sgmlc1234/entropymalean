@@ -83,6 +83,15 @@ def main() -> None:
             "nothing was measured in them either"
         ))
     parser.add_argument(
+        "--also-partial", action="store_true",
+        help=(
+            "additionally drop episodes that recorded a generator failure "
+            "after Lean had judged at least one attempt. The harness keeps "
+            "these on purpose -- what was judged is the model's -- but they "
+            "are episodes the model did not get to finish, and replaying them "
+            "is the only way to score them under the budget they were owed"
+        ))
+    parser.add_argument(
         "--desync-against", type=Path, default=None,
         help=(
             "an exam-rows file the pre-flight accepted. With it, "
@@ -110,6 +119,8 @@ def main() -> None:
             if r.get("outcome") in DROP:
                 return True
             if args.also_unjudged and unjudged_after_transport_failure(r):
+                return True
+            if args.also_partial and (r.get("generator_empty") or r.get("generator_error")):
                 return True
             return (r.get("outcome") == "statement_invalid"
                     and r.get("seed") in playable)

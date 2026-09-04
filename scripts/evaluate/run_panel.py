@@ -55,6 +55,30 @@ def _repo_root() -> Path:
 REPO = _repo_root()
 CONFIG = REPO / "config" / "exam_cells.json"
 
+
+def load_dotenv(path: Path = REPO / ".env") -> None:
+    """Read `.env` into the environment without overriding what is already set.
+
+    Every hosted cell needs a credential and every reviewer's first run forgot
+    `set -a; source .env`. The file is plain KEY=VALUE lines; quotes around the
+    value are stripped, comments and blanks skipped. Nothing is exported to
+    child shells beyond the subprocesses this script starts, which is the only
+    place the keys are needed.
+    """
+    if not path.is_file():
+        return
+    import os
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        if line.startswith("export "):
+            line = line[len("export "):]
+        key, value = line.split("=", 1)
+        key, value = key.strip(), value.strip().strip("'\"")
+        if key and value and key not in os.environ:
+            os.environ[key] = value
+
 #: Which corpus each arm plays. The control is the certified seeds; the
 #: treatment is the admitted release.
 ARMS = {"control": "seeds100", "treatment": "release535"}
@@ -70,9 +94,24 @@ def output_dir(model: str, arm: str, cfg: Dict) -> Path:
     The control path is whatever the config already names, because three of
     these cells are finished and their directories predate any convention.
     """
-    if arm == "control":
-        return REPO / cfg["controls"][model]
-    return REPO / cfg["treatments"][model]
+    path = REPO / (cfg["controls"] if arm == "control" else cfg["treatments"])[model]
+    _MODEL_ARM[path] = (model, arm)
+    return path
+
+
+def _episodes(directory: Path) -> List[dict]:
+    """A cell's episodes: the raw directory when it has them, else the shipped
+    bundle under data/evaluation/exam_evidence/. Without the fallback a checkout
+    that holds only the release reads every reported cell as unplayed."""
+    import sys
+    if str(REPO) not in sys.path:
+        sys.path.insert(0, str(REPO))
+    from src.evaluation.exam_records import cell_episodes
+    return cell_episodes(directory, *_MODEL_ARM.get(directory, ("", "")))
+
+
+#: filled by output_dir so the bundle fallback knows which cell a path is
+_MODEL_ARM: Dict[Path, Tuple[str, str]] = {}
 
 
 def done_count(directory: Path) -> Tuple[int, int]:
@@ -88,16 +127,10 @@ def done_count(directory: Path) -> Tuple[int, int]:
     but only if the count makes them visible in the first place.
     """
     total = empty = 0
-    for path in directory.glob("episodes_*.jsonl"):
-        if "before-replay" in path.name:
-            continue
-        with path.open(encoding="utf-8") as handle:
-            for line in handle:
-                if not line.strip():
-                    continue
-                total += 1
-                if json.loads(line).get("outcome") == "generator_empty":
-                    empty += 1
+    for row in _episodes(directory):
+        total += 1
+        if row.get("outcome") == "generator_empty":
+            empty += 1
     return total, empty
 
 
@@ -138,6 +171,7 @@ def main() -> None:
     parser.add_argument("--llama-cpp", default="http://127.0.0.1:8080/v1")
     parser.add_argument("--whole-proof-url", default="http://127.0.0.1:8081/v1")
     args = parser.parse_args()
+    load_dotenv()
 
     cfg = load()
     if args.model:
@@ -148,6 +182,10 @@ def main() -> None:
         if args.group not in cfg["groups"]:
             raise SystemExit(f"unknown group {args.group!r}; known: {sorted(cfg['groups'])}")
         models = cfg["groups"][args.group]
+    # Control before treatment, always: the parity gate compares a treatment
+    # cell against the control's recorded budget, and a control that has no
+    # episodes yet is skipped by the gate. `--arm both` used to queue the
+    # treatment first and so never fired it.
     arms = ["control", "treatment"] if args.arm == "both" else [args.arm]
 
     jobs = []
@@ -155,7 +193,7 @@ def main() -> None:
     for model in models:
         for arm in arms:
             directory = output_dir(model, arm, cfg)
-            have, empty = done_count(directory) if directory.is_dir() else (0, 0)
+            have, empty = done_count(directory)
             want = expected(arm, cfg, args.attempts)
             left = max(want - have, 0)
             # A cell whose remaining count is zero is not finished while empty
@@ -166,9 +204,27 @@ def main() -> None:
             if left:
                 jobs.append((model, arm))
 
-    if args.plan or not jobs:
-        if not jobs:
-            print("\nnothing left to play.")
+    if not jobs:
+        print("\nnothing left to play.")
+        return
+    if args.plan:
+        # A plan that passes and a run that refuses is the worst order to
+        # learn in, so the plan runs each remaining cell's gates now --
+        # parity against the control, the serving floor, the credential --
+        # with --dry-run, which stops before any model is called.
+        refused = 0
+        for model, arm in jobs:
+            cmd = cell_command(model, arm, cfg, args) + ["--dry-run"]
+            result = subprocess.run(cmd, cwd=REPO, capture_output=True, text=True)
+            gate = (result.stdout + result.stderr).strip().splitlines()
+            verdict = "ok" if result.returncode == 0 else "REFUSED"
+            refused += result.returncode != 0
+            print(f"  gate {model}/{arm}: {verdict}")
+            if result.returncode != 0:
+                for line in gate[-6:]:
+                    print(f"      {line}")
+        if refused:
+            print(f"\n{refused} cell(s) would refuse to run; fix the declaration first.")
         return
 
     # Local cells share one GPU, so they run one at a time whatever --parallel

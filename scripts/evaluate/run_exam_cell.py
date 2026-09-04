@@ -196,7 +196,29 @@ def main() -> None:
     # weight left unpinned looks identical in the config and is free to be
     # routed to fp4.
     provider = budget.get("provider") or {}
-    if budget.get("first_party_serving"):
+    local = budget.get("local_serving") or {}
+    if local:
+        # Served from this machine: there is no host to pin and no maker to
+        # name, but the quantisation is still a fact about the cell and is
+        # held to the same floor. `engine` is recorded so the appendix can say
+        # which server produced the tokens (llama.cpp and LM Studio differ on
+        # logprobs, which decides whether a tactic search is scored at all).
+        quant = str(local.get("quantization") or "").lower()
+        if not local.get("engine") or not quant:
+            raise SystemExit(
+                f"refusing to run: {args.model} declares local_serving without "
+                f"`engine` and `quantization`.")
+        if quant not in _EIGHT_BIT_OR_ABOVE:
+            raise SystemExit(
+                f"refusing to run: {args.model} is served locally at {quant}, below "
+                f"the panel's eight-bit floor. Allowed: "
+                f"{', '.join(sorted(_EIGHT_BIT_OR_ABOVE))}.")
+        if str(budget.get("url", "")).startswith("http") and not any(
+                h in str(budget.get("url")) for h in ("127.0.0.1", "localhost", "0.0.0.0")):
+            raise SystemExit(
+                f"refusing to run: {args.model} declares local_serving but its url "
+                f"is not on this machine.")
+    elif budget.get("first_party_serving"):
         if provider and provider.get("allow_fallbacks"):
             raise SystemExit(
                 f"refusing to run: {args.model} claims first-party serving but "
@@ -237,10 +259,12 @@ def main() -> None:
             )
     else:
         raise SystemExit(
-            f"refusing to run: {args.model} declares neither a pinned provider "
-            f"with quantisations nor `first_party_serving`. One of the two has "
-            f"to be said out loud --- silence used to mean the second, and that "
-            f"let an open-weight cell run unpinned."
+            f"refusing to run: {args.model} declares none of `provider` (a pinned "
+            f"host with quantisations), `first_party_serving` (the maker's own "
+            f"endpoint) or `local_serving` (engine and quantisation on this "
+            f"machine). One of the three has to be said out loud --- silence "
+            f"used to mean the second, and that let an open-weight cell run "
+            f"unpinned."
         )
 
     # ---- pre-flight --------------------------------------------------------

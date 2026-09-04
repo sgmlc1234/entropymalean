@@ -1,4 +1,6 @@
 import asyncio
+import pytest
+from tests._lean_available import mathlib_built, SKIP_REASON
 import csv
 import json
 import subprocess
@@ -408,6 +410,7 @@ def test_certify_csv_limit(tmp_path):
     assert len(output_path.read_text(encoding="utf-8").splitlines()) == 1
 
 
+@pytest.mark.skipif(not mathlib_built(), reason=SKIP_REASON)
 def test_cli_summary_and_jsonl_for_unsupported_rows(tmp_path):
     input_path = tmp_path / "input.csv"
     output_path = tmp_path / "out.jsonl"

@@ -287,7 +287,10 @@ def test_build_palette_with_fake_runner():
 # ---------------------------------------------------------------------------
 
 
-@pytest.mark.skipif(shutil.which("lake") is None, reason="lake not on PATH")
+from tests._lean_available import mathlib_built, SKIP_REASON
+
+
+@pytest.mark.skipif(not mathlib_built(), reason=SKIP_REASON)
 def test_real_lean_exam_episode():
     env = LeanExamEnv(
         formal_statement=f"{STATEMENT} := by\n  exact ⟨Nat.add_zero n, h⟩",
