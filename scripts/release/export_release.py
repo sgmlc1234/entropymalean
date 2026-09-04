@@ -517,8 +517,25 @@ def main() -> None:
             seed["statement"] = prose[key]
             parents[key] = seed
     print(f"benchmark prose recovered for {sum(1 for k in parents if k in prose)} seed(s)")
-    run1 = {r["problem_id"]: r for r in json.loads(args.run1.read_text(encoding="utf-8"))}
-    run2 = {r["problem_id"]: r for r in json.loads(args.run2.read_text(encoding="utf-8"))}
+    def _pass(path: Path) -> Dict[str, dict]:
+        """One pass, keyed by row. A row judged twice in the same pass keeps the
+        later verdict, which is the re-judgement -- but silently, and a flipped
+        verdict decides admission, so say it happened. Two rows in `run-e` are
+        in this state; both were rejected."""
+        records = json.loads(path.read_text(encoding="utf-8"))
+        seen: Dict[str, dict] = {}
+        for record in records:
+            pid = record["problem_id"]
+            earlier = seen.get(pid)
+            if earlier is not None and earlier.get("new_verdict") != record.get("new_verdict"):
+                print(f"NOTE {path.name}: {pid} judged twice in this pass, "
+                      f"{earlier.get('new_verdict')} then {record.get('new_verdict')}; "
+                      f"taking the later verdict.", flush=True)
+            seen[pid] = record
+        return seen
+
+    run1 = _pass(args.run1)
+    run2 = _pass(args.run2)
 
     # A pruned row is a different statement from the one the first two passes
     # judged, so it does not inherit their verdict: it was re-judged twice in
