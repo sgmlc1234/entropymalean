@@ -28,28 +28,44 @@ pip install -e .
 
 Python ≥ 3.10.
 
-### 0.2 Lean and Mathlib
+### 0.2 Lean and Mathlib — do this before anything in §1–§3
 
-The whole corpus is pinned to one toolchain and one Mathlib revision. These are
-not suggestions: a row's certificate names them, and a different Mathlib will
-fail rows that are correct under ours.
+Everything that touches Lean in this repository assumes a **built** Mathlib at
+one pinned revision. The toolchain alone is not enough: with `lake` on PATH and
+no build, every check fails with
 
 ```
-toolchain          leanprover/lean4:v4.30.0-rc2
-mathlib revision   0fb2045029635862ffb234635a111c80a55e2a87
+error: unknown module prefix 'Mathlib'
+```
+
+which the certifier, the evaluation environment and several tests report as a
+*failing proof*, not as a missing build. If you see that line, nothing below
+it is a result.
+
+The pins are not suggestions — every released row's certificate names them,
+and a different Mathlib fails rows that are correct under ours:
+
+```
+toolchain          leanprover/lean4:v4.30.0-rc2      (lean-toolchain)
+mathlib revision   0fb2045029635862ffb234635a111c80a55e2a87   (lake-manifest.json)
 ```
 
 ```bash
 curl https://elan.lean-lang.org/elan-init.sh -sSf | sh    # if you have no elan
-lake exe cache get                                        # prebuilt Mathlib oleans
-lake build
+lake exe cache get                                        # prebuilt Mathlib oleans, a few GB
+lake build                                                # links the workspace; minutes, not hours
+python3 scripts/check_setup.py                            # says whether the above worked
 ```
 
-`lake exe cache get` downloads Mathlib's build artifacts. Building Mathlib from
-source instead takes hours and is not necessary.
+`check_setup.py` checks that `lake` resolves to the pinned toolchain, that
+`lake-manifest.json` still names the certified Mathlib revision, and that
+`Mathlib.olean` exists; each failed line prints its fix. Do not run
+`lake update` — it moves the manifest off the certified revision. Run
+`python3 scripts/check_setup.py --cells` before an evaluation cell to see
+which credential that cell reads and whether `.env` provides it.
 
-Every workspace we ship records its own pins, Mathlib's revision included —
-`data/release/comparator/<row>/lake-manifest.json`.
+Every comparator workspace we ship records its own pins, Mathlib's revision
+included — `data/release/comparator/<row>/lake-manifest.json`.
 
 ### 0.3 What needs an API key, and what does not
 
@@ -553,6 +569,8 @@ python3 -m scripts.release.publish_release_page
 
 ## 6. What we would check first, if we were reviewing this
 
+0. **Run `python3 scripts/check_setup.py`** (§0.2). Ten seconds, and it says
+   whether anything Lean-related below can be trusted on this machine.
 1. **Recompute Table 1 and Table 5 from the bundle** (§3.1). Under a minute,
    Python only, and it settles whether the numbers in the paper are the numbers
    in the logs.

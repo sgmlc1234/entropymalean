@@ -175,7 +175,11 @@ def test_misaligned_statement_never_reaches_proof_verification():
 # ---------------------------------------------------------------------------
 
 
-def test_failing_proof_is_repaired_against_frozen_statement():
+def test_failing_proof_is_repaired_against_frozen_statement(monkeypatch):
+    # The dead-hypothesis pruner is its own gate (Appendix I) and would drop
+    # the unused `(h : 0 < n)` after the repair; this test is about the repair
+    # holding the statement fixed, so the pruner is switched off here.
+    monkeypatch.setenv("HYPOTHESIS_PRUNE", "0")
     repaired_code = GOOD_PROOF.replace("exact Nat.add_zero n", "simp")
     verify_log: List[str] = []
 
@@ -219,8 +223,17 @@ def test_failing_proof_is_repaired_against_frozen_statement():
     assert repair.get("repaired") is True
     assert repair.get("turns_used") == 1
     assert repair.get("attempts") == [{"turn": 1, "outcome": "proved"}]
-    # statement probe + failing proof + repaired proof (+ axiom probe)
-    assert len([c for c in verify_log if "#print axioms" not in c]) == 3
+    # The verifier also sees the vacuity and pruning probes; what is pinned is
+    # that the failing proof was checked and then the repaired one.
+    # Probes (statement check with `sorry`, vacuity, pruning) also pass through
+    # the verifier; the proofs are the entries with a real body.
+    # Under statement-first the statement is checked with `sorry` first and the
+    # broken proof is judged from that spliced form; what this pins is that the
+    # broken body reached the verifier and that the proof which closed the row
+    # was verified as a full theorem before being accepted.
+    assert any("linarith" in c for c in verify_log)
+    full_checks = [c for c in verify_log if "theorem child_thm" in c and "example" not in c and "sorry" not in c]
+    assert result.lean_code in full_checks
 
 
 def test_repair_budget_exhaustion_returns_proof_failed(monkeypatch):
@@ -273,7 +286,12 @@ def test_repairer_returning_none_counts_turn_without_verification():
     repair = (result.quality_evidence or {}).get("proof_repair") or {}
     assert all(a["outcome"] == "no_valid_candidate" for a in repair.get("attempts", []))
     # statement probe + initial proof attempt only — no repair verifications
-    assert len(verify_log) == 2
+    # The verifier also sees the axiom audit and the vacuity/pruning probes;
+    # what this test pins is that the broken proof was checked, then the
+    # repaired one, and that nothing else claiming to be the theorem was.
+    theorem_checks = [c for c in verify_log if "theorem child_thm" in c and "example" not in c and "sorry" not in c]
+    assert len(theorem_checks) == 1  # the repairer returned None, so only the original proof was verified
+    assert STATEMENT in theorem_checks[0]
 
 
 # ---------------------------------------------------------------------------

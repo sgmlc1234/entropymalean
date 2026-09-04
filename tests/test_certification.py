@@ -424,7 +424,7 @@ def test_cli_summary_and_jsonl_for_unsupported_rows(tmp_path):
     completed = subprocess.run(
         [
             sys.executable,
-            "scripts/certify_csv.py",
+            "scripts/archive/certify_csv.py",
             "--input",
             str(input_path),
             "--output",

@@ -241,10 +241,12 @@ def test_inline_hook_annotates_quality_evidence(monkeypatch):
     assert evidence.get("source") == "elaborated_goal_informalization"
 
 
-def test_inline_hook_off_by_default(monkeypatch):
+def test_inline_hook_off_when_disabled(monkeypatch):
     from src.orchestration import pool_generation as pg
 
-    monkeypatch.delenv("POOL_ALIGNMENT_GOAL_AUDIT", raising=False)
+    # The audit is on by default (every released row carries a goal round-trip);
+    # this checks the explicit off switch.
+    monkeypatch.setenv("POOL_ALIGNMENT_GOAL_AUDIT", "0")
 
     async def exploding_signal(**kwargs):  # must never be called
         raise AssertionError("A2 signal ran without opt-in")

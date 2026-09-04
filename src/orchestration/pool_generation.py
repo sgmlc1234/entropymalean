@@ -352,6 +352,8 @@ class PoolRunResult(BaseModel):
     failed_slots: List[Dict[str, Any]] = Field(default_factory=list)
     passed_results_count: int = 0
     cumulative_passed_results_count: int = 0
+    #: rows produced this run but not written because an identical row was already on file
+    deduplicated_on_write: int = 0
     generation_zero: Dict[str, Any] = Field(default_factory=dict)
     gen0_enriched_input_path: Optional[str] = None
     generation_feedback: Dict[str, Any] = Field(default_factory=dict)
@@ -11482,7 +11484,13 @@ def build_pool_generation_graph(
         with output_path.open("a" if append_only else "w", encoding="utf-8") as fh:
             for row in rows_to_write:
                 fh.write(json.dumps(row, ensure_ascii=False) + "\n")
-        cumulative_count = previous_count + len(generation_result_rows)
+        # Count what was written, not what was produced: rows_to_write has
+        # already been deduplicated by key against the file, and a summary that
+        # counted the pre-dedup list reported more rows than the file held.
+        # `previous_count` already covers the pending previous results that
+        # rows_to_write re-carries, so add only what this write puts on disk
+        # beyond them.
+        cumulative_count = previous_count - len(pending_previous_results) + len(rows_to_write)
 
         counts = dict(Counter(result.status for result in results))
         failed_slots = list(state.get("failed_slots", []) or [])
@@ -11521,6 +11529,7 @@ def build_pool_generation_graph(
             "saved_pool": _results_trace_manifest(list(state.get("approved_candidates", []) or []), limit=20),
             "passed_results_count": len(generation_result_rows),
             "cumulative_passed_results_count": cumulative_count,
+            "deduplicated_on_write": dropped,
             "failed_slots": _results_trace_manifest(failed_slots, limit=20),
             "generation_feedback": _generation_feedback_trace_manifest(
                 dict(state.get("generation_feedback", {}) or {})
@@ -11567,6 +11576,7 @@ def build_pool_generation_graph(
             failed_slots=_results_trace_manifest(failed_slots, limit=20),
             passed_results_count=len(generation_result_rows),
             cumulative_passed_results_count=cumulative_count,
+            deduplicated_on_write=dropped,
             generation_zero=generation_zero,
             gen0_enriched_input_path=state.get("gen0_enriched_input_path"),
             generation_feedback=_generation_feedback_trace_manifest(

@@ -304,7 +304,7 @@
             "prefill": "",
             "prompt_style": "goedel_v1",
             "reasoning_headroom": 12288,
-            "episode_concurrency": 16,
+            "episode_concurrency": 2,
             "url": "https://openrouter.ai/api/v1",
             "model": "openai/gpt-oss-20b",
             "provider": {
@@ -320,7 +320,8 @@
             "_provider_why": "DeepInfra at bf16. The model ships with its expert weights in MXFP4 and most endpoints serve it that way -- CoreWeave, Parasail and Novita all report fp4, which is below this panel's eight-bit floor and disqualifies them however cheap they are. Two endpoints clear the floor, and they are not close on speed: DeepInfra at bf16 runs 91-113 tok/s against SiliconFlow's 17-19 at fp8. bf16 is also the higher precision of the two.",
             "_reasoning_headroom_why": "Measured on three rows: 987 / 4,531 / 5,950 reasoning tokens, each finishing on its own with an extractable block. 12288 is about twice the largest observed, which is the margin the reasoning SLMs needed once ProofNet rows started running long.",
             "generate_retries": 6,
-            "generate_timeout": 900
+            "generate_timeout": 900,
+            "_episode_concurrency_why": "Lowered from 16 on 2026-09-04: DeepInfra rate-limits this model, and at 16 concurrent episodes 46 treatment episodes were cut short by HTTP 429 after six retries, then 7 more on the replay. The rate limit is a property of the host, so it is recorded here rather than worked around per run."
         },
         "qwen3_14b": {
             "player": "whole_proof",

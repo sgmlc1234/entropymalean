@@ -175,6 +175,8 @@ def _certify(*, verifier, aligned=True):
 
 
 async def _clean_axiom_probe_fn(code: str, timeout: float = 300.0) -> LeanVerifyResult:
+    if ": False" in code:  # the vacuity probe; an all-accepting fake would file the row vacuous
+        return LeanVerifyResult(ok=False, complete=False, verify_time=0.1)
     return _clean_axiom_probe(code)
 
 
@@ -193,6 +195,10 @@ def test_certified_row_gets_proof_checked_certificate(monkeypatch):
     monkeypatch.setattr(pg, "verify_lean_proof", _clean_axiom_probe_fn)
 
     async def verifier(code, timeout=300.0):
+        # A verifier that accepts everything would also "prove" the vacuity
+        # probe (`example ... : False`) and the row would be filed vacuous.
+        if ": False" in code:
+            return LeanVerifyResult(ok=False, complete=False, verify_time=0.1)
         return LeanVerifyResult(ok=True, complete="sorry" not in code, verify_time=0.1)
 
     result = _certify(verifier=verifier)

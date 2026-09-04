@@ -141,11 +141,16 @@ minutes, so `data/release/comparator/` ships five as examples and
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -e .
-lake exe cache get && lake build     # Mathlib at the pinned revision
+lake exe cache get && lake build     # Mathlib at the pinned revision; required, not optional
+python3 scripts/check_setup.py       # confirms toolchain, Mathlib revision, and that Mathlib is built
 ```
 
-`.env.example` lists what needs a key and what does not. Verifying the corpus
-needs none.
+A checkout with `lake` installed but Mathlib not built fails every Lean check
+with `unknown module prefix 'Mathlib'`, and the scripts report that as a
+failing proof rather than a missing build — run `check_setup.py` first and read
+[REVIEWERS.md §0.2](REVIEWERS.md#02-lean-and-mathlib--do-this-before-anything-in-13)
+if it fails. `.env.example` lists what needs a key and what does not; verifying
+the corpus needs none.
 
 ### One command, to see whether any of this is true
 

@@ -57,13 +57,27 @@ class ExamObservation:
         }
 
 
+_LAKE_NOISE_RE = re.compile(r"^(warning|info|error): (manifest out of date|no manifest)", re.IGNORECASE)
+
+
+def _is_lake_noise(block: str) -> bool:
+    """A block made only of lake's own messages (``warning: manifest out of
+    date: ...``) is not a goal. lake writes them to stderr ahead of Lean's
+    diagnostics, and a checkout whose package metadata disagrees with the
+    manifest by so much as a branch name emits them on every call; folded into
+    the goal state, a prover would be shown a lake warning as an open goal."""
+    lines = [line.strip() for line in block.splitlines() if line.strip()]
+    return bool(lines) and all(_LAKE_NOISE_RE.match(line) for line in lines)
+
+
 def _split_goal_blocks(body: str) -> List[str]:
     """Split an ``unsolved goals`` body into individual goal displays."""
     text = re.sub(r"^\s*unsolved goals\s*", "", body, flags=re.IGNORECASE).strip()
     if not text:
         return []
     blocks = [block.strip() for block in re.split(r"\n\s*\n", text) if block.strip()]
-    return blocks or [text]
+    blocks = [block for block in blocks if not _is_lake_noise(block)]
+    return blocks or ([text] if not _is_lake_noise(text) else [])
 
 
 class LeanExamEnv:
