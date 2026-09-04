@@ -5,7 +5,7 @@ extracted answer, and writes a JSONL with one record per ``(row, model,
 repeat)`` cell plus a JSON summary with arm-level accuracies, drops, and
 bootstrap CIs.
 
-This implements the EntropyMaG-1 protocol:
+The protocol implemented here:
 - temperature 0, provider/model default completion limit, ``\\boxed{...}`` extraction
 - 3 repeats per problem, 3 models per panel
 - bootstrap CI on dataset row indices (not individual repeats)
@@ -148,7 +148,7 @@ def summarize_jsonl(
 ) -> Dict:
     """Compute arm-level accuracies, drops, and bootstrap CIs.
 
-    The summary structure mirrors the EntropyMaG-1 Table 8 layout:
+    The summary structure is
     one cell per (benchmark, model) with control acc, treatment acc, drop in pp,
     and a 95% bootstrap CI on the drop.
     """

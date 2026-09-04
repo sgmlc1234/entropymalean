@@ -1,6 +1,6 @@
 """OpenRouter-backed model panel for direct no-tool evaluation.
 
-Three canonical models, matching EntropyMaG-1:
+Three canonical models:
 - GPT-5.4-mini    (openai/gpt-5.4-mini)
 - Claude Haiku 4.5 (anthropic/claude-haiku-4.5)
 - Gemini 3.1 Flash Lite (google/gemini-3.1-flash-lite)
@@ -87,8 +87,8 @@ def _default_panel() -> List[ModelConfig]:
       one tactic-step Lean prover (BFS-Prover-V2-7B, completion
       paradigm). Either slot can be disabled by setting its
       ``EVAL_*_SLUG`` env var to the literal string ``"disabled"``.
-    - Otherwise, serve the OpenRouter chat panel previously used by
-      EntropyMaG-1 (3 closed-source generalist LLMs).
+    - Otherwise, serve the OpenRouter chat panel of three closed-source
+      generalist LLMs.
     """
     panel_mode = os.getenv("EVAL_PANEL", "").lower()
     if panel_mode == "local" or (panel_mode != "openrouter" and os.getenv("LM_STUDIO_BASE_URL")):

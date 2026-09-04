@@ -85,7 +85,7 @@ def _parse() -> argparse.Namespace:
     p.add_argument("--n-per-step", type=int, default=8,
                    help="candidate tactics sampled per step "
                         "(tactic-step models; mirrors BFS-V2 "
-                        "n_sampling_search, scaled to a workshop budget)")
+                        "n_sampling_search, scaled to this panel's budget)")
     p.add_argument("--n-parallel", type=int, default=1,
                    help="best-of-N parallel completions per (attempt, turn) "
                         "(whole-proof / chat-paradigm models; mirrors "

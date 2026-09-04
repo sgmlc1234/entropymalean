@@ -1,6 +1,6 @@
 """Direct no-tool model evaluation pipeline for EntropyMaLean.
 
-Mirrors the EntropyMaG-1 stress-test protocol:
+The answer-recall stress-test protocol this package implements:
 - 3 benchmarks (miniF2F, PutnamBench, ProofNet)
 - 2 arms per benchmark (control seeds vs. quality-gated treatment)
 - 3 models (GPT-5.4-mini, Claude Haiku 4.5, Gemini 3.1 Flash Lite)

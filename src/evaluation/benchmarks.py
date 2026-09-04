@@ -17,8 +17,8 @@ benchmark in the YAML:
 - ``literal``: take the column value verbatim.
 
 If a row cannot be canonicalized into a non-empty ``gold_answer`` it is
-silently dropped from the control arm, matching the EntropyMaG-1 control
-construction protocol.
+silently dropped from the control arm: a control row with no gold answer
+cannot be graded, and a row that cannot be graded is not a control.
 """
 
 from __future__ import annotations

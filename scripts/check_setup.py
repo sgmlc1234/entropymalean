@@ -39,7 +39,7 @@ OK, NO = "  ok   ", "  FAIL "
 
 def _release_pins() -> tuple[str, str]:
     """The toolchain and Mathlib revision every released row's certificate names."""
-    for candidate in (RELEASE, ROOT / "data/release/eml2_release.jsonl"):
+    for candidate in (RELEASE,):
         if candidate.is_file():
             with candidate.open(encoding="utf-8") as handle:
                 row = json.loads(next(l for l in handle if l.strip()))

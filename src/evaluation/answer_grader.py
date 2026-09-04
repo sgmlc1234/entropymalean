@@ -1,6 +1,6 @@
 """Boxed-answer extraction and symbolic regrading.
 
-Implements the EntropyMaG-1 grading contract:
+The grading contract implemented here:
 - last \\boxed{...} in the model's response is the canonical answer
 - numeric normalization (strip commas, leading +, trailing zeros after decimal)
 - symbolic fallback via sympy if available

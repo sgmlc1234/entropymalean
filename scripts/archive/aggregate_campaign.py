@@ -4,7 +4,7 @@
 Produces:
 - ``cells``: flat list of (benchmark, model, control acc, treatment acc, drop,
   CI, Pass@3 drop)
-- ``per_benchmark``: avg drop across models, mirroring EntropyMaG-1 Table 3
+- ``per_benchmark``: avg drop across models
 - ``per_model``: avg drop across benchmarks
 - LaTeX-ready table fragments under ``latex_tables``.
 """

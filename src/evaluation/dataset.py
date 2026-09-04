@@ -185,7 +185,7 @@ def load_control_rows(csv_path: Path, benchmark: str) -> List[EvalRow]:
 
     Accepts the extended EMG-2 pilot schema
     (``id, statement, answer, formal_statement, lean_header, formal_status, ...``)
-    and falls back to the legacy EntropyMaG-1 schema when the Lean columns are
+    and falls back to the legacy answer-only schema when the Lean columns are
     absent.
     """
     rows: List[EvalRow] = []

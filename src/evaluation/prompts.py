@@ -1,6 +1,6 @@
 """Direct no-tool prompts.
 
-Matches the EntropyMaG-1 stress-test protocol:
+The stress-test protocol these prompts implement:
 - single-shot, no tools, no scratchpad augmentation
 - explicit \\boxed{...} answer contract
 - temperature 0, no local completion cap by default

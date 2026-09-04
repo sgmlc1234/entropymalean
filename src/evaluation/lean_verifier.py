@@ -6,11 +6,10 @@ Lean source string and returns a structured result describing whether
 the file type-checked, what the diagnostics were, and how long the check
 took.
 
-For the AI4Math workshop budget we use a plain ``lake env lean`` invocation
-against the project under ``lean/`` rather than the ``lake exe repl``
-server-mode interface. This keeps the wrapper standalone and avoids
-forcing the workshop submission archive to ship a mathlib4 sub-process
-manager. If the user has a faster repl-based scheduler available, this
+We use a plain ``lake env lean`` invocation against the project under
+``lean/`` rather than the ``lake exe repl`` server-mode interface. This keeps
+the wrapper standalone and avoids forcing the release archive to ship a
+mathlib4 sub-process manager. If the user has a faster repl-based scheduler available, this
 module exposes the same dataclass surface so it can be swapped in.
 
 The wrapper also handles three extraction tasks that every Lean prover

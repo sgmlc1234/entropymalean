@@ -1,4 +1,4 @@
-"""BFS-Prover-V2 aligned tactic-step prover (workshop-budget variant).
+"""BFS-Prover-V2 aligned tactic-step prover, at this panel's proof budget.
 
 The conventions mirror ByteDance-Seed/BFS-Prover-V2/src/search:
 - Prompt format ``f"{tactic_state}:::"`` (prover_manager.py:166).
@@ -8,7 +8,7 @@ The conventions mirror ByteDance-Seed/BFS-Prover-V2/src/search:
   drop ``sorry``/``admit``/``native_decide``; drop ``rcases``/``cases'``/
   ``simpa`` combined with ``?_``; drop ``simpa`` with a bare ``_``.
 
-Forced workshop-budget adaptations:
+Adaptations forced by that budget:
 - No LeanDojo REPL on this machine, so we verify each step by re-typing
   the whole file with ``lake env lean`` instead of running the tactic in
   a live ``Dojo`` session.
@@ -45,7 +45,7 @@ def build_state_prompt(formal_prefix: str, tactics: Sequence[str]) -> str:
     Without LeanDojo we cannot show the live proof state, so we
     approximate it by concatenating the theorem prefix and the tactics
     accepted so far. BFS-Prover-V2 is trained on a similar text form, so
-    this is the workshop-compatible substitute.
+    this is the substitute that fits the budget.
     """
     body = formal_prefix.rstrip()
     if tactics:

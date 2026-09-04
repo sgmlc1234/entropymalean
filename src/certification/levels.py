@@ -1,6 +1,6 @@
 """Certificate levels and alignment evidence: named, not lettered.
 
-Naming policy (decided 2026-07-28). The workshop review objected that an
+Naming policy (decided 2026-07-28). A numbered ladder was rejected because an
 invented "L1/L2/L3" ladder carries no meaning outside our paper ("people are
 familiar with Lean type checking, you can just say that"). So:
 

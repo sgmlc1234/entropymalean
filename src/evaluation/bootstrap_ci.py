@@ -74,8 +74,8 @@ def bootstrap_drop_ci(
     """Return (drop_mean_pp, lo_pp, hi_pp) for control-minus-treatment.
 
     The control and treatment arms are resampled independently because they
-    contain different row indices; this matches the per-cell bootstrap used in
-    the EntropyMaG-1 paper.
+    contain different row indices, so a paired resample would pair rows that
+    are not paired.
     """
     if not control_acc or not treatment_acc:
         return (0.0, 0.0, 0.0)

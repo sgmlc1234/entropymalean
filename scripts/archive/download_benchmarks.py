@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Snapshot-download the AI4Math 2026 benchmark suite into ``data/benchmarks/``.
+"""Snapshot-download the benchmark suite into ``data/benchmarks/``.
 
 Usage:
     # all benchmarks declared in config/benchmarks.yaml

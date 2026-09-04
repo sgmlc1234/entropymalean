@@ -1,4 +1,4 @@
-"""BFS-Prover-V2 tree-search prover (workshop-budget variant, no LeanDojo).
+"""BFS-Prover-V2 tree-search prover, at this panel's proof budget, no LeanDojo.
 
 This is the *full* port of ByteDance-Seed/BFS-Prover-V2/src/search semantics
 for a setup that doesn't have LeanDojo's per-tactic REPL. Compared to
