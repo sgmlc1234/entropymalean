@@ -1,7 +1,7 @@
 [
  {
   "problem_id": "aimeII_2020_p6__x__mathd_algebra_107__xe__c71b4da8",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -15,7 +15,7 @@
  },
  {
   "problem_id": "aime_1983_p3__me__c0629d00",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -29,7 +29,7 @@
  },
  {
   "problem_id": "aime_1983_p3__x__algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta__me.xe__05e902af",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -43,7 +43,7 @@
  },
  {
   "problem_id": "aime_1983_p9__me__30186074",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -57,7 +57,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh.mh__7607fe44",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -71,7 +71,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh.ms.me__bebfbd24",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -85,7 +85,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh.ms.mh__5434b06d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -99,7 +99,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh.ms__54ef2279",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -113,7 +113,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh__9b2d27e0",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -127,7 +127,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh__9b2d27e0__x__mathd_algebra_410__ms.me.xe__37ed238d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -141,7 +141,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me.mh__9b2d27e0__x__mathd_algebra_410__ms.me.xe__a97db311",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -155,7 +155,7 @@
  },
  {
   "problem_id": "aime_1984_p15__me__3f82f5b1",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -169,7 +169,7 @@
  },
  {
   "problem_id": "aime_1984_p15__x__mathd_algebra_113__me.xe__86db6af5",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -183,7 +183,7 @@
  },
  {
   "problem_id": "aime_1984_p15__x__mathd_algebra_113__me.xe__86db6af5__x__mathd_algebra_410__ms.me.xe__d797bef8",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -197,7 +197,7 @@
  },
  {
   "problem_id": "aime_1984_p15__x__mathd_algebra_113__me.xe__f8bf0b00",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -211,7 +211,7 @@
  },
  {
   "problem_id": "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta__me.me__850eb147",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -225,7 +225,7 @@
  },
  {
   "problem_id": "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta__me__6f44f522",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -239,7 +239,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__me__7dc1d005",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -253,7 +253,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__mh.mh__a5ca6605",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -267,7 +267,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__mh__12b65ade",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -281,7 +281,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__mh__bcee330d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -295,7 +295,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__x__mathd_algebra_101__xe__7fee6821",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -309,7 +309,7 @@
  },
  {
   "problem_id": "algebra_9onxpypzleqsum2onxpy__x__mathd_numbertheory_85__xe__0dc035aa",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -323,7 +323,7 @@
  },
  {
   "problem_id": "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x__me__2a3e888a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -337,7 +337,7 @@
  },
  {
   "problem_id": "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x__mh__07ab68b0",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -351,7 +351,7 @@
  },
  {
   "problem_id": "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x__mh__ce3a8181",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -365,7 +365,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__me__4312632b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -379,7 +379,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.me__11c1e1ee",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -393,7 +393,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.mh.mh__c31d4118",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -407,7 +407,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.mh__af2d4b34",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -421,7 +421,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.mh__f398235d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -435,7 +435,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.ms.mh__94f43e84",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -449,7 +449,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh.ms__fda9c8c5",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -463,7 +463,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh__1995d807",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -477,7 +477,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh__3e06acad",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -491,7 +491,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh__502f3339",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -505,7 +505,7 @@
  },
  {
   "problem_id": "amc12_2000_p6__mh__f43b4d36",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -519,7 +519,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__me.mh__4ed187c1",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -533,7 +533,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__me.mh__adc9b08a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -547,7 +547,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__me.mh__b19ac235",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -561,7 +561,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__me__a407401f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -575,7 +575,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__mh.me__0c83ce1f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -589,7 +589,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__mh.mh__84a63fd9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -603,7 +603,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__mh__a12b7312",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -617,7 +617,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__mh__ab69afd6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -631,7 +631,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__mh__c0433309",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -645,7 +645,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__x__induction_divisibility_3div2tooddnp1__me.xe.ms__14fb9688",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -659,7 +659,7 @@
  },
  {
   "problem_id": "amc12a_2002_p21__x__induction_divisibility_3div2tooddnp1__me.xe__c283c0cb",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -673,7 +673,7 @@
  },
  {
   "problem_id": "amc12a_2010_p10__x__imo_1965_p1__xe__06f3f455",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -687,7 +687,7 @@
  },
  {
   "problem_id": "amc12a_2010_p10__x__mathd_algebra_251__xe__50b3ddbb",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -701,7 +701,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.me__820eb7ea",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -715,7 +715,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.mh__f9428058",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -729,7 +729,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.ms.me.me__1aafc5a0",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -743,7 +743,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.ms.me.mh__e70cf985",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -757,7 +757,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.ms.me__a0719f65",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -771,7 +771,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.ms.mh__72c8dce9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -785,7 +785,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me.ms__b3b2fb01",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -799,7 +799,7 @@
  },
  {
   "problem_id": "amc12a_2021_p9__me__6082dd30",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -813,7 +813,7 @@
  },
  {
   "problem_id": "amc12b_2020_p22__me__59a938fb",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -827,7 +827,7 @@
  },
  {
   "problem_id": "amc12b_2020_p22__ms__bd0c9e7b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -841,7 +841,7 @@
  },
  {
   "problem_id": "imo_1965_p1__me__f89872b8",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -855,7 +855,7 @@
  },
  {
   "problem_id": "imo_1965_p1__x__mathd_algebra_28__me.ms.xe__b806a2a6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -869,7 +869,7 @@
  },
  {
   "problem_id": "imo_1965_p1__x__mathd_algebra_28__x__amc12a_2010_p10__xe.xe__5cd07f7c",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -883,7 +883,7 @@
  },
  {
   "problem_id": "imo_1965_p1__x__mathd_algebra_28__xe__436c40c7",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -897,7 +897,7 @@
  },
  {
   "problem_id": "imo_1992_p1__me__0afbebc7",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -911,7 +911,7 @@
  },
  {
   "problem_id": "imo_1992_p1__mh__f6a87745",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -925,7 +925,7 @@
  },
  {
   "problem_id": "induction_11div10tonmn1ton__me__16570d78",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -939,7 +939,7 @@
  },
  {
   "problem_id": "induction_11div10tonmn1ton__me__4fc5c2d7",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -953,7 +953,7 @@
  },
  {
   "problem_id": "induction_11div10tonmn1ton__me__6e895ca9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -967,7 +967,7 @@
  },
  {
   "problem_id": "induction_11div10tonmn1ton__me__a4706044",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -981,7 +981,7 @@
  },
  {
   "problem_id": "induction_11div10tonmn1ton__me__acf6d1a3",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -995,7 +995,7 @@
  },
  {
   "problem_id": "induction_divisibility_3div2tooddnp1__me.me.me__0ce87f02",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1009,7 +1009,7 @@
  },
  {
   "problem_id": "induction_divisibility_3div2tooddnp1__me.me__dd5e8f57",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1023,7 +1023,7 @@
  },
  {
   "problem_id": "induction_divisibility_3div2tooddnp1__me.me__e1a43802",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1037,7 +1037,7 @@
  },
  {
   "problem_id": "induction_divisibility_3div2tooddnp1__me.mh__cdac54ba",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1051,7 +1051,7 @@
  },
  {
   "problem_id": "induction_divisibility_3div2tooddnp1__me__46cb0a18",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1065,7 +1065,7 @@
  },
  {
   "problem_id": "induction_ineq_nsqlefactn__mh__1476bc0b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1079,7 +1079,7 @@
  },
  {
   "problem_id": "induction_ineq_nsqlefactn__mh__44923c94",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1093,7 +1093,7 @@
  },
  {
   "problem_id": "induction_ineq_nsqlefactn__mh__c95b5f83",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1107,7 +1107,7 @@
  },
  {
   "problem_id": "mathd_algebra_101__me__6edfe085",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1121,7 +1121,7 @@
  },
  {
   "problem_id": "mathd_algebra_101__mh__a91f760b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1135,7 +1135,7 @@
  },
  {
   "problem_id": "mathd_algebra_101__x__mathd_algebra_313__xe__da455c16",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1149,7 +1149,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.me__b2ecfb10",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1163,7 +1163,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh.me.me__8589c85d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1177,7 +1177,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh.me.me__b2d36bb6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1191,7 +1191,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh.me__d1798a1d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1205,7 +1205,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh.me__d1798a1d__x__numbertheory_prmdvsneqnsqmodpeq0__me.mh.me.xe__347bad4b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1219,7 +1219,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh.me__d1798a1d__x__numbertheory_prmdvsneqnsqmodpeq0__me.mh.me.xe__64fecd92",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1233,7 +1233,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh__933eaeb5",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1247,7 +1247,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me.mh__958b7837",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1261,7 +1261,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me__68485970",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1275,7 +1275,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__me__68485970__x__numbertheory_prmdvsneqnsqmodpeq0__me.mh.xe__79fc542e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1289,7 +1289,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__mh__3f68eba4",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1303,7 +1303,7 @@
  },
  {
   "problem_id": "mathd_algebra_107__x__mathd_algebra_327__xe__1c16df05",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1317,7 +1317,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__me__b3ca50cd",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1331,7 +1331,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__me__b3ca50cd__x__mathd_algebra_410__xe__6806ff1f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1345,7 +1345,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__x__aime_1984_p15__xe.mh.mh__5602c04a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1359,7 +1359,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__x__aime_1984_p15__xe.mh__483514d7",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1373,7 +1373,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__x__aime_1984_p15__xe.mh__483514d7__x__mathd_algebra_410__ms.xe__ac8bb441",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1387,7 +1387,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__x__aime_1984_p15__xe.mh__dc319d07",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1401,7 +1401,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__x__aime_1984_p15__xe__cf52fec9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1415,7 +1415,7 @@
  },
  {
   "problem_id": "mathd_algebra_114__mh__1bc02492",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1429,7 +1429,7 @@
  },
  {
   "problem_id": "mathd_algebra_114__mh__547b532a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1443,7 +1443,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me.me.me__0b049e9b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1457,7 +1457,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me.me.me__162d3e4e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1471,7 +1471,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me.me__9013b35e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1485,7 +1485,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me.mh.mh__f2108e35",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1499,7 +1499,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me.mh__b2e63997",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1513,7 +1513,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me__4110db47",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1527,7 +1527,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me__d3f82e0b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1541,7 +1541,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__me__ff18450c",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1555,7 +1555,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__mh__10933a7a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1569,7 +1569,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__mh__8c510446",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1583,7 +1583,7 @@
  },
  {
   "problem_id": "mathd_algebra_208__mh__fafacabf",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1597,7 +1597,7 @@
  },
  {
   "problem_id": "mathd_algebra_214__mh__9cf4355f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1611,7 +1611,7 @@
  },
  {
   "problem_id": "mathd_algebra_234__me__360cecbc",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1625,7 +1625,7 @@
  },
  {
   "problem_id": "mathd_algebra_251__me__84df140b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1639,7 +1639,7 @@
  },
  {
   "problem_id": "mathd_algebra_251__x__mathd_algebra_114__xe__e0f06d2f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1653,7 +1653,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.me__fce4aeba",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1667,7 +1667,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.ms.me__1f5d0186",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1681,7 +1681,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.ms.mh__4a4b5a63",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1695,7 +1695,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.ms.mh__a2cdcf5f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1709,7 +1709,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.ms.mh__e9cc885d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1723,7 +1723,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me.ms__e0abe93f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -1737,7 +1737,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__me__428c9cc3",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1751,7 +1751,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__mh__22408ea6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1765,7 +1765,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__mh__3871bd82",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1779,7 +1779,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__mh__4bfd6f03",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1793,7 +1793,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe.me__06a52718",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1807,7 +1807,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe.me__1f523ee9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1821,7 +1821,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe.mh.me__52120196",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1835,7 +1835,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe.mh.me__87e1cfc6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1849,7 +1849,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe.mh__82e0354b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1863,7 +1863,7 @@
  },
  {
   "problem_id": "mathd_algebra_28__x__amc12a_2010_p10__xe__52562171",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1877,7 +1877,7 @@
  },
  {
   "problem_id": "mathd_algebra_313__mh__3bb24da9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1891,7 +1891,7 @@
  },
  {
   "problem_id": "mathd_algebra_327__mh__12b4c4db",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1905,7 +1905,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__me__b16e00b9",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1919,7 +1919,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__mh__9adf79c2",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1933,7 +1933,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me.me.me__d0a0cd76",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1947,7 +1947,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me.me.mh__792c4e4b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1961,7 +1961,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me.me__3cf2d608",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1975,7 +1975,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me.me__fe304b63",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1989,7 +1989,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me.mh__3bcf1b2d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2003,7 +2003,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.me__5de279e4",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2017,7 +2017,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me.mh__07e632bf",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2031,7 +2031,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me__0ee00499",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2045,7 +2045,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.me__2590095a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2059,7 +2059,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms.mh__60cdc9ff",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2073,7 +2073,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__ms__aaa74262",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2087,7 +2087,7 @@
  },
  {
   "problem_id": "mathd_algebra_410__x__mathd_algebra_113__xe__d052b38e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2101,7 +2101,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me.me__77c02b0d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2115,7 +2115,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me.mh__d2494ad1",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2129,7 +2129,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me__0fa904b2",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2143,7 +2143,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me__10577840",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2157,7 +2157,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me__a7839e6f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2171,7 +2171,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me__a7839e6f__x__mathd_algebra_208__me.me.xe__d8b46315",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2185,7 +2185,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.me__dc10e4b6",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2199,7 +2199,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.mh__41c64f08",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2213,7 +2213,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh.ms__653d2f1f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2227,7 +2227,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh__34f6bf04",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2241,7 +2241,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_126__mh__83c67931",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2255,7 +2255,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_202__ms.me__a5ada452",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2269,7 +2269,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_202__ms.mh__ad2e8e24",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2283,7 +2283,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_202__ms.mh__b310647f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2297,7 +2297,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_202__ms__48ce67d7",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2311,7 +2311,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_202__ms__48ce67d7__x__induction_divisibility_3div2tooddnp1__me.xe__6622822a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2325,7 +2325,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_229__me__c5ab2543",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2339,7 +2339,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_284__me.mh__c0669468",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2353,7 +2353,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_284__me__276d5079",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2367,7 +2367,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_284__x__mathd_numbertheory_33__xe__f8f59b09",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2381,7 +2381,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_296__me.mh__23bfbf4a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2395,7 +2395,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_296__me__642d4d50",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2409,7 +2409,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_33__mh__ae6d0d0e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2423,7 +2423,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_483__me__d29b0035",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2437,7 +2437,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_483__me__d29b0035__x__mathd_numbertheory_85__xe__b8afa30d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2451,7 +2451,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_483__mh__38e7c3d2",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2465,7 +2465,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.me__ec6d6429",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2479,7 +2479,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.mh.me__56174ad5",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2493,7 +2493,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.mh__39acdc36",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2507,7 +2507,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.ms.me__cb5235b5",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2521,7 +2521,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.ms.me__f1a7f310",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2535,7 +2535,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me.ms__b1f68f60",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2549,7 +2549,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me.me__6dbad337",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2563,7 +2563,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_728__me__e5a2f50a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2577,7 +2577,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me.me__0d98e2ad",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2591,7 +2591,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me.me__7899a23f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2605,7 +2605,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me.me__826063d2",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2619,7 +2619,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me.me__df951098",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2633,7 +2633,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me.mh__7ce0802c",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2647,7 +2647,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.me__14ffd8e0",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2661,7 +2661,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me.ms__3d7174de",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2675,7 +2675,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me__0fd2ae3f",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2689,7 +2689,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me__0fd2ae3f__x__mathd_numbertheory_483__xe__86b00416",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2703,7 +2703,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__me__0fd2ae3f__x__mathd_numbertheory_483__xe__b7ac3c8d",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2717,7 +2717,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__mh__8d81fc9b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2731,7 +2731,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__mh__8e90b5ce",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2745,7 +2745,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__mh__bdaff846",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2759,7 +2759,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_85__mh__e2008f66",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2773,7 +2773,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_961__mh__df101654",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2787,7 +2787,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_99__mh.me__5214d109",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2801,7 +2801,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_99__mh.me__d72a2225",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2815,7 +2815,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_99__mh.mh__3a778cec",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2829,7 +2829,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_99__mh.mh__8d52f104",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2843,7 +2843,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_99__mh__c0226169",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2857,7 +2857,7 @@
  },
  {
   "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1__ms.me.me.mh__8477755b",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2871,7 +2871,7 @@
  },
  {
   "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1__ms.me.me__f428b552",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2885,7 +2885,7 @@
  },
  {
   "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1__ms.me__6b4f9b19",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2899,7 +2899,7 @@
  },
  {
   "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1__ms__b312e50e",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2913,7 +2913,7 @@
  },
  {
   "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1__ms__b312e50e__x__numbertheory_sumkmulnckeqnmul2pownm1__xe__d9bf661c",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2927,7 +2927,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.me.mh__4b0b8856",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2941,7 +2941,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.me.mh__86b0c6c0",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2955,7 +2955,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.me.mh__91ccd460",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2969,7 +2969,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.me__ebb8f821",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2983,7 +2983,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.me.mh__7fa8c862",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2997,7 +2997,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.me__0286cdbe",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3011,7 +3011,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.me__7012dc32",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3025,7 +3025,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.me__865f5688",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3039,7 +3039,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.me__de01678a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3053,7 +3053,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.mh.mh__3475b463",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3067,7 +3067,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.mh__71fb5780",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3081,7 +3081,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh.mh__ec130811",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3095,7 +3095,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh__0846e862",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3109,7 +3109,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh__0846e862__x__mathd_algebra_107__xe__93a3acd3",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -3123,7 +3123,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh__5a4d0186",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3137,7 +3137,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh.mh__72c95a98",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3151,7 +3151,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh__3044da59",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3165,7 +3165,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me.mh__eae785fb",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3179,7 +3179,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me__33129050",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3193,7 +3193,7 @@
  },
  {
   "problem_id": "numbertheory_prmdvsneqnsqmodpeq0__me__33129050__x__mathd_algebra_107__me.xe__c9f000cb",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -3207,7 +3207,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__me.me__7c947b95",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3221,7 +3221,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__me__46dc4c00",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3235,7 +3235,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__mh.mh__bc8f5e04",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3249,7 +3249,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__mh.ms__ca1f8653",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -3263,7 +3263,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__mh__f7f36d97",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3277,7 +3277,7 @@
  },
  {
   "problem_id": "numbertheory_sqmod3in01d__mh__f7f36d97__x__amc12b_2020_p22__xe__4c74269a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -3291,7 +3291,7 @@
  },
  {
   "problem_id": "numbertheory_sumkmulnckeqnmul2pownm1__mh__695829b4",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3305,7 +3305,7 @@
  },
  {
   "problem_id": "numbertheory_sumkmulnckeqnmul2pownm1__mh__cc19245c",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3319,7 +3319,7 @@
  },
  {
   "problem_id": "numbertheory_sumkmulnckeqnmul2pownm1__x__numbertheory_nckeqnm1ckpnm1ckm1__ms.me.me.xe__787840c1",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -3333,7 +3333,7 @@
  },
  {
   "problem_id": "numbertheory_sumkmulnckeqnmul2pownm1__x__numbertheory_nckeqnm1ckpnm1ckm1__ms.me.xe__e5dfcd7a",
-  "campaign": "eml2_minif2f_k",
+  "campaign": "run-d",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,

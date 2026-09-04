@@ -1,7 +1,7 @@
 [
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh.mh.me__cae6f81f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -15,7 +15,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh.mh__8aa971b5",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -29,7 +29,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh.mh__e633a98d",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -43,7 +43,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__068ce5a6",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -57,7 +57,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__4a0b684b",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -71,7 +71,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__cc302730",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -85,7 +85,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__d953fd9f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -99,7 +99,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me__55131fb7",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -113,7 +113,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__357e4f99",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -127,7 +127,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__7798f78c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -141,7 +141,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__7cd0cba0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -155,7 +155,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__x__Munkres_exercise_13_1__xe__f2f233cb",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -169,7 +169,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me.mh__d1579e3d",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -183,7 +183,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__6b34bd44",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -197,7 +197,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__mh__0eb4603c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -211,7 +211,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__mh__4b02c9a8",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -225,7 +225,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__mh__cc59fec2",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -239,7 +239,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.me__1c1dc987",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -253,7 +253,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.mh__5fcff258",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -267,7 +267,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__1c3c5d50",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -281,7 +281,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me__7edaafef",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -295,7 +295,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me__7edaafef__x__Rudin_exercise_4_12__ms.me.xe__9f5b8ac1",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -309,7 +309,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me__7edaafef__x__Rudin_exercise_4_12__ms.xe__9da88fa2",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -323,7 +323,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__x__Rudin_exercise_4_12__xe__5c2bbc5c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -337,7 +337,7 @@
  },
  {
   "problem_id": "Munkres_exercise_30_13__mh__cd50ccf4",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -351,7 +351,7 @@
  },
  {
   "problem_id": "Munkres_exercise_30_13__x__Rudin_exercise_1_1b__xe__20950f33",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -365,7 +365,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__4decaa2e",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -379,7 +379,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__9501332f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -393,7 +393,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__mh.me__3a1560d5",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -407,7 +407,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__mh.mh__2c31f62c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -421,7 +421,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__mh__2b475e34",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -435,7 +435,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__mh__fcde3616",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -449,7 +449,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__mh__fcde3616__x__Shakarchi_exercise_1_19b__me.xe__1e8805a0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -463,7 +463,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.me__f7815124",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -477,7 +477,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.mh.mh__c12743e8",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -491,7 +491,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.mh__51bf287b",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -505,7 +505,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.mh__8836a74e",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -519,7 +519,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.mh__c154a7db",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -533,7 +533,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me.mh__e00cca36",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -547,7 +547,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me__0accbc0a",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -561,7 +561,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me__1381c1ba",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -575,7 +575,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.me__7c32138e",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -589,7 +589,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me.mh__a2494e74",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -603,7 +603,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.me__adb7544c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -617,7 +617,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh.me.me__50567766",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -631,7 +631,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh.me__585812f3",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -645,7 +645,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh.me__a8d925a8",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -659,7 +659,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh.me__f6e71414",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -673,7 +673,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh.mh__a92c92a5",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -687,7 +687,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh__ab5b4a93",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -701,7 +701,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh__c30cfc76",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -715,7 +715,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh__c30cfc76__x__Munkres_exercise_23_2__me.me.xe__4e9b09eb",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -729,7 +729,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms.mh__c30cfc76__x__Munkres_exercise_23_2__me.me.xe__532e70b1",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -743,7 +743,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms__c26e906f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -757,7 +757,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__ms__c26e906f__x__Rudin_exercise_1_1b__xe__b69255c2",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -771,7 +771,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me__4e04b791",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -785,7 +785,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__mh.me__1122ba60",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -799,7 +799,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__mh.me__4d450bdc",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -813,7 +813,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__mh.mh__3ba4bcc3",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -827,7 +827,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__mh__27a629ff",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -841,7 +841,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__x__Munkres_exercise_13_1__xe__64a55aad",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -855,7 +855,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__x__Munkres_exercise_18_8a__xe.me__f4046ed9",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -869,7 +869,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__x__Munkres_exercise_18_8a__xe.mh__324f6568",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -883,7 +883,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__x__Munkres_exercise_18_8a__xe__49c9c080",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -897,7 +897,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__x__Munkres_exercise_18_8a__xh__43e618fe",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -911,7 +911,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__mh__3b64044d",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -925,7 +925,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_6__me__a17d08de",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -939,7 +939,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.me.mh__4ce18d21",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -953,7 +953,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.me__263cd10d",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -967,7 +967,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.me__938439ef",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -981,7 +981,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.mh__360969bb",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -995,7 +995,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.mh__7d0d3155",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1009,7 +1009,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.mh__97dfff79",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1023,7 +1023,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me.mh__f450a3ac",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1037,7 +1037,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__2f08af31",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1051,7 +1051,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__8adda5dd",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1065,7 +1065,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__9361aa77",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1079,7 +1079,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__9e9521a0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1093,7 +1093,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__d05f49c0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1107,7 +1107,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__x__Rudin_exercise_4_12__xe__ffb5daec",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,

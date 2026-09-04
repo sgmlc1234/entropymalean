@@ -8,7 +8,7 @@ statements, the same bands read 40% and 6%; on miniF2F the best band is the
 most-overlapping one at 54%. Bins of ~28 that reverse their ordering every time
 are noise, and an objective built on them optimises noise.
 
-What survives measurement is per-root yield. Across the eml1_gen5 miniF2F
+What survives measurement is per-root yield. Across the run-a miniF2F
 groups and both ablation arms, roots range from 72% of attempts certifying down
 to 13%, and the ordering is stable in a way the fit bands are not.
 

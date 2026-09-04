@@ -86,7 +86,7 @@ async def main() -> None:
     candidates = json.loads(args.candidates.read_text(encoding="utf-8"))
     # Original production order, so each row is judged against the siblings that
     # preceded it rather than against the whole corpus at once.
-    order = {"eml1_gen5": 0, "ablation/crossover": 1, "ablation/mutation": 2}
+    order = {"run-a": 0, "ablation/crossover": 1, "ablation/mutation": 2}
     candidates.sort(key=lambda c: (order.get(c["campaign"], 9), str(c["problem_id"])))
 
     if args.seed_siblings:

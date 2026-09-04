@@ -1,7 +1,7 @@
 [
  {
   "problem_id": "Axler_exercise_1_8__me.me__925ec37a",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -15,7 +15,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me.mh__3405d747",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -29,7 +29,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me.mh__3c3d72a0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -43,7 +43,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me.mh__5d513b10",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -57,7 +57,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__244392f2",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -71,7 +71,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__7d911058",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -85,7 +85,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__85841fac",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -99,7 +99,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__9398cde9",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -113,7 +113,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__966dac6f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -127,7 +127,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__b2253c94",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -141,7 +141,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__be74a7b4",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -155,7 +155,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__c12b47d6",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -169,7 +169,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__mh__547a3e14",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -183,7 +183,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__mh__e43ec687",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -197,7 +197,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__x__Dummit_Foote_exercise_3_4_4__xe__8d5a6b13",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -211,7 +211,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__x__Munkres_exercise_13_4b2__xe__4a6b5de4",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -225,7 +225,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_4_4__me__0fd31594",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -239,7 +239,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_4_4__me__e33d29b2",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -253,7 +253,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_4_4__mh__174fe9de",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -267,7 +267,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__me.me__f459a2fc",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -281,7 +281,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__me.mh__4ada3c71",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -295,7 +295,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__me__c4d2b752",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -309,7 +309,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh.me__4b1a9d7c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -323,7 +323,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh.me__a5894c94",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -337,7 +337,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh.mh__81853e5c",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -351,7 +351,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh__85f601c1",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -365,7 +365,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh__d65335b0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -379,7 +379,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__x__Munkres_exercise_29_10__xe__8edfd45f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -393,7 +393,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_4b2__mh__0ac6a102",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -407,7 +407,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_4b2__mh__c587ebb9",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -421,7 +421,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_4b2__x__Axler_exercise_1_8__xh__377796fd",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -435,7 +435,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_4b2__x__Munkres_exercise_18_8a__xe__f8032b74",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -449,7 +449,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me__20a4ae19",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -463,7 +463,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me__6e9c1b08",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -477,7 +477,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh.mh__180e4a76",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -491,7 +491,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh.mh__9b79d6c0",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -505,7 +505,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__52531ece",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -519,7 +519,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__b04d071f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -533,7 +533,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__x__Munkres_exercise_13_4b2__xe__6eead0cf",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -547,7 +547,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__6b951a1f",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -561,7 +561,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__917080e3",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -575,7 +575,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__x__Rudin_exercise_2_28__xh__f4c96a15",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -589,7 +589,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh__b4fbdc16",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -603,7 +603,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__me__71e4f964",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -617,7 +617,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__mh__46380a86",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -631,7 +631,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_6__mh__823f6abc",
-  "campaign": "eml1_gen10",
+  "campaign": "run-b",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,

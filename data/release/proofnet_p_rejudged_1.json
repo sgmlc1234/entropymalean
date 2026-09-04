@@ -1,7 +1,7 @@
 [
  {
   "problem_id": "Axler_exercise_1_3__me__171fb14c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -15,7 +15,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_3__mh__c3a4c52a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -29,7 +29,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_3__mh__c9459ce0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -43,7 +43,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me.me__58cb856c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -57,7 +57,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me.mh__83e0bdc6",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -71,7 +71,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__9f421d1d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -85,7 +85,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__bc501014",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -99,7 +99,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__me__d2ece878",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -113,7 +113,7 @@
  },
  {
   "problem_id": "Axler_exercise_1_8__mh__274daee5",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -127,7 +127,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me.me__c944fb1d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -141,7 +141,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me.me__ecf2e464",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -155,7 +155,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me.me__f779ed65",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -169,7 +169,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me.mh__101f67b5",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -183,7 +183,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me.mh__1bec794e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -197,7 +197,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me__32f25123",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -211,7 +211,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me__548d1291",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -225,7 +225,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me__c614d88a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -239,7 +239,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.me__e215357d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -253,7 +253,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me.mh__46206500",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -267,7 +267,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me__3bcaece7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -281,7 +281,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me__600143b3",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -295,7 +295,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me__84ec66f9",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -309,7 +309,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.me__b3c1ba8a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -323,7 +323,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.mh__31ad5087",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -337,7 +337,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.mh__cdca890b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -351,7 +351,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.ms.me__d98b1ebb",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -365,7 +365,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.ms.mh__c7c9901b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -379,7 +379,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me.ms__e9028d77",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -393,7 +393,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me__16f5f277",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -407,7 +407,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me__97650c46",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -421,7 +421,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.me__e74c8b7e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -435,7 +435,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__3fba5d3e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -449,7 +449,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__7fdfabde",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -463,7 +463,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__aada0d88",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -477,7 +477,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__b696cc8e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -491,7 +491,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__d0e5a09f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -505,7 +505,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me.mh__e25fd8e5",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -519,7 +519,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me__0e7ddb46",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -533,7 +533,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me__593a5769",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -547,7 +547,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me__593a5769",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -561,7 +561,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__me__c5e2d40f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -575,7 +575,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__mh.mh__8e79d468",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -589,7 +589,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__mh__16e3ee99",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -603,7 +603,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__mh__f435ceda",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -617,7 +617,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_22b__mh__f53b8227",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -631,7 +631,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_3_1_3a__mh__68f603c7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -645,7 +645,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__me__58a9e5ec",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -659,7 +659,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__me__88c07149",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -673,7 +673,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__me__c9e0395d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -687,7 +687,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__mh__fe35117f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -701,7 +701,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__ms.mh__c7542504",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -715,7 +715,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_4_5_23__ms__22180934",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -729,7 +729,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__me__1c63d88c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -743,7 +743,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__mh__b449643b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -757,7 +757,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__mh__b449643b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -771,7 +771,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__mh__ce5acbf7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -785,7 +785,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__ms.me__36389812",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -799,7 +799,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__ms.me__c8bb466b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -813,7 +813,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__ms.mh__5585f93b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -827,7 +827,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__ms__b9fb1dd1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -841,7 +841,7 @@
  },
  {
   "problem_id": "Dummit_Foote_exercise_7_1_15__x__Munkres_exercise_18_8a__me.xe__a1767a3a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -855,7 +855,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__me__84b4475d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -869,7 +869,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__me__e40788fd",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -883,7 +883,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__mh__9471c3b1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -897,7 +897,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__x__Dummit_Foote_exercise_4_5_23__mh.xh.mh__44317913",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -911,7 +911,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__x__Dummit_Foote_exercise_4_5_23__mh.xh.mh__9c519466",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -925,7 +925,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_4_36__x__Dummit_Foote_exercise_4_5_23__mh.xh__590497d8",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -939,7 +939,7 @@
  },
  {
   "problem_id": "Herstein_exercise_2_5_23__mh__ba56f709",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -953,7 +953,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__me__161b3e15",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -967,7 +967,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__me__ac5bf308",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -981,7 +981,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh.me__349e3473",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -995,7 +995,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh.me__fd705452",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1009,7 +1009,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh.mh.me__10843271",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1023,7 +1023,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh.mh__9b2b60d0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1037,7 +1037,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh.mh__f95f1e56",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1051,7 +1051,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh__95b28844",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1065,7 +1065,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh__c7b1741a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1079,7 +1079,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me.mh__d0c4e8db",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1093,7 +1093,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh.me__5e69c96c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1107,7 +1107,7 @@
  },
  {
   "problem_id": "Herstein_exercise_4_2_6__mh__1b3c0581",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1121,7 +1121,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.me__d982d059",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1135,7 +1135,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.mh.me__e70e2bb2",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1149,7 +1149,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.mh.mh__ed2761e4",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1163,7 +1163,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.mh__796d51c3",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1177,7 +1177,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.mh__7d67637c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1191,7 +1191,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me.mh__c839c86c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1205,7 +1205,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me__34206d90",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1219,7 +1219,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__me__e6a23a75",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1233,7 +1233,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__mh__9e38bb94",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1247,7 +1247,7 @@
  },
  {
   "problem_id": "Ireland_Rosen_exercise_1_31__x__Ireland_Rosen_exercise_1_27__xe__462a05a7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1261,7 +1261,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_1__mh__bde9eb06",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1275,7 +1275,7 @@
  },
  {
   "problem_id": "Munkres_exercise_13_1__x__Rudin_exercise_4_12__xe__28b357a0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1289,7 +1289,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__me.mh__041f8e45",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1303,7 +1303,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__me.mh__eb4b00a0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1317,7 +1317,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__me__6458c5ee",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1331,7 +1331,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__me__a3e56ed4",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1345,7 +1345,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__me__a3e56ed4__x__Rudin_exercise_5_5__ms.xe__85f96354",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1359,7 +1359,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__mh__9ac34659",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1373,7 +1373,7 @@
  },
  {
   "problem_id": "Munkres_exercise_16_4__x__Rudin_exercise_5_5__ms.xe__59e8a7bf",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1387,7 +1387,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.me.me__da2a0756",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1401,7 +1401,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.me__8bcad6cf",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1415,7 +1415,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.me__97b70b1e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1429,7 +1429,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.me__af143359",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1443,7 +1443,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.mh__1a717344",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1457,7 +1457,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.mh__74c69977",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1471,7 +1471,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.mh__bf1ee6ec",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1485,7 +1485,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me.mh__f5a06982",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1499,7 +1499,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me__6a1e33f8",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1513,7 +1513,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me__6f04ec97",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1527,7 +1527,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.me__82adff8f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1541,7 +1541,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.mh__08974092",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1555,7 +1555,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.mh__0fa448c1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1569,7 +1569,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me.mh__31a51bfe",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1583,7 +1583,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me__292188c1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1597,7 +1597,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me__6cceb54a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1611,7 +1611,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__me__6cceb54a__x__Dummit_Foote_exercise_7_1_15__xe__0501cfb7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1625,7 +1625,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__357e4f99",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1639,7 +1639,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__7cd0cba0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1653,7 +1653,7 @@
  },
  {
   "problem_id": "Munkres_exercise_18_8a__mh__b6fcc7fc",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1667,7 +1667,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me.mh__6791ed12",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1681,7 +1681,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1695,7 +1695,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh.me__532c0c8a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1709,7 +1709,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh.mh__1550c1e9",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1723,7 +1723,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh.mh__909d624c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1737,7 +1737,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh.mh__c65fa6ef",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1751,7 +1751,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh__38c5ef50",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -1765,7 +1765,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__me__ee8e2e02__x__Rudin_exercise_4_3__me.xh__38c5ef50__x__Rudin_exercise_4_3__me.me.xh__69070f8c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -1779,7 +1779,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__mh__0d870513",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1793,7 +1793,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_11__mh__ddc293ff",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1807,7 +1807,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.me.me__6c2d5cbc",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1821,7 +1821,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.me.mh__ff081ef5",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1835,7 +1835,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.me__0e190c47",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1849,7 +1849,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.me__ba621362",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1863,7 +1863,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me.mh__b6c12500",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1877,7 +1877,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__3e7b61e1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1891,7 +1891,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1905,7 +1905,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe.mh__722ddcf6",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -1919,7 +1919,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe.ms.me__d0014abf",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -1933,7 +1933,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe.ms__848cce60",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -1947,7 +1947,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe__da0d2af4",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1961,7 +1961,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe__da0d2af4__x__Munkres_exercise_23_2__me.me.xe__947fa18d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -1975,7 +1975,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.me__5097ab74__x__Rudin_exercise_4_3__me.mh.xe__da0d2af4__x__Munkres_exercise_23_2__me.xh__becb3351",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -1989,7 +1989,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me.mh__467e4adc",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2003,7 +2003,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me__9a77ee70",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2017,7 +2017,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__me__f32974a7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2031,7 +2031,7 @@
  },
  {
   "problem_id": "Munkres_exercise_23_2__mh__5db0f6a7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2045,7 +2045,7 @@
  },
  {
   "problem_id": "Munkres_exercise_24_3a__mh__3a30b4ca",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2059,7 +2059,7 @@
  },
  {
   "problem_id": "Munkres_exercise_24_3a__mh__9559776e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2073,7 +2073,7 @@
  },
  {
   "problem_id": "Munkres_exercise_24_3a__mh__c116b9bb",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2087,7 +2087,7 @@
  },
  {
   "problem_id": "Munkres_exercise_24_3a__x__Munkres_exercise_13_1__xe__508d56e0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2101,7 +2101,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__me__8d1abbd9",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2115,7 +2115,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__me__90c38c4d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2129,7 +2129,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__23d513d8",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2143,7 +2143,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__cb92bce9",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2157,7 +2157,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__cb92bce9__x__Rudin_exercise_2_25__xe__5ddc9a0c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2171,7 +2171,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__mh__e30330a1",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2185,7 +2185,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.me.me__4b96916a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2199,7 +2199,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.me__1ceef025",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2213,7 +2213,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.me__1ceef025__x__Rudin_exercise_2_25__me.mh.xe__d696b22b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 0,
@@ -2227,7 +2227,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.me__3e4bafce",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2241,7 +2241,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.me__d78a5df5",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2255,7 +2255,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.mh__5f1a3e4b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2269,7 +2269,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.ms.me__97127643",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2283,7 +2283,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.ms.me__c46ab9d2",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2297,7 +2297,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.ms.mh__10b2735a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2311,7 +2311,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh.ms__c8317e59",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -2325,7 +2325,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__69129ea3",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2339,7 +2339,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__9f344909",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2353,7 +2353,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__a86cb245",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2367,7 +2367,7 @@
  },
  {
   "problem_id": "Rudin_exercise_1_1b__mh__dded0c3f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2381,7 +2381,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me.mh.me.me__7c9f9ef2",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2395,7 +2395,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me.mh.me__129dda3a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2409,7 +2409,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me.mh.me__409c12da",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2423,7 +2423,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me.mh.mh__7db91648",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2437,7 +2437,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me.mh__f713c059",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2451,7 +2451,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me__71368725",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2465,7 +2465,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me__c765a259",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2479,7 +2479,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__me__ee014913",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2493,7 +2493,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__mh__8949e07b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2507,7 +2507,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_25__mh__b74d259e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2521,7 +2521,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__me__248a9081",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2535,7 +2535,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh.mh__00c8e1e0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2549,7 +2549,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh.mh__39b78299",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2563,7 +2563,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh.mh__a235a179",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2577,7 +2577,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh__0657fa6f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2591,7 +2591,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh__7158dbc7",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2605,7 +2605,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__mh__87abe271",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2619,7 +2619,7 @@
  },
  {
   "problem_id": "Rudin_exercise_2_28__x__Munkres_exercise_18_8a__me.xh__d2849caf",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "crossover",
   "operator_variant": "crossover_hard",
   "evidence_depth": 0,
@@ -2633,7 +2633,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh.me.mh.me__9a5c1657",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2647,7 +2647,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh.me.mh.mh__b76f9cd9",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2661,7 +2661,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh.me.mh__7c97e722",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2675,7 +2675,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh.me.mh__e4acd74f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2689,7 +2689,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh.me__47be696d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2703,7 +2703,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me.mh__e027570c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2717,7 +2717,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_12__me__a36d04eb",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2731,7 +2731,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.me__85d2a477",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2745,7 +2745,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.me__9373197a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2759,7 +2759,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__429658dc",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2773,7 +2773,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__814b23ba",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2787,7 +2787,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__a5ad1af2",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2801,7 +2801,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__b39ad3be",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2815,7 +2815,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__bda8ceec",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2829,7 +2829,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me.mh__eb8a2e1a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2843,7 +2843,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me__c0f67f60",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2857,7 +2857,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.me__f16b16ec",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2871,7 +2871,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh.me__000e7c9a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2885,7 +2885,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh.me__4d879715",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2899,7 +2899,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh.me__d9523552",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2913,7 +2913,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh.me__fc50be9d",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -2927,7 +2927,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh.mh__7049d394",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2941,7 +2941,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__08cbac12",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2955,7 +2955,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__62b4c13e",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2969,7 +2969,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__69f231de",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2983,7 +2983,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__a9233267",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -2997,7 +2997,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__cbaa205a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3011,7 +3011,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me.mh__e7a84b2c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3025,7 +3025,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me__18b2d420",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3039,7 +3039,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me__4e04b791",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3053,7 +3053,7 @@
  },
  {
   "problem_id": "Rudin_exercise_4_3__me__872e7f6f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3067,7 +3067,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__me__1e023b0f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3081,7 +3081,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__me__29b490be",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3095,7 +3095,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__me__dadd8a68",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3109,7 +3109,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__mh__06b0d94b",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3123,7 +3123,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__mh__1b41b366",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3137,7 +3137,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__ms.mh__9761fa5f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3151,7 +3151,7 @@
  },
  {
   "problem_id": "Rudin_exercise_5_5__ms__c45a482f",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_silent",
   "evidence_depth": 0,
@@ -3165,7 +3165,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__3eeca7f4",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3179,7 +3179,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__608c1a00",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3193,7 +3193,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__8feb093a",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3207,7 +3207,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__dde17d78",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3221,7 +3221,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__me__eb1129bf",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3235,7 +3235,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh.me__b7093508",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 0,
@@ -3249,7 +3249,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__02a0eb22",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3263,7 +3263,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__0fb1e4c0",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3277,7 +3277,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__1dc164cd",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3291,7 +3291,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__5f49854c",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3305,7 +3305,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__a768aa50",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,
@@ -3319,7 +3319,7 @@
  },
  {
   "problem_id": "Shakarchi_exercise_1_19b__mh__e00c9a68",
-  "campaign": "eml2_proofnet",
+  "campaign": "run-e",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 0,

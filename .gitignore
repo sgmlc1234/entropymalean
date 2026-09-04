@@ -154,14 +154,10 @@ ORCHESTRATOR_QA_REPORT.md
 PHASE*_COMPLETION.md
 docs/*.md
 !README.md
-!docs/lean_comparator.md
-!docs/naming_conventions.md
-!docs/eml2_campaign_plan.md
-!docs/axiom_audit_released.md
-!docs/alignment_benchmark_results.md
-!docs/lean_generation_failure_analysis.md
-!docs/semantic_alignment_plan.md
-!docs/eml_proofnet_hygiene_report.md
+# `docs/` ships the three release reports (PDF) and nothing else. The working
+# notes that once had exceptions here are drafting material -- design plans,
+# failure post-mortems, terminology decisions -- written for ourselves, and
+# naming them here published the titles without the documents.
 data/raw/*_notes.md
 data/raw/*inventory*.md
 data/raw/*recovery*.md

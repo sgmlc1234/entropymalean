@@ -1,7 +1,7 @@
 [
  {
   "problem_id": "Munkres_exercise_29_10__me__12d1d2e4",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -15,7 +15,7 @@
  },
  {
   "problem_id": "Munkres_exercise_29_10__x__Rudin_exercise_2_28__xe__536d45f3",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "crossover",
   "operator_variant": "crossover_easy",
   "evidence_depth": 1,
@@ -29,7 +29,7 @@
  },
  {
   "problem_id": "amc12a_2010_p10__me__8f91749d",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -43,7 +43,7 @@
  },
  {
   "problem_id": "amc12a_2010_p10__me.mh__6e72992c",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,
@@ -57,7 +57,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__me__a9461eb6",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -71,7 +71,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__me.mh__999a63e6",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,
@@ -85,7 +85,7 @@
  },
  {
   "problem_id": "mathd_algebra_113__me.mh__d709ac3d",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,
@@ -99,7 +99,7 @@
  },
  {
   "problem_id": "mathd_algebra_114__mh.me.mh__b34123ea",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,
@@ -113,7 +113,7 @@
  },
  {
   "problem_id": "mathd_algebra_234__me__96d44c13",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -127,7 +127,7 @@
  },
  {
   "problem_id": "mathd_algebra_484__me.me.me__fc955008",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -141,7 +141,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_284__x__mathd_numbertheory_85__xe.me__a8d95857",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_easy",
   "evidence_depth": 1,
@@ -155,7 +155,7 @@
  },
  {
   "problem_id": "mathd_numbertheory_551__me.mh__c475d546",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,
@@ -169,7 +169,7 @@
  },
  {
   "problem_id": "numbertheory_sumkmulnckeqnmul2pownm1__mh__145c56eb",
-  "campaign": "eml1_gen5",
+  "campaign": "run-a",
   "op_type": "mutation",
   "operator_variant": "mutation_hard",
   "evidence_depth": 1,

@@ -9236,7 +9236,7 @@ def _aggregate_messages(payload: Dict[str, Any]) -> List[Dict[str, str]]:
     # sent to the model, so editing it would make the released code differ from
     # the code that produced the corpus, for a cosmetic gain.
     system = (
-        "You are the EntropyMaG-2 next-pool aggregate orchestrator. "
+        "You are the EntropyMaLean next-pool aggregate orchestrator. "
         "Make final next-pool selection decisions from verified compact summaries. "
         "Return JSON only. Code only invalidates nonnegotiable invariant violations."
     )
