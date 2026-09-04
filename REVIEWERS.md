@@ -492,7 +492,7 @@ A certified row is not a release candidate. The admission path:
 # 1. two independent judge passes, recorded not applied
 GENERATION_PROVIDER=codex_cli PROBLEM_JUDGE=1 PROBLEM_JUDGE_MODEL=gpt-5.6-luna \
 python3 -m scripts.faithfulness.reader.rejudge_corpus --candidates <candidates>.json \
-        --output data/release/rejudged.json --concurrency 3
+        --output data/release/rejudged_1.json --concurrency 3
 #    then again, to a second output
 
 # 2. prose-vs-goal round trip
@@ -516,13 +516,10 @@ by the same rule.
 Reading only the quality and not the vote once admitted six rows the judge had
 voted to reject.
 
-Both passes ship, for all nine campaigns: `data/release/*_rejudged_1.json` and
-`_2.json`, with `rejudged.json` / `rejudged_run2.json` as the first campaign's
-unprefixed pair. They are the record of what the judge saw, not the route to the
-release's numbers. Two of the nine campaigns re-judged rows an earlier campaign
-had already seen, so an id appears in more than one file with different verdicts
-and only the later one counts; a reader who merges them without that order gets
-272/247/102 against the release's 276/249/102.
+Both passes ship, every run in one file each: `data/release/rejudged_1.json`
+and `rejudged_2.json`, 1247 records apiece, each naming its run in `campaign`.
+`data/release/CAMPAIGN_LABELS.md` says what the runs are and how the
+re-judgements of pruned rows sit in there.
 
 Nothing needs that merge. §1.3 counts `admission.why_not` in
 `eml1_rejected.jsonl` — one file, no order to know, and the number the release

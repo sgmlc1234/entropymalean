@@ -671,8 +671,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--rejected", type=Path, default=Path("data/release/eml1_rejected.jsonl"))
-    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
-    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
+    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged_1.json"))
+    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_2.json"))
     parser.add_argument("--workspace", type=Path,
                         default=_repo_root() / "site" / "workspace.html")
     parser.add_argument("--json-output", type=Path,

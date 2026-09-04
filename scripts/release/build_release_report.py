@@ -522,8 +522,8 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--release", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--rejected", type=Path, default=Path("data/release/eml1_rejected.jsonl"))
-    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
-    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
+    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged_1.json"))
+    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_2.json"))
     parser.add_argument("--output-tex", type=Path, default=Path("docs/eml1_release_report.tex"))
     parser.add_argument("--split-by-benchmark", action="store_true",
                         help="also write one document per source benchmark. The two "

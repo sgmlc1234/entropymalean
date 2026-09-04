@@ -71,8 +71,8 @@ def tvd(a: collections.Counter, b: collections.Counter) -> float:
 
 
 def admitted_ids() -> set:
-    r1 = {r["problem_id"]: r for r in json.loads(Path("data/release/rejudged.json").read_text(encoding="utf-8"))}
-    r2 = {r["problem_id"]: r for r in json.loads(Path("data/release/rejudged_run2.json").read_text(encoding="utf-8"))}
+    r1 = {r["problem_id"]: r for r in json.loads(Path("data/release/rejudged_1.json").read_text(encoding="utf-8"))}
+    r2 = {r["problem_id"]: r for r in json.loads(Path("data/release/rejudged_2.json").read_text(encoding="utf-8"))}
     return {p for p, a in r1.items()
             if (b := r2.get(p)) and a.get("new_quality") == "strong" and b.get("new_quality") == "strong"
             and a.get("new_verdict") == "keep" and b.get("new_verdict") == "keep"}

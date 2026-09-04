@@ -109,6 +109,13 @@ results/
 !data/evaluation/exam_evidence/
 !data/evaluation/exam_evidence/*.jsonl.gz
 !data/evaluation/exam_evidence/MANIFEST.json
+# The two judge passes ship as one file each. The per-batch files they were
+# merged from are working state: same records, split by the batch that was
+# being judged at the time, and named for it.
+data/release/*_rejudged_[12].json
+data/release/rejudged_run2.json
+!data/release/rejudged_1.json
+!data/release/rejudged_2.json
 # The two row files the scoring scripts read alongside the bundle: the 100
 # certified control seeds and the 535 released rows as the environment played
 # them. `lineage_gap_from_exam.py` needs both, so a checkout without them

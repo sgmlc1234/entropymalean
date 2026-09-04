@@ -461,8 +461,8 @@ def _refuse_to_discard(output: Path, final: list, force: bool) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged.json"))
-    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_run2.json"))
+    parser.add_argument("--run1", type=Path, default=Path("data/release/rejudged_1.json"))
+    parser.add_argument("--run2", type=Path, default=Path("data/release/rejudged_2.json"))
     parser.add_argument("--output", type=Path, default=Path("data/release/eml1_release.jsonl"))
     parser.add_argument("--rejected-output", type=Path, default=Path("data/release/eml1_rejected.jsonl"))
     parser.add_argument("--prune", type=Path, default=Path("data/release/hypothesis_prune.json"),
@@ -498,8 +498,6 @@ def main() -> None:
                              "top of the preparation record rather than replacing it, so a row "
                              "keeps both facts: that its workspace was ready, and what the kernel "
                              "then said about it.")
-    parser.add_argument("--prune-judged-1", type=Path, default=Path("data/release/pruned_rejudged_1.json"))
-    parser.add_argument("--prune-judged-2", type=Path, default=Path("data/release/pruned_rejudged_2.json"))
     parser.add_argument("--force", action="store_true",
                         help="Overwrite a release that carries `reproducible` "
                              "certificates or hand-withdrawn rows. Those are not "
@@ -543,12 +541,9 @@ def main() -> None:
     prune: Dict[str, dict] = {}
     if args.prune.is_file():
         prune = json.loads(args.prune.read_text(encoding="utf-8"))
-        for key, path in (("1", args.prune_judged_1), ("2", args.prune_judged_2)):
-            if not path.is_file():
-                continue
-            target = run1 if key == "1" else run2
-            for record in json.loads(path.read_text(encoding="utf-8")):
-                target[record["problem_id"]] = record
+        # The re-judgements of the pruned rows are already the last word in
+        # `rejudged_{1,2}.json`: the merge that built those files applied them
+        # after every batch, which is the order this overlay used to enforce.
         # The scan covered every row, so every row records the check. Only the
         # ones it changed carry a removal; a row with nothing to remove is a row
         # that passed, not a row that was skipped, and the coverage column would

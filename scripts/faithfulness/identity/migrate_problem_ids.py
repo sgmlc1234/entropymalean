@@ -247,8 +247,7 @@ def main() -> None:
     # so a mapping that stops at the JSONL leaves the export joining old keys
     # against new rows and silently dropping the evidence.
     for name, shape in (
-        ("rejudged.json", "list"), ("rejudged_run2.json", "list"),
-        ("pruned_rejudged_1.json", "list"), ("pruned_rejudged_2.json", "list"),
+        ("rejudged_1.json", "list"), ("rejudged_2.json", "list"),
         ("comparator_batch.json", "list"), ("comparator_results.json", "list"),
         ("dead_hypotheses.json", "list"), ("hypothesis_prune.json", "dict"),
         # Added after a later run: these three were written before this list

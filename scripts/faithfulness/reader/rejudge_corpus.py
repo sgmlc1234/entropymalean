@@ -74,7 +74,7 @@ def build_index(patterns=DEFAULT_INDEX) -> dict:
 async def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidates", type=Path, default=Path("data/release/eml_candidates.json"))
-    parser.add_argument("--output", type=Path, default=Path("data/release/rejudged.json"))
+    parser.add_argument("--output", type=Path, default=Path("data/release/rejudged_1.json"))
     parser.add_argument("--concurrency", type=int, default=3)
     parser.add_argument("--seed-siblings", type=Path, default=None,
                         help="Release JSONL whose rows are treated as already kept, so a "

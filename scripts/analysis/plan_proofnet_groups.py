@@ -61,9 +61,9 @@ def load_seeds() -> Tuple[Dict[str, dict], List[str]]:
 def _admitted() -> Set[str]:
     """Rows that both re-judge passes rated strong and voted to keep."""
     r1 = {r["problem_id"]: r for r in json.loads(
-        Path("data/release/rejudged.json").read_text(encoding="utf-8"))}
+        Path("data/release/rejudged_1.json").read_text(encoding="utf-8"))}
     r2 = {r["problem_id"]: r for r in json.loads(
-        Path("data/release/rejudged_run2.json").read_text(encoding="utf-8"))}
+        Path("data/release/rejudged_2.json").read_text(encoding="utf-8"))}
     out = set()
     for pid, a in r1.items():
         b = r2.get(pid)
