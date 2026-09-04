@@ -10,7 +10,6 @@ proofnet_verified/
 minif2f_v2/
   seeds_50_levels.csv     same 11 columns, same meaning
   raw/
-external/                 benchmarks we do not run experiments on
 ```
 
 Both seed sets are 50 rows in the same schema, and every row carries a proof

@@ -366,7 +366,7 @@ reading them.
 data/evaluation/exam_evidence/<model>_<arm>.jsonl.gz      episodes, one file per reported cell
 data/evaluation/exam_evidence/MANIFEST.json               SHA-256 and Pass@3 per cell
 data/evaluation/exam/seeds_all100.jsonl                   the 100 control rows as played
-data/evaluation/exam/release537_playable.jsonl            the 535 released rows as played
+data/evaluation/exam/release535_playable.jsonl            the 535 released rows as played
 config/exam_cells.json                                    panel (`groups`) and cell registry
 ```
 

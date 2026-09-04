@@ -66,7 +66,7 @@
       "url": "https://openrouter.ai/api/v1",
       "model": "openai/gpt-5.6-luna",
       "_model": "openai/gpt-5.6-luna through OpenRouter, the same transport and dialect as grok",
-      "_why_not_codex": "This cell used to be driven through `codex exec`, and that was not a fair reading of the model -- it was not even a reading of the model alone. `codex exec` is an agent, it was called with cwd unset so it inherited the runner's working directory, and `--sandbox read-only` lets an agent read files there. The repository holds the answers: release537_playable.jsonl carries gt_proof_body for all 535 rows and seeds_all100.jsonl carries a proof for every one of the 100 seeds.\n\nIt read them. Normalising whitespace and comments, 124 of the 470 treatment proofs longer than 150 characters match the released ground truth exactly, including a 52-line, 1,960-character dihedral-group argument reproduced lemma for lemma. Nothing about the old cell's 100.0/99.6/99.3 was a measurement of proving ability, and every claim that rested on it -- the ceiling reference, the near-zero LPG floor -- rested on nothing.\n\nAn HTTP endpoint has no filesystem to read, so the contamination cannot recur here by construction. Matching grok's player, dialect and budget also removes the second asymmetry: the old cell reported no usage, so the 8192 budget never bound it, and it took no assistant turn. The old episodes are kept under *_contaminated_codex.",
+      "_why_not_codex": "This cell used to be driven through `codex exec`, and that was not a fair reading of the model -- it was not even a reading of the model alone. `codex exec` is an agent, it was called with cwd unset so it inherited the runner's working directory, and `--sandbox read-only` lets an agent read files there. The repository holds the answers: release535_playable.jsonl carries gt_proof_body for all 535 rows and seeds_all100.jsonl carries a proof for every one of the 100 seeds.\n\nIt read them. Normalising whitespace and comments, 124 of the 470 treatment proofs longer than 150 characters match the released ground truth exactly, including a 52-line, 1,960-character dihedral-group argument reproduced lemma for lemma. Nothing about the old cell's 100.0/99.6/99.3 was a measurement of proving ability, and every claim that rested on it -- the ceiling reference, the near-zero LPG floor -- rested on nothing.\n\nAn HTTP endpoint has no filesystem to read, so the contamination cannot recur here by construction. Matching grok's player, dialect and budget also removes the second asymmetry: the old cell reported no usage, so the 8192 budget never bound it, and it took no assistant turn. The old episodes are kept under *_contaminated_codex.",
       "_reasoning_headroom_why": "Measured on three rows of varying difficulty: 4,293 / 198 / 271 reasoning tokens, each finishing on its own with an extractable block. 8192 clears the largest with room.",
       "episode_concurrency": 24,
       "first_party_serving": true,
@@ -516,8 +516,8 @@
       "note": "417 released rows minus 2 the exam environment cannot elaborate. The arm the paper reports."
     },
     "release535": {
-      "rows": "data/evaluation/exam/release537_playable.jsonl",
-      "note": "537 released rows minus 2 the exam environment cannot elaborate. The arm the paper reports. Supersedes release415, which was the same corpus before 120 rows were added; a cell built on the older file resumes onto this one without replaying anything."
+      "rows": "data/evaluation/exam/release535_playable.jsonl",
+      "note": "The 535 rows the paper reports: the 537 admitted rows minus the 2 the exam environment cannot elaborate. Supersedes release415, which was the same corpus before 120 rows were added; a cell built on the older file resumes onto this one without replaying anything."
     }
   },
   "_report_split_by_benchmark": [

@@ -116,7 +116,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--config", default=str(ROOT / "config/exam_cells.json"))
     ap.add_argument("--seeds", default=str(ROOT / "data/evaluation/exam/seeds_all100.jsonl"))
-    ap.add_argument("--release", default=str(ROOT / "data/evaluation/exam/release537_playable.jsonl"))
+    ap.add_argument("--release", default=str(ROOT / "data/evaluation/exam/release535_playable.jsonl"))
     ap.add_argument("--models", default="",
                     help="comma-separated labels; empty means the whole panel in "
                          "reporting order, read from the config's groups")

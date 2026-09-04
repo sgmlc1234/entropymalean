@@ -231,7 +231,7 @@ drivers all call `run_proof_evaluation.py`, and nothing outside that group calls
 any of them. They move together or not at all.
 
 **Confirmed off-path** by the evaluation session: the two live row files are
-`seeds_all100.jsonl` (3 Aug, control) and `release537_playable.jsonl` (20 Aug,
+`seeds_all100.jsonl` (3 Aug, control) and `release535_playable.jsonl` (20 Aug,
 treatment), and none of these produced either. The two that built the control
 corpus are listed under Analysis instead, because they are the only path back to
 it.
@@ -246,9 +246,9 @@ Three things, stated so they are not silently assumed:
    pipeline. The evaluation session should confirm.
 2. ~~**`release_to_exam_rows.py`.**~~ **Settled:** it is a manual step, not a
    missing edge. It runs once when the release changes —
-   `eml1_release.jsonl` → `release537_rows.jsonl` (14:44) → and then
+   `eml1_release.jsonl` → exam rows (14:44) → and then
    `preflight_exam_rows.py`, which `run_exam_cell.py` does call, produces
-   `release537_playable.jsonl` (14:46). A reviewer using the shipped release
+   `release535_playable.jsonl` (14:46). A reviewer using the shipped release
    never runs it, because the playable file is already there.
 3. **Whether any historical script is the only record of how a released
    artifact was made.** Archiving is safe for this; deleting is not, which is
