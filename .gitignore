@@ -109,6 +109,14 @@ results/
 !data/evaluation/exam_evidence/
 !data/evaluation/exam_evidence/*.jsonl.gz
 !data/evaluation/exam_evidence/MANIFEST.json
+# The two row files the scoring scripts read alongside the bundle: the 100
+# certified control seeds and the 535 released rows as the environment played
+# them. `lineage_gap_from_exam.py` needs both, so a checkout without them
+# cannot produce the lineage proof gap. Everything else under
+# data/evaluation/exam/ stays ignored.
+!data/evaluation/exam/
+!data/evaluation/exam/seeds_all100.jsonl
+!data/evaluation/exam/release537_playable.jsonl
 
 *.pkl
 *.pickle
