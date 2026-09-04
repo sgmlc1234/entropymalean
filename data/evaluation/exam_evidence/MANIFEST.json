@@ -91,7 +91,7 @@
       "episodes": 1605,
       "pass3": {
         "minif2f_v2": 47.6,
-        "proofnet_verified": 7.0
+        "proofnet_verified": 7.3
       },
       "rows": 535,
       "rows_per_benchmark": {
@@ -99,7 +99,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "5815fcfbcd8c1dc710f9829b594fbd6e93b472bce44ff54b61c6c37053068f32",
+      "sha256": "a0948c215f1f9e423338629024d2aca1bbac113a633182dffbdfdbcb4eada96f",
       "source": "data/evaluation/exam/release309_goedel/episodes_goedel_closed_book.jsonl"
     },
     "gptoss/control": {
@@ -116,7 +116,7 @@
         "proofnet_verified": 50
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "80ca2449947fff29427155e0732716661d4a68249c0848963e92033ba666ec08",
+      "sha256": "e424f1db34c2a20fb2a16322fb941b138b1e5b6f1d91c7e5dd9c81b54632b487",
       "source": "data/evaluation/exam/gptoss_control/episodes_gptoss_closed_book.jsonl"
     },
     "gptoss/treatment": {
@@ -124,7 +124,7 @@
       "compromised_episodes": 0,
       "episodes": 1605,
       "pass3": {
-        "minif2f_v2": 21.8,
+        "minif2f_v2": 22.6,
         "proofnet_verified": 23.3
       },
       "rows": 535,
@@ -133,7 +133,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "63fe4e316be354593418c943d3261508ca1e1ecfde0dde1df5ed73f875ebef78",
+      "sha256": "51295f41b43a28a078f767657e283e6c6d3e0bbe6e45dfe861a9f3b1bdd17de2",
       "source": "data/evaluation/exam/gptoss_treatment/episodes_gptoss_closed_book.jsonl"
     },
     "leanstral/control": {
@@ -141,7 +141,7 @@
       "compromised_episodes": 0,
       "episodes": 300,
       "pass3": {
-        "minif2f_v2": 56.0,
+        "minif2f_v2": 58.0,
         "proofnet_verified": 32.0
       },
       "rows": 100,
@@ -150,7 +150,7 @@
         "proofnet_verified": 50
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "5cee2a9d199afa6cdde5199f5b20732b6aaf3c69002bdaf16d43cb6e73970067",
+      "sha256": "dc6ade242267a4f104af6644d36895a682a651a787dbce85d6cfa7b4a0e1472d",
       "source": "data/evaluation/exam/leanstral_control/episodes_leanstral_closed_book.jsonl"
     },
     "leanstral/treatment": {
@@ -167,7 +167,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "2fa92999efe1c906f9312cd5802ed580ae2c49c40c0dc0cbc8830f7ee9a0618a",
+      "sha256": "1be1feae71329e5404f8ee1c238b68afca541dd51ff3aa02754562200e58f536",
       "source": "data/evaluation/exam/leanstral_treatment/episodes_leanstral_closed_book.jsonl"
     },
     "luna/control": {
@@ -218,7 +218,7 @@
         "proofnet_verified": 50
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "a8423ba61dfab669fb605191799b7e4bb86346ac3e70187b3c906b371c2109b3",
+      "sha256": "46fadba3804d3a4c215d63a0e4a0574c24d1a3623f38f42ed6f4637dda70f5d9",
       "source": "data/evaluation/exam/muse_control/episodes_muse_closed_book.jsonl"
     },
     "muse/treatment": {
@@ -235,7 +235,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "2ed077e85e74a54587feed5a4cc050015a6cc00e7240007b36e9083008cadab4",
+      "sha256": "17bf5d93e3b4b53e11b31d85c24b23bcaf0395ab613ba11a98ecfeff8521af28",
       "source": "data/evaluation/exam/muse_treatment/episodes_muse_closed_book.jsonl"
     },
     "muse_spark/control": {
@@ -269,7 +269,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "13cf2484ad7de769c888aeef2ab52589cddedf7355c49a7709ebbc2bf648ec38",
+      "sha256": "bb3544b90fce0242e2865d1a357d83e45c60cb576184a2d138cd4cbe01edd40a",
       "source": "data/evaluation/exam/muse_spark_treatment/episodes_muse_spark_closed_book.jsonl"
     },
     "nemotron/control": {
@@ -303,7 +303,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "103621f3cbd4f9ea48a53b22c9088b435df797f60958e0df715dbb53165960ca",
+      "sha256": "79813e207de1c47712e2e6e9f454465472400953639990e6a63e031cc7eb0965",
       "source": "data/evaluation/exam/nemotron_treatment/episodes_nemotron_closed_book.jsonl"
     },
     "nemotron_nano_9b/control": {
@@ -388,7 +388,7 @@
         "proofnet_verified": 50
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "63a84ca33b257ffcb10ab1dbd16538e1812f100b9c0b1d126e5047628679bd34",
+      "sha256": "4d922a1db9bc5e8815320f218cc64f216bd2be0dea7b316ca4dbf04fcf1a7dca",
       "source": "data/evaluation/exam/qwen36_control/episodes_qwen36_closed_book.jsonl"
     },
     "qwen36/treatment": {
@@ -405,7 +405,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "92ff20a70ba93a767d6c49c721c2d4b57a82ed136177069a1ab00e30717f0a6f",
+      "sha256": "b7a8810e0dd8fb0f4b6f488b39ea595cd1a559b3f1574c6579ed59fce920aca0",
       "source": "data/evaluation/exam/qwen36_treatment/episodes_qwen36_closed_book.jsonl"
     },
     "qwen3_14b/control": {
@@ -422,7 +422,7 @@
         "proofnet_verified": 50
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "c5b11f95f21ad127dd6c8cd167120c7c525ca12eaa19e82b559147614b1f93c8",
+      "sha256": "81672d0488aea5ba9eef39c10db73d4cb231911e6d7ba097944ff28b2fe5d819",
       "source": "data/evaluation/exam/qwen3_14b_control/episodes_qwen3_14b_closed_book.jsonl"
     },
     "qwen3_14b/treatment": {
@@ -439,7 +439,7 @@
         "proofnet_verified": 287
       },
       "rows_with_no_measured_episode": 0,
-      "sha256": "c84385572c2aa01869ea80a075cd97c6328c04fa0308acb377e567a5d4636262",
+      "sha256": "a299d51329779440893dee44a0c32542801e081cca757393e8fa773396968de9",
       "source": "data/evaluation/exam/qwen3_14b_treatment/episodes_qwen3_14b_closed_book.jsonl"
     }
   }

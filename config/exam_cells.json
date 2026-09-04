@@ -309,19 +309,28 @@
             "model": "openai/gpt-oss-20b",
             "provider": {
                 "only": [
+                    "SiliconFlow"
+                ],
+                "quantizations": [
+                    "fp8"
+                ],
+                "allow_fallbacks": false
+            },
+            "_model": "openai/gpt-oss-20b, Apache-2.0, 21B total with 3.6B active -- a third mixture-of-experts entry, at the same active scale as nemotron and qwen3.6",
+            "_provider_why": "Switched 2026-09-04 for the final 7 of the 1,605 treatment episodes. The pinned DeepInfra bf16 host answered HTTP 429 to every request that day, including an 8-token probe, after cutting 46 earlier episodes short the same way. SiliconFlow serves this model at fp8, inside the panel's eight-bit floor, so no exception is needed. Three episodes briefly played on Amazon Bedrock (precision unpublished) were discarded (kept as episodes_*.bedrock3.jsonl) so the seven share one host. The other 1,598 treatment episodes and all 300 control episodes ran on DeepInfra at bf16; Appendix G reports the split.",
+            "_reasoning_headroom_why": "Measured on three rows: 987 / 4,531 / 5,950 reasoning tokens, each finishing on its own with an extractable block. 12288 is about twice the largest observed, which is the margin the reasoning SLMs needed once ProofNet rows started running long.",
+            "generate_retries": 6,
+            "generate_timeout": 900,
+            "_episode_concurrency_why": "Lowered from 16 on 2026-09-04: DeepInfra rate-limits this model, and at 16 concurrent episodes 46 treatment episodes were cut short by HTTP 429 after six retries, then 7 more on the replay. The rate limit is a property of the host, so it is recorded here rather than worked around per run.",
+            "_provider_before_2026_09_04": {
+                "only": [
                     "DeepInfra"
                 ],
                 "quantizations": [
                     "bf16"
                 ],
                 "allow_fallbacks": false
-            },
-            "_model": "openai/gpt-oss-20b, Apache-2.0, 21B total with 3.6B active -- a third mixture-of-experts entry, at the same active scale as nemotron and qwen3.6",
-            "_provider_why": "DeepInfra at bf16. The model ships with its expert weights in MXFP4 and most endpoints serve it that way -- CoreWeave, Parasail and Novita all report fp4, which is below this panel's eight-bit floor and disqualifies them however cheap they are. Two endpoints clear the floor, and they are not close on speed: DeepInfra at bf16 runs 91-113 tok/s against SiliconFlow's 17-19 at fp8. bf16 is also the higher precision of the two.",
-            "_reasoning_headroom_why": "Measured on three rows: 987 / 4,531 / 5,950 reasoning tokens, each finishing on its own with an extractable block. 12288 is about twice the largest observed, which is the margin the reasoning SLMs needed once ProofNet rows started running long.",
-            "generate_retries": 6,
-            "generate_timeout": 900,
-            "_episode_concurrency_why": "Lowered from 16 on 2026-09-04: DeepInfra rate-limits this model, and at 16 concurrent episodes 46 treatment episodes were cut short by HTTP 429 after six retries, then 7 more on the replay. The rate limit is a property of the host, so it is recorded here rather than worked around per run."
+            }
         },
         "qwen3_14b": {
             "player": "whole_proof",
