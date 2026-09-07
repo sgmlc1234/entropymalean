@@ -335,6 +335,7 @@ across OpenRouter, Mistral API, and a dedicated FriendliAI endpoint.
 ```bash
 python3 scripts/evaluate/finalize_panel_numbers.py --latex drops         # Table 2
 python3 scripts/evaluate/lineage_gap_from_exam.py --contrast goedel,bfs  # Table 3
+python3 scripts/evaluate/revision_yield.py                            # what the revision attempts recover
 ```
 
 `analyze_exam_arms.py` is a different tool — paired Wilcoxon/McNemar between
